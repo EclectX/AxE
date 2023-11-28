@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "cwd": "/home/user/soc_frame/tools/",
+            "program": "/home/user/soc_frame/tools/run_mpsoc.py",
+            "console": "integratedTerminal",
+            "args": ["/home/user/soc_frame/tools/_2x2_main.conf"],
+        }
+    ]
+}

@@ -170,7 +170,6 @@ config.read_file( open( config_name ) )
 
 # remove the .conf from the config_name
 # split returns an array and the first part is the name
-
 config_name = config_name.split( "." )[0]
 
 # controller
