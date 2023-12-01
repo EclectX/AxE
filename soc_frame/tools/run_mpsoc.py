@@ -207,7 +207,7 @@ if what_to_run == "prgs":
     print( "\t\t\t\t>>>>>>>>running prgs" )
     
     prgs_str = config.get( "prgs", "prgs_lst" )
-    prgs_lst = prgs_str.split( "\n" )
+    prgs_lst = prgs_str.split( "," )
     
 elif what_to_run == "tasks":
     
@@ -256,7 +256,7 @@ print( "\t\t\t\t>>>>>>>>pick controller estimations" )
 # set here.
 
 #~ controller_size_addr = 16380; # 0x3FFC
-controller_size_addr = 32764; # 0x7FFC
+controller_size_addr = 32764; # 0x7FFCx
 controller_size = controller_size_addr / 4
 
 controller_size = int(controller_size)

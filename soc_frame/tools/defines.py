@@ -1,7 +1,7 @@
 
 PATH_CONTROLLERS = "../sw/controller/"
 #~ PATH_PRGS = "../sw/programs/"
-PATH_PRGS = "../sw/tasks/"
+PATH_PRGS = "../sw/programs/"
 PATH_TASKS = "../sw/tasks/"
 
 PATH_SYSS = "../systems/"
