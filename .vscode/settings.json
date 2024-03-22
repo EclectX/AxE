@@ -4,6 +4,7 @@
         "queue_func.h": "c",
         "snipmath.h": "c",
         "string_view": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "energy_harvester.h": "c"
     }
 }

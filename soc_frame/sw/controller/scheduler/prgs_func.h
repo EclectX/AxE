@@ -4,24 +4,50 @@
 // estimate execution time
 // 
 //------------------------------------------------------------------------------
-#define DBG_ESTIMATE_EXECUTION_TIME 
-void prgs_estimate_execution_times()
+
+// for every arch, every prg is executed. the selected node has to have the arch
+// for which the execution time is estimated.
+
+void prgs_estimate_execution_times() // CHECKED
 {
     int i = 0;
     int j = 0;
-    print_str_dec_n("prgs_estimate_execution_times: ",NUM_PRGS);
+    
     int node_to_use = 0;
     
     for ( i = 0; i < NUM_ARCHS; i++ )
     {
-        preferred_archs[ 0 ] = i;
+        if ( i == 1 )
+        {
+            #ifdef DBG_ESTIMATE_EXECUTION_TIME
+                NL;
+                print_str( "skipping execution time estimation for\n" );
+                print_str( "arch: " );
+                print_dec( i );
+                nl();
+            #endif
+            break;
+        }
         
-        node_to_use = node_get( preferred_archs, i );
-        print_str_dec_n("node to use:", node_to_use);
-        if(node_to_use > NUM_NODES || node_to_use < 0)
-            continue;
+        // a node is selected that fits the arch
+        
+        #ifdef DBG_ESTIMATE_EXECUTION_TIME
+            print_str( "arch: " );
+            print_dec( i );
+            nl();
+        #endif
+        
+        //~ preferred_archs[ 0 ] = i;
+        //~ node_to_use = node_get( preferred_archs, i );
+        //node_to_use = get_node_for_arch( i );
+		node_to_use = 0;
+        
         for ( j = 0; j < NUM_PRGS; j++ )
         {
+            #ifdef DBG_ESTIMATE_EXECUTION_TIME
+                print_prg( j );NL;
+			#endif
+            
             prg_estimate_execution_time( node_to_use, j );
         }
     }
@@ -36,17 +62,13 @@ void prgs_estimate_execution_times()
     
 }
 
-void prg_estimate_execution_time( int node_i, int prg_i )
+void prg_estimate_execution_time( int node_i, int prg_i ) // CHECKED
 {
     
-    
-    
 #ifdef DBG_ESTIMATE_EXECUTION_TIME
-    print_str_str_n( "exec time of: ",prgs[ prg_i ].name );
-    print_str_dec_n( "exec time on: ",node_i );
-    print_str_dec_n( "exec time of prg_i: ",prg_i );
-    // print_str( prgs[ prg_i ].name );
-    // nl();
+    print_str( "exec time of: " );
+    print_str( prgs[ prg_i ].name );
+    nl();
 #endif
     
     int cnt_start = 0;
@@ -72,17 +94,33 @@ void prg_estimate_execution_time( int node_i, int prg_i )
     
     cnt_diff = cnt_end - cnt_start;
     
+    //~ if ( prg_i == 0 )
+    //~ {
+        //~ cnt_diff = 3686042;
+    //~ }
+    //~ else if ( prg_i == 1 )
+    //~ {
+        //~ cnt_diff = 3687094;
+    //~ }
+    //~ else
+    //~ {
+        //~ cnt_diff = 3687094;
+    //~ }
+    
+    print_str( "set cnt_diff to: " ); print_dec( cnt_diff ); NL;
+    
     // use the node index to get the node and it's arch.
-    // this is used to save the cnt_diff in the correct array index of exec_t.
+    // this is used to save the cnt_diff in the correct array index of c.
     
-    prgs[ prg_i ].exec_t[ nodes[ node_i].arch ] = cnt_diff;
+    prgs[ prg_i ].c_clk_cnt[ nodes[node_i].arch ] = cnt_diff;
     
-    // exec interval
-    print_str_dec_n( "exec time of: ",cnt_diff );
-    prgs[ prg_i ].exec_inv[ nodes[ node_i].arch ] = cnt_diff * 2;
+    prgs[ prg_i ].c[ nodes[node_i].arch ] = prgs_get_execution_time_in_ms( cnt_diff );
+    
+    // set c to 8q8 format
+    
+    prgs[ prg_i ].c[ nodes[node_i].arch ] <<= 8;
 }
-
-void prgs_execution_time_debug()
+void prgs_execution_time_debug() // CHECKED
 {
     nl();
     print_str( "execution time estimations:\n" );
@@ -100,19 +138,133 @@ void prgs_execution_time_debug()
         
         for ( j = 0; j < NUM_PRGS; j++ )
         {
-            print_str( "p" );
-            print_dec( j );
-            print_str( " - " );
+            print_prg( j );
             print_str( prgs[ j ].name );
+
             print_str( ": " );
-            
-            print_dec( prgs[ j ].exec_t[ i ] );
-            print_str( " - " );
-            print_dec( prgs[ j ].exec_inv[ i ] );
+            print_dec( prgs[ j ].c[ i ] );
             nl();
         }
     }
 }
+
+// generally speaking ms are considered fixed point numbers
+
+int prgs_get_execution_time_in_ms( int clk_cnt ) // DEPRECATED
+{
+    return clk_cnt_to_ms( clk_cnt );
+}
+
+//------------------------------------------------------------------------------
+// 
+// prgs_set_relative_deadline
+// 
+//------------------------------------------------------------------------------
+
+void prgs_set_relative_deadline() // CHECKED
+{
+    int i = 0;
+    int j = 0;
+    
+    for ( i = 0; i < NUM_ARCHS; i++ )
+    {
+        for ( j = 0; j < NUM_PRGS; j++ )
+        {
+            prgs[ j ].d[ i ] = fixed_mul_8q8( prgs[ j ].c[ i ], prgs[ j ].d_multiplyer );
+        }
+    }
+    
+    #ifdef DBG_GET_RELATIVE_DEADLINE
+        prgs_get_relative_deadline_debug();
+    #endif
+}
+#ifdef DBG_GET_RELATIVE_DEADLINE
+    void prgs_get_relative_deadline_debug()
+    {
+        NL;
+        print_str( "get relative deadlines:\n" );
+        
+        int i = 0;
+        int j = 0;
+        
+        for ( i = 0; i < NUM_ARCHS; i++ )
+        {
+            NL;
+            
+            print_str( "arch " );
+            print_dec( i );
+            NL;
+            
+            for ( j = 0; j < NUM_PRGS; j++ )
+            {
+                print_str( "p" );
+                print_dec( j );
+                print_str( " - " );
+                print_str( prgs[ j ].name );
+                print_str( ": " );
+                
+                NL;
+                print_str( "c " );
+                print_fix( prgs[ j ].c[ i ], 8, 8 );
+                print_str( " mod " );
+                print_fix( prgs[ j ].d_multiplyer, 8, 8 );
+                print_str( " d " );
+                print_fix( prgs[ j ].d[ i ], 8, 8 );
+                NL;
+            }
+        }
+    }
+#endif
+
+//------------------------------------------------------------------------------
+// 
+// prgs_set_period
+// 
+//------------------------------------------------------------------------------
+
+void prgs_set_period() // CHECKED
+{
+    int i = 0;
+    int j = 0;
+    
+    for ( i = 0; i < NUM_ARCHS; i++ )
+    {
+        for ( j = 0; j < NUM_PRGS; j++ )
+        {
+            // the period or execution interval is the same as the
+            // deadline.
+            
+            prgs[ j ].t[ i ] = prgs[ j ].d[ i ];
+        }
+    }
+}
+void prgs_set_period_clk_cnt()
+{
+    int i = 0;
+    int j = 0;
+    
+    for ( i = 0; i < NUM_ARCHS; i++ )
+    {
+        for ( j = 0; j < NUM_PRGS; j++ )
+        {
+            prgs[ j ].t_clk_cnt[ i ] = ms_to_clk_cnt( prgs[ j ].t[ i ] );
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //------------------------------------------------------------------------------
 // 
@@ -120,16 +272,16 @@ void prgs_execution_time_debug()
 // 
 //------------------------------------------------------------------------------
 
-void prgs_estimate_energy_requirements()
+void prgs_estimate_energy_requirements() // CHECKED
 {
     int i = 0;
     int j = 0;
     
     for ( i = 0; i < NUM_ARCHS; i++ )
     {
-        // print_str( "n" );
-        // print_dec( i );
-        // nl();
+        print_str( "n" );
+        print_dec( i );
+        nl();
         
         for ( j = 0; j < NUM_PRGS; j++ )
         {
@@ -137,41 +289,127 @@ void prgs_estimate_energy_requirements()
         }
     }
 }
-
-void estimate_energy_requirement( int arch_i, int prg_i )
+void estimate_energy_requirement( int arch_i, int prg_i ) // CHECKED
 {
     // big:   1126 milliwatts
     // small: 1125 milliwatts
     
-    // 3687889 * 4 = 100000x
-    // -> 100000x / 100000 = x
-    
     // 147 milliseconds * 1,126 milliwatts = 165,522 millijouls
-    
-    int milli_sec = 0;
-    
-    // print_str( "p" );
-    // print_dec( prg_i );
-    
-    // calc time
-    // ( exec_t * 4 ) / 100000 = milliseconds
-    
-    milli_sec = prgs[ prg_i ].exec_t[ arch_i ] * 4;
-    milli_sec /= 100000;
-    
-    // print_str( " t: " );
-    // print_dec( milli_sec );
     
     // calc energy
     // milli_sec * power = millijouls
     
-    prgs[ prg_i ].exec_e[ arch_i ] = milli_sec * archs[ arch_i ].power;
+    //~ prgs[ prg_i ].e[ arch_i ] = prgs[ prg_i ].c[ arch_i ] * archs[ arch_i ].power;
+    prgs[ prg_i ].e[ arch_i ] = fixed_mul_8q8( prgs[ prg_i ].c[ arch_i ], archs[ arch_i ].power );
     
-    // print_str( " - e: " );
-    // print_dec( prgs[ prg_i ].exec_e[ arch_i ] );
+    print_str( " - e: " );
+    print_dec( prgs[ prg_i ].e[ arch_i ] );
     
-    // nl();
+    nl();
 }
+
+
+
+
+
+
+void prgs_set_initial_deadlines()
+{
+    // as the prgs have already been assigned to a node at the time the
+    // next deadlines are set, we do not have to consider different
+    // architectures at this point. as the architecture of a node is
+    // fixed an a task cannot be reassigned, there is only the node's
+    // architecture to consider.
+    
+    // we use the period here as the deadline is the same as the period
+    // and we only calculate the clk cnt for the latter.
+    
+    int j = 0;
+    
+    for ( j = 0; j < NUM_PRGS; j++ )
+    {
+        // as we recorded the t_clk_cnt for all architectures we have
+        // to find out the architecture of the node the prg has been
+        // assigned to with:
+        // nodes[ prgs[j].assigned_to ].arch
+        
+        prgs[ j ].next_release_clk_cnt = prgs[ j ].t_clk_cnt[ nodes[ prgs[j].assigned_to ].arch ];
+        prgs[ j ].next_deadline_clk_cnt = prgs[ j ].t_clk_cnt[ nodes[ prgs[j].assigned_to ].arch ] * 2;
+    }
+}
+
+#ifdef REP_INITIAL_DEADLINES
+    
+    void rep_prgs_set_initial_deadlines()
+    {
+        int j = 0;
+        
+        NL;
+        print_str( "initial r and d\n" );
+        
+        for ( j = 0; j < NUM_PRGS; j++ )
+        {
+            // as we recorded the t_clk_cnt for all architectures we have
+            // to find out the architecture of the node the prg has been
+            // assigned to with:
+            // nodes[ prgs[j].assigned_to ].arch
+            
+            NL;
+            print_str( "p" );print_dec( j );NL;
+            print_str( "r: " );print_dec( prgs[ j ].next_release_clk_cnt );NL;
+            print_str( "d: " );print_dec( prgs[ j ].next_deadline_clk_cnt );NL;
+        }
+    }
+    
+    
+#endif
+
+void prg_set_next_deadline( int prg_i )
+{
+    // here we set the next absolute deadline for a task.
+    // the current deadline is used to define the next release time. as
+    // the periods and the deadlines are always the same the deadlines
+    // are always the next release times.
+    
+    unsigned int tmp = prgs[ prg_i ].next_deadline_clk_cnt;
+    
+    prgs[ prg_i ].next_release_clk_cnt = prgs[ prg_i ].next_deadline_clk_cnt;
+    prgs[ prg_i ].next_release_overflows = prgs[ prg_i ].next_deadline_overflows;
+    
+    prgs[ prg_i ].next_deadline_clk_cnt += prgs[ prg_i ].t_clk_cnt[ nodes[ prgs[prg_i].assigned_to ].arch ];
+    
+    // check for overflows
+    
+    if ( tmp > prgs[ prg_i ].next_deadline_clk_cnt )
+    {
+        prgs[ prg_i ].next_deadline_overflows += 1;
+        
+        #ifdef DBG_SET_NEXT_DEADLINE
+            
+            print_str( "set_next_deadline overflow detected" ); NL;
+            print_str( "tmp: " ); print_dec( tmp ); NL;
+            print_str( "next: " ); print_dec( prgs[ prg_i ].next_deadline_clk_cnt ); NL;
+            print_str( "new overflow: " ); print_dec( prgs[ prg_i ].next_deadline_overflows ); NL;
+            
+        #endif
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //------------------------------------------------------------------------------
 // 
@@ -179,9 +417,11 @@ void estimate_energy_requirement( int arch_i, int prg_i )
 // 
 //------------------------------------------------------------------------------
 
+
+
 void prgs_check_if_finished()
 {
-    unsigned int nodes_finished = get_finished_nodes( nodes_busy );
+    unsigned int nodes_finished = get_finished_nodes_mask( nodes_busy );
     
     int nodes_finished_index = 0;
     
@@ -232,14 +472,9 @@ void prgs_check_if_finished()
         nodes_finished_index += 1;
     }
     
-    
-    
-#ifdef DBG_PRGS_ACTIVE
-    // print_bin( prgs_active, 5 ); nl();
-#endif
-    
-    
-    
+	#ifdef DBG_PRGS_ACTIVE
+		print_bin( task_set.prgs_active, 5 ); NL;
+	#endif
 }
 
 //------------------------------------------------------------------------------
@@ -247,6 +482,8 @@ void prgs_check_if_finished()
 // prg_set_inactive
 // 
 //------------------------------------------------------------------------------
+
+// TODO - only works for 32 or less prgs. maybe not needed anymore.
 
 void prg_set_inactive( int prg_i )
 {
@@ -257,7 +494,7 @@ void prg_set_inactive( int prg_i )
     prg_mask = 1 << prg_i;
     prg_mask = ~prg_mask;
     
-    prgs_active &= prg_mask;
+    task_set.prgs_active &= prg_mask;
 }
 
 //------------------------------------------------------------------------------
@@ -268,14 +505,14 @@ void prg_set_inactive( int prg_i )
 
 void prg_set_active( int prg_i )
 {
-    prgs_active |= ( 1 << prg_i );
+    task_set.prgs_active |= ( 1 << prg_i );
     
     
     
 #ifdef DBG_PRGS_ACTIVE
-    // print_str( "prgs_active: " );
-    // print_bin( prgs_active, 5 );
-    // nl();
+    print_str( "prgs_active: " );
+    print_bin( task_set.prgs_active, 5 );
+    nl();
 #endif
     
     
@@ -290,17 +527,119 @@ void prg_set_active( int prg_i )
 
 int prg_is_running( int prg_i )
 {
-    if ( 0 != ( prgs_active & (1<<prg_i) ) )
+    if ( 0 != ( task_set.prgs_active & (1<<prg_i) ) )
     {
-        // if the prg is still running we just skip it's execution.
-        // as the exec again variable has already been set the next
-        // time the execution of the prog is attemted is already
-        // set.
-        
         return 1;
     }
     else
     {
         return 0;
     }
+}
+
+//------------------------------------------------------------------------------
+// 
+// prgs_summary
+// 
+//------------------------------------------------------------------------------
+
+#ifdef REP_PRGS_SUMMERY
+    
+    void prgs_summary() // CHECKED
+    {
+        int i = 0;
+        int j = 0;
+        
+        // here we first loop through the prgs and not the archs
+        
+        for ( j = 0; j < NUM_PRGS; j++ )
+        {
+            NL;
+            
+            print_str( "prg " );
+            print_dec( j );
+            print_str( ": " );
+            print_str( prgs[ j ].name );
+            NL;
+            
+            print_str( "===" );
+            NL;
+            
+            for ( i = 0; i < NUM_ARCHS; i++ )
+            {
+                print_str( "arch" );
+                print_dec( i );
+                NL;
+                
+                print_str( "c: " ) ; print_fix( prgs[ j ].c[ i ], 8, 8 ) ; print_str( "ms\n" );
+                print_str( "d: " ) ; print_fix( prgs[ j ].d[ i ], 8, 8 ) ; print_str( "ms\n" );
+                print_str( "t: " ) ; print_fix( prgs[ j ].t[ i ], 8, 8 ) ; print_str( "ms\n" );
+                print_str( "e: " ) ; print_fix( prgs[ j ].e[ i ], 8, 8 ) ; print_str( "mj\n" );
+                print_str( "c_clk_cnt: " ); print_dec( prgs[ j ].c_clk_cnt[ i ] ); NL;
+                print_str( "t_clk_cnt: " ); print_dec( prgs[ j ].t_clk_cnt[ i ] ); NL;
+                
+                NL;
+            }
+        }
+    }
+    
+#endif
+
+void prgs_set_ready( int node_i ) // new
+{
+    #ifdef DBG_SET_READY
+        print_str( "setting prgs ready for n" ); print_dec( node_i ); NL;
+    #endif
+    
+    int i;
+    int prg_i = 0;
+    
+    unsigned int end = ( LAST_NODE(node_i) ) ? NUM_PRGS : nodes[ node_i+1 ].prgs_start_i;
+    
+    //~ #ifdef DBG_SET_READY
+        //~ print_str( "prgs list range:" ); NL;
+        //~ print_dec( nodes[ node_i ].prgs_start_i ); print_str( " - " ); print_dec( end ); NL;
+    //~ #endif
+    
+    // iterating all the prgs assigned to the node
+    // -----------------------------------------------------------------
+    
+    for ( i = nodes[ node_i ].prgs_start_i; i < end; i++ )
+    {
+        prg_i = prgs_list[ i ];
+        
+        // figure out how many times the task can be executed during
+        // the period defined by d.
+        
+        #ifdef DBG_SET_READY
+            print_str( "p" ); print_dec( prg_i );
+        #endif
+        
+        if ( TRUE == time_reached( prgs[ prg_i ].next_release_clk_cnt, prgs[ prg_i ].next_release_overflows ) )
+        {
+            #ifdef DBG_SET_READY
+                print_str( "-> ready" );
+            #endif
+            
+            ready_list[ i ] = 1;
+        }
+        else
+        {
+            #ifdef DBG_SET_READY
+                
+                print_str( " " );print_dec( prgs[ prg_i ].next_release_clk_cnt );
+                
+            #endif
+            
+            ready_list[ i ] = 0;
+        }
+        
+        #ifdef DBG_SET_READY
+            NL;
+        #endif
+    }
+    
+    #ifdef DBG_SET_READY
+        print_str("-> done\n");
+    #endif
 }
