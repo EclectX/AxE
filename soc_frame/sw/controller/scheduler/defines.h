@@ -1,4 +1,21 @@
 
+// if save mode is not enabled, the scheduler will always pick the big nodes.
+
+#define EN_SAVE_MODE
+
+// if charging is enabled, save mode should be enabled as well.
+
+#define EN_CHARGING
+
+#define EN_SKIPPING
+
+
+
+// the defines in this file are used for general prg assignements to
+// nodes.
+// they are independent from the scheduler or architectures used.
+
+// TODO - remove battery charging stuff.
 
 #define QUEUE_CHARGING_EVENT ( 255 )
 
@@ -218,6 +235,14 @@
 
 #define TRIGGERS ( 0b10000000000010000000000000000000 )
 #define SET_TRIGGERS *( (volatile int*) TRIGGERS )
+
+
+#define SPOON ( 0b10000000000100000000000000000000 )
+#define GET_SPOON_FED *( (volatile int*) SPOON )
+
+
+
+
 
 //~ #define LED_B_SET ( 0b10000000000010000000000000000000 )
 //~ #define GET_LED_B_SET *( (volatile int*) LED_B_SET )

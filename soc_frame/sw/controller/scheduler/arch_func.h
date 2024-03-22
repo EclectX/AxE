@@ -5,8 +5,13 @@
 // 
 //------------------------------------------------------------------------------
 
+// this is some experimental way to pick an architecture based on a
+// save mode.
+
 void archs_get_preferred( int *preferred_archs )
 {
+    print_str( "DEPR archs_get_preferred\n" );
+    
     // in save mode try to pick an i node, pick im otherwise
     // only pick the other node if none is available.
     

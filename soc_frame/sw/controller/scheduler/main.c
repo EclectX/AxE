@@ -1,17 +1,11 @@
 
-// This is free and unencumbered software released into the public domain.
-
-// A simple test program to run on the controller.
-
 #define MAX_HALF ( 0x7FFFFFFF )
-#define DBG_EVENT_QUEUE
 
 #include "debug.h"
 
+#include "boolean.h"
 #include "mpsoc.h"
-
 #include "typedefs.h"
-
 #include "defines.h"
 
 #include "controller.h"
@@ -22,16 +16,23 @@
 
 #include "energy_harvester.h"
 
-#include "../../_libs/util.h"
+#include "util.h"
+#include "fixed_point.h"
 
 #include "globals.h"
 
+#include "clk_func.h"
+#include "math_func.h"
+#include "time_func.h"
 #include "nodes_func.h"
 #include "prgs_func.h"
 #include "arch_func.h"
 #include "queue_func.h"
-// #include <std.h>
 
+#include "partition_func.h"
+#include "scheduler.h"
+
+#include "input_rgb_size.h"
 
 // period_in_s = 1 / ( MHz * 1.000.000 )
 // 60 / period_in_s = clk_cnt_for_1_min
@@ -164,320 +165,405 @@
 // do them between iterations of the loop. however, printing is not so hard
 // and just saving the chars into a buffer might cause even more delay.
 
-//------------------------------------------------------------------------------
-// prg should be executed again
-//------------------------------------------------------------------------------
-
-// if the battery is charging this means, that save_mode is off
-
-// enough battery
-// - run on im arch
-// - run on i if all im busy
-
-// drained battery
-// - skip if possible
-// - run on i arch
-// - run on im if all i busy
-// #include "dataset1.h"
-__attribute__((noinline))
-int amul(int rd, int rs1, int rs2)
+void trap()
 {
-    asm __volatile__ (".word 0xFEC5857F\n");
-    asm __volatile__ ("addi %0, x10, 0" : "=r" (rd));
+	print_str( "ended sched sw\n" );
+	signal_fin();
+	while ( 1 == 1 ) {}
+}
+
+void img_test()
+{
+    print_str( "running img test\n" );
     
-    return rd;
+    int spoon = 0;
+    
+    int cr = 0b01001101;
+    int cg = 0b10010111;
+    int cb = 0b00011101;
+    
+    int mr = 0;
+    int mg = 0;
+    int mb = 0;
+    
+    int gray = 0;
+    
+    int i = 0;
+    
+    for ( i = 0; i < RGB_SIZE; i+=3 )
+    {
+        //spoon = GET_SPOON_FED;
+        //print_dec( spoon );NL;
+        
+        mr = cr * GET_SPOON_FED;
+        mg = cg * GET_SPOON_FED;
+        mb = cb * GET_SPOON_FED;
+        
+        //mr = cr * rgb[ i ];
+        //mg = cg * rgb[ i+1 ];
+        //mb = cb * rgb[ i+2 ];
+        
+        gray = mr + mg + mb;
+        
+        gray >>= 8;
+        
+        print_dec(gray);NL;
+        //print_dec(gray);NL;
+        //print_dec(gray);NL;
+        
+        //print_bin( gray, 16 );
+        //printf("\n");
+        //printf("\n");
+        time_update_global();
+    }
+    
+    NL;
+    print_str("cnt: ");print_dec(cnt_global.cnt);NL;
+    print_str("overflows: ");print_dec(cnt_global.overflows);NL;
+    NL;
+    
+    print_char( 0x04 );
+    
+    print_str( "img_done\n" );
 }
 
 void my_main()
 {
-    int i = 0;
-    int j = 0;
+    //img_test();
     
-    print_str_n( "start the scheduler");
-    
-    int a = 123;
-    int b = 456;
-    
-    int pro = 0;
-    int pro_appr = 0;
-    
-    pro = a * b;
-    // pro_appr = amul( pro_appr, a, b );
-    pro_appr = a*b;
-    // print_str("exact\n");
-    // print_dec(pro);
-    // nl();
-    
-    // print_str("approx\n");
-    // print_dec(pro_appr);
-    // nl();
-    
-    cnt = GET_COUNTER_GLOBAL;
-    
-    // print_str( "t0: " );
-    // print_dec( cnt );
-    // nl();
-// /////
-//   int y[R];
-//     for (int aa = 0; aa < R; aa++)
-//       {
-//         int k;
-//         int yi0 = 0, yi1 = 0, yi2 = 0, yi3 = 0;
-//         for (k = ptr[aa]; k < ptr[aa+1]-3; k+=4)
-//         {
-//           yi0 += amul(yi0, val[k+0] ,  x[idx[k+0]]);
-//         //   yi0 += val[k+0]*x[idx[k+0]];
-//         //   yi1 += val[k+1]*x[idx[k+1]];
-//           yi1 += amul(yi1, val[k+1] ,  x[idx[k+1]]);
-//         //   yi2 += val[k+2]*x[idx[k+2]];
-//           yi2 += amul(yi2, val[k+2] ,  x[idx[k+2]]);
-//         //   yi3 += val[k+3]*x[idx[k+3]];
-//           yi3 += amul(yi3, val[k+3] ,  x[idx[k+3]]);
-//         }
-//         for ( ; k < ptr[aa+1]; k++)
-//         {
-//           yi0 += val[k]*x[idx[k]];
-//         }
-//         y[aa] = (yi0+yi1)+(yi2+yi3);
-//         // print_char("y");
-//         print_dec(aa);
-//         // print_char(" = ");
-//         // = printed as , 
-//         print_str(",");
-//         print_dec(y[aa]);
-//         nl();
-//       }
-    
+	int i = 0;
+	int j = 0;
+	
+	unsigned int tmp = 0;
+	
+	print_str( "start\n" );
+	
+	cnt = GET_COUNTER_GLOBAL;
+	
+	cnt_global.cnt = GET_COUNTER_GLOBAL;
+	cnt_global.overflows = 0;
+	
+	//~ c 147,0 mod 1,60937500 d 99,82812500
+	
+	unsigned int c = 0b1001001100000000;
+	unsigned int m = 0b0000001110100010;
+	
+	print_str( "fuck me" ); NL;
+	print_fix( c, 8, 8 ); NL;
+	print_fix( m, 8, 8 ); NL;
+	
+	//~ int d = c * m;
+	//~ d >>= 8;
+	
+	unsigned int d = fixed_mul_8q8( c, m );
+	
+	print_fix( d, 8, 8 ); NL;
+	
+	print_str( "div test" ); NL;
+	
+	//~ int ci = c << 8;
+	unsigned int ci = c;
+	unsigned int ti = d;
+	
+	//~ int upi = ci / ti;
+	
+	unsigned int upi = fixed_div_8q8( ci, ti );
+	
+	print_fix( ci, 8, 8 );
+	print_str( " / " );
+	print_fix( ti, 8, 8 );
+	print_str( " = " );
+	print_fix( upi, 8, 8 ); NL;
+	
+	upi += upi;
+	
+	print_fix( upi, 8, 8 ); NL;
+	
+	print_str( "t0: " );
+	print_dec( cnt );
+	nl();
+	nl();
+	
+	// -------------------------------------------------------------------------
+	// init
+	// -------------------------------------------------------------------------
+	
+	init_nodes( nodes );
+	init_prgs( prgs );
+	init_archs( archs );
+	
+	init_charges( charges );
+	
+	// -------------------------------------------------------------------------
+	// running estimations
+	// -------------------------------------------------------------------------
+	
+	print_str( "estimations\n" );
+	NL;
+	
+	prgs_estimate_execution_times();
+	prgs_set_relative_deadline();
+	prgs_set_period();
+	prgs_set_period_clk_cnt();
+	prgs_estimate_energy_requirements();
+	
+	NL;
+	print_str( "estimations -> done\n" );
+	
+	print_str( "estimations 2\n" );
+	NL;
+	
+	prgs_estimate_execution_times();
+	prgs_set_relative_deadline();
+	prgs_set_period();
+	prgs_set_period_clk_cnt();
+	prgs_estimate_energy_requirements();
+	
+	NL;
+	print_str( "estimations -> done\n" );
+	
+	#ifdef REP_PRGS_SUMMERY
+		prgs_summary();
+	#endif
+	
+	SET_LEDS_STATUS = 0x2;
+	SET_TRIGGERS = 0x2;
+	
+	// -------------------------------------------------------------------------
+	// running prg partition
+	// -------------------------------------------------------------------------
+	
+	print_str( "running task partition" ); NL;
+	
+	for( j = 0; j < NUM_NODES; j++ )
+	{
+		nodes[ j ].charge = 0;
+	}
+	
+	i = partition_eh_ra();
+	
+	if ( -1 == i )
+	{
+		print_str( "could not partition task set" ); NL;
+		signal_fin();
+	}
+	
+	#ifdef REP_PARTITION_EH_RA
+		rep_partition();
+	#endif
+	
+	// -------------------------------------------------------------------------
+	// task array sorted according to node assignment
+	// -------------------------------------------------------------------------
+	
+	create_task_array();
+	
+	#ifdef REP_PRGS_LIST
+		rep_prgs_list();
+	#endif
+	
+	// -------------------------------------------------------------------------
+	// clear used variables
+	// -------------------------------------------------------------------------
+	
+	for( j = 0; j < NUM_NODES; j++ )
+	{
+		nodes[ j ].charge = MAX_HALF;
+		//~ nodes[ j ].charge = 5;
+	}
+	
+	// -------------------------------------------------------------------------
+	// env
+	// -------------------------------------------------------------------------
+	
+	task_set.e_max = 10;
+	task_set.prgs_active = 0;
+	
+	battery.C = MAX;
+	
+	energy_harvester.Pr = 10;
+	energy_harvester.charge_i = 0;
+	energy_harvester.interval_cnt = 1000000;
+	energy_harvester.clairvoyance = 1000000 * 50;
+
+	energy_harvester.next_charge_cnt.cnt = energy_harvester.interval_cnt;
+	energy_harvester.next_charge_cnt.overflows = 0;
+	
+	// -------------------------------------------------------------------------
+	// last preperations
+	// -------------------------------------------------------------------------
+	
+	prgs_set_initial_deadlines();
+	
+	#ifdef REP_INITIAL_DEADLINES
+		rep_prgs_set_initial_deadlines();
+	#endif
+	
+	// reset counter
+
+	cnt_global.cnt = GET_COUNTER_GLOBAL_RESET;
+	cnt_global.cnt = 0;
 
 
-/////
-    cnt = GET_COUNTER_GLOBAL;
-    
-    // print_str( "t0: " );
-    // print_dec( cnt );
-    // nl();
-    // nl();
-    
-    // -------------------------------------------------------------------------
-    // init
-    // -------------------------------------------------------------------------
-    
-    init_nodes( nodes );
-    // print_str("nodes set\n");
-    init_prgs( prgs );
-    // print_str("prgs set\n");
-    init_archs( archs );
-    // print_str("archs set\n");
-    init_charges( charges );
-    // print_str("charges set\n");
-    // -------------------------------------------------------------------------
-    // running timing estimations
-    // -------------------------------------------------------------------------
-    
-    // print_str( "timing estimations\n" );
-    // nl();
-    
-    prgs_estimate_execution_times();
-    
-    // nl();
-    // print_str( "timing estimations -> done\n" );
-    
-    SET_LEDS_STATUS = 0x2;
-    SET_TRIGGERS = 0x2;
-    
-    ///-------------------------------------------------------------------------
-    /// 1. build event queue
-    ///-------------------------------------------------------------------------
-    
-    queue_build_event_queue();
-    QUEUE_SIZE = queue_index;
-    ///-------------------------------------------------------------------------
-    /// 2. estimate energy requirement
-    ///-------------------------------------------------------------------------
-    
-    prgs_estimate_energy_requirements();
-    
-    SET_LEDS_STATUS = 0x4;
-    SET_TRIGGERS = 0x4;
-    
-    cnt_prev = 0;
-    
-    // -------------
-    // run scheduler
-    // -------------
-    
-    queue_index = 0;
-    
-    cnt = GET_COUNTER_GLOBAL_RESET;
-    
-    int node_index = 0;
-    int queue_index_no_loop = 0;
-    while ( 1 == 1 )
-    {
-        // get the next event and wait for it
-        // printf("\nin while loop");
-        j = queue[ queue_index ].cnt;
-        i = queue[ queue_index ].event;
-        // print_str( "in the while loop\n" );
-        print_str_dec_n( "Queue size is: ",QUEUE_SIZE );
-        print_str_dec_n("J: ",j);  
-        print_str_dec_n("I: ",i); 
-        // print_dec_n( j );
-        // print_str_n( "I: " );
-        // print_dec_n( i );
-        print_str_n( "D" );
-        // nl();
-        
-        cnt = GET_COUNTER_GLOBAL;
-        
-        while ( cnt < j )
-        {
-            cnt = GET_COUNTER_GLOBAL;
-        }
-        queue_index_no_loop+=1;
-        queue_index += 1;
-        queue_index = queue_index % QUEUE_SIZE;
-        // print_dec( cnt );
-        // nl();
-        
-        ///---------------------------------------------------------------------
-        /// 
-        /// event
-        /// 
-        ///---------------------------------------------------------------------
-        
-        // now is the time to execute the event
-        
-        if ( QUEUE_CHARGING_EVENT == i )
-        {
-            // print_str( "charging event\n" );
-            
-            nodes_charge( charges[ charges_i ] );
-            
-            charges_i += 1;
-        }
-        else
-        {
-            // print_str( ",p" );
-            // print_dec( i );
-            // print_str( "," );
-            
-            //--------------------------------------------------------------
-            // check which prgs are finished
-            //--------------------------------------------------------------
-            
-            prgs_check_if_finished();
-            
-            //--------------------------------------------------------------
-            // check if prg is still running
-            //--------------------------------------------------------------
-            
-            // i holds the prg we want to execute
-            
-            // we mask the prgs_active variable with 1 at the index of the
-            // prg we want to execute. if this is 1 -> prg still running.
-            
-            int prg_running = prg_is_running( i );
-            
-            if ( 1 == prg_running )
-            {
-                print_str_dec_n( "prg_is_runninge: ",queue_index_no_loop );
-                print_str_dec_n("prg running id is: ",i);
-                continue;
-            }
-            
-            // the program is idle, it can be executed now.
-            
-            // print_str( "pi" );
-            
-            //--------------------------------------------------------------
-            // skip
-            //--------------------------------------------------------------
-            
-            
-            
-#ifdef EN_SKIPPING
-            if (
-                ( 0 == prgs[i].skip_cnt_down ) &&
-                ( 1 == save_mode )
-            )
-            {
-                prgs[i].skip_cnt_down = prgs[i].skip_after;
-                
-                // print_str( "sk\n" );
-                continue;
-            }
-#endif
-            
-            
-            
-            //----------------------------------------------------------
-            // find node
-            //----------------------------------------------------------
-            
-            archs_get_preferred( preferred_archs );
-            
-            node_index = node_get( preferred_archs, i );
-            
-            // make sure that any node is available
-            
-            if ( -1 == node_index )
-            {
-                print_str_n( "Not a valid node" );
-                continue;
-            }
-            
-            // print_str( ",n" );
-            // print_dec( node_index );
-            // nl();
-            
-            //----------------------------------------------------------
-            // node_discharge
-            //----------------------------------------------------------
-            
-            node_discharge( node_index, i );
-            
-            //----------------------------------------------------------
-            // node_assign_prg
-            //----------------------------------------------------------
-            // print_str("N");
-            // print_dec(node_index);
-            // print_str("I");
-            print_str_dec_n("queue index here: ",queue_index);
-            print_str_dec_n("node index: ",node_index);
-            print_str_dec_n("Value of I: ",i);
-            // if(i>1)
-            // i=1;
-            // if(i==0)
-            // node_index=0;
-            // else
-            // node_index=1;
-            // i = 0;
-            // node_index = 0
-            node_assign_prg( node_index, i );
-            prg_set_active( i );
-            node_set_busy( node_index );
-            
-            
-          
-#ifdef EN_SKIPPING
-            // update skip cnt
-            // watch out that the cnt does not go neg
-            
-            if ( 0 != prgs[i].skip_cnt_down )
-            {
-                prgs[i].skip_cnt_down -= 1;
-            }
-#endif
-            
-            
-            
-        }
-    }
-    
-    // print_str( "done\n" );
-    
-    signal_fin();
-    
-    while ( 1 == 1 ) {}
+
+	//-----------------------------------------------------------------
+	//
+	// run scheduler
+	//
+	//-----------------------------------------------------------------
+	
+
+
+	int prg_i = 0;
+	
+	while ( 1 == 1 )
+	{
+		#ifdef DBG_SCHEDULER
+			NL;
+			print_str(">~~~~~~~~~>\n");
+			NL;
+		#endif
+		
+
+
+		//-----------------------------------------------------------------
+		//
+		// 1. updating time
+		//
+		//-----------------------------------------------------------------
+		
+
+
+		time_update_global();
+		
+		#ifdef DBG_SCHEDULER
+			NL;
+			print_str("cnt: ");print_dec(cnt_global.cnt);NL;
+			print_str("overflows: ");print_dec(cnt_global.overflows);NL;
+			NL;
+		#endif
+
+
+
+		//-----------------------------------------------------------------
+		//
+		// 2. checking charges
+		//
+		//-----------------------------------------------------------------
+
+		// check if the next charge has happened
+		
+
+
+		if ( TRUE == time_reached_cnt_t( &energy_harvester.next_charge_cnt ) )
+		{
+			#ifdef DBG_SCHEDULER
+				NL;
+				print_str("CHARGE: the next charge has to be applied\n");
+			#endif
+			
+			time_advance( &(energy_harvester.next_charge_cnt), energy_harvester.interval_cnt );
+			
+			#ifdef DBG_SCHEDULER
+				NL;
+				print_str("CHARGE: next charge will be at time:\n");
+				print_str("CHARGE: cnt:  ");print_dec(energy_harvester.next_charge_cnt.cnt);NL;
+				print_str("CHARGE: ovfl: ");print_dec(energy_harvester.next_charge_cnt.overflows);NL;
+			#endif
+
+			// applying charges
+
+			for ( i = 0; i < NUM_NODES; i++ )
+			{
+				nodes[ i ].charge = clamp_add( nodes[ i ].charge, charges[ energy_harvester.charge_i ] );
+			}
+
+			energy_harvester.charge_i += 1;
+
+			#ifdef REP_CHARGING
+				for ( i = 0; i < NUM_NODES; i++ )
+				{
+					print_str("CHARGE: charge of n");print_dec(i);print_str(": ");print_dec(nodes[ i ].charge);NL;
+				}
+			#endif
+		}
+		
+
+
+		//-----------------------------------------------------------------
+		//
+		// 3. find prg to run
+		//
+		//-----------------------------------------------------------------
+		
+		nodes_set_idle();
+
+		// reset skip counter
+		// prgs[i].s_cnt_down = prgs[i].s;
+
+		// update skip cnt
+		// watch out that the cnt does not go neg
+		
+		//if ( 0 != prgs[i].s_cnt_down )
+		//{
+		//	prgs[i].s_cnt_down -= 1;
+		//}
+
+		//SET_LEDS_STATUS = 0x4;
+		//SET_TRIGGERS = 0x4;
+
+		for ( i = 0; i < NUM_NODES; i++ )
+		{
+			if ( TRUE == node_is_busy( i ) )
+			{
+				continue;
+			}
+
+			#ifdef DBG_SCHEDULER
+				NL;
+				print_str("[ n");print_dec(i);print_str(" ]\n");
+				NL;
+			#endif
+			
+			// checking if any prgs got ready (the release time has been reached)
+			
+			prgs_set_ready( i );
+			
+			prg_i = get_prg_apply_edh_rules( i );
+			
+			if ( -1 == prg_i )
+			{
+				#ifdef DBG_SCHEDULER
+					print_str("--> nothing to do\n");
+				#endif
+			}
+			else
+			{
+				#ifdef DBG_SCHEDULER
+					print_str("--> p");print_dec(prg_i);print_str(" should be run\n");
+				#endif
+
+				// execute the prg
+
+				node_assign_prg( i, prg_i );
+
+				// discharge the node
+
+				nodes[i].charge = clamp_sub( nodes[i].charge, prgs[ prg_i ].e[ nodes[i].arch ] );
+
+				#ifdef DBG_SCHEDULER
+					print_str("n");print_dec(i);print_str(" e: ");print_dec(nodes[i].charge);NL;
+					print_str("discharged: ");print_dec(prgs[ prg_i ].e[ nodes[i].arch ]);NL;
+				#endif
+
+				if ( 0 == nodes[i].charge )
+				{
+					print_str( "ERR: node ran out of energy" );NL;
+					trap();
+				}
+			}
+		}
+	}
+	
+	trap();
 }

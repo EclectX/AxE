@@ -1,4 +1,4 @@
-// #define DBG_EVENT_QUEUE
+
 void queue_build_event_queue()
 {
     int i = 0;
@@ -36,7 +36,7 @@ void queue_build_event_queue()
         
         for ( j = 1; j < 11; j++ )
         {
-            queue[ queue_index ].cnt   = prgs[i].exec_inv[ ARCH_RV32I ] * j;
+            queue[ queue_index ].cnt   = prgs[i].c_clk_cnt[ ARCH_RV32I ] * j;
             queue[ queue_index ].event = i;
             
             queue_index += 1;
@@ -45,15 +45,14 @@ void queue_build_event_queue()
     
 #ifdef DBG_EVENT_QUEUE
     
-    print_str( "queue: " );
+    print_str( "queue: \n" );
     
     for ( i = 0; i < queue_index; i++ )
     {
-        //   for ( j = 1; j < 11; j++ ){
-        print_str_dec_n( "queue id 0: ", i );
-        print_str_dec_n( "queue event 0: ", queue[ i ].event );
-        print_str_dec_n( "queue cnt 0: ", queue[ i ].cnt );
-        // nl();}
+        print_dec( queue[ i ].cnt );
+        print_str( ": " );
+        print_dec( queue[ i ].event );
+        nl();
     }
     
 #endif
@@ -84,18 +83,17 @@ void queue_build_event_queue()
         queue[ tmp1 ].event = tmp2;
     }
     
-// #ifdef DBG_EVENT_QUEUE
+#ifdef DBG_EVENT_QUEUE
     
-    // print_str( "queue: \n" );
+    print_str( "queue: \n" );
     
     for ( i = 0; i < queue_index; i++ )
     {
-        // print_str_dec_n( "queue index: ", queue_index);
-        print_str_dec_n( "queue index: ",i );
-
-        print_str_dec_n( "queue cnt: ",queue[ i ].cnt );
-        // print_str_str_n( "queue event: ",queue[ queue_index ].event);
+        print_dec( queue[ i ].cnt );
+        print_str( ": " );
+        print_dec( queue[ i ].event );
+        nl();
     }
     
-// #endif
+#endif
 }

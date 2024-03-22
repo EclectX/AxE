@@ -6,12 +6,9 @@ SMALL = rv32i
 BIG = rv32im
 
 SRC = 
-LIBS1 = ../../_libs
-#~ PROG = ./square_mmult/
-LIBS2 = /opt/riscv32i/riscv32-unknown-elf/include/c++/8.2.0
-LIBS3 = /opt/riscv32i/riscv32-unknown-elf/include/c++/8.2.0/riscv32-unknown-elf
-LIBS4 = /usr/include/c++/7
-INC = -I$(LIBS1) -I$(LIBS2) -I$(LIBS3) -I$(LIBS4)
+LIBS = ../../_libs
+
+INC = -I$(LIBS)
 
 # CFLAGS
 
@@ -28,7 +25,7 @@ CFLAGS = -$(WARN) -$(OPT) $(OTHER) $(INC)
 
 LINK = -Ttext 0 -Wl,-e,my_start
 
-.PHONY: clean rv32i rv32im
+.PHONY: clean objdump rv32i rv32im
 
 rv32i: ARCH=$(SMALL)
 rv32i: $(ARCH)_main.hex $(ARCH)_code
@@ -37,7 +34,7 @@ rv32im: ARCH=$(BIG)
 rv32im: $(ARCH)_main.hex $(ARCH)_code
 
 $(ARCH)_code: $(ARCH)_main.elf
-	/opt/riscv32i/bin/riscv32-unknown-elf-objdump -S ./$(ARCH)_main.elf > $(ARCH)_main.objdump
+	/opt/riscv32i/bin/riscv32-unknown-elf-objdump -S ./$(ARCH)_main.elf > $(ARCH)_objdump
 
 $(ARCH)_main.hex: $(ARCH)_main.bin
 	python3 ../../../tools/freedom-bin2hex.py --bit-width 32 ./$(ARCH)_main.bin > $(ARCH)_main.hex
@@ -46,7 +43,7 @@ $(ARCH)_main.bin: $(ARCH)_main.elf
 	/opt/riscv32i/bin/riscv32-unknown-elf-objcopy ./$(ARCH)_main.elf -O binary ./$(ARCH)_main.bin
 
 $(ARCH)_main.elf:
-	$(CC) -march=$(ARCH) $(CFLAGS) -o ./$(ARCH)_main.elf $(LINK) ../../_libs/start.S $(SRC) ./main.c ./../../_libs/util.c -lm
+	$(CC) -march=$(ARCH) $(CFLAGS) -o ./$(ARCH)_main.elf $(LINK) ../../_libs/start.S $(SRC) ./main.c -lm
 
 clean:
-	rm -f main.elf main.bin main.hex main.map *.objdump *.su *.o rv32*
+	rm -f main.elf main.bin main.hex main.map objdump *.su *.o rv32*
