@@ -7,7 +7,7 @@
 #include "mpsoc.h"
 #include "typedefs.h"
 #include "defines.h"
-
+#include "print.h"
 #include "controller.h"
 
 #include "nodes.h"
@@ -16,7 +16,7 @@
 
 #include "energy_harvester.h"
 
-#include "util.h"
+#include "./../../_libs/util.h"
 #include "fixed_point.h"
 
 #include "globals.h"
@@ -172,60 +172,6 @@ void trap()
 	while ( 1 == 1 ) {}
 }
 
-void img_test()
-{
-    print_str( "running img test\n" );
-    
-    int spoon = 0;
-    
-    int cr = 0b01001101;
-    int cg = 0b10010111;
-    int cb = 0b00011101;
-    
-    int mr = 0;
-    int mg = 0;
-    int mb = 0;
-    
-    int gray = 0;
-    
-    int i = 0;
-    
-    for ( i = 0; i < RGB_SIZE; i+=3 )
-    {
-        //spoon = GET_SPOON_FED;
-        //print_dec( spoon );NL;
-        
-        mr = cr * GET_SPOON_FED;
-        mg = cg * GET_SPOON_FED;
-        mb = cb * GET_SPOON_FED;
-        
-        //mr = cr * rgb[ i ];
-        //mg = cg * rgb[ i+1 ];
-        //mb = cb * rgb[ i+2 ];
-        
-        gray = mr + mg + mb;
-        
-        gray >>= 8;
-        
-        print_dec(gray);NL;
-        //print_dec(gray);NL;
-        //print_dec(gray);NL;
-        
-        //print_bin( gray, 16 );
-        //printf("\n");
-        //printf("\n");
-        time_update_global();
-    }
-    
-    NL;
-    print_str("cnt: ");print_dec(cnt_global.cnt);NL;
-    print_str("overflows: ");print_dec(cnt_global.overflows);NL;
-    NL;
-    
-    print_char( 0x04 );
-    
-    print_str( "img_done\n" );
-}
 
 void my_main()
 {

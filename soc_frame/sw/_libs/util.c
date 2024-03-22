@@ -1,5 +1,4 @@
 #include "util.h"
-
 // Define a structure to represent single-precision floating-point numbers
 
 
@@ -60,8 +59,7 @@ int fpdiv(int rs1, int rs2)
 }
 // is now done in the asm file.
 
-void signal_fin();
-inline void signal_fin()
+void signal_fin()
 {
     *((volatile int*)FINISHED) = FINISHED;
 }
@@ -80,14 +78,6 @@ void signal_kill_sim()
 // TODO - add some define to supress debug output. do it here so you don't
 // have to worry about it when adding new output.
 
-// char
-// -------------------------------------
-
-// void print_char(char ch);
-void print_char(char ch)
-{
-    // *((volatile int*)OUTPORT) = ch;
-}
 
 // str
 // -------------------------------------
@@ -133,14 +123,6 @@ void print_str_dec_n( const char *T,unsigned int val )
 
 }
 
-void print_str(const char *p)
-{
-    // while (*p != 0)
-    // {
-    //     *((volatile int*)OUTPORT) = *(p++);
-    // }
-    // *((volatile int*)OUTPORT) = '\n';
-}
 
 void print_str_n(const char *p)
 {
@@ -179,46 +161,10 @@ void print_dec_n(unsigned int val)
     *((volatile int*)OUTPORT) = '\n';
 }
 
-void print_dec(unsigned int val)
-{
-    // char buffer[10];
-    // char *p = buffer;
-    
-    // // val % 10 returns the last digit
-    // // val / 10 discards the last digit and allows the extraction of the next
-    // // one
-    
-    // while (val || p == buffer)
-    // {
-    //     *(p++) = val % 10;
-    //     val = val / 10;
-    // }
-    
-    // // as the digits have been collected beginning with the least significant
-    // // one the output is running in reverse order
-    
-    // while (p != buffer)
-    // {
-    //     *((volatile int*)OUTPORT) = '0' + *(--p);
-    // }
-    // *((volatile int*)OUTPORT) = '\n';
-}
-
-// hex
-// -------------------------------------
-
-void print_hex(unsigned int val, int digits)
-{
-    // for (int i = (4*digits)-4; i >= 0; i -= 4)
-    // {
-    //     *((volatile int*)OUTPORT) = "0123456789ABCDEF"[(val >> i) % 16];
-    // }
-}
-
 // binary
 // -------------------------------------
 
-void print_bin(unsigned int val, int bits)
+void print_bin_n(unsigned int val, int bits)
 {
     for (int i = (bits-1); i >= 0; i-- )
     {
@@ -230,10 +176,7 @@ void print_bin(unsigned int val, int bits)
 // newline
 // -------------------------------------
 
-void nl()
-{
-    // print_str("\n");
-}
+
 
 // print_assert
 // -------------------------------------
