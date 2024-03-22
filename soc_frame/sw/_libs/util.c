@@ -63,10 +63,9 @@ void signal_fin()
 {
     *((volatile int*)FINISHED) = FINISHED;
 }
-
 void signal_kill_sim()
 {
-    print_char( 0x04 );
+    *((volatile int*)OUTPORT) = 0x04;
 }
 
 // -----------------------------------------------------------------------------

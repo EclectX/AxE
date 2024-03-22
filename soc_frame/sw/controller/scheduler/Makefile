@@ -4,9 +4,9 @@ CC_DESKTOP = gcc
 
 SMALL = rv32i
 BIG = rv32im
-
-SRC = 
 LIBS = ../../_libs
+SRC = $(LIBS)/util.c $(LIBS)/print.c
+
 
 INC = -I$(LIBS)
 

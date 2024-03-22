@@ -1,4 +1,4 @@
-
+#include "./../../_libs/print.h"
 #define LAST_NODE(i) ( (NUM_NODES-1) == i )               // check if a node is the last one in the node array
 #define NODE_CNT(i) *( (volatile int*) nodes[ i ].cnt )   // TODO - should be deleted
 

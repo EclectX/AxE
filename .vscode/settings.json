@@ -5,6 +5,7 @@
         "snipmath.h": "c",
         "string_view": "c",
         "cstdio": "c",
-        "energy_harvester.h": "c"
+        "energy_harvester.h": "c",
+        "print.h": "c"
     }
 }

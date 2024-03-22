@@ -221,7 +221,7 @@ node_arch_lst = node_arch_str.split( "," )
 
 what_to_run = config.get( "run", "run" )
 
-exec_interval_modifier = config.getfloat( "run", "exec_interval_modifier" )
+deadline_is_wcet_times_this_number = config.getfloat( "run", "exec_interval_modifier" )
 
 # the system can run predefined programs, but also create simple tasks on the
 # fly. as the latter option was the only one used for a long time, the other
@@ -291,7 +291,7 @@ print( "\t\t\t\t>>>>>>>>pick controller estimations" )
 ### NO ITS NOT #### REASON IS 25048 HARD CODED INTO VTOP__TRACE.CPP 
 ### NO ITS NOT HARD CODED ===> DELETE OBJ_DIR +++ CHANGE MEM_SIZE ====> THEN RE-RUN
 controller_size_addr = 32764 # 0x7FFC
-controller_size_addr = 131056
+controller_size_addr = 196600
 controller_size = controller_size_addr / 4
 
 controller_size = int(controller_size)
@@ -352,7 +352,7 @@ con = Controller( controller_name, "rv32im" )
 
 con.create_controller_define( save_mode_at, start_charging_at, stop_charging_at )
 con.create_node_define( node_arch_lst )
-con.create_prg_define( which_arch, arch_lst, mem, index, None, exec_interval_modifier )
+con.create_prg_define( arch_lst, mem, index, deadline_is_wcet_times_this_number )
 
 # we read solar charging data from a spreadsheet that is used to simulate a
 # charging battery.

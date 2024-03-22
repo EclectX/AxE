@@ -1,7 +1,6 @@
 #ifndef UTIL_H
 #define UTIL_H
 // Define a structure to represent single-precision floating-point numbers
-#include "print.h"
 typedef unsigned int uint32_t;
 
 typedef struct {
@@ -58,7 +57,6 @@ void signal_kill_sim();
 // char
 // -------------------------------------
 
-// inline void print_char(char ch);
 // str
 // -------------------------------------
 void print_str_str_n( const char *p,const char * t );

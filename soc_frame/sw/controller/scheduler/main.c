@@ -7,7 +7,7 @@
 #include "mpsoc.h"
 #include "typedefs.h"
 #include "defines.h"
-#include "print.h"
+// #include "print.h"
 #include "controller.h"
 
 #include "nodes.h"
@@ -165,351 +165,351 @@
 // do them between iterations of the loop. however, printing is not so hard
 // and just saving the chars into a buffer might cause even more delay.
 
-void trap()
-{
-	print_str( "ended sched sw\n" );
-	signal_fin();
-	while ( 1 == 1 ) {}
-}
+// void trap()
+// {
+// 	print_str( "ended sched sw\n" );
+// 	signal_fin();
+// 	while ( 1 == 1 ) {}
+// }
 
 
 void my_main()
 {
     //img_test();
     
-	int i = 0;
-	int j = 0;
+	// int i = 0;
+	// int j = 0;
 	
-	unsigned int tmp = 0;
+	// unsigned int tmp = 0;
 	
-	print_str( "start\n" );
+	print_str_n( "start" );
 	
-	cnt = GET_COUNTER_GLOBAL;
+	// cnt = GET_COUNTER_GLOBAL;
 	
-	cnt_global.cnt = GET_COUNTER_GLOBAL;
-	cnt_global.overflows = 0;
+	// cnt_global.cnt = GET_COUNTER_GLOBAL;
+	// cnt_global.overflows = 0;
 	
-	//~ c 147,0 mod 1,60937500 d 99,82812500
+	// //~ c 147,0 mod 1,60937500 d 99,82812500
 	
-	unsigned int c = 0b1001001100000000;
-	unsigned int m = 0b0000001110100010;
+	// unsigned int c = 0b1001001100000000;
+	// unsigned int m = 0b0000001110100010;
 	
-	print_str( "fuck me" ); NL;
-	print_fix( c, 8, 8 ); NL;
-	print_fix( m, 8, 8 ); NL;
+	// print_str( "fuck me" ); NL;
+	// print_fix( c, 8, 8 ); NL;
+	// print_fix( m, 8, 8 ); NL;
 	
-	//~ int d = c * m;
-	//~ d >>= 8;
+	// //~ int d = c * m;
+	// //~ d >>= 8;
 	
-	unsigned int d = fixed_mul_8q8( c, m );
+	// unsigned int d = fixed_mul_8q8( c, m );
 	
-	print_fix( d, 8, 8 ); NL;
+	// print_fix( d, 8, 8 ); NL;
 	
-	print_str( "div test" ); NL;
+	// print_str( "div test" ); NL;
 	
-	//~ int ci = c << 8;
-	unsigned int ci = c;
-	unsigned int ti = d;
+	// //~ int ci = c << 8;
+	// unsigned int ci = c;
+	// unsigned int ti = d;
 	
-	//~ int upi = ci / ti;
+	// //~ int upi = ci / ti;
 	
-	unsigned int upi = fixed_div_8q8( ci, ti );
+	// unsigned int upi = fixed_div_8q8( ci, ti );
 	
-	print_fix( ci, 8, 8 );
-	print_str( " / " );
-	print_fix( ti, 8, 8 );
-	print_str( " = " );
-	print_fix( upi, 8, 8 ); NL;
+	// print_fix( ci, 8, 8 );
+	// print_str( " / " );
+	// print_fix( ti, 8, 8 );
+	// print_str( " = " );
+	// print_fix( upi, 8, 8 ); NL;
 	
-	upi += upi;
+	// upi += upi;
 	
-	print_fix( upi, 8, 8 ); NL;
+	// print_fix( upi, 8, 8 ); NL;
 	
-	print_str( "t0: " );
-	print_dec( cnt );
-	nl();
-	nl();
+	// print_str( "t0: " );
+	// print_dec( cnt );
+	// nl();
+	// nl();
 	
-	// -------------------------------------------------------------------------
-	// init
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // init
+	// // -------------------------------------------------------------------------
 	
-	init_nodes( nodes );
-	init_prgs( prgs );
-	init_archs( archs );
+	// init_nodes( nodes );
+	// init_prgs( prgs );
+	// init_archs( archs );
 	
-	init_charges( charges );
+	// init_charges( charges );
 	
-	// -------------------------------------------------------------------------
-	// running estimations
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // running estimations
+	// // -------------------------------------------------------------------------
 	
-	print_str( "estimations\n" );
-	NL;
+	// print_str( "estimations\n" );
+	// NL;
 	
-	prgs_estimate_execution_times();
-	prgs_set_relative_deadline();
-	prgs_set_period();
-	prgs_set_period_clk_cnt();
-	prgs_estimate_energy_requirements();
+	// prgs_estimate_execution_times();
+	// prgs_set_relative_deadline();
+	// prgs_set_period();
+	// prgs_set_period_clk_cnt();
+	// prgs_estimate_energy_requirements();
 	
-	NL;
-	print_str( "estimations -> done\n" );
+	// NL;
+	// print_str( "estimations -> done\n" );
 	
-	print_str( "estimations 2\n" );
-	NL;
+	// print_str( "estimations 2\n" );
+	// NL;
 	
-	prgs_estimate_execution_times();
-	prgs_set_relative_deadline();
-	prgs_set_period();
-	prgs_set_period_clk_cnt();
-	prgs_estimate_energy_requirements();
+	// prgs_estimate_execution_times();
+	// prgs_set_relative_deadline();
+	// prgs_set_period();
+	// prgs_set_period_clk_cnt();
+	// prgs_estimate_energy_requirements();
 	
-	NL;
-	print_str( "estimations -> done\n" );
+	// NL;
+	// print_str( "estimations -> done\n" );
 	
-	#ifdef REP_PRGS_SUMMERY
-		prgs_summary();
-	#endif
+	// #ifdef REP_PRGS_SUMMERY
+	// 	prgs_summary();
+	// #endif
 	
-	SET_LEDS_STATUS = 0x2;
-	SET_TRIGGERS = 0x2;
+	// SET_LEDS_STATUS = 0x2;
+	// SET_TRIGGERS = 0x2;
 	
-	// -------------------------------------------------------------------------
-	// running prg partition
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // running prg partition
+	// // -------------------------------------------------------------------------
 	
-	print_str( "running task partition" ); NL;
+	// print_str( "running task partition" ); NL;
 	
-	for( j = 0; j < NUM_NODES; j++ )
-	{
-		nodes[ j ].charge = 0;
-	}
+	// for( j = 0; j < NUM_NODES; j++ )
+	// {
+	// 	nodes[ j ].charge = 0;
+	// }
 	
-	i = partition_eh_ra();
+	// i = partition_eh_ra();
 	
-	if ( -1 == i )
-	{
-		print_str( "could not partition task set" ); NL;
-		signal_fin();
-	}
+	// if ( -1 == i )
+	// {
+	// 	print_str( "could not partition task set" ); NL;
+	// 	signal_fin();
+	// }
 	
-	#ifdef REP_PARTITION_EH_RA
-		rep_partition();
-	#endif
+	// #ifdef REP_PARTITION_EH_RA
+	// 	rep_partition();
+	// #endif
 	
-	// -------------------------------------------------------------------------
-	// task array sorted according to node assignment
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // task array sorted according to node assignment
+	// // -------------------------------------------------------------------------
 	
-	create_task_array();
+	// create_task_array();
 	
-	#ifdef REP_PRGS_LIST
-		rep_prgs_list();
-	#endif
+	// #ifdef REP_PRGS_LIST
+	// 	rep_prgs_list();
+	// #endif
 	
-	// -------------------------------------------------------------------------
-	// clear used variables
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // clear used variables
+	// // -------------------------------------------------------------------------
 	
-	for( j = 0; j < NUM_NODES; j++ )
-	{
-		nodes[ j ].charge = MAX_HALF;
-		//~ nodes[ j ].charge = 5;
-	}
+	// for( j = 0; j < NUM_NODES; j++ )
+	// {
+	// 	nodes[ j ].charge = MAX_HALF;
+	// 	//~ nodes[ j ].charge = 5;
+	// }
 	
-	// -------------------------------------------------------------------------
-	// env
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // env
+	// // -------------------------------------------------------------------------
 	
-	task_set.e_max = 10;
-	task_set.prgs_active = 0;
+	// task_set.e_max = 10;
+	// task_set.prgs_active = 0;
 	
-	battery.C = MAX;
+	// battery.C = MAX;
 	
-	energy_harvester.Pr = 10;
-	energy_harvester.charge_i = 0;
-	energy_harvester.interval_cnt = 1000000;
-	energy_harvester.clairvoyance = 1000000 * 50;
+	// energy_harvester.Pr = 10;
+	// energy_harvester.charge_i = 0;
+	// energy_harvester.interval_cnt = 1000000;
+	// energy_harvester.clairvoyance = 1000000 * 50;
 
-	energy_harvester.next_charge_cnt.cnt = energy_harvester.interval_cnt;
-	energy_harvester.next_charge_cnt.overflows = 0;
+	// energy_harvester.next_charge_cnt.cnt = energy_harvester.interval_cnt;
+	// energy_harvester.next_charge_cnt.overflows = 0;
 	
-	// -------------------------------------------------------------------------
-	// last preperations
-	// -------------------------------------------------------------------------
+	// // -------------------------------------------------------------------------
+	// // last preperations
+	// // -------------------------------------------------------------------------
 	
-	prgs_set_initial_deadlines();
+	// prgs_set_initial_deadlines();
 	
-	#ifdef REP_INITIAL_DEADLINES
-		rep_prgs_set_initial_deadlines();
-	#endif
+	// #ifdef REP_INITIAL_DEADLINES
+	// 	rep_prgs_set_initial_deadlines();
+	// #endif
 	
-	// reset counter
+	// // reset counter
 
-	cnt_global.cnt = GET_COUNTER_GLOBAL_RESET;
-	cnt_global.cnt = 0;
-
-
-
-	//-----------------------------------------------------------------
-	//
-	// run scheduler
-	//
-	//-----------------------------------------------------------------
-	
+	// cnt_global.cnt = GET_COUNTER_GLOBAL_RESET;
+	// cnt_global.cnt = 0;
 
 
-	int prg_i = 0;
+
+	// //-----------------------------------------------------------------
+	// //
+	// // run scheduler
+	// //
+	// //-----------------------------------------------------------------
 	
-	while ( 1 == 1 )
-	{
-		#ifdef DBG_SCHEDULER
-			NL;
-			print_str(">~~~~~~~~~>\n");
-			NL;
-		#endif
+
+
+	// int prg_i = 0;
+	
+	// while ( 1 == 1 )
+	// {
+	// 	#ifdef DBG_SCHEDULER
+	// 		NL;
+	// 		print_str(">~~~~~~~~~>\n");
+	// 		NL;
+	// 	#endif
 		
 
 
-		//-----------------------------------------------------------------
-		//
-		// 1. updating time
-		//
-		//-----------------------------------------------------------------
+	// 	//-----------------------------------------------------------------
+	// 	//
+	// 	// 1. updating time
+	// 	//
+	// 	//-----------------------------------------------------------------
 		
 
 
-		time_update_global();
+	// 	time_update_global();
 		
-		#ifdef DBG_SCHEDULER
-			NL;
-			print_str("cnt: ");print_dec(cnt_global.cnt);NL;
-			print_str("overflows: ");print_dec(cnt_global.overflows);NL;
-			NL;
-		#endif
+	// 	#ifdef DBG_SCHEDULER
+	// 		NL;
+	// 		print_str("cnt: ");print_dec(cnt_global.cnt);NL;
+	// 		print_str("overflows: ");print_dec(cnt_global.overflows);NL;
+	// 		NL;
+	// 	#endif
 
 
 
-		//-----------------------------------------------------------------
-		//
-		// 2. checking charges
-		//
-		//-----------------------------------------------------------------
+	// 	//-----------------------------------------------------------------
+	// 	//
+	// 	// 2. checking charges
+	// 	//
+	// 	//-----------------------------------------------------------------
 
-		// check if the next charge has happened
+	// 	// check if the next charge has happened
 		
 
 
-		if ( TRUE == time_reached_cnt_t( &energy_harvester.next_charge_cnt ) )
-		{
-			#ifdef DBG_SCHEDULER
-				NL;
-				print_str("CHARGE: the next charge has to be applied\n");
-			#endif
+	// 	if ( TRUE == time_reached_cnt_t( &energy_harvester.next_charge_cnt ) )
+	// 	{
+	// 		#ifdef DBG_SCHEDULER
+	// 			NL;
+	// 			print_str("CHARGE: the next charge has to be applied\n");
+	// 		#endif
 			
-			time_advance( &(energy_harvester.next_charge_cnt), energy_harvester.interval_cnt );
+	// 		time_advance( &(energy_harvester.next_charge_cnt), energy_harvester.interval_cnt );
 			
-			#ifdef DBG_SCHEDULER
-				NL;
-				print_str("CHARGE: next charge will be at time:\n");
-				print_str("CHARGE: cnt:  ");print_dec(energy_harvester.next_charge_cnt.cnt);NL;
-				print_str("CHARGE: ovfl: ");print_dec(energy_harvester.next_charge_cnt.overflows);NL;
-			#endif
+	// 		#ifdef DBG_SCHEDULER
+	// 			NL;
+	// 			print_str("CHARGE: next charge will be at time:\n");
+	// 			print_str("CHARGE: cnt:  ");print_dec(energy_harvester.next_charge_cnt.cnt);NL;
+	// 			print_str("CHARGE: ovfl: ");print_dec(energy_harvester.next_charge_cnt.overflows);NL;
+	// 		#endif
 
-			// applying charges
+	// 		// applying charges
 
-			for ( i = 0; i < NUM_NODES; i++ )
-			{
-				nodes[ i ].charge = clamp_add( nodes[ i ].charge, charges[ energy_harvester.charge_i ] );
-			}
+	// 		for ( i = 0; i < NUM_NODES; i++ )
+	// 		{
+	// 			nodes[ i ].charge = clamp_add( nodes[ i ].charge, charges[ energy_harvester.charge_i ] );
+	// 		}
 
-			energy_harvester.charge_i += 1;
+	// 		energy_harvester.charge_i += 1;
 
-			#ifdef REP_CHARGING
-				for ( i = 0; i < NUM_NODES; i++ )
-				{
-					print_str("CHARGE: charge of n");print_dec(i);print_str(": ");print_dec(nodes[ i ].charge);NL;
-				}
-			#endif
-		}
+	// 		#ifdef REP_CHARGING
+	// 			for ( i = 0; i < NUM_NODES; i++ )
+	// 			{
+	// 				print_str("CHARGE: charge of n");print_dec(i);print_str(": ");print_dec(nodes[ i ].charge);NL;
+	// 			}
+	// 		#endif
+	// 	}
 		
 
 
-		//-----------------------------------------------------------------
-		//
-		// 3. find prg to run
-		//
-		//-----------------------------------------------------------------
+	// 	//-----------------------------------------------------------------
+	// 	//
+	// 	// 3. find prg to run
+	// 	//
+	// 	//-----------------------------------------------------------------
 		
-		nodes_set_idle();
+	// 	nodes_set_idle();
 
-		// reset skip counter
-		// prgs[i].s_cnt_down = prgs[i].s;
+	// 	// reset skip counter
+	// 	// prgs[i].s_cnt_down = prgs[i].s;
 
-		// update skip cnt
-		// watch out that the cnt does not go neg
+	// 	// update skip cnt
+	// 	// watch out that the cnt does not go neg
 		
-		//if ( 0 != prgs[i].s_cnt_down )
-		//{
-		//	prgs[i].s_cnt_down -= 1;
-		//}
+	// 	//if ( 0 != prgs[i].s_cnt_down )
+	// 	//{
+	// 	//	prgs[i].s_cnt_down -= 1;
+	// 	//}
 
-		//SET_LEDS_STATUS = 0x4;
-		//SET_TRIGGERS = 0x4;
+	// 	//SET_LEDS_STATUS = 0x4;
+	// 	//SET_TRIGGERS = 0x4;
 
-		for ( i = 0; i < NUM_NODES; i++ )
-		{
-			if ( TRUE == node_is_busy( i ) )
-			{
-				continue;
-			}
+	// 	for ( i = 0; i < NUM_NODES; i++ )
+	// 	{
+	// 		if ( TRUE == node_is_busy( i ) )
+	// 		{
+	// 			continue;
+	// 		}
 
-			#ifdef DBG_SCHEDULER
-				NL;
-				print_str("[ n");print_dec(i);print_str(" ]\n");
-				NL;
-			#endif
+	// 		#ifdef DBG_SCHEDULER
+	// 			NL;
+	// 			print_str("[ n");print_dec(i);print_str(" ]\n");
+	// 			NL;
+	// 		#endif
 			
-			// checking if any prgs got ready (the release time has been reached)
+	// 		// checking if any prgs got ready (the release time has been reached)
 			
-			prgs_set_ready( i );
+	// 		prgs_set_ready( i );
 			
-			prg_i = get_prg_apply_edh_rules( i );
+	// 		prg_i = get_prg_apply_edh_rules( i );
 			
-			if ( -1 == prg_i )
-			{
-				#ifdef DBG_SCHEDULER
-					print_str("--> nothing to do\n");
-				#endif
-			}
-			else
-			{
-				#ifdef DBG_SCHEDULER
-					print_str("--> p");print_dec(prg_i);print_str(" should be run\n");
-				#endif
+	// 		if ( -1 == prg_i )
+	// 		{
+	// 			#ifdef DBG_SCHEDULER
+	// 				print_str("--> nothing to do\n");
+	// 			#endif
+	// 		}
+	// 		else
+	// 		{
+	// 			#ifdef DBG_SCHEDULER
+	// 				print_str("--> p");print_dec(prg_i);print_str(" should be run\n");
+	// 			#endif
 
-				// execute the prg
+	// 			// execute the prg
 
-				node_assign_prg( i, prg_i );
+	// 			node_assign_prg( i, prg_i );
 
-				// discharge the node
+	// 			// discharge the node
 
-				nodes[i].charge = clamp_sub( nodes[i].charge, prgs[ prg_i ].e[ nodes[i].arch ] );
+	// 			nodes[i].charge = clamp_sub( nodes[i].charge, prgs[ prg_i ].e[ nodes[i].arch ] );
 
-				#ifdef DBG_SCHEDULER
-					print_str("n");print_dec(i);print_str(" e: ");print_dec(nodes[i].charge);NL;
-					print_str("discharged: ");print_dec(prgs[ prg_i ].e[ nodes[i].arch ]);NL;
-				#endif
+	// 			#ifdef DBG_SCHEDULER
+	// 				print_str("n");print_dec(i);print_str(" e: ");print_dec(nodes[i].charge);NL;
+	// 				print_str("discharged: ");print_dec(prgs[ prg_i ].e[ nodes[i].arch ]);NL;
+	// 			#endif
 
-				if ( 0 == nodes[i].charge )
-				{
-					print_str( "ERR: node ran out of energy" );NL;
-					trap();
-				}
-			}
-		}
-	}
+	// 			if ( 0 == nodes[i].charge )
+	// 			{
+	// 				print_str( "ERR: node ran out of energy" );NL;
+	// 				trap();
+	// 			}
+	// 		}
+	// 	}
+	// }
 	
-	trap();
+	// trap();
 }

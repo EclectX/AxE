@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 
 // returns -1 if partition is not successful
+#include "./../../_libs/print.h"
 
 int partition_eh_ra()
 {

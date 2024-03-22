@@ -1,4 +1,4 @@
-
+#include "./../../_libs/print.h"
 void time_update_global()
 {
 	unsigned int tmp = cnt_global.cnt;
