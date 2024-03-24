@@ -204,6 +204,9 @@ class Memory:
                 # a simulation is run with an arg that outputs the memory usage
                 
                     memory_usage = sim.run( list(arch_dict.values())[1], prg, [MEM_PACKER_OUTPUT_MEMORY] )
+                    with open("/home/user/soc_frame/memory_usage.txt", "w") as file:
+                        for item in memory_usage:
+                            file.write(item + "\n")
                 
                     sp = prg.get_stack_pointer( memory_usage )
                 
@@ -289,7 +292,7 @@ class Memory:
                 # the text editor starts counting at 1 and not 0.
                 
                 # print( "---" )
-                # print( "current length of mem: " + str( len(mem) ) )
+            print( "current length of mem: " + str( len(mem) ) )
                 # print( "adding n lines of prg: " + str( len(prg_hex) ) )
                 
             mem.extend( prg_hex )

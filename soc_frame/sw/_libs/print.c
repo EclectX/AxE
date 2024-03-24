@@ -30,6 +30,7 @@ void print_str(const char *p)
     {
         *((volatile int*)OUTPORT) = *(p++);
     }
+    *((volatile int*)OUTPORT) = '\0';
 }
 
 // dec
@@ -57,6 +58,7 @@ void print_dec(unsigned int val)
     {
         *((volatile int*)OUTPORT) = '0' + *(--p);
     }
+        *((volatile int*)OUTPORT) = '\0';
 }
 
 void print_signed(int val)

@@ -1,5 +1,5 @@
 // c
-void main()
+void my_main()
 {
 
     int a=0;

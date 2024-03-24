@@ -1496,7 +1496,7 @@ module picorv32 #(
 						`debug($display("ST_RD Node[%d]:  %2d 0x%08x, BRANCH 0x%08x", NODE_ID, latched_rd, reg_pc + (latched_compr ? 2 : 4), current_pc);)
 					end
 					latched_store && !latched_branch: begin
-						`debug($display("ST_RD Node[%d]:  %2d 0x%08x", NODE_ID, latched_rd, latched_stalu ? alu_out_q : reg_out);)
+						`debug($display("ST_RD Node[%d]:  %2d PC address: 0x%8x 0x%08x", NODE_ID, latched_rd,current_pc, latched_stalu ? alu_out_q : reg_out);)
 					end
 					ENABLE_IRQ && irq_state[0]: begin
 						current_pc = PROGADDR_IRQ;

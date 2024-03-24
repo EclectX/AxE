@@ -7,7 +7,7 @@
 #include "mpsoc.h"
 #include "typedefs.h"
 #include "defines.h"
-// #include "print.h"
+
 #include "controller.h"
 
 #include "nodes.h"
@@ -165,121 +165,135 @@
 // do them between iterations of the loop. however, printing is not so hard
 // and just saving the chars into a buffer might cause even more delay.
 
-// void trap()
-// {
-// 	print_str( "ended sched sw\n" );
-// 	signal_fin();
-// 	while ( 1 == 1 ) {}
-// }
+void trap()
+{
+	print_str( "ended sched sw\n" );
+	signal_fin();
+	while ( 1 == 1 ) {}
+}
 
+// void img_test()
+// {
+//     print_str( "running img test\n" );
+    
+//     int spoon = 0;
+    
+//     int cr = 0b01001101;
+//     int cg = 0b10010111;
+//     int cb = 0b00011101;
+    
+//     int mr = 0;
+//     int mg = 0;
+//     int mb = 0;
+    
+//     int gray = 0;
+    
+//     int i = 0;
+    
+//     for ( i = 0; i < RGB_SIZE; i+=3 )
+//     {
+//         //spoon = GET_SPOON_FED;
+//         //print_dec( spoon );NL;
+        
+//         mr = cr * GET_SPOON_FED;
+//         mg = cg * GET_SPOON_FED;
+//         mb = cb * GET_SPOON_FED;
+        
+//         //mr = cr * rgb[ i ];
+//         //mg = cg * rgb[ i+1 ];
+//         //mb = cb * rgb[ i+2 ];
+        
+//         gray = mr + mg + mb;
+        
+//         gray >>= 8;
+        
+//         print_dec(gray);NL;
+//         //print_dec(gray);NL;
+//         //print_dec(gray);NL;
+        
+//         //print_bin( gray, 16 );
+//         //printf("\n");
+//         //printf("\n");
+//         time_update_global();
+//     }
+    
+//     NL;
+//     print_str("cnt: ");print_dec(cnt_global.cnt);NL;
+//     print_str("overflows: ");print_dec(cnt_global.overflows);NL;
+//     NL;
+    
+//     print_char( 0x04 );
+    
+//     print_str( "img_done\n" );
+// }
 
 void my_main()
 {
-    //img_test();
+//     //img_test();
     
-	// int i = 0;
-	// int j = 0;
+	int i = 0;
+	int j = 0;
 	
-	// unsigned int tmp = 0;
+	unsigned int tmp = 0;
 	
-	print_str_n( "start" );
+	print_str( "start\n" );
 	
-	// cnt = GET_COUNTER_GLOBAL;
+	cnt = GET_COUNTER_GLOBAL;
 	
-	// cnt_global.cnt = GET_COUNTER_GLOBAL;
-	// cnt_global.overflows = 0;
+	cnt_global.cnt = GET_COUNTER_GLOBAL;
+	cnt_global.overflows = 0;	
 	
-	// //~ c 147,0 mod 1,60937500 d 99,82812500
+	// -------------------------------------------------------------------------
+	// init
+	// -------------------------------------------------------------------------
 	
-	// unsigned int c = 0b1001001100000000;
-	// unsigned int m = 0b0000001110100010;
+	init_nodes( nodes );
+	init_prgs( prgs );
+	init_archs( archs );
 	
-	// print_str( "fuck me" ); NL;
-	// print_fix( c, 8, 8 ); NL;
-	// print_fix( m, 8, 8 ); NL;
+	init_charges( charges );
 	
-	// //~ int d = c * m;
-	// //~ d >>= 8;
+	// -------------------------------------------------------------------------
+	// running estimations
+	// -------------------------------------------------------------------------
 	
-	// unsigned int d = fixed_mul_8q8( c, m );
+	print_str( "estimations\n" );
+	NL;
 	
-	// print_fix( d, 8, 8 ); NL;
+	prgs_estimate_execution_times();
+	print_str("End of time executoin\n");
+	prgs_set_relative_deadline();
+	prgs_set_period();
+	prgs_set_period_clk_cnt();
+	prgs_estimate_energy_requirements();
 	
-	// print_str( "div test" ); NL;
+	NL;
+	print_str( "estimations -> done\n" );
 	
-	// //~ int ci = c << 8;
-	// unsigned int ci = c;
-	// unsigned int ti = d;
+	print_str( "estimations 2\n" );
+	NL;
 	
-	// //~ int upi = ci / ti;
+	prgs_estimate_execution_times();
+	prgs_set_relative_deadline();
+	prgs_set_period();
+	prgs_set_period_clk_cnt();
+	prgs_estimate_energy_requirements();
 	
-	// unsigned int upi = fixed_div_8q8( ci, ti );
+	NL;
+	print_str( "estimations -> done\n" );
 	
-	// print_fix( ci, 8, 8 );
-	// print_str( " / " );
-	// print_fix( ti, 8, 8 );
-	// print_str( " = " );
-	// print_fix( upi, 8, 8 ); NL;
+	#ifdef REP_PRGS_SUMMERY
+		prgs_summary();
+	#endif
 	
-	// upi += upi;
+	SET_LEDS_STATUS = 0x2;
+	SET_TRIGGERS = 0x2;
 	
-	// print_fix( upi, 8, 8 ); NL;
+	// -------------------------------------------------------------------------
+	// running prg partition
+	// -------------------------------------------------------------------------
 	
-	// print_str( "t0: " );
-	// print_dec( cnt );
-	// nl();
-	// nl();
-	
-	// // -------------------------------------------------------------------------
-	// // init
-	// // -------------------------------------------------------------------------
-	
-	// init_nodes( nodes );
-	// init_prgs( prgs );
-	// init_archs( archs );
-	
-	// init_charges( charges );
-	
-	// // -------------------------------------------------------------------------
-	// // running estimations
-	// // -------------------------------------------------------------------------
-	
-	// print_str( "estimations\n" );
-	// NL;
-	
-	// prgs_estimate_execution_times();
-	// prgs_set_relative_deadline();
-	// prgs_set_period();
-	// prgs_set_period_clk_cnt();
-	// prgs_estimate_energy_requirements();
-	
-	// NL;
-	// print_str( "estimations -> done\n" );
-	
-	// print_str( "estimations 2\n" );
-	// NL;
-	
-	// prgs_estimate_execution_times();
-	// prgs_set_relative_deadline();
-	// prgs_set_period();
-	// prgs_set_period_clk_cnt();
-	// prgs_estimate_energy_requirements();
-	
-	// NL;
-	// print_str( "estimations -> done\n" );
-	
-	// #ifdef REP_PRGS_SUMMERY
-	// 	prgs_summary();
-	// #endif
-	
-	// SET_LEDS_STATUS = 0x2;
-	// SET_TRIGGERS = 0x2;
-	
-	// // -------------------------------------------------------------------------
-	// // running prg partition
-	// // -------------------------------------------------------------------------
-	
-	// print_str( "running task partition" ); NL;
+	print_str( "running task partition" ); NL;
 	
 	// for( j = 0; j < NUM_NODES; j++ )
 	// {

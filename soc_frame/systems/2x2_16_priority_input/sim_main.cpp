@@ -154,9 +154,10 @@ int main(int argc, char** argv, char** env) {
                
                 buffer[buffer_index] = top->buffer_out_data;
                 buffer_index++;
+                    //  VL_PRINTF( "buffer: ");
 
                 // If the received character is the end of string character
-                if (top->buffer_out_data == '\n') {
+                if (top->buffer_out_data == '\0') {
                      VL_PRINTF( "buffer: ");
                     // VL_PRINTF("%s", buffer);
                     for (size_t i = 0; i < buffer_index; i++)

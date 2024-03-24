@@ -1,12 +1,12 @@
 /* This file has been automatically generated */
 
-#define NUM_PRGS ( 1 )
+#define NUM_PRGS ( 2 )
 
 void init_prgs( prg_t *prgs )
 {
-	prgs[0].name = "msort";
-	prgs[0].addr[ARCH_RV32IM] = 0x2fff8; // index: 49150 size: 4434
-	prgs[0].addr[ARCH_RV32IM] = 0x366d0; // index: 55732 size: 4434
+	prgs[0].name = "emptymain1";
+	prgs[0].addr[ARCH_RV32IM] = 0x2fff8; // index: 49150 size: 1848
+	prgs[0].addr[ARCH_RV32IM] = 0x33d30; // index: 53068 size: 1848
 	prgs[0].c[ARCH_RV32IM] = 0;
 	prgs[0].c[ARCH_RV32IM] = 0;
 	prgs[0].d[ARCH_RV32IM] = 0;
@@ -19,7 +19,7 @@ void init_prgs( prg_t *prgs )
 	prgs[0].c_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[0].t_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[0].t_clk_cnt[ARCH_RV32IM] = 0;
-	prgs[0].d_multiplyer = 0b0000000100001000;
+	prgs[0].d_multiplyer = 0b0000000100000011;
 	prgs[0].s          = 5;
 	prgs[0].s_cnt_down = 5;
 	prgs[0].assigned_to = 0;
@@ -27,5 +27,29 @@ void init_prgs( prg_t *prgs )
 	prgs[0].next_release_overflows = 0;
 	prgs[0].next_deadline_clk_cnt = 0;
 	prgs[0].next_deadline_overflows = 0;
+
+	prgs[1].name = "emptymain2";
+	prgs[1].addr[ARCH_RV32IM] = 0x37a68; // index: 56986 size: 1842
+	prgs[1].addr[ARCH_RV32IM] = 0x3b77c; // index: 60895 size: 1842
+	prgs[1].c[ARCH_RV32IM] = 0;
+	prgs[1].c[ARCH_RV32IM] = 0;
+	prgs[1].d[ARCH_RV32IM] = 0;
+	prgs[1].d[ARCH_RV32IM] = 0;
+	prgs[1].t[ARCH_RV32IM] = 0;
+	prgs[1].t[ARCH_RV32IM] = 0;
+	prgs[1].e[ARCH_RV32IM] = 0;
+	prgs[1].e[ARCH_RV32IM] = 0;
+	prgs[1].c_clk_cnt[ARCH_RV32IM] = 0;
+	prgs[1].c_clk_cnt[ARCH_RV32IM] = 0;
+	prgs[1].t_clk_cnt[ARCH_RV32IM] = 0;
+	prgs[1].t_clk_cnt[ARCH_RV32IM] = 0;
+	prgs[1].d_multiplyer = 0b0000001000101000;
+	prgs[1].s          = 5;
+	prgs[1].s_cnt_down = 5;
+	prgs[1].assigned_to = 0;
+	prgs[1].next_release_clk_cnt = 0;
+	prgs[1].next_release_overflows = 0;
+	prgs[1].next_deadline_clk_cnt = 0;
+	prgs[1].next_deadline_overflows = 0;
 
 }

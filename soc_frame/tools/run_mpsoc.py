@@ -68,7 +68,8 @@ def memory_compression( sim, prgs_lst, which_arch ):
     
     sys_mem_packer_rv32i = System( "_mem_packer_rv32i" )
     sys_mem_packer_rv32im = System( "_mem_packer_rv32im" )
-    
+    sys_mem_packer_rv32i.clean()
+    sys_mem_packer_rv32im.clean()
     sys_mem_packer_rv32i.compl()
     print( "\t\t\t\t>>>>>>>>compiled system i" )
     

@@ -9,6 +9,8 @@
   
 ***************************************************************************** */
 
+`define DEBUG_SELF_AWARENESS
+
 module self_awareness
 #(
      parameter ID = 0

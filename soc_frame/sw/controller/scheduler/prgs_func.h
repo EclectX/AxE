@@ -8,6 +8,7 @@
 // for every arch, every prg is executed. the selected node has to have the arch
 // for which the execution time is estimated.
 #include "./../../_libs/print.h"
+
 void prgs_estimate_execution_times() // CHECKED
 {
     int i = 0;
@@ -81,9 +82,9 @@ void prg_estimate_execution_time( int node_i, int prg_i ) // CHECKED
     cnt = GET_COUNTER_GLOBAL_RESET;
     
     // assign a prg and wait for it to finish
-    
+    print_str("node id: ");print_dec(prgs[prg_i].addr[nodes[node_i].arch]);NL;
     ASSIGN( nodes[node_i], prgs[ prg_i ] );
-    
+    print_str( "exec time of: " );
     cnt_start = GET_COUNTER_GLOBAL;
     
     while ( IS_BUSY( nodes[node_i].id_flag ) ) {}
