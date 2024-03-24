@@ -19,7 +19,7 @@ void init_prgs( prg_t *prgs )
 	prgs[0].c_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[0].t_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[0].t_clk_cnt[ARCH_RV32IM] = 0;
-	prgs[0].d_multiplyer = 0b0000000100000011;
+	prgs[0].d_multiplyer = 0b0000000100111010;
 	prgs[0].s          = 5;
 	prgs[0].s_cnt_down = 5;
 	prgs[0].assigned_to = 0;
@@ -43,7 +43,7 @@ void init_prgs( prg_t *prgs )
 	prgs[1].c_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[1].t_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[1].t_clk_cnt[ARCH_RV32IM] = 0;
-	prgs[1].d_multiplyer = 0b0000001000101000;
+	prgs[1].d_multiplyer = 0b0000001100000111;
 	prgs[1].s          = 5;
 	prgs[1].s_cnt_down = 5;
 	prgs[1].assigned_to = 0;

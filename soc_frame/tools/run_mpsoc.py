@@ -394,7 +394,7 @@ mem.save( config_name + "_prgs_with_controller.json" )
 # controller_name is going to be the first prg at addr 0.
 # the others will be ordered by their name.
 
-mem.pack( which_arch, "test.hex", controller_name )
+mem.pack( which_arch, "/home/user/test.hex", controller_name )
 
 # ------------------------------------------------------------------------------
 # 
@@ -407,6 +407,6 @@ mem.pack( which_arch, "test.hex", controller_name )
 
 print( "running sim" )
 
-result = sim.run( sys, "test.hex", sim_args, sim_prnt )
+result = sim.run( sys, "/home/user/test.hex", sim_args, sim_prnt )
 
 print( str( result ) )
