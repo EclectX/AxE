@@ -210,7 +210,7 @@ cvname:		pstr = nref.value.bytes;
 		plen = r_size(&nref);
 		if ( pchars != 0 )
 		  *pchars = pstr;
-		goto nl;
+		goto NL;
 	case t_oparray:
 		{ uint index = op_index(op);
 		  const op_array_table *opt = op_index_op_array_table(index);
@@ -282,7 +282,7 @@ cvname:		pstr = nref.value.bytes;
 		plen = r_size(op);
 		if ( pchars != 0 )
 		  *pchars = pstr;
-		goto nl;
+		goto NL;
 	default:
 		pstr = (const byte *)"--nostringval--";
 	   }

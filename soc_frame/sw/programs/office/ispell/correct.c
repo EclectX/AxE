@@ -1447,7 +1447,7 @@ void askmode ()
     register char *	cp1;
     register char *	cp2;
     ichar_t *		itok;		/* Ichar version of current word */
-    int			hadnl;		/* NZ if \n was at end of line */
+    int			hadNL;		/* NZ if \n was at end of line */
 
     if (fflag)
 	{

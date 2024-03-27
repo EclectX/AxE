@@ -6,6 +6,25 @@
         "string_view": "c",
         "cstdio": "c",
         "energy_harvester.h": "c",
-        "print.h": "c"
+        "print.h": "c",
+        "time_func.h": "c",
+        "scheduler.h": "c",
+        "fixed_point.h": "c",
+        "globals.h": "c",
+        "defines.h": "c",
+        "typedefs.h": "c",
+        "debug.h": "c",
+        "mpsoc.h": "c",
+        "controller.h": "c",
+        "nodes.h": "c",
+        "prgs.h": "c",
+        "clk_func.h": "c",
+        "math_func.h": "c",
+        "nodes_func.h": "c",
+        "prgs_func.h": "c",
+        "partition_func.h": "c",
+        "nap.h": "c",
+        "arch_func.h": "c",
+        "node_arch_prgs.h": "c"
     }
 }

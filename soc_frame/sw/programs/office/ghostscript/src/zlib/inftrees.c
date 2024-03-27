@@ -320,7 +320,7 @@ z_streamp z;            /* for zfree function */
 
 
 int inflate_trees_dynamic(nl, nd, c, bl, bd, tl, td, z)
-uInt nl;                /* number of literal/length codes */
+uInt NL;                /* number of literal/length codes */
 uInt nd;                /* number of distance codes */
 uIntf *c;               /* that many (total) code lengths */
 uIntf *bl;              /* literal desired/actual bit depth */

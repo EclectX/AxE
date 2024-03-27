@@ -1,6 +1,8 @@
 /* This file has been automatically generated */
 
-#define NUM_CHARGES ( 599 )
+#include "NAP.h"
+#include "Node_arch_prgs.h"
+
 
 void init_charges( int *charges )
 {

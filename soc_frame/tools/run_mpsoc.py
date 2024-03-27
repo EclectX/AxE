@@ -52,8 +52,28 @@ from software_program import *
 from software_program_task import *
 from software_controller import *
 
+def create_NAP_file():
+    NAP_file = open( "/home/user/soc_frame/sw/controller/scheduler/NAP.h", "a" )
+    NAP_file.write("/* This file has been automatically generated */\n")
+    NAP_file.write("#ifndef NAP_H\n")
+    NAP_file.write("#define NAP_H\n")
+    NAP_file.write("#include \"typedefs.h\"\n")
+    NAP_file.close()
+def End_NAP_file():
+    NAP_file = open( "/home/user/soc_frame/sw/controller/scheduler/NAP.h", "a" )
+    NAP_file.write("#endif")
+    NAP_file.close()
+
 prefix = "\t\t\t\t>>>>>>>>"
 
+os.system("rm -f /home/user/soc_frame/sw/controller/scheduler/NAP.h")
+f = open("output_buffer","w")
+f.write("****************")
+f.close()
+os.system("rm -f /home/user/soc_frame/sw/controller/scheduler/nodes.c")
+os.system("rm -f /home/user/soc_frame/sw/controller/scheduler/prgs.c")
+os.system("rm -f /home/user/soc_frame/sw/controller/scheduler/energy_harvester.c")
+create_NAP_file()
 # the simulation that the memory compression runs is on a single core system,
 # so no controller is needed.
 
@@ -369,7 +389,7 @@ for index, line in enumerate( charges_l ):
     
 
 con.create_charging_define( charges_l )
-
+End_NAP_file()
 # compile controller with new defines
 # ---------------------------------------
 
@@ -394,7 +414,7 @@ mem.save( config_name + "_prgs_with_controller.json" )
 # controller_name is going to be the first prg at addr 0.
 # the others will be ordered by their name.
 
-mem.pack( which_arch, "/home/user/test.hex", controller_name )
+mem.pack( which_arch, "/home/user/mem.hex", controller_name )
 
 # ------------------------------------------------------------------------------
 # 
@@ -407,6 +427,6 @@ mem.pack( which_arch, "/home/user/test.hex", controller_name )
 
 print( "running sim" )
 
-result = sim.run( sys, "/home/user/test.hex", sim_args, sim_prnt )
+result = sim.run( sys, "/home/user/mem.hex", sim_args, sim_prnt )
 
 print( str( result ) )

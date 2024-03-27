@@ -6,6 +6,7 @@
 
 #include <time.h>
 #include <signal.h>
+#include <cstdio>
 
 
 // Include common routines
@@ -166,6 +167,12 @@ int main(int argc, char** argv, char** env) {
 
                 // If the received character is the end of string character
                 if (top->buffer_out_data == '\0') {
+                    FILE *fd = fopen("output_buffer","a");
+                    for (size_t i = 0; i < buffer_index -1; i++){
+                        
+                        fputc(buffer[i], fd);                    
+                    }
+                    fclose(fd);
                      VL_PRINTF( "buffer: ");
                     // VL_PRINTF("%s", buffer);
                     for (size_t i = 0; i < buffer_index -1; i++)

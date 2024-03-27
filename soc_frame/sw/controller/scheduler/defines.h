@@ -1,4 +1,5 @@
-
+#ifndef DEFINES_H
+#define DEFINES_H
 // if save mode is not enabled, the scheduler will always pick the big nodes.
 
 #define EN_SAVE_MODE
@@ -10,6 +11,8 @@
 #define EN_SKIPPING
 
 
+#define TRUE ( 1 )
+#define FALSE ( 0 )
 
 // the defines in this file are used for general prg assignements to
 // nodes.
@@ -359,3 +362,5 @@
 #define IS_READY( node_id_flag ) ( ! IS_BUSY(node_id_flag) )
 
 #define ASSIGN( node, prg ) ( *( (volatile int*) node.addr_assign ) = prg.addr[node.arch] )
+
+#endif

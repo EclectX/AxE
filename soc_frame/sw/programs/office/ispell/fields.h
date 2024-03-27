@@ -23,7 +23,7 @@
 typedef struct
     {
     int		nfields;	/* Number of fields in the line */
-    int		hadnl;		/* NZ if line ended with a newline */
+    int		hadNL;		/* NZ if line ended with a newline */
     char *	linebuf;	/* Malloc'ed buffer containing the line */
     char **	fields;		/* Malloc'ed array of pointers to fields */
     }

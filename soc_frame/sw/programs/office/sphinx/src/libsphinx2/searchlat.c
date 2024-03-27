@@ -441,7 +441,7 @@ static int32 build_lattice (int32 bptbl_sz)
     BPTBL_T *bp_ptr;
     latnode_t *node, *from, *to; /* , *prev_node, *t_node; */
     latlink_t *link; /* *t_link, *prev_link; */
-    int32 nn, nl;
+    int32 nn, NL;
     char const *dumplatdir;
     
     /* Create lattice nodes; not all these may be useful */
@@ -597,7 +597,7 @@ static int32 build_lattice (int32 bptbl_sz)
 	nn++;
     }
     n_node = nn;
-    n_link = nl;
+    n_link = NL;
 
     return (1);
 }

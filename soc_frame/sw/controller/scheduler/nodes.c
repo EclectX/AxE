@@ -1,9 +1,12 @@
 /* This file has been automatically generated */
 
-#define CHARGE_MAX ( 0xFFFFFFFF )
-#define CHARGE_INITIAL ( 500000 )
+#include "NAP.h"
 
-#define NUM_NODES ( 2 )
+#include "Node_arch_prgs.h"
+
+#include "defines.h"
+
+#include "typedefs.h"
 
 void init_nodes( node_t *nodes )
 {
@@ -27,6 +30,3 @@ void init_nodes( node_t *nodes )
 	
 }
 
-#define NODES_MASK        ( 0b0000000000000000000000000000011 )
-#define NODES_MASK_RV32I  ( 0b0000000000000000000000000000000 )
-#define NODES_MASK_RV32IM ( 0b0000000000000000000000000000011 )

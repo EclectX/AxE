@@ -5,7 +5,8 @@ CC_DESKTOP = gcc
 SMALL = rv32i
 BIG = rv32im
 LIBS = ../../_libs
-SRC = $(LIBS)/util.c $(LIBS)/print.c
+SRC = $(LIBS)/util.c $(LIBS)/print.c $(LIBS)/fixed_point.c arch_func.c clk_func.c math_func.c\
+  partition_func.c nodes_func.c prgs_func.c queue_func.c time_func.c scheduler.c nodes.c prgs.c energy_harvester.c
 
 
 INC = -I$(LIBS)

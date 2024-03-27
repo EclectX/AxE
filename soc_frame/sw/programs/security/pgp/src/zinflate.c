@@ -768,7 +768,7 @@ int inflate_dynamic()
   int bl;               /* lookup bits for tl */
   int bd;               /* lookup bits for td */
   unsigned nb;          /* number of bit length codes */
-  unsigned nl;          /* number of literal/length codes */
+  unsigned NL;          /* number of literal/length codes */
   unsigned nd;          /* number of distance codes */
   unsigned ll[286+30];  /* literal/length and distance code lengths */
   register ULONG b;     /* bit buffer */

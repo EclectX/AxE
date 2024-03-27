@@ -62,6 +62,7 @@ class Controller( Software ):
         define_lst.append( '' )
         
         define_f = open( self.get_path_dir() + "controller.h", "w" )
+        define_f = open( self.get_path_dir() + "controller.h", "w" )
         
         for line in define_lst:
             
@@ -105,12 +106,28 @@ class Controller( Software ):
         
         prgs_lst = mem.get_prgs_lst()
         
-        define_lst.append( '/* This file has been automatically generated */' )
         
         define_lst.append( '' )
         define_lst.append( '#define NUM_PRGS ( ' + str(len(prgs_lst)) + ' )' )
         define_lst.append( '' )
+        # define_lst.append( 'void init_prgs( prg_t *prgs );' )
+        define_lst.append( '' )
+        define_f = open( self.get_path_dir() + "NAP.h", "a" )
         
+        for i,line in enumerate( define_lst ):
+            
+            define_f.write( line + "\n" )
+            
+        
+        define_f.close()
+        
+        define_lst = []
+        define_lst.append( '/* This file has been automatically generated */' )
+        define_lst.append( '' )
+        define_lst.append("#include \"NAP.h\"\n")
+        define_lst.append("#include \"typedefs.h\"\n")
+        define_lst.append("#include \"Node_arch_prgs.h\"\n")
+        define_lst.append("#include \"mpsoc.h\"\n\n")
         define_lst.append( 'void init_prgs( prg_t *prgs )' )
         define_lst.append( '{' )
         
@@ -187,7 +204,7 @@ class Controller( Software ):
         
         # TODO: use the func made for this.
         
-        define_f = open( self.get_path_dir() + "prgs.h", "w" )
+        define_f = open( self.get_path_dir() + "prgs.c", "w" )
         
         for i,line in enumerate( define_lst ):
             
@@ -203,7 +220,9 @@ class Controller( Software ):
     def create_node_define( self, node_arch_lst ):
         
         define_lst = []
-        
+        NAP = []
+        NAP_file = open( self.get_path_dir() + "NAP.h", "a" )
+
         # the node masks are created later and are going to result in something
         # like this:
         
@@ -215,16 +234,30 @@ class Controller( Software ):
         mask_lst_i = []
         mask_lst_im = []
         
-        define_lst.append( '/* This file has been automatically generated */' )
         
         define_lst.append( '' )
         define_lst.append( '#define CHARGE_MAX ( 0xFFFFFFFF )' )
         define_lst.append( '#define CHARGE_INITIAL ( 500000 )' )
         
         define_lst.append( '' )
-        define_lst.append( '#define NUM_NODES ( ' + str(len(node_arch_lst)) + ' )' )
-        define_lst.append( '' )
         
+        define_lst.append( '#define NUM_NODES ( ' + str(len(node_arch_lst)) + ' )' )
+
+        define_lst.append( '' )
+        # define_lst.append("void init_nodes( node_t *nodes );")
+        define_lst.append( '' )
+        # Writing the header file included in other c files as well
+
+        for line in define_lst:
+            NAP_file.write( line + "\n" )
+        
+        define_lst = []
+        define_lst.append( '/* This file has been automatically generated */' )
+        define_lst.append( '' )
+        define_lst.append("#include \"NAP.h\"\n")
+        define_lst.append("#include \"Node_arch_prgs.h\"\n")
+        define_lst.append("#include \"defines.h\"\n")
+        define_lst.append("#include \"typedefs.h\"\n")
         define_lst.append( 'void init_nodes( node_t *nodes )' )
         define_lst.append( '{' )
         
@@ -273,17 +306,25 @@ class Controller( Software ):
         
         define_lst.append( '' )
         
-        define_lst.append( '#define NODES_MASK        ( 0b' + ''.join( mask_lst ) + ' )' )
-        define_lst.append( '#define NODES_MASK_RV32I  ( 0b' + ''.join( mask_lst_i ) + ' )' )
-        define_lst.append( '#define NODES_MASK_RV32IM ( 0b' + ''.join( mask_lst_im ) + ' )' )
+        # define_lst.append( '#define NODES_MASK        ( 0b' + ''.join( mask_lst ) + ' )' )
+        # define_lst.append( '#define NODES_MASK_RV32I  ( 0b' + ''.join( mask_lst_i ) + ' )' )
+        # define_lst.append( '#define NODES_MASK_RV32IM ( 0b' + ''.join( mask_lst_im ) + ' )' )
         
-        define_f = open( self.get_path_dir() + "nodes.h", "w" )
-        
+        define_f = open( self.get_path_dir() + "nodes.c", "w" )
+
         for line in define_lst:
             
             define_f.write( line + "\n" )
             
         define_f.close()
+
+        NAP.append( '#define NODES_MASK        ( 0b' + ''.join( mask_lst ) + ' )' )
+        NAP.append( '#define NODES_MASK_RV32I  ( 0b' + ''.join( mask_lst_i ) + ' )' )
+        NAP.append( '#define NODES_MASK_RV32IM ( 0b' + ''.join( mask_lst_im ) + ' )' )
+        for line in NAP:
+            
+            NAP_file.write( line + "\n" )
+        NAP_file.close()
         
     
     # --------------------------------------------------------------------------
@@ -294,12 +335,24 @@ class Controller( Software ):
         
         define_lst = []
         
-        define_lst.append( '/* This file has been automatically generated */' )
+
         
         define_lst.append( '' )
         define_lst.append( '#define NUM_CHARGES ( ' + str(len(charges_lst)) + ' )' )
         define_lst.append( '' )
-        
+        # define_lst.append( 'void init_charges( int *charges );' )
+        define_lst.append( '' )
+        file_define = open( self.get_path_dir() + "NAP.h", "a" )
+
+        for line in define_lst:
+             file_define.write( line + "\n" )
+        file_define.close()
+        define_lst = []
+        define_lst.append( '/* This file has been automatically generated */' )
+        define_lst.append( '' )
+        define_lst.append( '#include \"NAP.h\"' )
+        define_lst.append("#include \"Node_arch_prgs.h\"\n")
+        define_lst.append( '' )
         define_lst.append( 'void init_charges( int *charges )' )
         define_lst.append( '{' )
         
@@ -310,7 +363,7 @@ class Controller( Software ):
         
         define_lst.append( '}' )
         
-        define_f = open( self.get_path_dir() + "energy_harvester.h", "w" )
+        define_f = open( self.get_path_dir() + "energy_harvester.c", "w" )
         
         for line in define_lst:
             

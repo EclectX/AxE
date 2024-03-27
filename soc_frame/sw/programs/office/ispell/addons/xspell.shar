@@ -228,7 +228,7 @@ getbuf(bp, offset)
 buf_t *	bp;
 long	offset;
 {
-    char *nl;
+    char *NL;
     int ret;
     long size;
 

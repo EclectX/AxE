@@ -1,7 +1,10 @@
 
 // good info about typedefs:
 // https://stackoverflow.com/a/23660072
-
+#ifndef TYPEDEF_H
+#define TYPEDEF_H
+#include "NAP.h"
+#include "mpsoc.h"
 typedef struct {
     
     char* name;
@@ -81,6 +84,12 @@ typedef struct {
     
 } cnt_t;
 
+typedef struct {
+    
+    cnt_t cnt;
+    unsigned int interval_cnt;
+    
+} interval_t;
 
 typedef struct {
     
@@ -108,3 +117,4 @@ typedef struct {
     
 } energy_harvester_t;
 
+#endif

@@ -41,7 +41,7 @@ class System:
     def clean( self ):
         
         os.system( "make -C " + self.get_dir_path() + " clean" )
-        
+
     
     # --------------------------------------------------------------------------
     # 

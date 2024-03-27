@@ -8,9 +8,16 @@
 #include "print.h"
 // #define OUTPORT ( 0x00000000 )
 
-#define NL ( *((volatile int*)OUTPORT) = '\n' )
+// #define NL ( *((volatile int*)OUTPORT) = '\n' )
 
-
+void NL(){
+    // char* p = ".NL\n ";
+    // while (*p != 0)
+    // {
+    //     *((volatile int*)OUTPORT) = *(p++);
+    // }
+    // *((volatile int*)OUTPORT) = '\0';
+}
 
 // char
 // -------------------------------------
@@ -252,7 +259,7 @@ void print_str_dec_nl( char* str, unsigned int dec )
 {
 	print_str( str );
 	print_dec( dec );
-	NL;
+	 print_str( "\n  \n" );
 }
 
 
@@ -354,5 +361,5 @@ void print_fixed_calculation( unsigned int a, unsigned int b, unsigned int c, ch
     print_char( ' ' );
     print_fix( b, 8, 8 );
     print_str( " = " );
-    print_fix( c, 8, 8 ); NL;
+    print_fix( c, 8, 8 );  print_str( ";\n" );
 }

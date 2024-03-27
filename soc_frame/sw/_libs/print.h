@@ -9,11 +9,13 @@
 #include "util.h"
 // #define OUTPORT ( 0x00000000 )
 
-#define NL ( *((volatile int*)OUTPORT) = '\n' )
+void NL();
 
 void print_char(char);
 void print_str(const char*);
 void print_dec(unsigned int);
+void print_str_m(const char*);
+void print_dec_m(unsigned int);
 void print_hex(unsigned int, int);
 void print_bin(unsigned int, int);
 void print_fix( unsigned int, int, int);
