@@ -23,9 +23,7 @@ void time_advance( cnt_t* cnt, unsigned int time )
 	
 	if ( (*cnt).cnt <= cnt_tmp )
 	{
-        cnt_tmp+=1;
-        print_str("yessss");
-		// (*cnt).overflows += 1;
+		(*cnt).overflows += 1;
 	}
 }
 

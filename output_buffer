@@ -1,1 +1,4950 @@
-****************
+****************start
+
+prg 0: emptymain1
+===arch0
+c: ms
+d: ms
+t: ms
+e: mj
+c_clk_cnt: 0
+t_clk_cnt: 0
+prg 1: emptymain2
+===arch0
+c: ms
+d: ms
+t: ms
+e: mj
+c_clk_cnt: 0
+t_clk_cnt: 0estimations
+
+arch: 0;
+
+exec time of: emptymain1
+node id: 196600
+exec time of: 
+set cnt_diff to: 432587
+result: 17
+exec time of: emptymain2
+node id: 212272
+exec time of: 
+set cnt_diff to: 434721
+result: 17
+execution time estimations:
+
+arch 0;
+;
+emptymain1: 196600;
+emptymain2: 212272
+get relative deadlines:
+
+arch 0
+p0 - emptymain1: 
+c  mod  d 
+p1 - emptymain2: 
+c  mod  d 
+End of prgs_set_relative_deadline
+
+End ofprgs_set_period
+
+End of prgs_set_period_clk_cnt
+n0 - e: 863964 - e: 932835
+End of prgs_estimate_energy_requirements
+
+estimations -> done
+estimations 2
+
+arch: 0;
+
+exec time of: emptymain1
+node id: 196600
+exec time of: 
+set cnt_diff to: 432064
+result: 17
+exec time of: emptymain2
+node id: 212272
+exec time of: 
+set cnt_diff to: 434198
+result: 17
+execution time estimations:
+
+arch 0;
+;
+emptymain1: 196600;
+emptymain2: 212272
+get relative deadlines:
+
+arch 0
+p0 - emptymain1: 
+c  mod  d 
+p1 - emptymain2: 
+c  mod  d End of prgs_set_relative_deadline 2
+End ofprgs_set_period 2 
+End of prgs_set_period_clk_cnt 2 
+n0 - e: 863964 - e: 932835End of prgs_estimate_energy_requirements 2
+estimations -> done
+
+running task partition
+starting partition eh ra
+p0
+n0
+load check has passed
+energy check has passed
+n1
+load check has passed
+energy check has passed
+assigned to n0
+p1
+n0
+load check has passed
+energy check has passed
+n1
+load check has passed
+energy check has passed
+assigned to n0
+
+partition summary
+p0 -> n0
+p1 -> n0
+creating task list/array
+finding prgs belonging to n0
+prgs_start_i set to: 0
+looking at p0
+found p0 for -> n0
+set p0 at index: 0
+next index is: 1
+looking at p1
+found p1 for -> n0
+set p1 at index: 1
+next index is: 2
+finding prgs belonging to n1
+last node
+prgs_start_i set to: 2
+looking at p0
+looking at p1
+all prgs_starts: 
+n0 : 0
+n1 : 2
+report prgs list:
+0 | p0 <- n0;
+ 1 | p1;
+ 
+initial r and d
+
+p0
+r: 388
+d: 776
+p1
+r: 1003
+d: 2006
+>~~~~~~~~~>
+cnt: 8954
+overflows: 0
+[ n0 ]
+setting prgs ready for n0p0-> readyp1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147717647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n0
+range: 0 - 2
+in ST for p0
+checking clairvoyance: 50000000
+covering instances: 4
+having a period of: 12321514
+checking instance: 0
+until it's deadline: 12321514
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 12321514getting h for period: 12321514range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 1considering di: 12321514and the prg's period: 12321514h is now: 297971considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is greater than d
+-> ignoring
+## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 12023543
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 24643028
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 24643028getting h for period: 24643028range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 2considering di: 24643028and the prg's period: 12321514h is now: 595942considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is smaller than dpossible executions: 1considering di: 24643028and the prg's period: 14109397h is now: 1427617considering c of: 831675## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 23215411
+checking instance: 2
+until it's deadline: 36964542
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 36964542getting h for period: 36964542range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 3considering di: 36964542and the prg's period: 12321514h is now: 893913considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is smaller than dpossible executions: 2considering di: 36964542and the prg's period: 14109397h is now: 2557263considering c of: 831675## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 34407279
+checking instance: 3
+until it's deadline: 49286056
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 49286056getting h for period: 49286056range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 4considering di: 49286056and the prg's period: 12321514h is now: 1191884considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is smaller than dpossible executions: 3considering di: 49286056and the prg's period: 14109397h is now: 3686909considering c of: 831675## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45599147
+finished checking instances of p0
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 3
+having a period of: 14109397
+checking instance: 0
+until it's deadline: 14109397
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 14109397getting h for period: 14109397range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 1considering di: 14109397and the prg's period: 12321514h is now: 297971considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is smaller than dpossible executions: 1considering di: 14109397and the prg's period: 14109397h is now: 1129646considering c of: 831675## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 12979751
+checking instance: 1
+until it's deadline: 28218794
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 28218794getting h for period: 28218794range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 2considering di: 28218794and the prg's period: 12321514h is now: 595942considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is smaller than dpossible executions: 2considering di: 28218794and the prg's period: 14109397h is now: 2259292considering c of: 831675## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 25959502
+checking instance: 2
+until it's deadline: 42328191
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 42328191getting h for period: 42328191range: 0 - 2looking at p0having period t of: 12321514prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 12321514t_clk_cnt is smaller than dpossible executions: 3considering di: 42328191and the prg's period: 12321514h is now: 893913considering c of: 297971looking at p1having period t of: 14109397prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 14109397t_clk_cnt is smaller than dpossible executions: 3considering di: 42328191and the prg's period: 14109397h is now: 3388938considering c of: 831675## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 38939253
+finished checking instances of p1
+found a prg to run: 0--> p0 should be run
+In node_assign_prg func0In node_assign_prg func
+clamp_sub number: 2147483647
+sub: 0n0 e: 2147483647
+discharged: 0
+>~~~~~~~~~>
+cnt: 4710286
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  2000000
+CHARGE: ovfl: 0
+clamp_add number: 2147483647
+add: 15000
+clamp_add number: 2147483647
+add: 15000
+CHARGE: charge of n0: 2147498647
+CHARGE: charge of n1: 2147498647
+>~~~~~~~~~>
+cnt: 4983826
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  3000000
+CHARGE: ovfl: 0
+clamp_add number: 2147498647
+add: 15000
+clamp_add number: 2147498647
+add: 15000
+CHARGE: charge of n0: 2147513647
+CHARGE: charge of n1: 2147513647
+>~~~~~~~~~>
+cnt: 5257368
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  4000000
+CHARGE: ovfl: 0
+clamp_add number: 2147513647
+add: 16000
+clamp_add number: 2147513647
+add: 16000
+CHARGE: charge of n0: 2147529647
+CHARGE: charge of n1: 2147529647
+>~~~~~~~~~>
+cnt: 5530908
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  5000000
+CHARGE: ovfl: 0
+clamp_add number: 2147529647
+add: 17000
+clamp_add number: 2147529647
+add: 17000
+CHARGE: charge of n0: 2147546647
+CHARGE: charge of n1: 2147546647
+>~~~~~~~~~>
+cnt: 5804450
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  6000000
+CHARGE: ovfl: 0
+clamp_add number: 2147546647
+add: 18000
+clamp_add number: 2147546647
+add: 18000
+CHARGE: charge of n0: 2147564647
+CHARGE: charge of n1: 2147564647
+>~~~~~~~~~>
+cnt: 6077990
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  7000000
+CHARGE: ovfl: 0
+clamp_add number: 2147564647
+add: 19000
+clamp_add number: 2147564647
+add: 19000
+CHARGE: charge of n0: 2147583647
+CHARGE: charge of n1: 2147583647
+>~~~~~~~~~>
+cnt: 6351532
+overflows: 0
+>~~~~~~~~~>
+cnt: 6394192
+overflows: 0
+>~~~~~~~~~>
+cnt: 6436854
+overflows: 0
+>~~~~~~~~~>
+cnt: 6479514
+overflows: 0
+>~~~~~~~~~>
+cnt: 6522176
+overflows: 0
+>~~~~~~~~~>
+cnt: 6564836
+overflows: 0
+>~~~~~~~~~>
+cnt: 6607498
+overflows: 0
+>~~~~~~~~~>
+cnt: 6650158
+overflows: 0
+>~~~~~~~~~>
+cnt: 6692820
+overflows: 0
+>~~~~~~~~~>
+cnt: 6735480
+overflows: 0
+>~~~~~~~~~>
+cnt: 6778142
+overflows: 0
+>~~~~~~~~~>
+cnt: 6820802
+overflows: 0
+>~~~~~~~~~>
+cnt: 6863464
+overflows: 0
+>~~~~~~~~~>
+cnt: 6906124
+overflows: 0
+>~~~~~~~~~>
+cnt: 6948786
+overflows: 0
+>~~~~~~~~~>
+cnt: 6991446
+overflows: 0
+>~~~~~~~~~>
+cnt: 7034108
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  8000000
+CHARGE: ovfl: 0
+clamp_add number: 2147583647
+add: 20000
+clamp_add number: 2147583647
+add: 20000
+CHARGE: charge of n0: 2147603647
+CHARGE: charge of n1: 2147603647
+>~~~~~~~~~>
+cnt: 7307648
+overflows: 0
+>~~~~~~~~~>
+cnt: 7350310
+overflows: 0
+>~~~~~~~~~>
+cnt: 7392970
+overflows: 0
+>~~~~~~~~~>
+cnt: 7435632
+overflows: 0
+>~~~~~~~~~>
+cnt: 7478292
+overflows: 0
+>~~~~~~~~~>
+cnt: 7520954
+overflows: 0
+>~~~~~~~~~>
+cnt: 7563614
+overflows: 0
+>~~~~~~~~~>
+cnt: 7606276
+overflows: 0
+>~~~~~~~~~>
+cnt: 7648936
+overflows: 0
+>~~~~~~~~~>
+cnt: 7691598
+overflows: 0
+>~~~~~~~~~>
+cnt: 7734258
+overflows: 0
+>~~~~~~~~~>
+cnt: 7776920
+overflows: 0
+>~~~~~~~~~>
+cnt: 7819580
+overflows: 0
+>~~~~~~~~~>
+cnt: 7862242
+overflows: 0
+>~~~~~~~~~>
+cnt: 7904902
+overflows: 0
+>~~~~~~~~~>
+cnt: 7947564
+overflows: 0
+>~~~~~~~~~>
+cnt: 7990224
+overflows: 0
+>~~~~~~~~~>
+cnt: 8032886
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  9000000
+CHARGE: ovfl: 0
+clamp_add number: 2147603647
+add: 21000
+clamp_add number: 2147603647
+add: 21000
+CHARGE: charge of n0: 2147624647
+CHARGE: charge of n1: 2147624647
+>~~~~~~~~~>
+cnt: 8306426
+overflows: 0
+>~~~~~~~~~>
+cnt: 8349088
+overflows: 0
+>~~~~~~~~~>
+cnt: 8391748
+overflows: 0
+>~~~~~~~~~>
+cnt: 8434410
+overflows: 0
+>~~~~~~~~~>
+cnt: 8477070
+overflows: 0
+>~~~~~~~~~>
+cnt: 8519732
+overflows: 0
+>~~~~~~~~~>
+cnt: 8562392
+overflows: 0
+>~~~~~~~~~>
+cnt: 8605054
+overflows: 0
+>~~~~~~~~~>
+cnt: 8647714
+overflows: 0
+>~~~~~~~~~>
+cnt: 8690376
+overflows: 0
+>~~~~~~~~~>
+cnt: 8733036
+overflows: 0
+>~~~~~~~~~>
+cnt: 8775698
+overflows: 0
+>~~~~~~~~~>
+cnt: 8818358
+overflows: 0
+>~~~~~~~~~>
+cnt: 8861020
+overflows: 0
+>~~~~~~~~~>
+cnt: 8903680
+overflows: 0
+>~~~~~~~~~>
+cnt: 8946342
+overflows: 0
+>~~~~~~~~~>
+cnt: 8989002
+overflows: 0
+>~~~~~~~~~>
+cnt: 9031664
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  10000000
+CHARGE: ovfl: 0
+clamp_add number: 2147624647
+add: 23000
+clamp_add number: 2147624647
+add: 23000
+CHARGE: charge of n0: 2147647647
+CHARGE: charge of n1: 2147647647
+>~~~~~~~~~>
+cnt: 9306648
+overflows: 0
+>~~~~~~~~~>
+cnt: 9349308
+overflows: 0
+>~~~~~~~~~>
+cnt: 9391970
+overflows: 0
+>~~~~~~~~~>
+cnt: 9434630
+overflows: 0
+>~~~~~~~~~>
+cnt: 9477292
+overflows: 0
+>~~~~~~~~~>
+cnt: 9519952
+overflows: 0
+>~~~~~~~~~>
+cnt: 9562614
+overflows: 0
+>~~~~~~~~~>
+cnt: 9605274
+overflows: 0
+>~~~~~~~~~>
+cnt: 9647936
+overflows: 0
+>~~~~~~~~~>
+cnt: 9690596
+overflows: 0
+>~~~~~~~~~>
+cnt: 9733258
+overflows: 0
+>~~~~~~~~~>
+cnt: 9775918
+overflows: 0
+>~~~~~~~~~>
+cnt: 9818580
+overflows: 0
+>~~~~~~~~~>
+cnt: 9861240
+overflows: 0
+>~~~~~~~~~>
+cnt: 9903902
+overflows: 0
+>~~~~~~~~~>
+cnt: 9946562
+overflows: 0
+>~~~~~~~~~>
+cnt: 9989224
+overflows: 0
+>~~~~~~~~~>
+cnt: 10031884
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  11000000
+CHARGE: ovfl: 0
+clamp_add number: 2147647647
+add: 23000
+clamp_add number: 2147647647
+add: 23000
+CHARGE: charge of n0: 2147670647
+CHARGE: charge of n1: 2147670647
+>~~~~~~~~~>
+cnt: 10308312
+overflows: 0
+>~~~~~~~~~>
+cnt: 10352416
+overflows: 0
+>~~~~~~~~~>
+cnt: 10396520
+overflows: 0
+>~~~~~~~~~>
+cnt: 10440624
+overflows: 0
+>~~~~~~~~~>
+cnt: 10484728
+overflows: 0
+>~~~~~~~~~>
+cnt: 10528832
+overflows: 0
+>~~~~~~~~~>
+cnt: 10572936
+overflows: 0
+>~~~~~~~~~>
+cnt: 10617040
+overflows: 0
+>~~~~~~~~~>
+cnt: 10661144
+overflows: 0
+>~~~~~~~~~>
+cnt: 10705248
+overflows: 0
+>~~~~~~~~~>
+cnt: 10749352
+overflows: 0
+>~~~~~~~~~>
+cnt: 10793456
+overflows: 0
+>~~~~~~~~~>
+cnt: 10837560
+overflows: 0
+>~~~~~~~~~>
+cnt: 10881664
+overflows: 0
+>~~~~~~~~~>
+cnt: 10925768
+overflows: 0
+>~~~~~~~~~>
+cnt: 10969872
+overflows: 0
+>~~~~~~~~~>
+cnt: 11013976
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  12000000
+CHARGE: ovfl: 0
+clamp_add number: 2147670647
+add: 23000
+clamp_add number: 2147670647
+add: 23000
+CHARGE: charge of n0: 2147693647
+CHARGE: charge of n1: 2147693647
+>~~~~~~~~~>
+cnt: 11290402
+overflows: 0
+>~~~~~~~~~>
+cnt: 11334506
+overflows: 0
+>~~~~~~~~~>
+cnt: 11378610
+overflows: 0
+>~~~~~~~~~>
+cnt: 11422714
+overflows: 0
+>~~~~~~~~~>
+cnt: 11466818
+overflows: 0
+>~~~~~~~~~>
+cnt: 11510922
+overflows: 0
+>~~~~~~~~~>
+cnt: 11555026
+overflows: 0
+>~~~~~~~~~>
+cnt: 11599130
+overflows: 0
+>~~~~~~~~~>
+cnt: 11643234
+overflows: 0
+>~~~~~~~~~>
+cnt: 11687338
+overflows: 0
+>~~~~~~~~~>
+cnt: 11731442
+overflows: 0
+>~~~~~~~~~>
+cnt: 11775546
+overflows: 0
+>~~~~~~~~~>
+cnt: 11819650
+overflows: 0
+>~~~~~~~~~>
+cnt: 11863754
+overflows: 0
+>~~~~~~~~~>
+cnt: 11907858
+overflows: 0
+>~~~~~~~~~>
+cnt: 11951962
+overflows: 0
+>~~~~~~~~~>
+cnt: 11996066
+overflows: 0
+>~~~~~~~~~>
+cnt: 12040170
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  13000000
+CHARGE: ovfl: 0
+clamp_add number: 2147693647
+add: 24000
+clamp_add number: 2147693647
+add: 24000
+CHARGE: charge of n0: 2147717647
+CHARGE: charge of n1: 2147717647
+>~~~~~~~~~>
+cnt: 12316598
+overflows: 0
+>~~~~~~~~~>
+cnt: 12360702
+overflows: 0
+>~~~~~~~~~>
+cnt: 12404806
+overflows: 0
+>~~~~~~~~~>
+cnt: 12448910
+overflows: 0
+>~~~~~~~~~>
+cnt: 12493014
+overflows: 0
+>~~~~~~~~~>
+cnt: 12537118
+overflows: 0
+>~~~~~~~~~>
+cnt: 12581222
+overflows: 0
+>~~~~~~~~~>
+cnt: 12625326
+overflows: 0
+>~~~~~~~~~>
+cnt: 12669430
+overflows: 0
+>~~~~~~~~~>
+cnt: 12713534
+overflows: 0
+>~~~~~~~~~>
+cnt: 12757638
+overflows: 0
+>~~~~~~~~~>
+cnt: 12801742
+overflows: 0
+>~~~~~~~~~>
+cnt: 12845846
+overflows: 0
+>~~~~~~~~~>
+cnt: 12889950
+overflows: 0
+>~~~~~~~~~>
+cnt: 12934054
+overflows: 0
+>~~~~~~~~~>
+cnt: 12978158
+overflows: 0
+>~~~~~~~~~>
+cnt: 13022262
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  14000000
+CHARGE: ovfl: 0
+clamp_add number: 2147717647
+add: 24000
+clamp_add number: 2147717647
+add: 24000
+CHARGE: charge of n0: 2147741647
+CHARGE: charge of n1: 2147741647
+>~~~~~~~~~>
+cnt: 13298688
+overflows: 0
+>~~~~~~~~~>
+cnt: 13342792
+overflows: 0
+>~~~~~~~~~>
+cnt: 13386896
+overflows: 0
+>~~~~~~~~~>
+cnt: 13431000
+overflows: 0
+>~~~~~~~~~>
+cnt: 13475104
+overflows: 0
+>~~~~~~~~~>
+cnt: 13519208
+overflows: 0
+>~~~~~~~~~>
+cnt: 13563312
+overflows: 0
+>~~~~~~~~~>
+cnt: 13607416
+overflows: 0
+>~~~~~~~~~>
+cnt: 13651520
+overflows: 0
+>~~~~~~~~~>
+cnt: 13695624
+overflows: 0
+>~~~~~~~~~>
+cnt: 13739728
+overflows: 0
+>~~~~~~~~~>
+cnt: 13783832
+overflows: 0
+>~~~~~~~~~>
+cnt: 13827936
+overflows: 0
+>~~~~~~~~~>
+cnt: 13872040
+overflows: 0
+>~~~~~~~~~>
+cnt: 13916144
+overflows: 0
+>~~~~~~~~~>
+cnt: 13960248
+overflows: 0
+>~~~~~~~~~>
+cnt: 14004352
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  15000000
+CHARGE: ovfl: 0
+clamp_add number: 2147741647
+add: 24000
+clamp_add number: 2147741647
+add: 24000
+CHARGE: charge of n0: 2147765647
+CHARGE: charge of n1: 2147765647
+>~~~~~~~~~>
+cnt: 14280780
+overflows: 0
+>~~~~~~~~~>
+cnt: 14324884
+overflows: 0
+>~~~~~~~~~>
+cnt: 14368988
+overflows: 0
+>~~~~~~~~~>
+cnt: 14413092
+overflows: 0
+>~~~~~~~~~>
+cnt: 14457196
+overflows: 0
+>~~~~~~~~~>
+cnt: 14501300
+overflows: 0
+>~~~~~~~~~>
+cnt: 14545404
+overflows: 0
+>~~~~~~~~~>
+cnt: 14589508
+overflows: 0
+>~~~~~~~~~>
+cnt: 14633612
+overflows: 0
+>~~~~~~~~~>
+cnt: 14677716
+overflows: 0
+>~~~~~~~~~>
+cnt: 14721820
+overflows: 0
+>~~~~~~~~~>
+cnt: 14765924
+overflows: 0
+>~~~~~~~~~>
+cnt: 14810028
+overflows: 0
+>~~~~~~~~~>
+cnt: 14854132
+overflows: 0
+>~~~~~~~~~>
+cnt: 14898236
+overflows: 0
+>~~~~~~~~~>
+cnt: 14942340
+overflows: 0
+>~~~~~~~~~>
+cnt: 14986444
+overflows: 0
+>~~~~~~~~~>
+cnt: 15030548
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  16000000
+CHARGE: ovfl: 0
+clamp_add number: 2147765647
+add: 25000
+clamp_add number: 2147765647
+add: 25000
+CHARGE: charge of n0: 2147790647
+CHARGE: charge of n1: 2147790647
+>~~~~~~~~~>
+cnt: 15306974
+overflows: 0
+>~~~~~~~~~>
+cnt: 15351078
+overflows: 0
+>~~~~~~~~~>
+cnt: 15395182
+overflows: 0
+>~~~~~~~~~>
+cnt: 15439286
+overflows: 0
+>~~~~~~~~~>
+cnt: 15483390
+overflows: 0
+>~~~~~~~~~>
+cnt: 15527494
+overflows: 0
+>~~~~~~~~~>
+cnt: 15571598
+overflows: 0
+>~~~~~~~~~>
+cnt: 15615702
+overflows: 0
+>~~~~~~~~~>
+cnt: 15659806
+overflows: 0
+>~~~~~~~~~>
+cnt: 15703910
+overflows: 0
+>~~~~~~~~~>
+cnt: 15748014
+overflows: 0
+>~~~~~~~~~>
+cnt: 15792118
+overflows: 0
+>~~~~~~~~~>
+cnt: 15836222
+overflows: 0
+>~~~~~~~~~>
+cnt: 15880326
+overflows: 0
+>~~~~~~~~~>
+cnt: 15924430
+overflows: 0
+>~~~~~~~~~>
+cnt: 15968534
+overflows: 0
+>~~~~~~~~~>
+cnt: 16012638
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  17000000
+CHARGE: ovfl: 0
+clamp_add number: 2147790647
+add: 25000
+clamp_add number: 2147790647
+add: 25000
+CHARGE: charge of n0: 2147815647
+CHARGE: charge of n1: 2147815647
+>~~~~~~~~~>
+cnt: 16289066
+overflows: 0
+>~~~~~~~~~>
+cnt: 16333170
+overflows: 0
+>~~~~~~~~~>
+cnt: 16377274
+overflows: 0
+>~~~~~~~~~>
+cnt: 16421378
+overflows: 0
+>~~~~~~~~~>
+cnt: 16465482
+overflows: 0
+>~~~~~~~~~>
+cnt: 16509586
+overflows: 0
+>~~~~~~~~~>
+cnt: 16553690
+overflows: 0
+>~~~~~~~~~>
+cnt: 16597794
+overflows: 0
+>~~~~~~~~~>
+cnt: 16641898
+overflows: 0
+>~~~~~~~~~>
+cnt: 16686002
+overflows: 0
+>~~~~~~~~~>
+cnt: 16730106
+overflows: 0
+>~~~~~~~~~>
+cnt: 16774210
+overflows: 0
+>~~~~~~~~~>
+cnt: 16818314
+overflows: 0
+>~~~~~~~~~>
+cnt: 16862418
+overflows: 0
+>~~~~~~~~~>
+cnt: 16906522
+overflows: 0
+>~~~~~~~~~>
+cnt: 16950626
+overflows: 0
+>~~~~~~~~~>
+cnt: 16994730
+overflows: 0
+>~~~~~~~~~>
+cnt: 17038834
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  18000000
+CHARGE: ovfl: 0
+clamp_add number: 2147815647
+add: 25000
+clamp_add number: 2147815647
+add: 25000
+CHARGE: charge of n0: 2147840647
+CHARGE: charge of n1: 2147840647
+>~~~~~~~~~>
+cnt: 17315260
+overflows: 0
+>~~~~~~~~~>
+cnt: 17359364
+overflows: 0
+>~~~~~~~~~>
+cnt: 17403468
+overflows: 0
+>~~~~~~~~~>
+cnt: 17447572
+overflows: 0
+>~~~~~~~~~>
+cnt: 17491676
+overflows: 0
+>~~~~~~~~~>
+cnt: 17535780
+overflows: 0
+>~~~~~~~~~>
+cnt: 17579884
+overflows: 0
+>~~~~~~~~~>
+cnt: 17623988
+overflows: 0
+>~~~~~~~~~>
+cnt: 17668092
+overflows: 0
+>~~~~~~~~~>
+cnt: 17712196
+overflows: 0
+>~~~~~~~~~>
+cnt: 17756300
+overflows: 0
+>~~~~~~~~~>
+cnt: 17800404
+overflows: 0
+>~~~~~~~~~>
+cnt: 17844508
+overflows: 0
+>~~~~~~~~~>
+cnt: 17888612
+overflows: 0
+>~~~~~~~~~>
+cnt: 17932716
+overflows: 0
+>~~~~~~~~~>
+cnt: 17976820
+overflows: 0
+>~~~~~~~~~>
+cnt: 18020924
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  19000000
+CHARGE: ovfl: 0
+clamp_add number: 2147840647
+add: 25000
+clamp_add number: 2147840647
+add: 25000
+CHARGE: charge of n0: 2147865647
+CHARGE: charge of n1: 2147865647
+>~~~~~~~~~>
+cnt: 18297352
+overflows: 0
+>~~~~~~~~~>
+cnt: 18341456
+overflows: 0
+>~~~~~~~~~>
+cnt: 18385560
+overflows: 0
+>~~~~~~~~~>
+cnt: 18429664
+overflows: 0
+>~~~~~~~~~>
+cnt: 18473768
+overflows: 0
+>~~~~~~~~~>
+cnt: 18517872
+overflows: 0
+>~~~~~~~~~>
+cnt: 18561976
+overflows: 0
+>~~~~~~~~~>
+cnt: 18606080
+overflows: 0
+>~~~~~~~~~>
+cnt: 18650184
+overflows: 0
+>~~~~~~~~~>
+cnt: 18694288
+overflows: 0
+>~~~~~~~~~>
+cnt: 18738392
+overflows: 0
+>~~~~~~~~~>
+cnt: 18782496
+overflows: 0
+>~~~~~~~~~>
+cnt: 18826600
+overflows: 0
+>~~~~~~~~~>
+cnt: 18870704
+overflows: 0
+>~~~~~~~~~>
+cnt: 18914808
+overflows: 0
+>~~~~~~~~~>
+cnt: 18958912
+overflows: 0
+>~~~~~~~~~>
+cnt: 19003016
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  20000000
+CHARGE: ovfl: 0
+clamp_add number: 2147865647
+add: 25000
+clamp_add number: 2147865647
+add: 25000
+CHARGE: charge of n0: 2147890647
+CHARGE: charge of n1: 2147890647
+>~~~~~~~~~>
+cnt: 19279442
+overflows: 0
+>~~~~~~~~~>
+cnt: 19323546
+overflows: 0
+>~~~~~~~~~>
+cnt: 19367650
+overflows: 0
+>~~~~~~~~~>
+cnt: 19411754
+overflows: 0
+>~~~~~~~~~>
+cnt: 19455858
+overflows: 0
+>~~~~~~~~~>
+cnt: 19499962
+overflows: 0
+>~~~~~~~~~>
+cnt: 19544066
+overflows: 0
+>~~~~~~~~~>
+cnt: 19588170
+overflows: 0
+>~~~~~~~~~>
+cnt: 19632274
+overflows: 0
+>~~~~~~~~~>
+cnt: 19676378
+overflows: 0
+>~~~~~~~~~>
+cnt: 19720482
+overflows: 0
+>~~~~~~~~~>
+cnt: 19764586
+overflows: 0
+>~~~~~~~~~>
+cnt: 19808690
+overflows: 0
+>~~~~~~~~~>
+cnt: 19852794
+overflows: 0
+>~~~~~~~~~>
+cnt: 19896898
+overflows: 0
+>~~~~~~~~~>
+cnt: 19941002
+overflows: 0
+>~~~~~~~~~>
+cnt: 19985106
+overflows: 0
+>~~~~~~~~~>
+cnt: 20029210
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  21000000
+CHARGE: ovfl: 0
+clamp_add number: 2147890647
+add: 29000
+clamp_add number: 2147890647
+add: 29000
+CHARGE: charge of n0: 2147919647
+CHARGE: charge of n1: 2147919647
+>~~~~~~~~~>
+cnt: 20305638
+overflows: 0
+>~~~~~~~~~>
+cnt: 20349742
+overflows: 0
+>~~~~~~~~~>
+cnt: 20393846
+overflows: 0
+>~~~~~~~~~>
+cnt: 20437950
+overflows: 0
+>~~~~~~~~~>
+cnt: 20482054
+overflows: 0
+>~~~~~~~~~>
+cnt: 20526158
+overflows: 0
+>~~~~~~~~~>
+cnt: 20570262
+overflows: 0
+>~~~~~~~~~>
+cnt: 20614366
+overflows: 0
+>~~~~~~~~~>
+cnt: 20658470
+overflows: 0
+>~~~~~~~~~>
+cnt: 20702574
+overflows: 0
+>~~~~~~~~~>
+cnt: 20746678
+overflows: 0
+>~~~~~~~~~>
+cnt: 20790782
+overflows: 0
+>~~~~~~~~~>
+cnt: 20834886
+overflows: 0
+>~~~~~~~~~>
+cnt: 20878990
+overflows: 0
+>~~~~~~~~~>
+cnt: 20923094
+overflows: 0
+>~~~~~~~~~>
+cnt: 20967198
+overflows: 0
+>~~~~~~~~~>
+cnt: 21011302
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  22000000
+CHARGE: ovfl: 0
+clamp_add number: 2147919647
+add: 33000
+clamp_add number: 2147919647
+add: 33000
+CHARGE: charge of n0: 2147952647
+CHARGE: charge of n1: 2147952647
+>~~~~~~~~~>
+cnt: 21287728
+overflows: 0
+>~~~~~~~~~>
+cnt: 21331832
+overflows: 0
+>~~~~~~~~~>
+cnt: 21375936
+overflows: 0
+>~~~~~~~~~>
+cnt: 21420040
+overflows: 0
+>~~~~~~~~~>
+cnt: 21464144
+overflows: 0
+>~~~~~~~~~>
+cnt: 21508248
+overflows: 0
+>~~~~~~~~~>
+cnt: 21552352
+overflows: 0
+>~~~~~~~~~>
+cnt: 21596456
+overflows: 0
+>~~~~~~~~~>
+cnt: 21640560
+overflows: 0
+>~~~~~~~~~>
+cnt: 21684664
+overflows: 0
+>~~~~~~~~~>
+cnt: 21728768
+overflows: 0
+>~~~~~~~~~>
+cnt: 21772872
+overflows: 0
+>~~~~~~~~~>
+cnt: 21816976
+overflows: 0
+>~~~~~~~~~>
+cnt: 21861080
+overflows: 0
+>~~~~~~~~~>
+cnt: 21905184
+overflows: 0
+>~~~~~~~~~>
+cnt: 21949288
+overflows: 0
+>~~~~~~~~~>
+cnt: 21993392
+overflows: 0
+>~~~~~~~~~>
+cnt: 22037496
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  23000000
+CHARGE: ovfl: 0
+clamp_add number: 2147952647
+add: 36000
+clamp_add number: 2147952647
+add: 36000
+CHARGE: charge of n0: 2147988647
+CHARGE: charge of n1: 2147988647
+>~~~~~~~~~>
+cnt: 22313924
+overflows: 0
+>~~~~~~~~~>
+cnt: 22358028
+overflows: 0
+>~~~~~~~~~>
+cnt: 22402132
+overflows: 0
+>~~~~~~~~~>
+cnt: 22446236
+overflows: 0
+>~~~~~~~~~>
+cnt: 22490340
+overflows: 0
+>~~~~~~~~~>
+cnt: 22534444
+overflows: 0
+>~~~~~~~~~>
+cnt: 22578548
+overflows: 0
+>~~~~~~~~~>
+cnt: 22622652
+overflows: 0
+>~~~~~~~~~>
+cnt: 22666756
+overflows: 0
+>~~~~~~~~~>
+cnt: 22710860
+overflows: 0
+>~~~~~~~~~>
+cnt: 22754964
+overflows: 0
+>~~~~~~~~~>
+cnt: 22799068
+overflows: 0
+>~~~~~~~~~>
+cnt: 22843172
+overflows: 0
+>~~~~~~~~~>
+cnt: 22887276
+overflows: 0
+>~~~~~~~~~>
+cnt: 22931380
+overflows: 0
+>~~~~~~~~~>
+cnt: 22975484
+overflows: 0
+>~~~~~~~~~>
+cnt: 23019588
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  24000000
+CHARGE: ovfl: 0
+clamp_add number: 2147988647
+add: 40000
+clamp_add number: 2147988647
+add: 40000
+CHARGE: charge of n0: 2148028647
+CHARGE: charge of n1: 2148028647
+>~~~~~~~~~>
+cnt: 23296014
+overflows: 0
+>~~~~~~~~~>
+cnt: 23340118
+overflows: 0
+>~~~~~~~~~>
+cnt: 23384222
+overflows: 0
+>~~~~~~~~~>
+cnt: 23428326
+overflows: 0
+>~~~~~~~~~>
+cnt: 23472430
+overflows: 0
+>~~~~~~~~~>
+cnt: 23516534
+overflows: 0
+>~~~~~~~~~>
+cnt: 23560638
+overflows: 0
+>~~~~~~~~~>
+cnt: 23604742
+overflows: 0
+>~~~~~~~~~>
+cnt: 23648846
+overflows: 0
+>~~~~~~~~~>
+cnt: 23692950
+overflows: 0
+>~~~~~~~~~>
+cnt: 23737054
+overflows: 0
+>~~~~~~~~~>
+cnt: 23781158
+overflows: 0
+>~~~~~~~~~>
+cnt: 23825262
+overflows: 0
+>~~~~~~~~~>
+cnt: 23869366
+overflows: 0
+>~~~~~~~~~>
+cnt: 23913470
+overflows: 0
+>~~~~~~~~~>
+cnt: 23957574
+overflows: 0
+>~~~~~~~~~>
+cnt: 24001678
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  25000000
+CHARGE: ovfl: 0
+clamp_add number: 2148028647
+add: 44000
+clamp_add number: 2148028647
+add: 44000
+CHARGE: charge of n0: 2148072647
+CHARGE: charge of n1: 2148072647
+>~~~~~~~~~>
+cnt: 24278106
+overflows: 0
+>~~~~~~~~~>
+cnt: 24322210
+overflows: 0
+>~~~~~~~~~>
+cnt: 24366314
+overflows: 0
+>~~~~~~~~~>
+cnt: 24410418
+overflows: 0
+>~~~~~~~~~>
+cnt: 24454522
+overflows: 0
+>~~~~~~~~~>
+cnt: 24498626
+overflows: 0
+>~~~~~~~~~>
+cnt: 24542730
+overflows: 0
+>~~~~~~~~~>
+cnt: 24586834
+overflows: 0
+>~~~~~~~~~>
+cnt: 24630938
+overflows: 0
+>~~~~~~~~~>
+cnt: 24675042
+overflows: 0
+>~~~~~~~~~>
+cnt: 24719146
+overflows: 0
+>~~~~~~~~~>
+cnt: 24763250
+overflows: 0
+>~~~~~~~~~>
+cnt: 24807354
+overflows: 0
+>~~~~~~~~~>
+cnt: 24851458
+overflows: 0
+>~~~~~~~~~>
+cnt: 24895562
+overflows: 0
+>~~~~~~~~~>
+cnt: 24939666
+overflows: 0
+>~~~~~~~~~>
+cnt: 24983770
+overflows: 0
+>~~~~~~~~~>
+cnt: 25027874
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  26000000
+CHARGE: ovfl: 0
+clamp_add number: 2148072647
+add: 39000
+clamp_add number: 2148072647
+add: 39000
+CHARGE: charge of n0: 2148111647
+CHARGE: charge of n1: 2148111647
+>~~~~~~~~~>
+cnt: 25304300
+overflows: 0
+>~~~~~~~~~>
+cnt: 25348404
+overflows: 0
+>~~~~~~~~~>
+cnt: 25392508
+overflows: 0
+>~~~~~~~~~>
+cnt: 25436612
+overflows: 0
+>~~~~~~~~~>
+cnt: 25480716
+overflows: 0
+>~~~~~~~~~>
+cnt: 25524820
+overflows: 0
+>~~~~~~~~~>
+cnt: 25568924
+overflows: 0
+>~~~~~~~~~>
+cnt: 25613028
+overflows: 0
+>~~~~~~~~~>
+cnt: 25657132
+overflows: 0
+>~~~~~~~~~>
+cnt: 25701236
+overflows: 0
+>~~~~~~~~~>
+cnt: 25745340
+overflows: 0
+>~~~~~~~~~>
+cnt: 25789444
+overflows: 0
+>~~~~~~~~~>
+cnt: 25833548
+overflows: 0
+>~~~~~~~~~>
+cnt: 25877652
+overflows: 0
+>~~~~~~~~~>
+cnt: 25921756
+overflows: 0
+>~~~~~~~~~>
+cnt: 25965860
+overflows: 0
+>~~~~~~~~~>
+cnt: 26009964
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  27000000
+CHARGE: ovfl: 0
+clamp_add number: 2148111647
+add: 33000
+clamp_add number: 2148111647
+add: 33000
+CHARGE: charge of n0: 2148144647
+CHARGE: charge of n1: 2148144647
+>~~~~~~~~~>
+cnt: 26286392
+overflows: 0
+>~~~~~~~~~>
+cnt: 26330496
+overflows: 0
+>~~~~~~~~~>
+cnt: 26374600
+overflows: 0
+>~~~~~~~~~>
+cnt: 26418704
+overflows: 0
+>~~~~~~~~~>
+cnt: 26462808
+overflows: 0
+>~~~~~~~~~>
+cnt: 26506912
+overflows: 0
+>~~~~~~~~~>
+cnt: 26551016
+overflows: 0
+>~~~~~~~~~>
+cnt: 26595120
+overflows: 0
+>~~~~~~~~~>
+cnt: 26639224
+overflows: 0
+>~~~~~~~~~>
+cnt: 26683328
+overflows: 0
+>~~~~~~~~~>
+cnt: 26727432
+overflows: 0
+>~~~~~~~~~>
+cnt: 26771536
+overflows: 0
+>~~~~~~~~~>
+cnt: 26815640
+overflows: 0
+>~~~~~~~~~>
+cnt: 26859744
+overflows: 0
+>~~~~~~~~~>
+cnt: 26903848
+overflows: 0
+>~~~~~~~~~>
+cnt: 26947952
+overflows: 0
+>~~~~~~~~~>
+cnt: 26992056
+overflows: 0
+>~~~~~~~~~>
+cnt: 27036160
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  28000000
+CHARGE: ovfl: 0
+clamp_add number: 2148144647
+add: 28000
+clamp_add number: 2148144647
+add: 28000
+CHARGE: charge of n0: 2148172647
+CHARGE: charge of n1: 2148172647
+>~~~~~~~~~>
+cnt: 27312586
+overflows: 0
+>~~~~~~~~~>
+cnt: 27356690
+overflows: 0
+>~~~~~~~~~>
+cnt: 27400794
+overflows: 0
+>~~~~~~~~~>
+cnt: 27444898
+overflows: 0
+>~~~~~~~~~>
+cnt: 27489002
+overflows: 0
+>~~~~~~~~~>
+cnt: 27533106
+overflows: 0
+>~~~~~~~~~>
+cnt: 27577210
+overflows: 0
+>~~~~~~~~~>
+cnt: 27621314
+overflows: 0
+>~~~~~~~~~>
+cnt: 27665418
+overflows: 0
+>~~~~~~~~~>
+cnt: 27709522
+overflows: 0
+>~~~~~~~~~>
+cnt: 27753626
+overflows: 0
+>~~~~~~~~~>
+cnt: 27797730
+overflows: 0
+>~~~~~~~~~>
+cnt: 27841834
+overflows: 0
+>~~~~~~~~~>
+cnt: 27885938
+overflows: 0
+>~~~~~~~~~>
+cnt: 27930042
+overflows: 0
+>~~~~~~~~~>
+cnt: 27974146
+overflows: 0
+>~~~~~~~~~>
+cnt: 28018250
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  29000000
+CHARGE: ovfl: 0
+clamp_add number: 2148172647
+add: 23000
+clamp_add number: 2148172647
+add: 23000
+CHARGE: charge of n0: 2148195647
+CHARGE: charge of n1: 2148195647
+>~~~~~~~~~>
+cnt: 28294678
+overflows: 0
+>~~~~~~~~~>
+cnt: 28338782
+overflows: 0
+>~~~~~~~~~>
+cnt: 28382886
+overflows: 0
+>~~~~~~~~~>
+cnt: 28426990
+overflows: 0
+>~~~~~~~~~>
+cnt: 28471094
+overflows: 0
+>~~~~~~~~~>
+cnt: 28515198
+overflows: 0
+>~~~~~~~~~>
+cnt: 28559302
+overflows: 0
+>~~~~~~~~~>
+cnt: 28603406
+overflows: 0
+>~~~~~~~~~>
+cnt: 28647510
+overflows: 0
+>~~~~~~~~~>
+cnt: 28691614
+overflows: 0
+>~~~~~~~~~>
+cnt: 28735718
+overflows: 0
+>~~~~~~~~~>
+cnt: 28779822
+overflows: 0
+>~~~~~~~~~>
+cnt: 28823926
+overflows: 0
+>~~~~~~~~~>
+cnt: 28868030
+overflows: 0
+>~~~~~~~~~>
+cnt: 28912134
+overflows: 0
+>~~~~~~~~~>
+cnt: 28956238
+overflows: 0
+>~~~~~~~~~>
+cnt: 29000342
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  30000000
+CHARGE: ovfl: 0
+clamp_add number: 2148195647
+add: 18000
+clamp_add number: 2148195647
+add: 18000
+CHARGE: charge of n0: 2148213647
+CHARGE: charge of n1: 2148213647
+>~~~~~~~~~>
+cnt: 29276768
+overflows: 0
+>~~~~~~~~~>
+cnt: 29320872
+overflows: 0
+>~~~~~~~~~>
+cnt: 29364976
+overflows: 0
+>~~~~~~~~~>
+cnt: 29409080
+overflows: 0
+>~~~~~~~~~>
+cnt: 29453184
+overflows: 0
+>~~~~~~~~~>
+cnt: 29497288
+overflows: 0
+>~~~~~~~~~>
+cnt: 29541392
+overflows: 0
+>~~~~~~~~~>
+cnt: 29585496
+overflows: 0
+>~~~~~~~~~>
+cnt: 29629600
+overflows: 0
+>~~~~~~~~~>
+cnt: 29673704
+overflows: 0
+>~~~~~~~~~>
+cnt: 29717808
+overflows: 0
+>~~~~~~~~~>
+cnt: 29761912
+overflows: 0
+>~~~~~~~~~>
+cnt: 29806016
+overflows: 0
+>~~~~~~~~~>
+cnt: 29850120
+overflows: 0
+>~~~~~~~~~>
+cnt: 29894224
+overflows: 0
+>~~~~~~~~~>
+cnt: 29938328
+overflows: 0
+>~~~~~~~~~>
+cnt: 29982432
+overflows: 0
+>~~~~~~~~~>
+cnt: 30026536
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  31000000
+CHARGE: ovfl: 0
+clamp_add number: 2148213647
+add: 17000
+clamp_add number: 2148213647
+add: 17000
+CHARGE: charge of n0: 2148230647
+CHARGE: charge of n1: 2148230647
+>~~~~~~~~~>
+cnt: 30302964
+overflows: 0
+>~~~~~~~~~>
+cnt: 30347068
+overflows: 0
+>~~~~~~~~~>
+cnt: 30391172
+overflows: 0
+>~~~~~~~~~>
+cnt: 30435276
+overflows: 0
+>~~~~~~~~~>
+cnt: 30479380
+overflows: 0
+>~~~~~~~~~>
+cnt: 30523484
+overflows: 0
+>~~~~~~~~~>
+cnt: 30567588
+overflows: 0
+>~~~~~~~~~>
+cnt: 30611692
+overflows: 0
+>~~~~~~~~~>
+cnt: 30655796
+overflows: 0
+>~~~~~~~~~>
+cnt: 30699900
+overflows: 0
+>~~~~~~~~~>
+cnt: 30744004
+overflows: 0
+>~~~~~~~~~>
+cnt: 30788108
+overflows: 0
+>~~~~~~~~~>
+cnt: 30832212
+overflows: 0
+>~~~~~~~~~>
+cnt: 30876316
+overflows: 0
+>~~~~~~~~~>
+cnt: 30920420
+overflows: 0
+>~~~~~~~~~>
+cnt: 30964524
+overflows: 0
+>~~~~~~~~~>
+cnt: 31008628
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  32000000
+CHARGE: ovfl: 0
+clamp_add number: 2148230647
+add: 16000
+clamp_add number: 2148230647
+add: 16000
+CHARGE: charge of n0: 2148246647
+CHARGE: charge of n1: 2148246647
+>~~~~~~~~~>
+cnt: 31285054
+overflows: 0
+>~~~~~~~~~>
+cnt: 31329158
+overflows: 0
+>~~~~~~~~~>
+cnt: 31373262
+overflows: 0
+>~~~~~~~~~>
+cnt: 31417366
+overflows: 0
+>~~~~~~~~~>
+cnt: 31461470
+overflows: 0
+>~~~~~~~~~>
+cnt: 31505574
+overflows: 0
+>~~~~~~~~~>
+cnt: 31549678
+overflows: 0
+>~~~~~~~~~>
+cnt: 31593782
+overflows: 0
+>~~~~~~~~~>
+cnt: 31637886
+overflows: 0
+>~~~~~~~~~>
+cnt: 31681990
+overflows: 0
+>~~~~~~~~~>
+cnt: 31726094
+overflows: 0
+>~~~~~~~~~>
+cnt: 31770198
+overflows: 0
+>~~~~~~~~~>
+cnt: 31814302
+overflows: 0
+>~~~~~~~~~>
+cnt: 31858406
+overflows: 0
+>~~~~~~~~~>
+cnt: 31902510
+overflows: 0
+>~~~~~~~~~>
+cnt: 31946614
+overflows: 0
+>~~~~~~~~~>
+cnt: 31990718
+overflows: 0
+>~~~~~~~~~>
+cnt: 32034822
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  33000000
+CHARGE: ovfl: 0
+clamp_add number: 2148246647
+add: 16000
+clamp_add number: 2148246647
+add: 16000
+CHARGE: charge of n0: 2148262647
+CHARGE: charge of n1: 2148262647
+>~~~~~~~~~>
+cnt: 32311250
+overflows: 0
+>~~~~~~~~~>
+cnt: 32355354
+overflows: 0
+>~~~~~~~~~>
+cnt: 32399458
+overflows: 0
+>~~~~~~~~~>
+cnt: 32443562
+overflows: 0
+>~~~~~~~~~>
+cnt: 32487666
+overflows: 0
+>~~~~~~~~~>
+cnt: 32531770
+overflows: 0
+>~~~~~~~~~>
+cnt: 32575874
+overflows: 0
+>~~~~~~~~~>
+cnt: 32619978
+overflows: 0
+>~~~~~~~~~>
+cnt: 32664082
+overflows: 0
+>~~~~~~~~~>
+cnt: 32708186
+overflows: 0
+>~~~~~~~~~>
+cnt: 32752290
+overflows: 0
+>~~~~~~~~~>
+cnt: 32796394
+overflows: 0
+>~~~~~~~~~>
+cnt: 32840498
+overflows: 0
+>~~~~~~~~~>
+cnt: 32884602
+overflows: 0
+>~~~~~~~~~>
+cnt: 32928706
+overflows: 0
+>~~~~~~~~~>
+cnt: 32972810
+overflows: 0
+>~~~~~~~~~>
+cnt: 33016914
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  34000000
+CHARGE: ovfl: 0
+clamp_add number: 2148262647
+add: 15000
+clamp_add number: 2148262647
+add: 15000
+CHARGE: charge of n0: 2148277647
+CHARGE: charge of n1: 2148277647
+>~~~~~~~~~>
+cnt: 33293340
+overflows: 0
+>~~~~~~~~~>
+cnt: 33337444
+overflows: 0
+>~~~~~~~~~>
+cnt: 33381548
+overflows: 0
+>~~~~~~~~~>
+cnt: 33425652
+overflows: 0
+>~~~~~~~~~>
+cnt: 33469756
+overflows: 0
+>~~~~~~~~~>
+cnt: 33513860
+overflows: 0
+>~~~~~~~~~>
+cnt: 33557964
+overflows: 0
+>~~~~~~~~~>
+cnt: 33602068
+overflows: 0
+>~~~~~~~~~>
+cnt: 33646172
+overflows: 0
+>~~~~~~~~~>
+cnt: 33690276
+overflows: 0
+>~~~~~~~~~>
+cnt: 33734380
+overflows: 0
+>~~~~~~~~~>
+cnt: 33778484
+overflows: 0
+>~~~~~~~~~>
+cnt: 33822588
+overflows: 0
+>~~~~~~~~~>
+cnt: 33866692
+overflows: 0
+>~~~~~~~~~>
+cnt: 33910796
+overflows: 0
+>~~~~~~~~~>
+cnt: 33954900
+overflows: 0
+>~~~~~~~~~>
+cnt: 33999004
+overflows: 0
+>~~~~~~~~~>
+cnt: 34043108
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  35000000
+CHARGE: ovfl: 0
+clamp_add number: 2148277647
+add: 14000
+clamp_add number: 2148277647
+add: 14000
+CHARGE: charge of n0: 2148291647
+CHARGE: charge of n1: 2148291647
+>~~~~~~~~~>
+cnt: 34319536
+overflows: 0
+>~~~~~~~~~>
+cnt: 34363640
+overflows: 0
+>~~~~~~~~~>
+cnt: 34407744
+overflows: 0
+>~~~~~~~~~>
+cnt: 34451848
+overflows: 0
+>~~~~~~~~~>
+cnt: 34495952
+overflows: 0
+>~~~~~~~~~>
+cnt: 34540056
+overflows: 0
+>~~~~~~~~~>
+cnt: 34584160
+overflows: 0
+>~~~~~~~~~>
+cnt: 34628264
+overflows: 0
+>~~~~~~~~~>
+cnt: 34672368
+overflows: 0
+>~~~~~~~~~>
+cnt: 34716472
+overflows: 0
+>~~~~~~~~~>
+cnt: 34760576
+overflows: 0
+>~~~~~~~~~>
+cnt: 34804680
+overflows: 0
+>~~~~~~~~~>
+cnt: 34848784
+overflows: 0
+>~~~~~~~~~>
+cnt: 34892888
+overflows: 0
+>~~~~~~~~~>
+cnt: 34936992
+overflows: 0
+>~~~~~~~~~>
+cnt: 34981096
+overflows: 0
+>~~~~~~~~~>
+cnt: 35025200
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  36000000
+CHARGE: ovfl: 0
+clamp_add number: 2148291647
+add: 17000
+clamp_add number: 2148291647
+add: 17000
+CHARGE: charge of n0: 2148308647
+CHARGE: charge of n1: 2148308647
+>~~~~~~~~~>
+cnt: 35301626
+overflows: 0
+>~~~~~~~~~>
+cnt: 35345730
+overflows: 0
+>~~~~~~~~~>
+cnt: 35389834
+overflows: 0
+>~~~~~~~~~>
+cnt: 35433938
+overflows: 0
+>~~~~~~~~~>
+cnt: 35478042
+overflows: 0
+>~~~~~~~~~>
+cnt: 35522146
+overflows: 0
+>~~~~~~~~~>
+cnt: 35566250
+overflows: 0
+>~~~~~~~~~>
+cnt: 35610354
+overflows: 0
+>~~~~~~~~~>
+cnt: 35654458
+overflows: 0
+>~~~~~~~~~>
+cnt: 35698562
+overflows: 0
+>~~~~~~~~~>
+cnt: 35742666
+overflows: 0
+>~~~~~~~~~>
+cnt: 35786770
+overflows: 0
+>~~~~~~~~~>
+cnt: 35830874
+overflows: 0
+>~~~~~~~~~>
+cnt: 35874978
+overflows: 0
+>~~~~~~~~~>
+cnt: 35919082
+overflows: 0
+>~~~~~~~~~>
+cnt: 35963186
+overflows: 0
+>~~~~~~~~~>
+cnt: 36007290
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  37000000
+CHARGE: ovfl: 0
+clamp_add number: 2148308647
+add: 20000
+clamp_add number: 2148308647
+add: 20000
+CHARGE: charge of n0: 2148328647
+CHARGE: charge of n1: 2148328647
+>~~~~~~~~~>
+cnt: 36283718
+overflows: 0
+>~~~~~~~~~>
+cnt: 36327822
+overflows: 0
+>~~~~~~~~~>
+cnt: 36371926
+overflows: 0
+>~~~~~~~~~>
+cnt: 36416030
+overflows: 0
+>~~~~~~~~~>
+cnt: 36460134
+overflows: 0
+>~~~~~~~~~>
+cnt: 36504238
+overflows: 0
+>~~~~~~~~~>
+cnt: 36548342
+overflows: 0
+>~~~~~~~~~>
+cnt: 36592446
+overflows: 0
+>~~~~~~~~~>
+cnt: 36636550
+overflows: 0
+>~~~~~~~~~>
+cnt: 36680654
+overflows: 0
+>~~~~~~~~~>
+cnt: 36724758
+overflows: 0
+>~~~~~~~~~>
+cnt: 36768862
+overflows: 0
+>~~~~~~~~~>
+cnt: 36812966
+overflows: 0
+>~~~~~~~~~>
+cnt: 36857070
+overflows: 0
+>~~~~~~~~~>
+cnt: 36901174
+overflows: 0
+>~~~~~~~~~>
+cnt: 36945278
+overflows: 0
+>~~~~~~~~~>
+cnt: 36989382
+overflows: 0
+>~~~~~~~~~>
+cnt: 37033486
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  38000000
+CHARGE: ovfl: 0
+clamp_add number: 2148328647
+add: 23000
+clamp_add number: 2148328647
+add: 23000
+CHARGE: charge of n0: 2148351647
+CHARGE: charge of n1: 2148351647
+>~~~~~~~~~>
+cnt: 37309912
+overflows: 0
+>~~~~~~~~~>
+cnt: 37354016
+overflows: 0
+>~~~~~~~~~>
+cnt: 37398120
+overflows: 0
+>~~~~~~~~~>
+cnt: 37442224
+overflows: 0
+>~~~~~~~~~>
+cnt: 37486328
+overflows: 0
+>~~~~~~~~~>
+cnt: 37530432
+overflows: 0
+>~~~~~~~~~>
+cnt: 37574536
+overflows: 0
+>~~~~~~~~~>
+cnt: 37618640
+overflows: 0
+>~~~~~~~~~>
+cnt: 37662744
+overflows: 0
+>~~~~~~~~~>
+cnt: 37706848
+overflows: 0
+>~~~~~~~~~>
+cnt: 37750952
+overflows: 0
+>~~~~~~~~~>
+cnt: 37795056
+overflows: 0
+>~~~~~~~~~>
+cnt: 37839160
+overflows: 0
+>~~~~~~~~~>
+cnt: 37883264
+overflows: 0
+>~~~~~~~~~>
+cnt: 37927368
+overflows: 0
+>~~~~~~~~~>
+cnt: 37971472
+overflows: 0
+>~~~~~~~~~>
+cnt: 38015576
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  39000000
+CHARGE: ovfl: 0
+clamp_add number: 2148351647
+add: 25000
+clamp_add number: 2148351647
+add: 25000
+CHARGE: charge of n0: 2148376647
+CHARGE: charge of n1: 2148376647
+>~~~~~~~~~>
+cnt: 38292004
+overflows: 0
+>~~~~~~~~~>
+cnt: 38336108
+overflows: 0
+>~~~~~~~~~>
+cnt: 38380212
+overflows: 0
+>~~~~~~~~~>
+cnt: 38424316
+overflows: 0
+>~~~~~~~~~>
+cnt: 38468420
+overflows: 0
+>~~~~~~~~~>
+cnt: 38512524
+overflows: 0
+>~~~~~~~~~>
+cnt: 38556628
+overflows: 0
+>~~~~~~~~~>
+cnt: 38600732
+overflows: 0
+>~~~~~~~~~>
+cnt: 38644836
+overflows: 0
+>~~~~~~~~~>
+cnt: 38688940
+overflows: 0
+>~~~~~~~~~>
+cnt: 38733044
+overflows: 0
+>~~~~~~~~~>
+cnt: 38777148
+overflows: 0
+>~~~~~~~~~>
+cnt: 38821252
+overflows: 0
+>~~~~~~~~~>
+cnt: 38865356
+overflows: 0
+>~~~~~~~~~>
+cnt: 38909460
+overflows: 0
+>~~~~~~~~~>
+cnt: 38953564
+overflows: 0
+>~~~~~~~~~>
+cnt: 38997668
+overflows: 0
+>~~~~~~~~~>
+cnt: 39041772
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  40000000
+CHARGE: ovfl: 0
+clamp_add number: 2148376647
+add: 28000
+clamp_add number: 2148376647
+add: 28000
+CHARGE: charge of n0: 2148404647
+CHARGE: charge of n1: 2148404647
+>~~~~~~~~~>
+cnt: 39318198
+overflows: 0
+>~~~~~~~~~>
+cnt: 39362302
+overflows: 0
+>~~~~~~~~~>
+cnt: 39406406
+overflows: 0
+>~~~~~~~~~>
+cnt: 39450510
+overflows: 0
+>~~~~~~~~~>
+cnt: 39494614
+overflows: 0
+>~~~~~~~~~>
+cnt: 39538718
+overflows: 0
+>~~~~~~~~~>
+cnt: 39582822
+overflows: 0
+>~~~~~~~~~>
+cnt: 39626926
+overflows: 0
+>~~~~~~~~~>
+cnt: 39671030
+overflows: 0
+>~~~~~~~~~>
+cnt: 39715134
+overflows: 0
+>~~~~~~~~~>
+cnt: 39759238
+overflows: 0
+>~~~~~~~~~>
+cnt: 39803342
+overflows: 0
+>~~~~~~~~~>
+cnt: 39847446
+overflows: 0
+>~~~~~~~~~>
+cnt: 39891550
+overflows: 0
+>~~~~~~~~~>
+cnt: 39935654
+overflows: 0
+>~~~~~~~~~>
+cnt: 39979758
+overflows: 0
+>~~~~~~~~~>
+cnt: 40023862
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  41000000
+CHARGE: ovfl: 0
+clamp_add number: 2148404647
+add: 32000
+clamp_add number: 2148404647
+add: 32000
+CHARGE: charge of n0: 2148436647
+CHARGE: charge of n1: 2148436647
+>~~~~~~~~~>
+cnt: 40300290
+overflows: 0
+>~~~~~~~~~>
+cnt: 40344394
+overflows: 0
+>~~~~~~~~~>
+cnt: 40388498
+overflows: 0
+>~~~~~~~~~>
+cnt: 40432602
+overflows: 0
+>~~~~~~~~~>
+cnt: 40476706
+overflows: 0
+>~~~~~~~~~>
+cnt: 40520810
+overflows: 0
+>~~~~~~~~~>
+cnt: 40564914
+overflows: 0
+>~~~~~~~~~>
+cnt: 40609018
+overflows: 0
+>~~~~~~~~~>
+cnt: 40653122
+overflows: 0
+>~~~~~~~~~>
+cnt: 40697226
+overflows: 0
+>~~~~~~~~~>
+cnt: 40741330
+overflows: 0
+>~~~~~~~~~>
+cnt: 40785434
+overflows: 0
+>~~~~~~~~~>
+cnt: 40829538
+overflows: 0
+>~~~~~~~~~>
+cnt: 40873642
+overflows: 0
+>~~~~~~~~~>
+cnt: 40917746
+overflows: 0
+>~~~~~~~~~>
+cnt: 40961850
+overflows: 0
+>~~~~~~~~~>
+cnt: 41005954
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  42000000
+CHARGE: ovfl: 0
+clamp_add number: 2148436647
+add: 35000
+clamp_add number: 2148436647
+add: 35000
+CHARGE: charge of n0: 2148471647
+CHARGE: charge of n1: 2148471647
+>~~~~~~~~~>
+cnt: 41282380
+overflows: 0
+>~~~~~~~~~>
+cnt: 41326484
+overflows: 0
+>~~~~~~~~~>
+cnt: 41370588
+overflows: 0
+>~~~~~~~~~>
+cnt: 41414692
+overflows: 0
+>~~~~~~~~~>
+cnt: 41458796
+overflows: 0
+>~~~~~~~~~>
+cnt: 41502900
+overflows: 0
+>~~~~~~~~~>
+cnt: 41547004
+overflows: 0
+>~~~~~~~~~>
+cnt: 41591108
+overflows: 0
+>~~~~~~~~~>
+cnt: 41635212
+overflows: 0
+>~~~~~~~~~>
+cnt: 41679316
+overflows: 0
+>~~~~~~~~~>
+cnt: 41723420
+overflows: 0
+>~~~~~~~~~>
+cnt: 41767524
+overflows: 0
+>~~~~~~~~~>
+cnt: 41811628
+overflows: 0
+>~~~~~~~~~>
+cnt: 41855732
+overflows: 0
+>~~~~~~~~~>
+cnt: 41899836
+overflows: 0
+>~~~~~~~~~>
+cnt: 41943940
+overflows: 0
+>~~~~~~~~~>
+cnt: 41988044
+overflows: 0
+>~~~~~~~~~>
+cnt: 42032148
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  43000000
+CHARGE: ovfl: 0
+clamp_add number: 2148471647
+add: 39000
+clamp_add number: 2148471647
+add: 39000
+CHARGE: charge of n0: 2148510647
+CHARGE: charge of n1: 2148510647
+>~~~~~~~~~>
+cnt: 42308576
+overflows: 0
+>~~~~~~~~~>
+cnt: 42352680
+overflows: 0
+>~~~~~~~~~>
+cnt: 42396784
+overflows: 0
+>~~~~~~~~~>
+cnt: 42440888
+overflows: 0
+>~~~~~~~~~>
+cnt: 42484992
+overflows: 0
+>~~~~~~~~~>
+cnt: 42529096
+overflows: 0
+>~~~~~~~~~>
+cnt: 42573200
+overflows: 0
+>~~~~~~~~~>
+cnt: 42617304
+overflows: 0
+>~~~~~~~~~>
+cnt: 42661408
+overflows: 0
+>~~~~~~~~~>
+cnt: 42705512
+overflows: 0
+>~~~~~~~~~>
+cnt: 42749616
+overflows: 0
+>~~~~~~~~~>
+cnt: 42793720
+overflows: 0
+>~~~~~~~~~>
+cnt: 42837824
+overflows: 0
+>~~~~~~~~~>
+cnt: 42881928
+overflows: 0
+>~~~~~~~~~>
+cnt: 42926032
+overflows: 0
+>~~~~~~~~~>
+cnt: 42970136
+overflows: 0
+>~~~~~~~~~>
+cnt: 43014240
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  44000000
+CHARGE: ovfl: 0
+clamp_add number: 2148510647
+add: 42000
+clamp_add number: 2148510647
+add: 42000
+CHARGE: charge of n0: 2148552647
+CHARGE: charge of n1: 2148552647
+>~~~~~~~~~>
+cnt: 43290666
+overflows: 0
+>~~~~~~~~~>
+cnt: 43334770
+overflows: 0
+>~~~~~~~~~>
+cnt: 43378874
+overflows: 0
+>~~~~~~~~~>
+cnt: 43422978
+overflows: 0
+>~~~~~~~~~>
+cnt: 43467082
+overflows: 0
+>~~~~~~~~~>
+cnt: 43511186
+overflows: 0
+>~~~~~~~~~>
+cnt: 43555290
+overflows: 0
+>~~~~~~~~~>
+cnt: 43599394
+overflows: 0
+>~~~~~~~~~>
+cnt: 43643498
+overflows: 0
+>~~~~~~~~~>
+cnt: 43687602
+overflows: 0
+>~~~~~~~~~>
+cnt: 43731706
+overflows: 0
+>~~~~~~~~~>
+cnt: 43775810
+overflows: 0
+>~~~~~~~~~>
+cnt: 43819914
+overflows: 0
+>~~~~~~~~~>
+cnt: 43864018
+overflows: 0
+>~~~~~~~~~>
+cnt: 43908122
+overflows: 0
+>~~~~~~~~~>
+cnt: 43952226
+overflows: 0
+>~~~~~~~~~>
+cnt: 43996330
+overflows: 0
+>~~~~~~~~~>
+cnt: 44040434
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  45000000
+CHARGE: ovfl: 0
+clamp_add number: 2148552647
+add: 46000
+clamp_add number: 2148552647
+add: 46000
+CHARGE: charge of n0: 2148598647
+CHARGE: charge of n1: 2148598647
+>~~~~~~~~~>
+cnt: 44316862
+overflows: 0
+>~~~~~~~~~>
+cnt: 44360966
+overflows: 0
+>~~~~~~~~~>
+cnt: 44405070
+overflows: 0
+>~~~~~~~~~>
+cnt: 44449174
+overflows: 0
+>~~~~~~~~~>
+cnt: 44493278
+overflows: 0
+>~~~~~~~~~>
+cnt: 44537382
+overflows: 0
+>~~~~~~~~~>
+cnt: 44581486
+overflows: 0
+>~~~~~~~~~>
+cnt: 44625590
+overflows: 0
+>~~~~~~~~~>
+cnt: 44669694
+overflows: 0
+>~~~~~~~~~>
+cnt: 44713798
+overflows: 0
+>~~~~~~~~~>
+cnt: 44757902
+overflows: 0
+>~~~~~~~~~>
+cnt: 44802006
+overflows: 0
+>~~~~~~~~~>
+cnt: 44846110
+overflows: 0
+>~~~~~~~~~>
+cnt: 44890214
+overflows: 0
+>~~~~~~~~~>
+cnt: 44934318
+overflows: 0
+>~~~~~~~~~>
+cnt: 44978422
+overflows: 0
+>~~~~~~~~~>
+cnt: 45022526
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  46000000
+CHARGE: ovfl: 0
+clamp_add number: 2148598647
+add: 42000
+clamp_add number: 2148598647
+add: 42000
+CHARGE: charge of n0: 2148640647
+CHARGE: charge of n1: 2148640647
+>~~~~~~~~~>
+cnt: 45298952
+overflows: 0
+>~~~~~~~~~>
+cnt: 45343056
+overflows: 0
+>~~~~~~~~~>
+cnt: 45387160
+overflows: 0
+>~~~~~~~~~>
+cnt: 45431264
+overflows: 0
+>~~~~~~~~~>
+cnt: 45475368
+overflows: 0
+>~~~~~~~~~>
+cnt: 45519472
+overflows: 0
+>~~~~~~~~~>
+cnt: 45563576
+overflows: 0
+>~~~~~~~~~>
+cnt: 45607680
+overflows: 0
+>~~~~~~~~~>
+cnt: 45651784
+overflows: 0
+>~~~~~~~~~>
+cnt: 45695888
+overflows: 0
+>~~~~~~~~~>
+cnt: 45739992
+overflows: 0
+>~~~~~~~~~>
+cnt: 45784096
+overflows: 0
+>~~~~~~~~~>
+cnt: 45828200
+overflows: 0
+>~~~~~~~~~>
+cnt: 45872304
+overflows: 0
+>~~~~~~~~~>
+cnt: 45916408
+overflows: 0
+>~~~~~~~~~>
+cnt: 45960512
+overflows: 0
+>~~~~~~~~~>
+cnt: 46004616
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  47000000
+CHARGE: ovfl: 0
+clamp_add number: 2148640647
+add: 39000
+clamp_add number: 2148640647
+add: 39000
+CHARGE: charge of n0: 2148679647
+CHARGE: charge of n1: 2148679647
+>~~~~~~~~~>
+cnt: 46281044
+overflows: 0
+>~~~~~~~~~>
+cnt: 46325148
+overflows: 0
+>~~~~~~~~~>
+cnt: 46369252
+overflows: 0
+>~~~~~~~~~>
+cnt: 46413356
+overflows: 0
+>~~~~~~~~~>
+cnt: 46457460
+overflows: 0
+>~~~~~~~~~>
+cnt: 46501564
+overflows: 0
+>~~~~~~~~~>
+cnt: 46545668
+overflows: 0
+>~~~~~~~~~>
+cnt: 46589772
+overflows: 0
+>~~~~~~~~~>
+cnt: 46633876
+overflows: 0
+>~~~~~~~~~>
+cnt: 46677980
+overflows: 0
+>~~~~~~~~~>
+cnt: 46722084
+overflows: 0
+>~~~~~~~~~>
+cnt: 46766188
+overflows: 0
+>~~~~~~~~~>
+cnt: 46810292
+overflows: 0
+>~~~~~~~~~>
+cnt: 46854396
+overflows: 0
+>~~~~~~~~~>
+cnt: 46898500
+overflows: 0
+>~~~~~~~~~>
+cnt: 46942604
+overflows: 0
+>~~~~~~~~~>
+cnt: 46986708
+overflows: 0
+>~~~~~~~~~>
+cnt: 47030812
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  48000000
+CHARGE: ovfl: 0
+clamp_add number: 2148679647
+add: 35000
+clamp_add number: 2148679647
+add: 35000
+CHARGE: charge of n0: 2148714647
+CHARGE: charge of n1: 2148714647
+>~~~~~~~~~>
+cnt: 47307238
+overflows: 0
+>~~~~~~~~~>
+cnt: 47351342
+overflows: 0
+>~~~~~~~~~>
+cnt: 47395446
+overflows: 0
+>~~~~~~~~~>
+cnt: 47439550
+overflows: 0
+>~~~~~~~~~>
+cnt: 47483654
+overflows: 0
+>~~~~~~~~~>
+cnt: 47527758
+overflows: 0
+>~~~~~~~~~>
+cnt: 47571862
+overflows: 0
+>~~~~~~~~~>
+cnt: 47615966
+overflows: 0
+>~~~~~~~~~>
+cnt: 47660070
+overflows: 0
+>~~~~~~~~~>
+cnt: 47704174
+overflows: 0
+>~~~~~~~~~>
+cnt: 47748278
+overflows: 0
+>~~~~~~~~~>
+cnt: 47792382
+overflows: 0
+>~~~~~~~~~>
+cnt: 47836486
+overflows: 0
+>~~~~~~~~~>
+cnt: 47880590
+overflows: 0
+>~~~~~~~~~>
+cnt: 47924694
+overflows: 0
+>~~~~~~~~~>
+cnt: 47968798
+overflows: 0
+>~~~~~~~~~>
+cnt: 48012902
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  49000000
+CHARGE: ovfl: 0
+clamp_add number: 2148714647
+add: 31000
+clamp_add number: 2148714647
+add: 31000
+CHARGE: charge of n0: 2148745647
+CHARGE: charge of n1: 2148745647
+>~~~~~~~~~>
+cnt: 48289330
+overflows: 0
+>~~~~~~~~~>
+cnt: 48333434
+overflows: 0
+>~~~~~~~~~>
+cnt: 48377538
+overflows: 0
+>~~~~~~~~~>
+cnt: 48421642
+overflows: 0
+>~~~~~~~~~>
+cnt: 48465746
+overflows: 0
+>~~~~~~~~~>
+cnt: 48509850
+overflows: 0
+>~~~~~~~~~>
+cnt: 48553954
+overflows: 0
+>~~~~~~~~~>
+cnt: 48598058
+overflows: 0
+>~~~~~~~~~>
+cnt: 48642162
+overflows: 0
+>~~~~~~~~~>
+cnt: 48686266
+overflows: 0
+>~~~~~~~~~>
+cnt: 48730370
+overflows: 0
+>~~~~~~~~~>
+cnt: 48774474
+overflows: 0
+>~~~~~~~~~>
+cnt: 48818578
+overflows: 0
+>~~~~~~~~~>
+cnt: 48862682
+overflows: 0
+>~~~~~~~~~>
+cnt: 48906786
+overflows: 0
+>~~~~~~~~~>
+cnt: 48950890
+overflows: 0
+>~~~~~~~~~>
+cnt: 48994994
+overflows: 0
+>~~~~~~~~~>
+cnt: 49039098
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  50000000
+CHARGE: ovfl: 0
+clamp_add number: 2148745647
+add: 27000
+clamp_add number: 2148745647
+add: 27000
+CHARGE: charge of n0: 2148772647
+CHARGE: charge of n1: 2148772647
+>~~~~~~~~~>
+cnt: 49315524
+overflows: 0
+>~~~~~~~~~>
+cnt: 49359628
+overflows: 0
+>~~~~~~~~~>
+cnt: 49403732
+overflows: 0
+>~~~~~~~~~>
+cnt: 49447836
+overflows: 0
+>~~~~~~~~~>
+cnt: 49491940
+overflows: 0
+>~~~~~~~~~>
+cnt: 49536044
+overflows: 0
+>~~~~~~~~~>
+cnt: 49580148
+overflows: 0
+>~~~~~~~~~>
+cnt: 49624252
+overflows: 0
+>~~~~~~~~~>
+cnt: 49668356
+overflows: 0
+>~~~~~~~~~>
+cnt: 49712460
+overflows: 0
+>~~~~~~~~~>
+cnt: 49756564
+overflows: 0
+>~~~~~~~~~>
+cnt: 49800668
+overflows: 0
+>~~~~~~~~~>
+cnt: 49844772
+overflows: 0
+>~~~~~~~~~>
+cnt: 49888876
+overflows: 0
+>~~~~~~~~~>
+cnt: 49932980
+overflows: 0
+>~~~~~~~~~>
+cnt: 49977084
+overflows: 0
+>~~~~~~~~~>
+cnt: 50021188
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  51000000
+CHARGE: ovfl: 0
+clamp_add number: 2148772647
+add: 26000
+clamp_add number: 2148772647
+add: 26000
+CHARGE: charge of n0: 2148798647
+CHARGE: charge of n1: 2148798647
+>~~~~~~~~~>
+cnt: 50297616
+overflows: 0
+>~~~~~~~~~>
+cnt: 50341720
+overflows: 0
+>~~~~~~~~~>
+cnt: 50385824
+overflows: 0
+>~~~~~~~~~>
+cnt: 50429928
+overflows: 0
+>~~~~~~~~~>
+cnt: 50474032
+overflows: 0
+>~~~~~~~~~>
+cnt: 50518136
+overflows: 0
+>~~~~~~~~~>
+cnt: 50562240
+overflows: 0
+>~~~~~~~~~>
+cnt: 50606344
+overflows: 0
+>~~~~~~~~~>
+cnt: 50650448
+overflows: 0
+>~~~~~~~~~>
+cnt: 50694552
+overflows: 0
+>~~~~~~~~~>
+cnt: 50738656
+overflows: 0
+>~~~~~~~~~>
+cnt: 50782760
+overflows: 0
+>~~~~~~~~~>
+cnt: 50826864
+overflows: 0
+>~~~~~~~~~>
+cnt: 50870968
+overflows: 0
+>~~~~~~~~~>
+cnt: 50915072
+overflows: 0
+>~~~~~~~~~>
+cnt: 50959176
+overflows: 0
+>~~~~~~~~~>
+cnt: 51003280
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  52000000
+CHARGE: ovfl: 0
+clamp_add number: 2148798647
+add: 25000
+clamp_add number: 2148798647
+add: 25000
+CHARGE: charge of n0: 2148823647
+CHARGE: charge of n1: 2148823647
+>~~~~~~~~~>
+cnt: 51279706
+overflows: 0
+>~~~~~~~~~>
+cnt: 51323810
+overflows: 0
+>~~~~~~~~~>
+cnt: 51367914
+overflows: 0
+>~~~~~~~~~>
+cnt: 51412018
+overflows: 0
+>~~~~~~~~~>
+cnt: 51456122
+overflows: 0
+>~~~~~~~~~>
+cnt: 51500226
+overflows: 0
+>~~~~~~~~~>
+cnt: 51544330
+overflows: 0
+>~~~~~~~~~>
+cnt: 51588434
+overflows: 0
+>~~~~~~~~~>
+cnt: 51632538
+overflows: 0
+>~~~~~~~~~>
+cnt: 51676642
+overflows: 0
+>~~~~~~~~~>
+cnt: 51720746
+overflows: 0
+>~~~~~~~~~>
+cnt: 51764850
+overflows: 0
+>~~~~~~~~~>
+cnt: 51808954
+overflows: 0
+>~~~~~~~~~>
+cnt: 51853058
+overflows: 0
+>~~~~~~~~~>
+cnt: 51897162
+overflows: 0
+>~~~~~~~~~>
+cnt: 51941266
+overflows: 0
+>~~~~~~~~~>
+cnt: 51985370
+overflows: 0
+>~~~~~~~~~>
+cnt: 52029474
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  53000000
+CHARGE: ovfl: 0
+clamp_add number: 2148823647
+add: 23000
+clamp_add number: 2148823647
+add: 23000
+CHARGE: charge of n0: 2148846647
+CHARGE: charge of n1: 2148846647
+>~~~~~~~~~>
+cnt: 52305902
+overflows: 0
+>~~~~~~~~~>
+cnt: 52350006
+overflows: 0
+>~~~~~~~~~>
+cnt: 52394110
+overflows: 0
+>~~~~~~~~~>
+cnt: 52438214
+overflows: 0
+>~~~~~~~~~>
+cnt: 52482318
+overflows: 0
+>~~~~~~~~~>
+cnt: 52526422
+overflows: 0
+>~~~~~~~~~>
+cnt: 52570526
+overflows: 0
+>~~~~~~~~~>
+cnt: 52614630
+overflows: 0
+>~~~~~~~~~>
+cnt: 52658734
+overflows: 0
+>~~~~~~~~~>
+cnt: 52702838
+overflows: 0
+>~~~~~~~~~>
+cnt: 52746942
+overflows: 0
+>~~~~~~~~~>
+cnt: 52791046
+overflows: 0
+>~~~~~~~~~>
+cnt: 52835150
+overflows: 0
+>~~~~~~~~~>
+cnt: 52879254
+overflows: 0
+>~~~~~~~~~>
+cnt: 52923358
+overflows: 0
+>~~~~~~~~~>
+cnt: 52967462
+overflows: 0
+>~~~~~~~~~>
+cnt: 53011566
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  54000000
+CHARGE: ovfl: 0
+clamp_add number: 2148846647
+add: 22000
+clamp_add number: 2148846647
+add: 22000
+CHARGE: charge of n0: 2148868647
+CHARGE: charge of n1: 2148868647
+>~~~~~~~~~>
+cnt: 53287992
+overflows: 0
+>~~~~~~~~~>
+cnt: 53332096
+overflows: 0
+>~~~~~~~~~>
+cnt: 53376200
+overflows: 0
+>~~~~~~~~~>
+cnt: 53420304
+overflows: 0
+>~~~~~~~~~>
+cnt: 53464408
+overflows: 0
+>~~~~~~~~~>
+cnt: 53508512
+overflows: 0
+>~~~~~~~~~>
+cnt: 53552616
+overflows: 0
+>~~~~~~~~~>
+cnt: 53596720
+overflows: 0
+>~~~~~~~~~>
+cnt: 53640824
+overflows: 0
+>~~~~~~~~~>
+cnt: 53684928
+overflows: 0
+>~~~~~~~~~>
+cnt: 53729032
+overflows: 0
+>~~~~~~~~~>
+cnt: 53773136
+overflows: 0
+>~~~~~~~~~>
+cnt: 53817240
+overflows: 0
+>~~~~~~~~~>
+cnt: 53861344
+overflows: 0
+>~~~~~~~~~>
+cnt: 53905448
+overflows: 0
+>~~~~~~~~~>
+cnt: 53949552
+overflows: 0
+>~~~~~~~~~>
+cnt: 53993656
+overflows: 0
+>~~~~~~~~~>
+cnt: 54037760
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  55000000
+CHARGE: ovfl: 0
+clamp_add number: 2148868647
+add: 21000
+clamp_add number: 2148868647
+add: 21000
+CHARGE: charge of n0: 2148889647
+CHARGE: charge of n1: 2148889647
+>~~~~~~~~~>
+cnt: 54314188
+overflows: 0
+>~~~~~~~~~>
+cnt: 54358292
+overflows: 0
+>~~~~~~~~~>
+cnt: 54402396
+overflows: 0
+>~~~~~~~~~>
+cnt: 54446500
+overflows: 0
+>~~~~~~~~~>
+cnt: 54490604
+overflows: 0
+>~~~~~~~~~>
+cnt: 54534708
+overflows: 0
+>~~~~~~~~~>
+cnt: 54578812
+overflows: 0
+>~~~~~~~~~>
+cnt: 54622916
+overflows: 0
+>~~~~~~~~~>
+cnt: 54667020
+overflows: 0
+>~~~~~~~~~>
+cnt: 54711124
+overflows: 0
+>~~~~~~~~~>
+cnt: 54755228
+overflows: 0
+>~~~~~~~~~>
+cnt: 54799332
+overflows: 0
+>~~~~~~~~~>
+cnt: 54843436
+overflows: 0
+>~~~~~~~~~>
+cnt: 54887540
+overflows: 0
+>~~~~~~~~~>
+cnt: 54931644
+overflows: 0
+>~~~~~~~~~>
+cnt: 54975748
+overflows: 0
+>~~~~~~~~~>
+cnt: 55019852
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  56000000
+CHARGE: ovfl: 0
+clamp_add number: 2148889647
+add: 22000
+clamp_add number: 2148889647
+add: 22000
+CHARGE: charge of n0: 2148911647
+CHARGE: charge of n1: 2148911647
+>~~~~~~~~~>
+cnt: 55296278
+overflows: 0
+>~~~~~~~~~>
+cnt: 55340382
+overflows: 0
+>~~~~~~~~~>
+cnt: 55384486
+overflows: 0
+>~~~~~~~~~>
+cnt: 55428590
+overflows: 0
+>~~~~~~~~~>
+cnt: 55472694
+overflows: 0
+>~~~~~~~~~>
+cnt: 55516798
+overflows: 0
+>~~~~~~~~~>
+cnt: 55560902
+overflows: 0
+>~~~~~~~~~>
+cnt: 55605006
+overflows: 0
+>~~~~~~~~~>
+cnt: 55649110
+overflows: 0
+>~~~~~~~~~>
+cnt: 55693214
+overflows: 0
+>~~~~~~~~~>
+cnt: 55737318
+overflows: 0
+>~~~~~~~~~>
+cnt: 55781422
+overflows: 0
+>~~~~~~~~~>
+cnt: 55825526
+overflows: 0
+>~~~~~~~~~>
+cnt: 55869630
+overflows: 0
+>~~~~~~~~~>
+cnt: 55913734
+overflows: 0
+>~~~~~~~~~>
+cnt: 55957838
+overflows: 0
+>~~~~~~~~~>
+cnt: 56001942
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  57000000
+CHARGE: ovfl: 0
+clamp_add number: 2148911647
+add: 24000
+clamp_add number: 2148911647
+add: 24000
+CHARGE: charge of n0: 2148935647
+CHARGE: charge of n1: 2148935647
+>~~~~~~~~~>
+cnt: 56278370
+overflows: 0
+>~~~~~~~~~>
+cnt: 56322474
+overflows: 0
+>~~~~~~~~~>
+cnt: 56366578
+overflows: 0
+>~~~~~~~~~>
+cnt: 56410682
+overflows: 0
+>~~~~~~~~~>
+cnt: 56454786
+overflows: 0
+>~~~~~~~~~>
+cnt: 56498890
+overflows: 0
+>~~~~~~~~~>
+cnt: 56542994
+overflows: 0
+>~~~~~~~~~>
+cnt: 56587098
+overflows: 0
+>~~~~~~~~~>
+cnt: 56631202
+overflows: 0
+>~~~~~~~~~>
+cnt: 56675306
+overflows: 0
+>~~~~~~~~~>
+cnt: 56719410
+overflows: 0
+>~~~~~~~~~>
+cnt: 56763514
+overflows: 0
+>~~~~~~~~~>
+cnt: 56807618
+overflows: 0
+>~~~~~~~~~>
+cnt: 56851722
+overflows: 0
+>~~~~~~~~~>
+cnt: 56895826
+overflows: 0
+>~~~~~~~~~>
+cnt: 56939930
+overflows: 0
+>~~~~~~~~~>
+cnt: 56984034
+overflows: 0
+>~~~~~~~~~>
+cnt: 57028138
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  58000000
+CHARGE: ovfl: 0
+clamp_add number: 2148935647
+add: 25000
+clamp_add number: 2148935647
+add: 25000
+CHARGE: charge of n0: 2148960647
+CHARGE: charge of n1: 2148960647
+>~~~~~~~~~>
+cnt: 57304564
+overflows: 0
+>~~~~~~~~~>
+cnt: 57348668
+overflows: 0
+>~~~~~~~~~>
+cnt: 57392772
+overflows: 0
+>~~~~~~~~~>
+cnt: 57436876
+overflows: 0
+>~~~~~~~~~>
+cnt: 57480980
+overflows: 0
+>~~~~~~~~~>
+cnt: 57525084
+overflows: 0
+>~~~~~~~~~>
+cnt: 57569188
+overflows: 0
+>~~~~~~~~~>
+cnt: 57613292
+overflows: 0
+>~~~~~~~~~>
+cnt: 57657396
+overflows: 0
+>~~~~~~~~~>
+cnt: 57701500
+overflows: 0
+>~~~~~~~~~>
+cnt: 57745604
+overflows: 0
+>~~~~~~~~~>
+cnt: 57789708
+overflows: 0
+>~~~~~~~~~>
+cnt: 57833812
+overflows: 0
+>~~~~~~~~~>
+cnt: 57877916
+overflows: 0
+>~~~~~~~~~>
+cnt: 57922020
+overflows: 0
+>~~~~~~~~~>
+cnt: 57966124
+overflows: 0
+>~~~~~~~~~>
+cnt: 58010228
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  59000000
+CHARGE: ovfl: 0
+clamp_add number: 2148960647
+add: 27000
+clamp_add number: 2148960647
+add: 27000
+CHARGE: charge of n0: 2148987647
+CHARGE: charge of n1: 2148987647
+>~~~~~~~~~>
+cnt: 58286656
+overflows: 0
+>~~~~~~~~~>
+cnt: 58330760
+overflows: 0
+>~~~~~~~~~>
+cnt: 58374864
+overflows: 0
+>~~~~~~~~~>
+cnt: 58418968
+overflows: 0
+>~~~~~~~~~>
+cnt: 58463072
+overflows: 0
+>~~~~~~~~~>
+cnt: 58507176
+overflows: 0
+>~~~~~~~~~>
+cnt: 58551280
+overflows: 0
+>~~~~~~~~~>
+cnt: 58595384
+overflows: 0
+>~~~~~~~~~>
+cnt: 58639488
+overflows: 0
+>~~~~~~~~~>
+cnt: 58683592
+overflows: 0
+>~~~~~~~~~>
+cnt: 58727696
+overflows: 0
+>~~~~~~~~~>
+cnt: 58771800
+overflows: 0
+>~~~~~~~~~>
+cnt: 58815904
+overflows: 0
+>~~~~~~~~~>
+cnt: 58860008
+overflows: 0
+>~~~~~~~~~>
+cnt: 58904112
+overflows: 0
+>~~~~~~~~~>
+cnt: 58948216
+overflows: 0
+>~~~~~~~~~>
+cnt: 58992320
+overflows: 0
+>~~~~~~~~~>
+cnt: 59036424
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  60000000
+CHARGE: ovfl: 0
+clamp_add number: 2148987647
+add: 28000
+clamp_add number: 2148987647
+add: 28000
+CHARGE: charge of n0: 2149015647
+CHARGE: charge of n1: 2149015647
+>~~~~~~~~~>
+cnt: 59312850
+overflows: 0
+>~~~~~~~~~>
+cnt: 59356954
+overflows: 0
+>~~~~~~~~~>
+cnt: 59401058
+overflows: 0
+>~~~~~~~~~>
+cnt: 59445162
+overflows: 0
+>~~~~~~~~~>
+cnt: 59489266
+overflows: 0
+>~~~~~~~~~>
+cnt: 59533370
+overflows: 0
+>~~~~~~~~~>
+cnt: 59577474
+overflows: 0
+>~~~~~~~~~>
+cnt: 59621578
+overflows: 0
+>~~~~~~~~~>
+cnt: 59665682
+overflows: 0
+>~~~~~~~~~>
+cnt: 59709786
+overflows: 0
+>~~~~~~~~~>
+cnt: 59753890
+overflows: 0
+>~~~~~~~~~>
+cnt: 59797994
+overflows: 0
+>~~~~~~~~~>
+cnt: 59842098
+overflows: 0
+>~~~~~~~~~>
+cnt: 59886202
+overflows: 0
+>~~~~~~~~~>
+cnt: 59930306
+overflows: 0
+>~~~~~~~~~>
+cnt: 59974410
+overflows: 0
+>~~~~~~~~~>
+cnt: 60018514
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  61000000
+CHARGE: ovfl: 0
+clamp_add number: 2149015647
+add: 26000
+clamp_add number: 2149015647
+add: 26000
+CHARGE: charge of n0: 2149041647
+CHARGE: charge of n1: 2149041647
+>~~~~~~~~~>
+cnt: 60294942
+overflows: 0
+>~~~~~~~~~>
+cnt: 60339046
+overflows: 0
+>~~~~~~~~~>
+cnt: 60383150
+overflows: 0
+>~~~~~~~~~>
+cnt: 60427254
+overflows: 0
+>~~~~~~~~~>
+cnt: 60471358
+overflows: 0
+>~~~~~~~~~>
+cnt: 60515462
+overflows: 0
+>~~~~~~~~~>
+cnt: 60559566
+overflows: 0
+>~~~~~~~~~>
+cnt: 60603670
+overflows: 0
+>~~~~~~~~~>
+cnt: 60647774
+overflows: 0
+>~~~~~~~~~>
+cnt: 60691878
+overflows: 0
+>~~~~~~~~~>
+cnt: 60735982
+overflows: 0
+>~~~~~~~~~>
+cnt: 60780086
+overflows: 0
+>~~~~~~~~~>
+cnt: 60824190
+overflows: 0
+>~~~~~~~~~>
+cnt: 60868294
+overflows: 0
+>~~~~~~~~~>
+cnt: 60912398
+overflows: 0
+>~~~~~~~~~>
+cnt: 60956502
+overflows: 0
+>~~~~~~~~~>
+cnt: 61000606
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  62000000
+CHARGE: ovfl: 0
+clamp_add number: 2149041647
+add: 25000
+clamp_add number: 2149041647
+add: 25000
+CHARGE: charge of n0: 2149066647
+CHARGE: charge of n1: 2149066647
+>~~~~~~~~~>
+cnt: 61277032
+overflows: 0
+>~~~~~~~~~>
+cnt: 61321136
+overflows: 0
+>~~~~~~~~~>
+cnt: 61365240
+overflows: 0
+>~~~~~~~~~>
+cnt: 61409344
+overflows: 0
+>~~~~~~~~~>
+cnt: 61453448
+overflows: 0
+>~~~~~~~~~>
+cnt: 61497552
+overflows: 0
+>~~~~~~~~~>
+cnt: 61541656
+overflows: 0
+>~~~~~~~~~>
+cnt: 61585760
+overflows: 0
+>~~~~~~~~~>
+cnt: 61629864
+overflows: 0
+>~~~~~~~~~>
+cnt: 61673968
+overflows: 0
+>~~~~~~~~~>
+cnt: 61718072
+overflows: 0
+>~~~~~~~~~>
+cnt: 61762176
+overflows: 0
+>~~~~~~~~~>
+cnt: 61806280
+overflows: 0
+>~~~~~~~~~>
+cnt: 61850384
+overflows: 0
+>~~~~~~~~~>
+cnt: 61894488
+overflows: 0
+>~~~~~~~~~>
+cnt: 61938592
+overflows: 0
+>~~~~~~~~~>
+cnt: 61982696
+overflows: 0
+>~~~~~~~~~>
+cnt: 62026800
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  63000000
+CHARGE: ovfl: 0
+clamp_add number: 2149066647
+add: 23000
+clamp_add number: 2149066647
+add: 23000
+CHARGE: charge of n0: 2149089647
+CHARGE: charge of n1: 2149089647
+>~~~~~~~~~>
+cnt: 62303228
+overflows: 0
+>~~~~~~~~~>
+cnt: 62347332
+overflows: 0
+>~~~~~~~~~>
+cnt: 62391436
+overflows: 0
+>~~~~~~~~~>
+cnt: 62435540
+overflows: 0
+>~~~~~~~~~>
+cnt: 62479644
+overflows: 0
+>~~~~~~~~~>
+cnt: 62523748
+overflows: 0
+>~~~~~~~~~>
+cnt: 62567852
+overflows: 0
+>~~~~~~~~~>
+cnt: 62611956
+overflows: 0
+>~~~~~~~~~>
+cnt: 62656060
+overflows: 0
+>~~~~~~~~~>
+cnt: 62700164
+overflows: 0
+>~~~~~~~~~>
+cnt: 62744268
+overflows: 0
+>~~~~~~~~~>
+cnt: 62788372
+overflows: 0
+>~~~~~~~~~>
+cnt: 62832476
+overflows: 0
+>~~~~~~~~~>
+cnt: 62876580
+overflows: 0
+>~~~~~~~~~>
+cnt: 62920684
+overflows: 0
+>~~~~~~~~~>
+cnt: 62964788
+overflows: 0
+>~~~~~~~~~>
+cnt: 63008892
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  64000000
+CHARGE: ovfl: 0
+clamp_add number: 2149089647
+add: 21000
+clamp_add number: 2149089647
+add: 21000
+CHARGE: charge of n0: 2149110647
+CHARGE: charge of n1: 2149110647
+>~~~~~~~~~>
+cnt: 63285318
+overflows: 0
+>~~~~~~~~~>
+cnt: 63329422
+overflows: 0
+>~~~~~~~~~>
+cnt: 63373526
+overflows: 0
+>~~~~~~~~~>
+cnt: 63417630
+overflows: 0
+>~~~~~~~~~>
+cnt: 63461734
+overflows: 0
+>~~~~~~~~~>
+cnt: 63505838
+overflows: 0
+>~~~~~~~~~>
+cnt: 63549942
+overflows: 0
+>~~~~~~~~~>
+cnt: 63594046
+overflows: 0
+>~~~~~~~~~>
+cnt: 63638150
+overflows: 0
+>~~~~~~~~~>
+cnt: 63682254
+overflows: 0
+>~~~~~~~~~>
+cnt: 63726358
+overflows: 0
+>~~~~~~~~~>
+cnt: 63770462
+overflows: 0
+>~~~~~~~~~>
+cnt: 63814566
+overflows: 0
+>~~~~~~~~~>
+cnt: 63858670
+overflows: 0
+>~~~~~~~~~>
+cnt: 63902774
+overflows: 0
+>~~~~~~~~~>
+cnt: 63946878
+overflows: 0
+>~~~~~~~~~>
+cnt: 63990982
+overflows: 0
+>~~~~~~~~~>
+cnt: 64035086
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  65000000
+CHARGE: ovfl: 0
+clamp_add number: 2149110647
+add: 19000
+clamp_add number: 2149110647
+add: 19000
+CHARGE: charge of n0: 2149129647
+CHARGE: charge of n1: 2149129647
+>~~~~~~~~~>
+cnt: 64311514
+overflows: 0
+>~~~~~~~~~>
+cnt: 64355618
+overflows: 0
+>~~~~~~~~~>
+cnt: 64399722
+overflows: 0
+>~~~~~~~~~>
+cnt: 64443826
+overflows: 0
+>~~~~~~~~~>
+cnt: 64487930
+overflows: 0
+>~~~~~~~~~>
+cnt: 64532034
+overflows: 0
+>~~~~~~~~~>
+cnt: 64576138
+overflows: 0
+>~~~~~~~~~>
+cnt: 64620242
+overflows: 0
+>~~~~~~~~~>
+cnt: 64664346
+overflows: 0
+>~~~~~~~~~>
+cnt: 64708450
+overflows: 0
+>~~~~~~~~~>
+cnt: 64752554
+overflows: 0
+>~~~~~~~~~>
+cnt: 64796658
+overflows: 0
+>~~~~~~~~~>
+cnt: 64840762
+overflows: 0
+>~~~~~~~~~>
+cnt: 64884866
+overflows: 0
+>~~~~~~~~~>
+cnt: 64928970
+overflows: 0
+>~~~~~~~~~>
+cnt: 64973074
+overflows: 0
+>~~~~~~~~~>
+cnt: 65017178
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  66000000
+CHARGE: ovfl: 0
+clamp_add number: 2149129647
+add: 20000
+clamp_add number: 2149129647
+add: 20000
+CHARGE: charge of n0: 2149149647
+CHARGE: charge of n1: 2149149647
+>~~~~~~~~~>
+cnt: 65293604
+overflows: 0
+>~~~~~~~~~>
+cnt: 65337708
+overflows: 0
+>~~~~~~~~~>
+cnt: 65381812
+overflows: 0
+>~~~~~~~~~>
+cnt: 65425916
+overflows: 0
+>~~~~~~~~~>
+cnt: 65470020
+overflows: 0
+>~~~~~~~~~>
+cnt: 65514124
+overflows: 0
+>~~~~~~~~~>
+cnt: 65558228
+overflows: 0
+>~~~~~~~~~>
+cnt: 65602332
+overflows: 0
+>~~~~~~~~~>
+cnt: 65646436
+overflows: 0
+>~~~~~~~~~>
+cnt: 65690540
+overflows: 0
+>~~~~~~~~~>
+cnt: 65734644
+overflows: 0
+>~~~~~~~~~>
+cnt: 65778748
+overflows: 0
+>~~~~~~~~~>
+cnt: 65822852
+overflows: 0
+>~~~~~~~~~>
+cnt: 65866956
+overflows: 0
+>~~~~~~~~~>
+cnt: 65911060
+overflows: 0
+>~~~~~~~~~>
+cnt: 65955164
+overflows: 0
+>~~~~~~~~~>
+cnt: 65999268
+overflows: 0
+>~~~~~~~~~>
+cnt: 66043372
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  67000000
+CHARGE: ovfl: 0
+clamp_add number: 2149149647
+add: 21000
+clamp_add number: 2149149647
+add: 21000
+CHARGE: charge of n0: 2149170647
+CHARGE: charge of n1: 2149170647
+>~~~~~~~~~>
+cnt: 66319800
+overflows: 0
+>~~~~~~~~~>
+cnt: 66363904
+overflows: 0
+>~~~~~~~~~>
+cnt: 66408008
+overflows: 0
+>~~~~~~~~~>
+cnt: 66452112
+overflows: 0
+>~~~~~~~~~>
+cnt: 66496216
+overflows: 0
+>~~~~~~~~~>
+cnt: 66540320
+overflows: 0
+>~~~~~~~~~>
+cnt: 66584424
+overflows: 0
+>~~~~~~~~~>
+cnt: 66628528
+overflows: 0
+>~~~~~~~~~>
+cnt: 66672632
+overflows: 0
+>~~~~~~~~~>
+cnt: 66716736
+overflows: 0
+>~~~~~~~~~>
+cnt: 66760840
+overflows: 0
+>~~~~~~~~~>
+cnt: 66804944
+overflows: 0
+>~~~~~~~~~>
+cnt: 66849048
+overflows: 0
+>~~~~~~~~~>
+cnt: 66893152
+overflows: 0
+>~~~~~~~~~>
+cnt: 66937256
+overflows: 0
+>~~~~~~~~~>
+cnt: 66981360
+overflows: 0
+>~~~~~~~~~>
+cnt: 67025464
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  68000000
+CHARGE: ovfl: 0
+clamp_add number: 2149170647
+add: 23000
+clamp_add number: 2149170647
+add: 23000
+CHARGE: charge of n0: 2149193647
+CHARGE: charge of n1: 2149193647
+>~~~~~~~~~>
+cnt: 67301890
+overflows: 0
+>~~~~~~~~~>
+cnt: 67345994
+overflows: 0
+>~~~~~~~~~>
+cnt: 67390098
+overflows: 0
+>~~~~~~~~~>
+cnt: 67434202
+overflows: 0
+>~~~~~~~~~>
+cnt: 67478306
+overflows: 0
+>~~~~~~~~~>
+cnt: 67522410
+overflows: 0
+>~~~~~~~~~>
+cnt: 67566514
+overflows: 0
+>~~~~~~~~~>
+cnt: 67610618
+overflows: 0
+>~~~~~~~~~>
+cnt: 67654722
+overflows: 0
+>~~~~~~~~~>
+cnt: 67698826
+overflows: 0
+>~~~~~~~~~>
+cnt: 67742930
+overflows: 0
+>~~~~~~~~~>
+cnt: 67787034
+overflows: 0
+>~~~~~~~~~>
+cnt: 67831138
+overflows: 0
+>~~~~~~~~~>
+cnt: 67875242
+overflows: 0
+>~~~~~~~~~>
+cnt: 67919346
+overflows: 0
+>~~~~~~~~~>
+cnt: 67963450
+overflows: 0
+>~~~~~~~~~>
+cnt: 68007554
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  69000000
+CHARGE: ovfl: 0
+clamp_add number: 2149193647
+add: 24000
+clamp_add number: 2149193647
+add: 24000
+CHARGE: charge of n0: 2149217647
+CHARGE: charge of n1: 2149217647
+>~~~~~~~~~>
+cnt: 68283982
+overflows: 0
+>~~~~~~~~~>
+cnt: 68328086
+overflows: 0
+>~~~~~~~~~>
+cnt: 68372190
+overflows: 0
+>~~~~~~~~~>
+cnt: 68416294
+overflows: 0
+>~~~~~~~~~>
+cnt: 68460398
+overflows: 0
+>~~~~~~~~~>
+cnt: 68504502
+overflows: 0
+>~~~~~~~~~>
+cnt: 68548606
+overflows: 0
+>~~~~~~~~~>
+cnt: 68592710
+overflows: 0
+>~~~~~~~~~>
+cnt: 68636814
+overflows: 0
+>~~~~~~~~~>
+cnt: 68680918
+overflows: 0
+>~~~~~~~~~>
+cnt: 68725022
+overflows: 0
+>~~~~~~~~~>
+cnt: 68769126
+overflows: 0
+>~~~~~~~~~>
+cnt: 68813230
+overflows: 0
+>~~~~~~~~~>
+cnt: 68857334
+overflows: 0
+>~~~~~~~~~>
+cnt: 68901438
+overflows: 0
+>~~~~~~~~~>
+cnt: 68945542
+overflows: 0
+>~~~~~~~~~>
+cnt: 68989646
+overflows: 0
+>~~~~~~~~~>
+cnt: 69033750
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  70000000
+CHARGE: ovfl: 0
+clamp_add number: 2149217647
+add: 25000
+clamp_add number: 2149217647
+add: 25000
+CHARGE: charge of n0: 2149242647
+CHARGE: charge of n1: 2149242647
+>~~~~~~~~~>
+cnt: 69310176
+overflows: 0
+>~~~~~~~~~>
+cnt: 69354280
+overflows: 0
+>~~~~~~~~~>
+cnt: 69398384
+overflows: 0
+>~~~~~~~~~>
+cnt: 69442488
+overflows: 0
+>~~~~~~~~~>
+cnt: 69486592
+overflows: 0
+>~~~~~~~~~>
+cnt: 69530696
+overflows: 0
+>~~~~~~~~~>
+cnt: 69574800
+overflows: 0
+>~~~~~~~~~>
+cnt: 69618904
+overflows: 0
+>~~~~~~~~~>
+cnt: 69663008
+overflows: 0
+>~~~~~~~~~>
+cnt: 69707112
+overflows: 0
+>~~~~~~~~~>
+cnt: 69751216
+overflows: 0
+>~~~~~~~~~>
+cnt: 69795320
+overflows: 0
+>~~~~~~~~~>
+cnt: 69839424
+overflows: 0
+>~~~~~~~~~>
+cnt: 69883528
+overflows: 0
+>~~~~~~~~~>
+cnt: 69927632
+overflows: 0
+>~~~~~~~~~>
+cnt: 69971736
+overflows: 0
+>~~~~~~~~~>
+cnt: 70015840
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  71000000
+CHARGE: ovfl: 0
+clamp_add number: 2149242647
+add: 39000
+clamp_add number: 2149242647
+add: 39000
+CHARGE: charge of n0: 2149281647
+CHARGE: charge of n1: 2149281647
+>~~~~~~~~~>
+cnt: 70292268
+overflows: 0
+>~~~~~~~~~>
+cnt: 70336372
+overflows: 0
+>~~~~~~~~~>
+cnt: 70380476
+overflows: 0
+>~~~~~~~~~>
+cnt: 70424580
+overflows: 0
+>~~~~~~~~~>
+cnt: 70468684
+overflows: 0
+>~~~~~~~~~>
+cnt: 70512788
+overflows: 0
+>~~~~~~~~~>
+cnt: 70556892
+overflows: 0
+>~~~~~~~~~>
+cnt: 70600996
+overflows: 0
+>~~~~~~~~~>
+cnt: 70645100
+overflows: 0
+>~~~~~~~~~>
+cnt: 70689204
+overflows: 0
+>~~~~~~~~~>
+cnt: 70733308
+overflows: 0
+>~~~~~~~~~>
+cnt: 70777412
+overflows: 0
+>~~~~~~~~~>
+cnt: 70821516
+overflows: 0
+>~~~~~~~~~>
+cnt: 70865620
+overflows: 0
+>~~~~~~~~~>
+cnt: 70909724
+overflows: 0
+>~~~~~~~~~>
+cnt: 70953828
+overflows: 0
+>~~~~~~~~~>
+cnt: 70997932
+overflows: 0
+>~~~~~~~~~>
+cnt: 71042036
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  72000000
+CHARGE: ovfl: 0
+clamp_add number: 2149281647
+add: 53000
+clamp_add number: 2149281647
+add: 53000
+CHARGE: charge of n0: 2149334647
+CHARGE: charge of n1: 2149334647
+>~~~~~~~~~>
+cnt: 71318462
+overflows: 0
+>~~~~~~~~~>
+cnt: 71362566
+overflows: 0
+>~~~~~~~~~>
+cnt: 71406670
+overflows: 0
+>~~~~~~~~~>
+cnt: 71450774
+overflows: 0
+>~~~~~~~~~>
+cnt: 71494878
+overflows: 0
+>~~~~~~~~~>
+cnt: 71538982
+overflows: 0
+>~~~~~~~~~>
+cnt: 71583086
+overflows: 0
+>~~~~~~~~~>
+cnt: 71627190
+overflows: 0
+>~~~~~~~~~>
+cnt: 71671294
+overflows: 0
+>~~~~~~~~~>
+cnt: 71715398
+overflows: 0
+>~~~~~~~~~>
+cnt: 71759502
+overflows: 0
+>~~~~~~~~~>
+cnt: 71803606
+overflows: 0
+>~~~~~~~~~>
+cnt: 71847710
+overflows: 0
+>~~~~~~~~~>
+cnt: 71891814
+overflows: 0
+>~~~~~~~~~>
+cnt: 71935918
+overflows: 0
+>~~~~~~~~~>
+cnt: 71980022
+overflows: 0
+>~~~~~~~~~>
+cnt: 72024126
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  73000000
+CHARGE: ovfl: 0
+clamp_add number: 2149334647
+add: 67000
+clamp_add number: 2149334647
+add: 67000
+CHARGE: charge of n0: 2149401647
+CHARGE: charge of n1: 2149401647
+>~~~~~~~~~>
+cnt: 72300554
+overflows: 0
+>~~~~~~~~~>
+cnt: 72344658
+overflows: 0
+>~~~~~~~~~>
+cnt: 72388762
+overflows: 0
+>~~~~~~~~~>
+cnt: 72432866
+overflows: 0
+>~~~~~~~~~>
+cnt: 72476970
+overflows: 0
+>~~~~~~~~~>
+cnt: 72521074
+overflows: 0
+>~~~~~~~~~>
+cnt: 72565178
+overflows: 0
+>~~~~~~~~~>
+cnt: 72609282
+overflows: 0
+>~~~~~~~~~>
+cnt: 72653386
+overflows: 0
+>~~~~~~~~~>
+cnt: 72697490
+overflows: 0
+>~~~~~~~~~>
+cnt: 72741594
+overflows: 0
+>~~~~~~~~~>
+cnt: 72785698
+overflows: 0
+>~~~~~~~~~>
+cnt: 72829802
+overflows: 0
+>~~~~~~~~~>
+cnt: 72873906
+overflows: 0
+>~~~~~~~~~>
+cnt: 72918010
+overflows: 0
+>~~~~~~~~~>
+cnt: 72962114
+overflows: 0
+>~~~~~~~~~>
+cnt: 73006218
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  74000000
+CHARGE: ovfl: 0
+clamp_add number: 2149401647
+add: 81000
+clamp_add number: 2149401647
+add: 81000
+CHARGE: charge of n0: 2149482647
+CHARGE: charge of n1: 2149482647
+>~~~~~~~~~>
+cnt: 73282644
+overflows: 0
+>~~~~~~~~~>
+cnt: 73326748
+overflows: 0
+>~~~~~~~~~>
+cnt: 73370852
+overflows: 0
+>~~~~~~~~~>
+cnt: 73414956
+overflows: 0
+>~~~~~~~~~>
+cnt: 73459060
+overflows: 0
+>~~~~~~~~~>
+cnt: 73503164
+overflows: 0
+>~~~~~~~~~>
+cnt: 73547268
+overflows: 0
+>~~~~~~~~~>
+cnt: 73591372
+overflows: 0
+>~~~~~~~~~>
+cnt: 73635476
+overflows: 0
+>~~~~~~~~~>
+cnt: 73679580
+overflows: 0
+>~~~~~~~~~>
+cnt: 73723684
+overflows: 0
+>~~~~~~~~~>
+cnt: 73767788
+overflows: 0
+>~~~~~~~~~>
+cnt: 73811892
+overflows: 0
+>~~~~~~~~~>
+cnt: 73855996
+overflows: 0
+>~~~~~~~~~>
+cnt: 73900100
+overflows: 0
+>~~~~~~~~~>
+cnt: 73944204
+overflows: 0
+>~~~~~~~~~>
+cnt: 73988308
+overflows: 0
+>~~~~~~~~~>
+cnt: 74032412
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  75000000
+CHARGE: ovfl: 0
+clamp_add number: 2149482647
+add: 95000
+clamp_add number: 2149482647
+add: 95000
+CHARGE: charge of n0: 2149577647
+CHARGE: charge of n1: 2149577647
+>~~~~~~~~~>
+cnt: 74308840
+overflows: 0
+>~~~~~~~~~>
+cnt: 74352944
+overflows: 0
+>~~~~~~~~~>
+cnt: 74397048
+overflows: 0
+>~~~~~~~~~>
+cnt: 74441152
+overflows: 0
+>~~~~~~~~~>
+cnt: 74485256
+overflows: 0
+>~~~~~~~~~>
+cnt: 74529360
+overflows: 0
+>~~~~~~~~~>
+cnt: 74573464
+overflows: 0
+>~~~~~~~~~>
+cnt: 74617568
+overflows: 0
+>~~~~~~~~~>
+cnt: 74661672
+overflows: 0
+>~~~~~~~~~>
+cnt: 74705776
+overflows: 0
+>~~~~~~~~~>
+cnt: 74749880
+overflows: 0
+>~~~~~~~~~>
+cnt: 74793984
+overflows: 0
+>~~~~~~~~~>
+cnt: 74838088
+overflows: 0
+>~~~~~~~~~>
+cnt: 74882192
+overflows: 0
+>~~~~~~~~~>
+cnt: 74926296
+overflows: 0
+>~~~~~~~~~>
+cnt: 74970400
+overflows: 0
+>~~~~~~~~~>
+cnt: 75014504
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  76000000
+CHARGE: ovfl: 0
+clamp_add number: 2149577647
+add: 90000
+clamp_add number: 2149577647
+add: 90000
+CHARGE: charge of n0: 2149667647
+CHARGE: charge of n1: 2149667647
+>~~~~~~~~~>
+cnt: 75290930
+overflows: 0
+>~~~~~~~~~>
+cnt: 75335034
+overflows: 0
+>~~~~~~~~~>
+cnt: 75379138
+overflows: 0
+>~~~~~~~~~>
+cnt: 75423242
+overflows: 0
+>~~~~~~~~~>
+cnt: 75467346
+overflows: 0
+>~~~~~~~~~>
+cnt: 75511450
+overflows: 0
+>~~~~~~~~~>
+cnt: 75555554
+overflows: 0
+>~~~~~~~~~>
+cnt: 75599658
+overflows: 0
+>~~~~~~~~~>
+cnt: 75643762
+overflows: 0
+>~~~~~~~~~>
+cnt: 75687866
+overflows: 0
+>~~~~~~~~~>
+cnt: 75731970
+overflows: 0
+>~~~~~~~~~>
+cnt: 75776074
+overflows: 0
+>~~~~~~~~~>
+cnt: 75820178
+overflows: 0
+>~~~~~~~~~>
+cnt: 75864282
+overflows: 0
+>~~~~~~~~~>
+cnt: 75908386
+overflows: 0
+>~~~~~~~~~>
+cnt: 75952490
+overflows: 0
+>~~~~~~~~~>
+cnt: 75996594
+overflows: 0
+>~~~~~~~~~>
+cnt: 76040698
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  77000000
+CHARGE: ovfl: 0
+clamp_add number: 2149667647
+add: 85000
+clamp_add number: 2149667647
+add: 85000
+CHARGE: charge of n0: 2149752647
+CHARGE: charge of n1: 2149752647
+>~~~~~~~~~>
+cnt: 76317126
+overflows: 0
+>~~~~~~~~~>
+cnt: 76361230
+overflows: 0
+>~~~~~~~~~>
+cnt: 76405334
+overflows: 0
+>~~~~~~~~~>
+cnt: 76449438
+overflows: 0
+>~~~~~~~~~>
+cnt: 76493542
+overflows: 0
+>~~~~~~~~~>
+cnt: 76537646
+overflows: 0
+>~~~~~~~~~>
+cnt: 76581750
+overflows: 0
+>~~~~~~~~~>
+cnt: 76625854
+overflows: 0
+>~~~~~~~~~>
+cnt: 76669958
+overflows: 0
+>~~~~~~~~~>
+cnt: 76714062
+overflows: 0
+>~~~~~~~~~>
+cnt: 76758166
+overflows: 0
+>~~~~~~~~~>
+cnt: 76802270
+overflows: 0
+>~~~~~~~~~>
+cnt: 76846374
+overflows: 0
+>~~~~~~~~~>
+cnt: 76890478
+overflows: 0
+>~~~~~~~~~>
+cnt: 76934582
+overflows: 0
+>~~~~~~~~~>
+cnt: 76978686
+overflows: 0
+>~~~~~~~~~>
+cnt: 77022790
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  78000000
+CHARGE: ovfl: 0
+clamp_add number: 2149752647
+add: 80000
+clamp_add number: 2149752647
+add: 80000
+CHARGE: charge of n0: 2149832647
+CHARGE: charge of n1: 2149832647
+>~~~~~~~~~>
+cnt: 77299216
+overflows: 0
+>~~~~~~~~~>
+cnt: 77343320
+overflows: 0
+>~~~~~~~~~>
+cnt: 77387424
+overflows: 0
+>~~~~~~~~~>
+cnt: 77431528
+overflows: 0
+>~~~~~~~~~>
+cnt: 77475632
+overflows: 0
+>~~~~~~~~~>
+cnt: 77519736
+overflows: 0
+>~~~~~~~~~>
+cnt: 77563840
+overflows: 0
+>~~~~~~~~~>
+cnt: 77607944
+overflows: 0
+>~~~~~~~~~>
+cnt: 77652048
+overflows: 0
+>~~~~~~~~~>
+cnt: 77696152
+overflows: 0
+>~~~~~~~~~>
+cnt: 77740256
+overflows: 0
+>~~~~~~~~~>
+cnt: 77784360
+overflows: 0
+>~~~~~~~~~>
+cnt: 77828464
+overflows: 0
+>~~~~~~~~~>
+cnt: 77872568
+overflows: 0
+>~~~~~~~~~>
+cnt: 77916672
+overflows: 0
+>~~~~~~~~~>
+cnt: 77960776
+overflows: 0
+>~~~~~~~~~>
+cnt: 78004880
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  79000000
+CHARGE: ovfl: 0
+clamp_add number: 2149832647
+add: 75000
+clamp_add number: 2149832647
+add: 75000
+CHARGE: charge of n0: 2149907647
+CHARGE: charge of n1: 2149907647
+>~~~~~~~~~>
+cnt: 78281308
+overflows: 0
+>~~~~~~~~~>
+cnt: 78325412
+overflows: 0
+>~~~~~~~~~>
+cnt: 78369516
+overflows: 0
+>~~~~~~~~~>
+cnt: 78413620
+overflows: 0
+>~~~~~~~~~>
+cnt: 78457724
+overflows: 0
+>~~~~~~~~~>
+cnt: 78501828
+overflows: 0
+>~~~~~~~~~>
+cnt: 78545932
+overflows: 0
+>~~~~~~~~~>
+cnt: 78590036
+overflows: 0
+>~~~~~~~~~>
+cnt: 78634140
+overflows: 0
+>~~~~~~~~~>
+cnt: 78678244
+overflows: 0
+>~~~~~~~~~>
+cnt: 78722348
+overflows: 0
+>~~~~~~~~~>
+cnt: 78766452
+overflows: 0
+>~~~~~~~~~>
+cnt: 78810556
+overflows: 0
+>~~~~~~~~~>
+cnt: 78854660
+overflows: 0
+>~~~~~~~~~>
+cnt: 78898764
+overflows: 0
+>~~~~~~~~~>
+cnt: 78942868
+overflows: 0
+>~~~~~~~~~>
+cnt: 78986972
+overflows: 0
+>~~~~~~~~~>
+cnt: 79031076
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  80000000
+CHARGE: ovfl: 0
+clamp_add number: 2149907647
+add: 71000
+clamp_add number: 2149907647
+add: 71000
+CHARGE: charge of n0: 2149978647
+CHARGE: charge of n1: 2149978647

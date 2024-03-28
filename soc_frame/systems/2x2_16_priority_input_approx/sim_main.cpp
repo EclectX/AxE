@@ -166,8 +166,9 @@ int main(int argc, char** argv, char** env) {
                 buffer_index++;
 
                 // If the received character is the end of string character
-                if (top->buffer_out_data == '\0') {
+                if (top->buffer_out_data == 0) {
                     FILE *fd = fopen("output_buffer","a");
+                    // fprintf(fd,"buffer_index: %d",buffer_index);
                     for (size_t i = 0; i < buffer_index -1; i++){
                         
                         fputc(buffer[i], fd);                    

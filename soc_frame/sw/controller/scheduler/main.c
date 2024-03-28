@@ -452,114 +452,114 @@ void my_main()
 		if ( TRUE == time_reached_cnt_t( &energy_harvester.next_charge_cnt ) )
 		{
 			#ifdef DBG_SCHEDULER
-				// print_str("\nCHARGE: the next charge has to be applied\n");
+				print_str("\nCHARGE: the next charge has to be applied\n");
 			#endif
-		}
+		
 	
 			time_advance( &(energy_harvester.next_charge_cnt), energy_harvester.interval_cnt );
-	}		
-	// 		#ifdef DBG_SCHEDULER
+			
+			#ifdef DBG_SCHEDULER
 				
-	// 			print_str("\nCHARGE: next charge will be at time:\n");
-	// 			print_str("CHARGE: cnt:  ");print_dec(energy_harvester.next_charge_cnt.cnt);
-	// 			print_str("\nCHARGE: ovfl: ");print_dec(energy_harvester.next_charge_cnt.overflows);
-	// 		#endif
+				print_str("\nCHARGE: next charge will be at time:\n");
+				print_str("CHARGE: cnt:  ");print_dec(energy_harvester.next_charge_cnt.cnt);
+				print_str("\nCHARGE: ovfl: ");print_dec(energy_harvester.next_charge_cnt.overflows);
+			#endif
 
-	// 		// applying charges
+			// applying charges
 
-	// 		for ( i = 0; i < NUM_NODES; i++ )
-	// 		{
-	// 			nodes[ i ].charge = clamp_add( nodes[ i ].charge, charges[ energy_harvester.charge_i ] );
-	// 		}
+			for ( i = 0; i < NUM_NODES; i++ )
+			{
+				nodes[ i ].charge = clamp_add( nodes[ i ].charge, charges[ energy_harvester.charge_i ] );
+			}
 
-	// 		energy_harvester.charge_i += 1;
+			energy_harvester.charge_i += 1;
 
-	// 		#ifdef REP_CHARGING
-	// 			for ( i = 0; i < NUM_NODES; i++ )
-	// 			{
-	// 				print_str("\nCHARGE: charge of n");print_dec(i);print_str(": ");print_dec(nodes[ i ].charge);
-	// 			}
-	// 		#endif
-	// 	}
+			#ifdef REP_CHARGING
+				for ( i = 0; i < NUM_NODES; i++ )
+				{
+					print_str("\nCHARGE: charge of n");print_dec(i);print_str(": ");print_dec(nodes[ i ].charge);
+				}
+			#endif
+		}
 
 
-	// 	//-----------------------------------------------------------------
-	// 	//
-	// 	// 3. find prg to run
-	// 	//
-	// 	//-----------------------------------------------------------------
+		//-----------------------------------------------------------------
+		//
+		// 3. find prg to run
+		//
+		//-----------------------------------------------------------------
 		
-	// 	nodes_set_idle();
+		nodes_set_idle();
 
-	// 	// reset skip counter
-	// 	// prgs[i].s_cnt_down = prgs[i].s;
+		// reset skip counter
+		// prgs[i].s_cnt_down = prgs[i].s;
 
-	// 	// update skip cnt
-	// 	// watch out that the cnt does not go neg
+		// update skip cnt
+		// watch out that the cnt does not go neg
 		
-	// 	//if ( 0 != prgs[i].s_cnt_down )
-	// 	//{
-	// 	//	prgs[i].s_cnt_down -= 1;
-	// 	//}
+		//if ( 0 != prgs[i].s_cnt_down )
+		//{
+		//	prgs[i].s_cnt_down -= 1;
+		//}
 
-	// 	//SET_LEDS_STATUS = 0x4;
-	// 	//SET_TRIGGERS = 0x4;
+		//SET_LEDS_STATUS = 0x4;
+		//SET_TRIGGERS = 0x4;
 
-	// 	for ( i = 0; i < NUM_NODES; i++ )
-	// 	{
-	// 		if ( TRUE == node_is_busy( i ) )
-	// 		{
-	// 			continue;
-	// 		}
+		for ( i = 0; i < NUM_NODES; i++ )
+		{
+			if ( TRUE == node_is_busy( i ) )
+			{
+				continue;
+			}
 
-	// 		#ifdef DBG_SCHEDULER
+			#ifdef DBG_SCHEDULER
 				
-	// 			print_str("\n[ n");print_dec(i);print_str(" ]\n");
+				print_str("\n[ n");print_dec(i);print_str(" ]\n");
 				
-	// 		#endif
+			#endif
 			
-	// 		// checking if any prgs got ready (the release time has been reached)
+			// checking if any prgs got ready (the release time has been reached)
 			
-	// 		prgs_set_ready( i );
+			prgs_set_ready( i );
 			
-	// 		prg_i = get_prg_apply_edh_rules( i );
+			prg_i = get_prg_apply_edh_rules( i );
 			
-	// 		if ( -1 == prg_i )
-	// 		{
-	// 			#ifdef DBG_SCHEDULER
-	// 				print_str("\n--> nothing to do\n");
-	// 			#endif
-	// 		}
+			if ( -1 == prg_i )
+			{
+				#ifdef DBG_SCHEDULER
+					print_str("\n--> nothing to do\n");
+				#endif
+			}
             
-	// 		else
-	// 		{
-	// 			#ifdef DBG_SCHEDULER
-	// 				print_str("--> p");print_dec(prg_i);print_str(" should be run\n");
-	// 			#endif
+			else
+			{
+				#ifdef DBG_SCHEDULER
+					print_str("--> p");print_dec(prg_i);print_str(" should be run\n");
+				#endif
 
-	// 			// execute the prg
+				// execute the prg
 
-	// 			node_assign_prg( i, prg_i );
+				node_assign_prg( i, prg_i );
 
-	// 			// discharge the node
+				// discharge the node
 
-	// 			nodes[i].charge = clamp_sub( nodes[i].charge, prgs[ prg_i ].e[ nodes[i].arch ] );
+				nodes[i].charge = clamp_sub( nodes[i].charge, prgs[ prg_i ].e[ nodes[i].arch ] );
 
-	// 			#ifdef DBG_SCHEDULER
-	// 				print_str("n");print_dec(i);print_str(" e: ");print_dec(nodes[i].charge);
-	// 				print_str("\ndischarged: ");print_dec(prgs[ prg_i ].e[ nodes[i].arch ]);
-	// 			#endif
+				#ifdef DBG_SCHEDULER
+					print_str("n");print_dec(i);print_str(" e: ");print_dec(nodes[i].charge);
+					print_str("\ndischarged: ");print_dec(prgs[ prg_i ].e[ nodes[i].arch ]);
+				#endif
 
-	// 			if ( 0 == nodes[i].charge )
-	// 			{
-	// 				print_str( "\nERR: node ran out of energy" );
-	// 				trap();
-	// 			}
-	// 		}
-	// 	}
+				if ( 0 == nodes[i].charge )
+				{
+					print_str( "\nERR: node ran out of energy" );
+					trap();
+				}
+			}
+		}
 
     
-	// }
+	}
 	
 	// trap();
 }

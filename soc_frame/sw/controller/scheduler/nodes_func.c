@@ -152,15 +152,16 @@ int node_is_busy( int node_i )
 
 void node_assign_prg( int node_i, int prg_i )
 {
-     print_str( "In node_assign_prg func" );
-    // ASSIGN( nodes[node_i], prgs[prg_i] );
-    //      while(1){ print_str( "In node_assign_prg func" );}
-
-//     // remember which prg the node is running and that the prg
-//     // as well as the node is active
+    print_str( "In node_assign_prg func" );
+        print_dec(node_i);
+    ASSIGN( nodes[node_i], prgs[prg_i] );
+    print_str( "In node_assign_prg func" );
     
-//     nodes[node_i].prg = prg_i;
-// 	node_set_busy( node_i );
+    // remember which prg the node is running and that the prg
+    // as well as the node is active
+    
+    nodes[node_i].prg = prg_i;
+	node_set_busy( node_i );
 }
 
 
