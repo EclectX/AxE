@@ -13,7 +13,7 @@
 #include "Node_arch_prgs.h"
 
 #include "globals.h"
-
+#include "./../../_libs/util.h"
 #include "clk_func.h"
 #include "math_func.h"
 #include "time_func.h"
@@ -272,6 +272,11 @@ void my_main()
 	init_nodes( nodes );
 	init_prgs( prgs );
 	init_archs( archs );
+
+	print_str("node[0] addres: ");
+	print_dec(nodes[0].addr_assign );
+	print_str("\nnode[1] addres: ");
+	print_dec(nodes[1].addr_assign );
 	
 	init_charges( charges );
     #ifdef REP_PRGS_SUMMERY
@@ -538,8 +543,15 @@ void my_main()
 				#ifdef DBG_SCHEDULER
 					print_str("--> p");print_dec(prg_i);print_str(" should be run\n");
 				#endif
+				// while(1){
+				// // execute the prg
+				//     print_str_m("node_assign_prg");
 
-				// execute the prg
+				// print_str("node[0] addres: ");
+				// print_dec(nodes[0].addr_assign );
+				// print_str("\nnode[1] addres: ");
+				// print_dec(nodes[1].addr_assign );
+				// }
 
 				node_assign_prg( i, prg_i );
 

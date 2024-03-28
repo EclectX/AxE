@@ -361,6 +361,6 @@
 #define IS_BUSY(  node_id_flag ) ( GET_BUSY & node_id_flag )
 #define IS_READY( node_id_flag ) ( ! IS_BUSY(node_id_flag) )
 
-#define ASSIGN( node, prg ) ( *( (volatile int*) node.addr_assign ) = prg.addr[node.arch] )
+#define ASSIGN( node, prg ) ( *( (volatile int*) node.mem_address_assigned) = prg.addr[node.arch] )
 
 #endif

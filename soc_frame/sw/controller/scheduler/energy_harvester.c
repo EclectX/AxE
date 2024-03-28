@@ -1,6 +1,6 @@
 /* This file has been automatically generated */
 
-#include "NAP.h"
+#include "globals.h"
 #include "Node_arch_prgs.h"
 
 

@@ -7,7 +7,7 @@
 #ifndef PRINT_H
 #define PRINT_H
 #include "util.h"
-// #define OUTPORT ( 0x00000000 )
+#define OUTPORT ( 0x00000000 )
 
 void NL();
 

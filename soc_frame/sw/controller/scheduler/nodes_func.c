@@ -154,6 +154,9 @@ void node_assign_prg( int node_i, int prg_i )
 {
     print_str( "In node_assign_prg func" );
         print_dec(node_i);
+        print_dec(nodes[node_i].addr_assign);
+        print_str( "In node_assign_prg func" );
+    print_str_m("node_assign_prg");
     ASSIGN( nodes[node_i], prgs[prg_i] );
     print_str( "In node_assign_prg func" );
     

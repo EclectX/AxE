@@ -5,17 +5,16 @@
 // 
 // ---------------------------------------------------------------------
 #include "print.h"
-#include "util.h"
+// #include "util.h"
 // #define OUTPORT ( 0x00000000 )
 
 void NL(){}
 
 void print_char(char x){}
 void print_str(const char *p){
-    
     while (*p != 0)
     {
-        *((volatile int*)OUTPORT) = *(p++);
+        *((volatile int*)OUTPORT) = (int)(*(p++));
     }
     *((volatile int*)OUTPORT) = 0;
 }
@@ -23,28 +22,30 @@ void print_str(const char *p){
 void print_dec(unsigned int val){
     char buffer[10];
     char *p = buffer;
-
+    
     // val % 10 returns the last digit
     // val / 10 discards the last digit and allows the extraction of the
     // next one
-
+    
     while (val || p == buffer)
     {
         *(p++) = val % 10;
         val = val / 10;
     }
-
+    
     // as the digits have been collected beginning with the least
     // significant one the output is running in reverse order
-
+    
     while (p != buffer)
     {
         *((volatile int*)OUTPORT) = '0' + *(--p);
     }
-        *((volatile int*)OUTPORT) = 0;
+    *((volatile int*)OUTPORT) = 0;
 }
-void print_str_m(const char* x){}
-void print_dec_m(unsigned int x){}
+void print_str_m(const char* p){
+
+}
+void print_dec_m(unsigned int p){}
 void print_hex(unsigned int x, int y){}
 void print_bin(unsigned int y, int x){}
 void print_fix( unsigned int x, int y, int z){}

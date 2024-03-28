@@ -8,6 +8,7 @@
 
 #include "./../../_libs/fixed_point.h"
 #include "./../../_libs/print.h"
+#include "./../../_libs/util.h"
 #include "NAP.h"
 #include "mpsoc.h"
 extern node_t nodes[ NUM_NODES ];

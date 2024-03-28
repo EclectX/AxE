@@ -1,6 +1,7 @@
 ****************start
-
-prg 0: emptymain1
+node[0] addres: 2147483776
+node[1] addres: 2147483780
+prg 0: msort
 ===arch0
 c: ms
 d: ms
@@ -8,7 +9,7 @@ t: ms
 e: mj
 c_clk_cnt: 0
 t_clk_cnt: 0
-prg 1: emptymain2
+prg 1: qsort
 ===arch0
 c: ms
 d: ms
@@ -19,35 +20,35 @@ t_clk_cnt: 0estimations
 
 arch: 0;
 
-exec time of: emptymain1
+exec time of: msort
 node id: 196600
 exec time of: 
-set cnt_diff to: 432587
-result: 17
-exec time of: emptymain2
-node id: 212272
+set cnt_diff to: 1043925
+result: 41
+exec time of: qsort
+node id: 215312
 exec time of: 
-set cnt_diff to: 434721
-result: 17
+set cnt_diff to: 1232042
+result: 49
 execution time estimations:
 
 arch 0;
 ;
-emptymain1: 196600;
-emptymain2: 212272
+msort: 196600;
+qsort: 215312
 get relative deadlines:
 
 arch 0
-p0 - emptymain1: 
+p0 - msort: 
 c  mod  d 
-p1 - emptymain2: 
+p1 - qsort: 
 c  mod  d 
 End of prgs_set_relative_deadline
 
 End ofprgs_set_period
 
 End of prgs_set_period_clk_cnt
-n0 - e: 863964 - e: 932835
+n0 - e: 863964 - e: 946195
 End of prgs_estimate_energy_requirements
 
 estimations -> done
@@ -55,32 +56,32 @@ estimations 2
 
 arch: 0;
 
-exec time of: emptymain1
+exec time of: msort
 node id: 196600
 exec time of: 
-set cnt_diff to: 432064
-result: 17
-exec time of: emptymain2
-node id: 212272
+set cnt_diff to: 1043921
+result: 41
+exec time of: qsort
+node id: 215312
 exec time of: 
-set cnt_diff to: 434198
-result: 17
+set cnt_diff to: 1232039
+result: 49
 execution time estimations:
 
 arch 0;
 ;
-emptymain1: 196600;
-emptymain2: 212272
+msort: 196600;
+qsort: 215312
 get relative deadlines:
 
 arch 0
-p0 - emptymain1: 
+p0 - msort: 
 c  mod  d 
-p1 - emptymain2: 
+p1 - qsort: 
 c  mod  d End of prgs_set_relative_deadline 2
 End ofprgs_set_period 2 
 End of prgs_set_period_clk_cnt 2 
-n0 - e: 863964 - e: 932835End of prgs_estimate_energy_requirements 2
+n0 - e: 863964 - e: 946195End of prgs_estimate_energy_requirements 2
 estimations -> done
 
 running task partition
@@ -95,16 +96,14 @@ energy check has passed
 assigned to n0
 p1
 n0
-load check has passed
-energy check has passed
 n1
 load check has passed
 energy check has passed
-assigned to n0
+assigned to n1
 
 partition summary
 p0 -> n0
-p1 -> n0
+p1 -> n1
 creating task list/array
 finding prgs belonging to n0
 prgs_start_i set to: 0
@@ -113,34 +112,432 @@ found p0 for -> n0
 set p0 at index: 0
 next index is: 1
 looking at p1
-found p1 for -> n0
-set p1 at index: 1
-next index is: 2
 finding prgs belonging to n1
 last node
-prgs_start_i set to: 2
+prgs_start_i set to: 1
 looking at p0
 looking at p1
+found p1 for -> n1
+set p1 at index: 1
+next index is: 2
 all prgs_starts: 
 n0 : 0
-n1 : 2
+n1 : 1
 report prgs list:
 0 | p0 <- n0;
- 1 | p1;
+ 1 | p1 <- n1;
  
 initial r and d
 
 p0
-r: 823
-d: 1646
+r: 322
+d: 644
 p1
-r: 817
-d: 1634
+r: 506
+d: 1012
 >~~~~~~~~~>
 cnt: 8954
 overflows: 0
 [ n0 ]
-setting prgs ready for n0p0-> readyp1-> ready-> done
+setting prgs ready for n0p0-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147603647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n0
+range: 0 - 1
+in ST for p0
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 7371709
+checking instance: 0
+until it's deadline: 7371709
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 7371709getting h for period: 7371709range: 0 - 1looking at p0having period t of: 7371709prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 7371709t_clk_cnt is smaller than dpossible executions: 1considering di: 7371709and the prg's period: 7371709h is now: 247285considering c of: 247285## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7124424
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 14743418
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 14743418getting h for period: 14743418range: 0 - 1looking at p0having period t of: 7371709prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 7371709t_clk_cnt is smaller than dpossible executions: 2considering di: 14743418and the prg's period: 7371709h is now: 494570considering c of: 247285## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 14248848
+checking instance: 2
+until it's deadline: 22115127
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 22115127getting h for period: 22115127range: 0 - 1looking at p0having period t of: 7371709prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 7371709t_clk_cnt is smaller than dpossible executions: 3considering di: 22115127and the prg's period: 7371709h is now: 741855considering c of: 247285## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 21373272
+checking instance: 3
+until it's deadline: 29486836
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 29486836getting h for period: 29486836range: 0 - 1looking at p0having period t of: 7371709prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 7371709t_clk_cnt is smaller than dpossible executions: 4considering di: 29486836and the prg's period: 7371709h is now: 989140considering c of: 247285## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 28497696
+checking instance: 4
+until it's deadline: 36858545
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 36858545getting h for period: 36858545range: 0 - 1looking at p0having period t of: 7371709prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 7371709t_clk_cnt is smaller than dpossible executions: 5considering di: 36858545and the prg's period: 7371709h is now: 1236425considering c of: 247285## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 35622120
+checking instance: 5
+until it's deadline: 44230254
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 44230254getting h for period: 44230254range: 0 - 1looking at p0having period t of: 7371709prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 7371709t_clk_cnt is smaller than dpossible executions: 6considering di: 44230254and the prg's period: 7371709h is now: 1483710considering c of: 247285## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 42746544
+finished checking instances of p0
+found a prg to run: 0--> p0 should be run
+In node_assign_prg func02147483647In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147483647
+sub: 0n0 e: 2147483647
+discharged: 0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147624647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147483647
+sub: 0n1 e: 2147483647
+discharged: 0
+>~~~~~~~~~>
+cnt: 5799473
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  2000000
+CHARGE: ovfl: 0
+clamp_add number: 2147483647
+add: 15000
+clamp_add number: 2147483647
+add: 15000
+CHARGE: charge of n0: 2147498647
+CHARGE: charge of n1: 2147498647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147647647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147498647
+sub: 0n1 e: 2147498647
+discharged: 0
+>~~~~~~~~~>
+cnt: 8972304
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  3000000
+CHARGE: ovfl: 0
+clamp_add number: 2147498647
+add: 15000
+clamp_add number: 2147498647
+add: 15000
+CHARGE: charge of n0: 2147513647
+CHARGE: charge of n1: 2147513647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147670647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147513647
+sub: 0n1 e: 2147513647
+discharged: 0
+>~~~~~~~~~>
+cnt: 12145137
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  4000000
+CHARGE: ovfl: 0
+clamp_add number: 2147513647
+add: 16000
+clamp_add number: 2147513647
+add: 16000
+CHARGE: charge of n0: 2147529647
+CHARGE: charge of n1: 2147529647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
 
 getting prg by edh rules
 
@@ -154,91 +551,1560 @@ finished running SE: 2147693647
 ED-H rule 4
 battery full or no slack time
 
-running ST for n0
-range: 0 - 2
-in ST for p0
+running ST for n1
+range: 1 - 2
+in ST for p1
 checking clairvoyance: 50000000
-covering instances: 4
-having a period of: 11390812
+covering instances: 6
+having a period of: 8005821
 checking instance: 0
-until it's deadline: 11390812
+until it's deadline: 8005821
 # ST_tau
 
-ST_tau for p0
-ST_tau = T: 11390812getting h for period: 11390812range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 1considering di: 11390812and the prg's period: 11390812h is now: 632038considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is greater than d
--> ignoring
-## h - end
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
 
 => back in ST
 
-smalles_ST_tau_new: 10758774
+smalles_ST_tau_new: 7580244
 new ST tau is smaller
 old ST tau was: 4294967295
 checking instance: 1
-until it's deadline: 22781624
+until it's deadline: 16011642
 # ST_tau
 
-ST_tau for p0
-ST_tau = T: 22781624getting h for period: 22781624range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 2considering di: 22781624and the prg's period: 11390812h is now: 1264076considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is smaller than dpossible executions: 1considering di: 22781624and the prg's period: 15825187h is now: 1941522considering c of: 677446## h - end
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
 
 => back in ST
 
-smalles_ST_tau_new: 20840102
+smalles_ST_tau_new: 15160488
 checking instance: 2
-until it's deadline: 34172436
+until it's deadline: 24017463
 # ST_tau
 
-ST_tau for p0
-ST_tau = T: 34172436getting h for period: 34172436range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 3considering di: 34172436and the prg's period: 11390812h is now: 1896114considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is smaller than dpossible executions: 2considering di: 34172436and the prg's period: 15825187h is now: 3251006considering c of: 677446## h - end
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
 
 => back in ST
 
-smalles_ST_tau_new: 30921430
+smalles_ST_tau_new: 22740732
 checking instance: 3
-until it's deadline: 45563248
-# ST_tau
-
-ST_tau for p0
-ST_tau = T: 45563248getting h for period: 45563248range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 4considering di: 45563248and the prg's period: 11390812h is now: 2528152considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is smaller than dpossible executions: 2considering di: 45563248and the prg's period: 15825187h is now: 3883044considering c of: 677446## h - end
-
-=> back in ST
-
-smalles_ST_tau_new: 41680204
-finished checking instances of p0
-in ST for p1
-checking clairvoyance: 50000000
-covering instances: 3
-having a period of: 15825187
-checking instance: 0
-until it's deadline: 15825187
+until it's deadline: 32023284
 # ST_tau
 
 ST_tau for p1
-ST_tau = T: 15825187getting h for period: 15825187range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 1considering di: 15825187and the prg's period: 11390812h is now: 632038considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is smaller than dpossible executions: 1considering di: 15825187and the prg's period: 15825187h is now: 1309484considering c of: 677446## h - end
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
 
 => back in ST
 
-smalles_ST_tau_new: 14515703
-checking instance: 1
-until it's deadline: 31650374
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
 # ST_tau
 
 ST_tau for p1
-ST_tau = T: 31650374getting h for period: 31650374range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 2considering di: 31650374and the prg's period: 11390812h is now: 1264076considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is smaller than dpossible executions: 2considering di: 31650374and the prg's period: 15825187h is now: 2618968considering c of: 677446## h - end
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
 
 => back in ST
 
-smalles_ST_tau_new: 29031406
-checking instance: 2
-until it's deadline: 47475561
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
 # ST_tau
 
 ST_tau for p1
-ST_tau = T: 47475561getting h for period: 47475561range: 0 - 2looking at p0having period t of: 11390812prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 11390812t_clk_cnt is smaller than dpossible executions: 4considering di: 47475561and the prg's period: 11390812h is now: 2528152considering c of: 632038looking at p1having period t of: 15825187prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 15825187t_clk_cnt is smaller than dpossible executions: 3considering di: 47475561and the prg's period: 15825187h is now: 4560490considering c of: 677446## h - end
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
 
 => back in ST
 
-smalles_ST_tau_new: 42915071
+smalles_ST_tau_new: 45481464
 finished checking instances of p1
 found a prg to run: 1--> p1 should be run
-In node_assign_prg func0
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147529647
+sub: 0n1 e: 2147529647
+discharged: 0
+>~~~~~~~~~>
+cnt: 15319412
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  5000000
+CHARGE: ovfl: 0
+clamp_add number: 2147529647
+add: 17000
+clamp_add number: 2147529647
+add: 17000
+CHARGE: charge of n0: 2147546647
+CHARGE: charge of n1: 2147546647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147717647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147546647
+sub: 0n1 e: 2147546647
+discharged: 0
+>~~~~~~~~~>
+cnt: 18493687
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  6000000
+CHARGE: ovfl: 0
+clamp_add number: 2147546647
+add: 18000
+clamp_add number: 2147546647
+add: 18000
+CHARGE: charge of n0: 2147564647
+CHARGE: charge of n1: 2147564647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147741647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147564647
+sub: 0n1 e: 2147564647
+discharged: 0
+>~~~~~~~~~>
+cnt: 21667962
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  7000000
+CHARGE: ovfl: 0
+clamp_add number: 2147564647
+add: 19000
+clamp_add number: 2147564647
+add: 19000
+CHARGE: charge of n0: 2147583647
+CHARGE: charge of n1: 2147583647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147765647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147583647
+sub: 0n1 e: 2147583647
+discharged: 0
+>~~~~~~~~~>
+cnt: 24842237
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  8000000
+CHARGE: ovfl: 0
+clamp_add number: 2147583647
+add: 20000
+clamp_add number: 2147583647
+add: 20000
+CHARGE: charge of n0: 2147603647
+CHARGE: charge of n1: 2147603647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147790647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147603647
+sub: 0n1 e: 2147603647
+discharged: 0
+>~~~~~~~~~>
+cnt: 28016512
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  9000000
+CHARGE: ovfl: 0
+clamp_add number: 2147603647
+add: 21000
+clamp_add number: 2147603647
+add: 21000
+CHARGE: charge of n0: 2147624647
+CHARGE: charge of n1: 2147624647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147815647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147624647
+sub: 0n1 e: 2147624647
+discharged: 0
+>~~~~~~~~~>
+cnt: 31190787
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  10000000
+CHARGE: ovfl: 0
+clamp_add number: 2147624647
+add: 23000
+clamp_add number: 2147624647
+add: 23000
+CHARGE: charge of n0: 2147647647
+CHARGE: charge of n1: 2147647647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147840647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147647647
+sub: 0n1 e: 2147647647
+discharged: 0
+>~~~~~~~~~>
+cnt: 34366504
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  11000000
+CHARGE: ovfl: 0
+clamp_add number: 2147647647
+add: 23000
+clamp_add number: 2147647647
+add: 23000
+CHARGE: charge of n0: 2147670647
+CHARGE: charge of n1: 2147670647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147865647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147670647
+sub: 0n1 e: 2147670647
+discharged: 0
+>~~~~~~~~~>
+cnt: 37542223
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  12000000
+CHARGE: ovfl: 0
+clamp_add number: 2147670647
+add: 23000
+clamp_add number: 2147670647
+add: 23000
+CHARGE: charge of n0: 2147693647
+CHARGE: charge of n1: 2147693647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147890647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147693647
+sub: 0n1 e: 2147693647
+discharged: 0
+>~~~~~~~~~>
+cnt: 40717940
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  13000000
+CHARGE: ovfl: 0
+clamp_add number: 2147693647
+add: 24000
+clamp_add number: 2147693647
+add: 24000
+CHARGE: charge of n0: 2147717647
+CHARGE: charge of n1: 2147717647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147919647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147717647
+sub: 0n1 e: 2147717647
+discharged: 0
+>~~~~~~~~~>
+cnt: 43893659
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  14000000
+CHARGE: ovfl: 0
+clamp_add number: 2147717647
+add: 24000
+clamp_add number: 2147717647
+add: 24000
+CHARGE: charge of n0: 2147741647
+CHARGE: charge of n1: 2147741647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147952647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147741647
+sub: 0n1 e: 2147741647
+discharged: 0
+>~~~~~~~~~>
+cnt: 47069376
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  15000000
+CHARGE: ovfl: 0
+clamp_add number: 2147741647
+add: 24000
+clamp_add number: 2147741647
+add: 24000
+CHARGE: charge of n0: 2147765647
+CHARGE: charge of n1: 2147765647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2147988647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147765647
+sub: 0n1 e: 2147765647
+discharged: 0
+>~~~~~~~~~>
+cnt: 50245095
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  16000000
+CHARGE: ovfl: 0
+clamp_add number: 2147765647
+add: 25000
+clamp_add number: 2147765647
+add: 25000
+CHARGE: charge of n0: 2147790647
+CHARGE: charge of n1: 2147790647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2148028647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147790647
+sub: 0n1 e: 2147790647
+discharged: 0
+>~~~~~~~~~>
+cnt: 53420812
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  17000000
+CHARGE: ovfl: 0
+clamp_add number: 2147790647
+add: 25000
+clamp_add number: 2147790647
+add: 25000
+CHARGE: charge of n0: 2147815647
+CHARGE: charge of n1: 2147815647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2148072647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147815647
+sub: 0n1 e: 2147815647
+discharged: 0
+>~~~~~~~~~>
+cnt: 56596531
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  18000000
+CHARGE: ovfl: 0
+clamp_add number: 2147815647
+add: 25000
+clamp_add number: 2147815647
+add: 25000
+CHARGE: charge of n0: 2147840647
+CHARGE: charge of n1: 2147840647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2148111647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 1considering di: 8005821and the prg's period: 8005821h is now: 425577considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 7580244
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 16011642
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 16011642getting h for period: 16011642range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 2considering di: 16011642and the prg's period: 8005821h is now: 851154considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 15160488
+checking instance: 2
+until it's deadline: 24017463
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 24017463getting h for period: 24017463range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 3considering di: 24017463and the prg's period: 8005821h is now: 1276731considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 22740732
+checking instance: 3
+until it's deadline: 32023284
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 32023284getting h for period: 32023284range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 4considering di: 32023284and the prg's period: 8005821h is now: 1702308considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 30320976
+checking instance: 4
+until it's deadline: 40029105
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 40029105getting h for period: 40029105range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 5considering di: 40029105and the prg's period: 8005821h is now: 2127885considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 37901220
+checking instance: 5
+until it's deadline: 48034926
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 48034926getting h for period: 48034926range: 1 - 2looking at p1having period t of: 8005821prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 8005821t_clk_cnt is smaller than dpossible executions: 6considering di: 48034926and the prg's period: 8005821h is now: 2553462considering c of: 425577## h - end
+
+=> back in ST
+
+smalles_ST_tau_new: 45481464
+finished checking instances of p1
+found a prg to run: 1--> p1 should be run
+In node_assign_prg func141998In node_assign_prg funcIn node_assign_prg func
+clamp_sub number: 2147840647
+sub: 0n1 e: 2147840647
+discharged: 0
+>~~~~~~~~~>
+cnt: 59772248
+overflows: 0
+CHARGE: the next charge has to be applied
+
+CHARGE: next charge will be at time:
+CHARGE: cnt:  19000000
+CHARGE: ovfl: 0
+clamp_add number: 2147840647
+add: 25000
+clamp_add number: 2147840647
+add: 25000
+CHARGE: charge of n0: 2147865647
+CHARGE: charge of n1: 2147865647node busy id:0
+[ n1 ]
+setting prgs ready for n1p1-> ready-> done
+
+getting prg by edh rules
+
+==================
+ED-H rule 3
+checking for no energy
+checking slack energy
+------------------
+finished running SE: 2148144647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n1
+range: 1 - 2
+in ST for p1
+checking clairvoyance: 50000000
+covering instances: 6
+having a period of: 8005821
+checking instance: 0
+until it's deadline: 8005821
+# ST_tau
+
+ST_tau for p1
+ST_tau = T: 8005821getting h for period: 8005821range: 1 - 2looking at p1having period t of: 8005821prg_i: 

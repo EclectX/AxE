@@ -25,6 +25,7 @@
         "partition_func.h": "c",
         "nap.h": "c",
         "arch_func.h": "c",
-        "node_arch_prgs.h": "c"
+        "node_arch_prgs.h": "c",
+        "util.h": "c"
     }
 }

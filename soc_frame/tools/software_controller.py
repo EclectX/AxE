@@ -124,10 +124,10 @@ class Controller( Software ):
         define_lst = []
         define_lst.append( '/* This file has been automatically generated */' )
         define_lst.append( '' )
-        define_lst.append("#include \"NAP.h\"\n")
-        define_lst.append("#include \"typedefs.h\"\n")
+        define_lst.append("#include \"globals.h\"\n")
+        # define_lst.append("#include \"typedefs.h\"\n")
         define_lst.append("#include \"Node_arch_prgs.h\"\n")
-        define_lst.append("#include \"mpsoc.h\"\n\n")
+        # define_lst.append("#include \"mpsoc.h\"\n\n")
         define_lst.append( 'void init_prgs( prg_t *prgs )' )
         define_lst.append( '{' )
         
@@ -254,10 +254,10 @@ class Controller( Software ):
         define_lst = []
         define_lst.append( '/* This file has been automatically generated */' )
         define_lst.append( '' )
-        define_lst.append("#include \"NAP.h\"\n")
+        define_lst.append("#include \"globals.h\"\n")
         define_lst.append("#include \"Node_arch_prgs.h\"\n")
-        define_lst.append("#include \"defines.h\"\n")
-        define_lst.append("#include \"typedefs.h\"\n")
+        # define_lst.append("#include \"defines.h\"\n")
+        # define_lst.append("#include \"typedefs.h\"\n")
         define_lst.append( 'void init_nodes( node_t *nodes )' )
         define_lst.append( '{' )
         
@@ -280,6 +280,7 @@ class Controller( Software ):
             define_lst.append( '\tnodes[' + str(i) + '].arch        = ' + 'ARCH_RV32' + node_arch.upper() + ';' )
             define_lst.append( '\tnodes[' + str(i) + '].id_flag     = ' + 'NODE_' + str(i) + '_ID;' )
             define_lst.append( '\tnodes[' + str(i) + '].addr_assign = ' + 'NODE_' + str(i) + '_ADDR_ASSIGN;' )
+            define_lst.append( '\tnodes[' + str(i) + '].mem_address_assigned = ' + 'NODE_' + str(i) + '_ADDR_ASSIGN;' )
             define_lst.append( '\tnodes[' + str(i) + '].cnt         = ' + 'NODE_' + str(i) + '_COUNTER;' )
             define_lst.append( '\tnodes[' + str(i) + '].prg         = -1;' )
             define_lst.append( '\tnodes[' + str(i) + '].charge      = CHARGE_INITIAL;' )
@@ -350,7 +351,7 @@ class Controller( Software ):
         define_lst = []
         define_lst.append( '/* This file has been automatically generated */' )
         define_lst.append( '' )
-        define_lst.append( '#include \"NAP.h\"' )
+        define_lst.append( '#include \"globals.h\"' )
         define_lst.append("#include \"Node_arch_prgs.h\"\n")
         define_lst.append( '' )
         define_lst.append( 'void init_charges( int *charges )' )

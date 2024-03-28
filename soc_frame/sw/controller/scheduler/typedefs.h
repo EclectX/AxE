@@ -58,7 +58,7 @@ typedef struct {
     int cnt;
     int prg;                   // the prg that is assigned to the node
     unsigned int charge;
-    
+    int mem_address_assigned;
     unsigned int prgs_start_i; // the index in the prg array where the prgs for this node start
     
 } node_t;
