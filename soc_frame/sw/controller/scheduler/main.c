@@ -509,6 +509,8 @@ void my_main()
 		{
 			if ( TRUE == node_is_busy( i ) )
 			{
+				print_str("node busy id:");
+				print_dec(i);
 				continue;
 			}
 

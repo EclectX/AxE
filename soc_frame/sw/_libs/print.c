@@ -11,11 +11,15 @@
 void NL(){}
 
 void print_char(char x){}
-void print_str(const char *p){    while (*p != 0)
+void print_str(const char *p){
+    
+    while (*p != 0)
     {
         *((volatile int*)OUTPORT) = *(p++);
     }
-    *((volatile int*)OUTPORT) = 0;}
+    *((volatile int*)OUTPORT) = 0;
+}
+
 void print_dec(unsigned int val){
     char buffer[10];
     char *p = buffer;
