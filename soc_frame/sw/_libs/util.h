@@ -10,7 +10,7 @@ typedef struct {
 #define MAX ( 0xFFFFFFFF )
 #define MAX_HALF ( 0x7FFFFFFF )
 
-#define OUTPORT 0x00000000
+// #define OUTPORT 0x00000000
 
 #define FINISHED ( 0x00FFFFFC )
 

@@ -312,7 +312,7 @@ print( "\t\t\t\t>>>>>>>>pick controller estimations" )
 ### NO ITS NOT #### REASON IS 25048 HARD CODED INTO VTOP__TRACE.CPP 
 ### NO ITS NOT HARD CODED ===> DELETE OBJ_DIR +++ CHANGE MEM_SIZE ====> THEN RE-RUN
 controller_size_addr = 32764 # 0x7FFC
-controller_size_addr = 196600
+controller_size_addr = 1048576
 controller_size = controller_size_addr / 4
 
 controller_size = int(controller_size)

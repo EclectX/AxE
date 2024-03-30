@@ -57,15 +57,4 @@ void my_main()
 
 
 
-    // print_str("exact\n");
-    // print_dec(pro);
-    nl();
-    
-    // print_str("approx\n");
-    print_dec(fpquo);
-    nl();
-    
-    print_str( "div d\n" );
-    
-    while (1==1){}
 }
