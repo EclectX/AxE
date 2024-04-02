@@ -26,6 +26,8 @@
         "nap.h": "c",
         "arch_func.h": "c",
         "node_arch_prgs.h": "c",
-        "util.h": "c"
+        "util.h": "c",
+        "basicmath.h": "c",
+        "costum_math.h": "c"
     }
 }

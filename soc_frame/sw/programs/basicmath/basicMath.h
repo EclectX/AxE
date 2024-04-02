@@ -1,7 +1,8 @@
-#ifndef _HELP_
-#define _HELP_
+#ifndef BASICMATH_H
+#define BASICMATH_H
 
 #include "../../_libs/util.h"
+#include "../../_libs/costum_math.h"
 /* The printf's may be removed to isolate just the math calculations */
 #define BITSPERLONG 32
 
