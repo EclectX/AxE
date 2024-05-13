@@ -10,7 +10,9 @@
 
 void NL(){}
 
-void print_char(char x){}
+void print_char(char x){
+    *((volatile int*)OUTPORT) = (int)(x);
+}
 void print_str(const char *p){
     while (*p != 0)
     {

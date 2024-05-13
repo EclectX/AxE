@@ -1,7 +1,7 @@
 ****************start
 node[0] addres: 2147483776
 node[1] addres: 2147483780
-prg 0: basicmath
+prg 0: msort
 ===arch0
 c: ms
 d: ms
@@ -9,7 +9,7 @@ t: ms
 e: mj
 c_clk_cnt: 0
 t_clk_cnt: 0
-prg 1: msort
+prg 1: qsort
 ===arch0
 c: ms
 d: ms
@@ -20,35 +20,35 @@ t_clk_cnt: 0estimations
 
 arch: 0;
 
-exec time of: basicmath
-node id: 2097152
-exec time of: 
-set cnt_diff to: 548390
-result: 21
 exec time of: msort
-node id: 4887064
+node id: 2097152
 exec time of: 
 set cnt_diff to: 1041327
 result: 41
+exec time of: qsort
+node id: 2110912
+exec time of: 
+set cnt_diff to: 1232041
+result: 49
 execution time estimations:
 
 arch 0;
 ;
-basicmath: 2097152;
-msort: 4887064
+msort: 2097152;
+qsort: 2110912
 get relative deadlines:
 
 arch 0
-p0 - basicmath: 
+p0 - msort: 
 c  mod  d 
-p1 - msort: 
+p1 - qsort: 
 c  mod  d 
 End of prgs_set_relative_deadline
 
 End ofprgs_set_period
 
 End of prgs_set_period_clk_cnt
-n0 - e: 9216000 - e: 4699139
+n0 - e: 9216000 - e: 9276468
 End of prgs_estimate_energy_requirements
 
 estimations -> done
@@ -56,32 +56,32 @@ estimations 2
 
 arch: 0;
 
-exec time of: basicmath
-node id: 2097152
-exec time of: 
-set cnt_diff to: 548389
-result: 21
 exec time of: msort
-node id: 4887064
+node id: 2097152
 exec time of: 
 set cnt_diff to: 1041323
 result: 41
+exec time of: qsort
+node id: 2110912
+exec time of: 
+set cnt_diff to: 1232040
+result: 49
 execution time estimations:
 
 arch 0;
 ;
-basicmath: 2097152;
-msort: 4887064
+msort: 2097152;
+qsort: 2110912
 get relative deadlines:
 
 arch 0
-p0 - basicmath: 
+p0 - msort: 
 c  mod  d 
-p1 - msort: 
+p1 - qsort: 
 c  mod  d End of prgs_set_relative_deadline 2
 End ofprgs_set_period 2 
 End of prgs_set_period_clk_cnt 2 
-n0 - e: 9216000 - e: 4699139End of prgs_estimate_energy_requirements 2
+n0 - e: 9216000 - e: 9276468End of prgs_estimate_energy_requirements 2
 estimations -> done
 
 running task partition
@@ -132,11 +132,11 @@ report prgs list:
 initial r and d
 
 p0
-r: 484
-d: 968
+r: 635
+d: 1270
 p1
-r: 578
-d: 1156
+r: 503
+d: 1006
 >~~~~~~~~~>
 cnt: 8954
 overflows: 0
@@ -149,3 +149,59 @@ getting prg by edh rules
 ED-H rule 3
 checking for no energy
 checking slack energy
+------------------
+finished running SE: 2147513647
+==================
+ED-H rule 4
+battery full or no slack time
+
+running ST for n0
+range: 0 - 2
+in ST for p0
+checking clairvoyance: 50000000
+covering instances: 10
+having a period of: 4683520
+checking instance: 0
+until it's deadline: 4683520
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 4683520getting h for period: 4683520range: 0 - 2looking at p0having period t of: 4683520prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 4683520t_clk_cnt is smaller than dpossible executions: 1considering di: 4683520and the prg's period: 4683520h is now: 5201920considering c of: 5201920looking at p1having period t of: 2387050prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 2387050t_clk_cnt is smaller than dpossible executions: 1considering di: 4683520and the prg's period: 2387050h is now: 9349532considering c of: 4147612## h - end
+
+ST_tau got underflow
+
+=> back in ST
+
+smalles_ST_tau_new: 0
+new ST tau is smaller
+old ST tau was: 4294967295
+checking instance: 1
+until it's deadline: 9367040
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 9367040getting h for period: 9367040range: 0 - 2looking at p0having period t of: 4683520prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 4683520t_clk_cnt is smaller than dpossible executions: 2considering di: 9367040and the prg's period: 4683520h is now: 10403840considering c of: 5201920looking at p1having period t of: 2387050prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 2387050t_clk_cnt is smaller than dpossible executions: 3considering di: 9367040and the prg's period: 2387050h is now: 22846676considering c of: 4147612## h - end
+
+ST_tau got underflow
+
+=> back in ST
+
+smalles_ST_tau_new: 0
+checking instance: 2
+until it's deadline: 14050560
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 14050560getting h for period: 14050560range: 0 - 2looking at p0having period t of: 4683520prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 4683520t_clk_cnt is smaller than dpossible executions: 3considering di: 14050560and the prg's period: 4683520h is now: 15605760considering c of: 5201920looking at p1having period t of: 2387050prg_i: 1prgs[ prg_i ].t_clk_cnt[0]: 2387050t_clk_cnt is smaller than dpossible executions: 5considering di: 14050560and the prg's period: 2387050h is now: 36343820considering c of: 4147612## h - end
+
+ST_tau got underflow
+
+=> back in ST
+
+smalles_ST_tau_new: 0
+checking instance: 3
+until it's deadline: 18734080
+# ST_tau
+
+ST_tau for p0
+ST_tau = T: 18734080getting h for period: 18734080range: 0 - 2looking at p0having period t of: 4683520prg_i: 0prgs[ prg_i ].t_clk_cnt[0]: 4683520t_clk_cnt is smaller than dpossible executions: 4considering di: 18734080and the prg's period: 
