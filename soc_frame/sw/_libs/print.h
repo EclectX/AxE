@@ -6,16 +6,14 @@
 // ---------------------------------------------------------------------
 #ifndef PRINT_H
 #define PRINT_H
-#include "util.h"
+
 #define OUTPORT ( 0x00000000 )
 
-void NL();
+#define NL ( *((volatile int*)OUTPORT) = '\n' )
 
 void print_char(char);
 void print_str(const char*);
 void print_dec(unsigned int);
-void print_str_m(const char*);
-void print_dec_m(unsigned int);
 void print_hex(unsigned int, int);
 void print_bin(unsigned int, int);
 void print_fix( unsigned int, int, int);
@@ -34,5 +32,8 @@ void print_fixed_sub( unsigned int, unsigned int, unsigned int);
 void print_fixed_mul( unsigned int, unsigned int, unsigned int);
 void print_fixed_div( unsigned int, unsigned int, unsigned int);
 void print_fixed_calculation( unsigned int, unsigned int, unsigned int, char);
+
+// char
+// -------------------------------------
 
 #endif

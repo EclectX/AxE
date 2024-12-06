@@ -17,24 +17,24 @@
 
 `include "../../rtl/axi_detector/axi_detector.sv"
 
-`include "../../rtl/pico/picorv32.v"
+`include "../../rtl/PiXo/picorv32_extended.v"
 
-`ifdef INCISIVE
+// `ifdef INCISIVE
     
-    `include "../../rtl/pico/picorv32_if_wrapper_cadence.sv"
+//     `include "../../rtl/pico/picorv32_if_wrapper_cadence.sv"
     
-    `include "../../rtl/memory_asic/memory_latch1.sv"
-    `include "../../rtl/memory_asic/latch_register_file.sv"
-    `include "../../rtl/memory_asic/latch_register_file_wrapper.sv"
-    `include "../../rtl/memory_asic/cluster_clock_gating.sv"
+//     `include "../../rtl/memory_asic/memory_latch1.sv"
+//     `include "../../rtl/memory_asic/latch_register_file.sv"
+//     `include "../../rtl/memory_asic/latch_register_file_wrapper.sv"
+//     `include "../../rtl/memory_asic/cluster_clock_gating.sv"
     
-`else
+// `else
     
-    `include "../../rtl/pico/picorv32_if_wrapper.sv"
+    `include "../../rtl/PiXo/picorv32_if_wrapper.sv"
     
     `include "../../rtl/memory/memory_mem_packer.sv"
     
-`endif
+// `endif
 
 `include "../../rtl/debugger/debugger.sv"
 

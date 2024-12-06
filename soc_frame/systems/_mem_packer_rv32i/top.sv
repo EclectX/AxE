@@ -13,8 +13,6 @@
 `include "defines_mem.vh"
 `include "defines_ascii.vh"
 
-
-
 `include "../../rtl/interfaces/if_axi_light.sv"
 
 `include "../../rtl/axi_detector/axi_detector.sv"

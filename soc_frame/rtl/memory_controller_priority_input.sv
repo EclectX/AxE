@@ -21,6 +21,15 @@ module memory_controller
     
     ,output reg [7:0] leds_status
     ,output reg [7:0] triggers
+    
+    ,input [31:0] spoon_feed
+    ,output spoon_taken
+    
+    ,output [31:0] addr_pixel
+    ,output request_pixel
+    
+    ,input [31:0] pixel
+    ,input pixel_avail
 );
     
     if_axi_light #() if_axi_light_bridge_to_arbiter();
@@ -203,6 +212,15 @@ module memory_controller
         
         ,.leds_status( leds_status )
         ,.triggers( triggers )
+        
+        ,.spoon_feed( spoon_feed )
+        ,.spoon_taken( spoon_taken )
+        
+        ,.addr_pixel( addr_pixel )
+        ,.request_pixel( request_pixel )
+        
+        ,.pixel( pixel )
+        ,.pixel_avail( pixel_avail )
     );
     
 endmodule

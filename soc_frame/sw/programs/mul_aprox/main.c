@@ -2,6 +2,7 @@
 // This is free and unencumbered software released into the public domain.
 
 #include "util.h"
+#include "print.h"
 
 // idea from:
 // http://quasilyte.dev/blog/post/riscv32-custom-instruction-and-its-simulation/
@@ -18,17 +19,17 @@
 // to keep everything working with O0 an additional instruction is needed to
 // read the result from the register. this is done by adding 0 to x10.
 
-__attribute__((noinline))
-int amul(int rd, int rs1, int rs2)
-{
-    asm __volatile__ (".word 0xFEC5857F\n");
-    asm __volatile__ ("addi %0, x10, 0" : "=r" (rd));
+// __attribute__((noinline))
+// int amul(int rd, int rs1, int rs2)
+// {
+//     asm __volatile__ (".word 0xFEC5857F\n");
+//     asm __volatile__ ("addi %0, x10, 0" : "=r" (rd));
     
-    return rd;
-}
+//     return rd;
+// }
 
 // The main function has to be called my_main.
-//TODO: Could be buggy, as it has been changed a few times and not re-verified in a simulation.
+
 void my_main()
 {
     // There are a few print functions located in util.h (found in dir _libs).
@@ -42,25 +43,42 @@ void my_main()
     // The messeges are detected by the debugger module and further processed
     // by the simulation environment (sim_main.cpp under configurations)
     
-    print_str( "mul s\n" );
+    // print_str( "mul s\n" );
+    
     int a = 333;
     int b = 444;
-
+    
     int pro = 0;
     int pro_appr = 0;
     
-    pro = a + b;
-    pro_appr = amul( pro_appr, a, b);
+    pro = a * b;
+    uint32_t X = 0x400ccccd;//2.2
+    uint32_t Y = 0x42288f5c;
 
-    print_str("exact\n");
-    print_dec(pro);
-    nl();
+    uint32_t Z = fpmul(X,Y);
+    display_print(0,0,"\nZ is : ");
+    display_print(1,Z,"");
     
-    print_str("approx\n");
-    print_dec(pro_appr);
-    nl();
+    display_print(0,0,"\nZ is : ");
+    display_print(1,Z,"");
     
-    print_str( "mul d\n" );
+    display_print(0,0,"\nZ is : ");
+    display_print(1,Z,"");
     
-    while (1==1){}
+    display_print(0,0,"\nZ is : ");
+    display_print(1,Z,"");
+    
+    // pro_appr = amul( pro_appr, a, b );
+    
+    // print_str("exact\n");
+    // print_dec(pro);
+    // nl();
+    
+    // print_str("approx\n");
+    // print_dec(pro_appr);
+    // nl();
+    
+    // print_str( "mul d\n" );
+    
+    // while (1==1){}
 }

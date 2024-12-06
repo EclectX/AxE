@@ -5,16 +5,9 @@
 //~ #include <stdio.h>
 #include <stdlib.h>
 
-#include "./../../_libs/util.h"
+#include "util.h"
 #include "memmgr.h"
-// __attribute__((noinline))
-// int amul(int rd, int rs1, int rs2)
-// {
-//     asm __volatile__ (".word 0xFEC5857F\n");
-//     asm __volatile__ ("addi %0, x10, 0" : "=r" (rd));
-    
-//     return rd;
-// }
+
 // Function to Merge Arrays L and R into A. 
 // lefCount = number of elements in L
 // rightCount = number of elements in R. 
@@ -67,7 +60,8 @@ void my_main() {
 //~ int main() {
 	/* Code to test the MergeSort function. */
     
-    // print_str( "msort s\n" );
+    print_str( "msort s\n" );
+	
 	int A[] = {6,2,3,1,9,10,15,13,12,17}; // creating an array of integers. 
 	//~ int i;
     int numberOfElements;
@@ -80,6 +74,7 @@ void my_main() {
 
 	// Calling merge sort to sort the array. 
 	MergeSort(A,numberOfElements);
+
 	//printing all elements in the array once its sorted.
 	//~ for(i = 0;i < numberOfElements;i++) printf("%d ",A[i]);
     
@@ -90,5 +85,5 @@ void my_main() {
         //~ nl();
     //~ }
     
-    // print_str( "msort d\n" );
+    print_str( "msort d\n" );
 }

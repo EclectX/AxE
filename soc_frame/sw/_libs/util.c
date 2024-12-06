@@ -172,20 +172,7 @@ void signal_kill_sim()
 
 // str
 // -------------------------------------
-void print_str_str_n( const char *p,const char * t ){}
-void print_str_dec_n( const char *T,unsigned int val ){}
 
-void print_str_n(const char *p){}
-// dec
-// -------------------------------------
-
-void print_dec_n(unsigned int val){}
-
-// binary
-// -------------------------------------
-
-void print_bin_n(unsigned int val, int bits){}
-// newline
 // -------------------------------------
 
 
@@ -778,7 +765,7 @@ uint32_t fp_Sqrt_x_lt_30(uint32_t y) {
     float* yF = &y;
     if(*yF >30.0){
         counterF+=1;
-        printf("\n%d %f",counterF,*yF);
+        // printf("\n%d %f",counterF,*yF);
     }
     uint32_t x;
     uint32_t const_15 = 0x41700000;

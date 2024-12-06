@@ -37,8 +37,7 @@ VERILATOR_FLAGS =
 VERILATOR_FLAGS += -cc --exe
 
 # used to create trace file
-VERILATOR_FLAGS += --trace 
-# --threads {4}
+VERILATOR_FLAGS += --trace
 
 # used to dump large arrays
 #VERILATOR_FLAGS += --trace-max-array 10200
@@ -65,13 +64,13 @@ VERILATOR_FLAGS += -Wno-fatal
 default: compile
 
 obj_dir/Vtop:
-	$(VERILATOR) $(VERILATOR_FLAGS) top.sv sim_main.cpp
-	$(MAKE) -j 4 -C obj_dir -f Vtop.mk
+	$(VERILATOR) $(VERILATOR_FLAGS) -CFLAGS "-g" top.sv sim_main.cpp
+	$(MAKE) -j 32 -C obj_dir -f Vtop.mk
 
 compile: obj_dir/Vtop
 
 run: obj_dir/Vtop
-	obj_dir/Vtop 
+	obj_dir/Vtop 0
 
 wave: obj_dir/Vtop
 	obj_dir/Vtop +trace

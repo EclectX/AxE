@@ -60,7 +60,7 @@ reg done = 1'b0;
 initial begin
     
     // read the program to memory array.
-    // $display("\nhere we read the program to memory array.: %d %d",`MEM_SIZE,`AXI_DATA_WIDTH);
+    
     $readmemh( `MEM_PATH, mem,  0 );
     
     state = IDLE;
@@ -107,10 +107,12 @@ begin : proc_memory
             begin
                 
                 index = ( latched_awaddr>>2 );
-                
+                //  $display("\n( latched_awaddr>>2 ) > `MEM_SIZE %d %d",( latched_awaddr>>2 ) , `MEM_SIZE);
                 if ( ( latched_awaddr>>2 ) > `MEM_SIZE )
+                begin
                     ill_awaddr_out_of_range = 1'b1;
-                
+                   
+                end                
                 state = WRITE;
                 
             end
@@ -126,9 +128,10 @@ begin : proc_memory
                 
                 index = ( latched_araddr>>2 );
                 
-                if ( ( latched_araddr>>2 ) > `MEM_SIZE )
+                if ( ( latched_araddr>>2 ) > `MEM_SIZE )begin
+                    // $display("\n( latched_awaddr>>2 ) > `MEM_SIZE %d %d",( latched_awaddr>>2 ) , `MEM_SIZE);
                     ill_araddr_out_of_range = 1'b1;
-                
+                end                
                 state = READ;
                 
             end

@@ -6,12 +6,10 @@ SMALL = rv32i
 BIG = rv32im
 
 SRC = 
-LIBS1 = ../../_libs
+LIBS = ../../_libs
 #~ PROG = ./square_mmult/
-LIBS2 = /opt/riscv32i/riscv32-unknown-elf/include/c++/8.2.0
-LIBS3 = /opt/riscv32i/riscv32-unknown-elf/include/c++/8.2.0/riscv32-unknown-elf
-LIBS4 = /usr/include/c++/7
-INC = -I$(LIBS1) -I$(LIBS2) -I$(LIBS3) -I$(LIBS4)
+
+INC = -I$(LIBS)
 
 # CFLAGS
 
@@ -47,7 +45,6 @@ $(ARCH)_main.bin: $(ARCH)_main.elf
 
 $(ARCH)_main.elf:
 #~ 	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp_nostart.S -DSTACK_POINTER=$(STACK_POINTER) ../start.S $(SRC) ./main.c
-	echo "$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp.S -DSTACK_POINTER=$(STACK_POINTER) ../crt0.o ../start.S $(SRC) ./main.c"
 	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp.S -DSTACK_POINTER=$(STACK_POINTER) ../crt0.o ../start.S $(SRC) ./main.c
 
 clean:

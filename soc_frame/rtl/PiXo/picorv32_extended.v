@@ -27,7 +27,21 @@
 // `define DEBUGNETS
 // `define DEBUGREGS
 // `define DEBUGASM
-//`define DEBUG
+// `define DEBUG
+// `define FP_count
+// `define INT_MUL_COUNT
+`define PRINT_MODULE
+`ifdef FP_COUNT
+	`define fp_count(debug_command) debug_command
+`else
+	`define fp_count(debug_command)
+`endif
+
+`ifdef INT_MUL_COUNT
+	`define int_mul_count(debug_command) debug_command
+`else
+	`define int_mul_count(debug_command)
+`endif
 
 `ifdef DEBUG
   `define debug(debug_command) debug_command
@@ -451,8 +465,7 @@ module picorv32 #(
 		//TODO: pcpi_int_wait and pcpi_int_ready may need to be renamed as they do not suggest a more general use of PCPI (!) beyond integer operations. I abuse them as flags to show whether any module on PCPI has wait or ready asserted   
 		pcpi_int_wait  = |{ENABLE_PCPI && pcpi_wait,  (ENABLE_MUL || ENABLE_FAST_MUL) && pcpi_mul_wait,  ENABLE_DIV && pcpi_div_wait  , pcpi_mul_approx_wait, pcpi_fpmul_wait, pcpi_fpmul_approx_wait, pcpi_fpdiv_wait, pcpi_fpadd_wait, pcpi_fpsub_wait};
 		pcpi_int_ready = |{ENABLE_PCPI && pcpi_ready, (ENABLE_MUL || ENABLE_FAST_MUL) && pcpi_mul_ready, ENABLE_DIV && pcpi_div_ready , pcpi_mul_approx_ready, pcpi_fpmul_ready, pcpi_fpmul_approx_ready, pcpi_fpdiv_ready, pcpi_fpadd_ready, pcpi_flag_ready, pcpi_fpsub_ready};
-		if({pcpi_fpadd_ready})
-		$display("in pcpi %d %d %d pcpi_int_rd %d pcpi_int_wr %d",ENABLE_PCPI,pcpi_mul_ready,pcpi_fpadd_ready,pcpi_int_rd,pcpi_int_wr);
+
 		(* parallel_case *)
 		case (1'b1)
 			ENABLE_PCPI && pcpi_ready: begin
@@ -1638,6 +1651,8 @@ module picorv32 #(
 		(* parallel_case, full_case *)
 		case (cpu_state)
 			cpu_state_trap: begin
+
+				`debug($display("Trap");)
 				trap <= 1;
 			end
 
@@ -2494,7 +2509,7 @@ module picorv32_pcpi_mul #(
 		if (mul_finish && resetn) begin
 			//$display("ACTIVE: couter is : %d picorv32_pcpi_mul rs1 %d rs2 %d pcpi_valid %d pcpi_ready %d pcpi_wr %d pcpi_rd %d",
 			//counter,pcpi_rs1,pcpi_rs2,pcpi_valid,pcpi_ready,pcpi_wr,pcpi_rd);
-			$display("\nMUL called");
+			`int_mul_count($display("\nMUL called");)
 			pcpi_wr <= 1;
 			pcpi_ready <= 1;
 			pcpi_rd <= instr_any_mulh ? rd >> 32 : rd;
@@ -3171,7 +3186,7 @@ module picorv32_pcpi_fpmul(
         if (s_output_z_stb) begin
 		//   $display("FPMUL Completed.");
 		//   $display("FPMUL internal input a: %h, internal input b: %h, external output z (s_output_z <= z;): %h, internal output z: %h", a, b, s_output_z, z);
-		  $display("\nFPMUL called");
+		  `fp_count($display("\nFPMUL called");)
           s_output_z_stb <= 0;
 		  pcpi_wr <= 0;
 		  pcpi_ready <= 0;
@@ -3235,7 +3250,7 @@ module picorv32_pcpi_fpmul_approx (
 						// $display("ACTIVE: picorv32_pcpi_fpmul_approx");
                         pcpi_ready <= 1;
                         pcpi_wr <= 1;
-						// $display("FPMUL_APPROX Completed.");
+						`fp_count($display("FPMUL_APPROX Completed.");)
 						// $display("FPMUL_APPROX input a: %h, input b: %h, external output z: %h", pcpi_rs1, pcpi_rs2, pcpi_rd);
                 end
         end
@@ -3530,7 +3545,7 @@ module picorv32_pcpi_fpdiv(
 		pcpi_wr <= 1;
 		pcpi_rd <= z;
         if (s_output_z_stb) begin
-	      $display("\nFPDIV called: %d",pcpi_rd);
+	      `fp_count($display("\nFPDIV called: %d",pcpi_rd);)
 		//   $display("FPDIV input a: %h, input b: %h, output z: %h", pcpi_rs1, pcpi_rs2, s_output_z);
 		
 		pcpi_wr <= 0;
@@ -3608,25 +3623,7 @@ module picorv32_pcpi_fpadd(
   reg       guard, round_bit, sticky;
   reg       [27:0] sum;
   reg [8:0]fpadd_counter;
-  always @(posedge clk)
-  	begin
-		if(active)begin
-			// $display("fpadd_couneter is : %d",fpadd_counter);
-			case(state)
-				get_operands:
-					fpadd_counter <= 0;
-				done:
-				begin
-					$display("fpadd_counter is : %d",fpadd_counter);
-					fpadd_counter <= 0;
-				end
 
-				default:
-					fpadd_counter <= fpadd_counter + 1;
-			endcase
-		end
-  		
-    end
   always @(posedge clk)
   begin
 	 //$display("pcpi_insn: %b, pcpi_valid: %b, isactive: %b, pcpi_insn[6:0]: %b, pcpi_insn[31:25]: %b", pcpi_insn, pcpi_valid, active, pcpi_insn[6:0], pcpi_insn[31:25]);
@@ -3642,7 +3639,6 @@ module picorv32_pcpi_fpadd(
         s_input_a_ack <= 1;
 		s_input_b_ack <= 1;
         if (s_input_a_ack && s_input_b_ack && active) begin
-		  $display("ACTIVE: picorv32_pcpi_fpadd");
           s_input_a_ack <= 0;
           s_input_b_ack <= 0;
 		  a <= pcpi_rs1;
@@ -3836,7 +3832,6 @@ module picorv32_pcpi_fpadd(
 
       put_z:
       begin
-	  $display("FPADD Completed. result is %d",z);
         s_output_z_stb <= 1;
 		s_output_z <= z;
 		pcpi_ready <= 1; //TODO: check if this is correct placement
@@ -3847,7 +3842,7 @@ module picorv32_pcpi_fpadd(
           s_output_z_stb <= 0;
 		  pcpi_ready <= 0; //TODO: check if this is correct placement
 	  	//   pcpi_wait <= 0;
-		  $display("\nFPADD called");
+		  `fp_count($display("\nFPADD called");)
 		  pcpi_wr <= 0;
 		  state <= get_operands;
         end
@@ -3925,29 +3920,31 @@ module picorv32_pcpi_flag (
   wire [7:0] rs2_char_3 = pcpi_rs1[15:8];
   wire [7:0] rs2_char_4 = pcpi_rs1[7:0];
   wire [63:0] double; // double precision float
-  assign double = {pcpi_rs2[31], pcpi_rs2[30], {3{~pcpi_rs2[30]}}, pcpi_rs2[29:23], pcpi_rs2[22:0], {29{1'b0}}};
+  single_to_double single_to_double_0(.single(pcpi_rs2),.double(double));
+
   always@(posedge clk)begin
 	case(state)
 		listening:begin
 			if(active)begin
 				pcpi_ready <= 1;
 				state <= setting;
-				if(is_digit == 1)begin 
-					$write("%f\n",$bitstoreal(double));
-				end
-				if(is_digit == 2)
-					$write("%d",pcpi_rs2);
-				else begin 
-					$write("%c",rs1_char_1);
-					$write("%c",rs1_char_2);
-					$write("%c",rs1_char_3);
-					$write("%c",rs1_char_4);
-					$write("%c",rs2_char_1);
-					$write("%c",rs2_char_2);
-					$write("%c",rs2_char_3);
-					$write("%c",rs2_char_4);
-				end
-				
+				`ifdef PRINT_MODULE
+					if(is_digit == 1)begin 
+						$write("%f",$bitstoreal(double));
+					end
+					if(is_digit == 2)
+						$write("%d",pcpi_rs2);
+					else begin 
+						$write("%c",rs1_char_1);
+						$write("%c",rs1_char_2);
+						$write("%c",rs1_char_3);
+						$write("%c",rs1_char_4);
+						$write("%c",rs2_char_1);
+						$write("%c",rs2_char_2);
+						$write("%c",rs2_char_3);
+						$write("%c",rs2_char_4);
+					end
+				`endif 
 			end
 			else 
 				pcpi_ready <= 0;
@@ -4223,7 +4220,7 @@ module picorv32_pcpi_fpsub(
 		pcpi_wr <= 1;
 		pcpi_rd <= z;
         if (s_output_z_stb) begin
-		   $display("\nFPSUB called");
+		   `fp_count($display("\nFPSUB called");)
 		   pcpi_wr <= 0;
 		   pcpi_ready <= 0;
           s_output_z_stb <= 0;
@@ -4650,6 +4647,29 @@ module picorv32_axi_adapter (
 	end
 endmodule
 
+module single_to_double (
+    input [31:0] single,  // Single-precision input
+    output [63:0] double  // Double-precision output
+);
+    wire sign;
+    wire [7:0] single_exp;
+    wire [22:0] single_mantissa;
+    wire [10:0] double_exp;
+    wire [51:0] double_mantissa;
+
+    assign sign = single[31];
+    assign single_exp = single[30:23];
+    assign single_mantissa = single[22:0];
+
+    // Adjust exponent from single (bias 127) to double (bias 1023)
+    assign double_exp = (single_exp == 8'b0) ? 11'b0 : single_exp + 11'd896;
+
+    // Extend mantissa, padding with zeros
+    assign double_mantissa = {single_mantissa, 29'b0};
+
+    // Construct double-precision number
+    assign double = {sign, double_exp, double_mantissa};
+endmodule
 
 /***************************************************************
  * picorv32_wb

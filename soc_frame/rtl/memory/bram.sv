@@ -38,7 +38,7 @@ assign index = addr >> 2;
 initial begin
     
     // read the program to a memory array.
-    $display("\n in bram modulke the mem_size is %d",`MEM_SIZE);
+    
     $readmemh( "/home/user/soc_frame/mem.hex", mem,  0 );
     //~ $readmemh( "../../mem.hex", mem,  0 );
     
@@ -69,9 +69,22 @@ begin : proc_bram
             rdata = mem[ index ];
             done = 1'b1;
             
+            //~ $display("read: %d: %h", index, rdata);
+            //~ if ( index >= 49150 )
+            //~ begin
+                //~ $display("read: %d: %h", index, rdata);
+            //~ end
+            
         end
         else if ( write == 1'b1 )
         begin
+            
+            //~ if ( index = 5649 )
+            //~ if ( index >= 49150 )
+            //~ begin
+                //~ $display( "writing to index: %d: %h", index, wdata );
+                //~ $display( "before: %h", mem[index] );
+            //~ end
             
             mem[ index ] = wdata;
             done = 1'b1;

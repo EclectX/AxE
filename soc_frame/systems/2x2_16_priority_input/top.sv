@@ -28,7 +28,8 @@
 `include "../../rtl/res_n_syn/res_n_syn.sv"
 
 `include "../../rtl/pico/picorv32.v"
-
+//`include "../../rtl/PiXo/picorv32_extended.v"
+//`include "../../rtl/PiXo/picorv32_approx_mul16s_GV3.v"
 `include "../../rtl/pico/picorv32_if_wrapper.sv"
 
 `include "../../rtl/memory/bram_controller.sv"
@@ -91,15 +92,15 @@
 
 //~ `include "../../rtl/memory_controller.sv"
 `include "../../rtl/memory_controller_priority_input.sv"
-// `define SYNTHESIS
-// `ifdef SYNTHESIS
+
+`ifdef SYNTHESIS
     
     `include "../../rtl/uart/uart.sv"
     
     `include "../../rtl/uart/uart_clk.sv"
     `include "../../rtl/uart/uart_tx.sv"
     
-// `endif
+`endif
 
 module top
 (
@@ -116,7 +117,7 @@ module top
         
         ,output [ `ASCII_WIDTH-1:0 ] buffer_out_data
         ,output buffer_out_valid
-        ,output buffer_recv_busy
+        ,input buffer_recv_busy
         
     `endif
     
@@ -125,6 +126,15 @@ module top
     
     ,output [ 7:0 ] leds_status
     ,output [ 7:0 ] triggers
+    
+    ,input [ 31:0 ] spoon_feed
+    ,output spoon_taken
+    
+    ,output [31:0] addr_pixel
+    ,output request_pixel
+    
+    ,input [31:0] pixel
+    ,input pixel_avail
 );
     
     assign trap_nodes = trap_0  ||
@@ -199,7 +209,7 @@ module top
     // O U T P U T
     // -------------------------------------------------------------------------
     
-    // `ifdef SYNTHESIS
+    `ifdef SYNTHESIS
         
         uart
         #(
@@ -217,7 +227,7 @@ module top
             ,.busy( buffer_recv_busy )
         );
         
-    // `endif
+    `endif
     
     ring_buffer
     #(
@@ -311,6 +321,15 @@ module top
         
         ,.leds_status( leds_status )
         ,.triggers( triggers )
+        
+        ,.spoon_feed( spoon_feed )
+        ,.spoon_taken( spoon_taken )
+        
+        ,.addr_pixel( addr_pixel )
+        ,.request_pixel( request_pixel )
+        
+        ,.pixel( pixel )
+        ,.pixel_avail( pixel_avail )
     );
     
     // -------------------------------------------------------------------------

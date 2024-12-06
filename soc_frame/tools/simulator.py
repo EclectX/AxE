@@ -11,8 +11,6 @@ from memory import *
 from software_program import *
 from software_controller import *
 
-# os.environ['OMP_NUM_THREADS'] = '4'
-
 class Simulator:
     
     # --------------------------------------------------------------------------
@@ -41,7 +39,7 @@ class Simulator:
         call = [ "/home/user/soc_frame/systems/"+sys.name+"/obj_dir/Vtop" ]
         call.extend( args )
         
-        print( str( call ) )
+        #~ print( str( call ) )
         
         # create the necessary hex file and copy it to a place where the
         # memory can find it.
@@ -93,7 +91,7 @@ class Simulator:
     # --------------------------------------------------------------------------
     
     def set_hex( self, src ):
-        print("\nset_hex here\n",src)
+        
         logging.debug( "set_hex" )
         
         dst = "/home/user/soc_frame/mem.hex"
