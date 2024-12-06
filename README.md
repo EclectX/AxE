@@ -10,17 +10,17 @@ cd AxE
 ```
 Run the following in your Ubuntu system to pull the docker image from the docker hub:
 ```bash
-docker pull poria19964214/axe:original
+docker pull poria19964214/axe:debugger
 ```
 Now you can run an interactive docker container:
 ```bash
-docker run -it -v $(pwd):/home/user/ poria19964214/axe:original
+docker run -it -v $(pwd):/home/user/ poria19964214/axe:debugger
 ```
 Using the `-v` option you use a docker volume where the current directory of your local machine is mapped to the `/home/user/` directory of the container. Any changes to this directory are reflected on both sides. 
 
 For use with Docker Desktop and Windows Powershell analogously use 
 ```bash
-docker run -it -v ${pwd}:/home/user/ poria19964214/axe:original
+docker run -it -v ${pwd}:/home/user/ poria19964214/axe:debugger
 ```
 with curly brackets instead.
 
