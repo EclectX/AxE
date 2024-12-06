@@ -8,9 +8,9 @@
   Copyright (C) 2019 Stefan Huemer <stefan@huemer.tech>
   
 ***************************************************************************** */
-// sobel 8x8 needs this much memory!!!
-`define MEM_SIZE ( 268435455 )
-// `define MEM_SIZE ( 2048 )
-// `define MEM_SIZE ( 36880 )
+
+`define MEM_SIZE ( 262144 )
+//`define MEM_SIZE ( 2048 )
+//`define MEM_SIZE ( 16384 )
 
 `define MEM_PATH ( "/home/user/soc_frame/mem.hex" )

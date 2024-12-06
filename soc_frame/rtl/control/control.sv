@@ -10,7 +10,7 @@
 ***************************************************************************** */
 
 // this module can activate the nodes and set the AXI address offsets.
-// `define DEBUG_CONTROL
+
 module control #()
 (
      input clk
@@ -20,6 +20,15 @@ module control #()
     
     ,output reg [7:0] leds_status
     ,output reg [7:0] triggers
+    
+    ,input [31:0] spoon_feed
+    ,output reg spoon_taken
+    
+    ,output reg [31:0] addr_pixel
+    ,output reg request_pixel
+    
+    ,input [31:0] pixel
+    ,input pixel_avail
 );
 
 //~ (* mark_debug = "true" *) enum
@@ -28,6 +37,7 @@ enum
      IDLE
     ,WRITE
     ,READ
+    ,WAIT_FOR_DATA
     ,SEND_WRITE_RESP
     ,SEND_READ_RESP
 }state;
@@ -59,6 +69,10 @@ parameter INDEX_COUNT_GLOBAL_RESET = 15;
 
 parameter INDEX_LEDS_STATUS = 18;
 parameter INDEX_TRIGGERS = 19;
+
+parameter INDEX_SPOON_FEED = 20;
+
+parameter INDEX_GET_PIXEL = 30;
 
 // req
 
@@ -115,8 +129,14 @@ begin : control_proc
     
     s_axi.s_default();
     
+    spoon_taken = 1'b0;
+    
+    request_pixel = 1'b0;
+    
     if ( ! res_n )
     begin
+        
+        addr_pixel = 0;
         
         for ( i = 0; i < `NUM_NODES_PROCESSING; i = i +1 ) begin
             axi_offsets[ i ] = 32'h 0000_0000;
@@ -221,7 +241,7 @@ begin : control_proc
             
 `ifdef DEBUG_CONTROL
             
-            // $display( "pico_sel: %d", pico_sel );
+            $display( "pico_sel: %d", pico_sel );
             $display( "awaddr: %b", latched_awaddr );
             
 `endif
@@ -256,7 +276,7 @@ begin : control_proc
                 if ( latched_wdata == 0 )
                     $display( ";%d,%d,fin;", counter_global, node_sel );
                 else
-                    $display( "Contro set prg:;%d,p%h,%d;", counter_global, latched_wdata, node_sel );
+                    $display( ";%d,p%h,%d;", counter_global, latched_wdata, node_sel );
                 
                 // check for overflow
                 
@@ -292,10 +312,14 @@ begin : control_proc
             
             node_sel = latched_araddr[ NODE_LSB +: `NUM_NODES_PROCESSING_WIDTH ];
             
-                 if ( latched_araddr[ INDEX_PROG         ] == 1'b1 ) latched_rdata = axi_offsets[ node_sel ];
+            if      ( latched_araddr[ INDEX_GET_PIXEL    ] == 1'b1 ) begin addr_pixel = latched_araddr; request_pixel = 1'b1; end
+            else if ( latched_araddr[ INDEX_PROG         ] == 1'b1 ) latched_rdata = axi_offsets[ node_sel ];
             else if ( latched_araddr[ INDEX_BUSY         ] == 1'b1 ) latched_rdata = active;
             else if ( latched_araddr[ INDEX_COUNT        ] == 1'b1 ) latched_rdata = counters[ node_sel ];
             else if ( latched_araddr[ INDEX_COUNT_GLOBAL ] == 1'b1 ) latched_rdata = counter_global;
+            
+            else if ( latched_araddr[ INDEX_SPOON_FEED ] == 1'b1 ) begin latched_rdata = spoon_feed; spoon_taken = 1'b1; end
+            
             
             else if ( latched_araddr[ INDEX_COUNT_GLOBAL_RESET ] == 1'b1 ) begin latched_rdata = counter_global; counter_global = 0; end
             
@@ -309,7 +333,7 @@ begin : control_proc
                 
             end
             
-            // $display( "get prg for pico %d", pico_sel );
+            $display( "get prg for pico %d", pico_sel );
             
             //~ if (
                 //~ ( latched_araddr[ INDEX_PROG ] == 1'b1 ) &&
@@ -320,14 +344,45 @@ begin : control_proc
             if ( latched_araddr[ INDEX_COUNT_GLOBAL ] == 1'b1 )
             begin
                 
-                // $display( "get prg for pico %d", pico_sel );
+                $display( "get prg for pico %d", pico_sel );
                 $display( "global time" );
                 
             end
             
 `endif
             
-            state = SEND_READ_RESP;
+            if ( latched_araddr[ INDEX_GET_PIXEL ] == 1'b1 )
+            begin
+                
+                state = WAIT_FOR_DATA;
+                
+            end
+            else
+            begin
+                
+                state = SEND_READ_RESP;
+                
+            end
+            
+            
+            
+            
+        end
+        
+        // ---------------------------------------------------------------------
+        // WAIT_FOR_DATA
+        // ---------------------------------------------------------------------
+        
+        WAIT_FOR_DATA :
+        begin
+            
+            if ( 1'b1 == pixel_avail )
+            begin
+                
+                latched_rdata = pixel;
+                state = SEND_READ_RESP;
+                
+            end
             
         end
         

@@ -29,7 +29,7 @@ CONFIGURATION = test_single_vivado
 #~ CONFIGURATION = noc_two_nodes
 #~ CONFIGURATION = noc_three_nodes
 #~ CONFIGURATION = mult_no_noc_interface
-#~ CONFIGURATION = mult_noc_interfaceveri
+#~ CONFIGURATION = mult_noc_interface
 #~ CONFIGURATION = test
 
 DIR = ./configurations/$(CONFIGURATION)
@@ -54,8 +54,7 @@ VERILATOR_FLAGS =
 VERILATOR_FLAGS += -cc --exe
 
 # used to create trace file
-VERILATOR_FLAGS += --trace 
-# --threads {4}
+VERILATOR_FLAGS += --trace
 
 # used to dump large arrays
 #~ VERILATOR_FLAGS += --trace-max-array 10200
@@ -135,8 +134,6 @@ clean_programs:
 	$(MAKE) -C sw/programs/sha256/ clean
 	$(MAKE) -C sw/programs/square_mmult/ clean
 	$(MAKE) -C sw/programs/mul/ clean
-	$(MAKE) -C sw/programs/basicmath/ clean
-	$(MAKE) -C sw/programs/CRC32/ clean
 
 controller:
 	$(MAKE) -C sw/controller/ big

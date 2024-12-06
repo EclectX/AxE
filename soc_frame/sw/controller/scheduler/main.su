@@ -1,3 +1,0 @@
-arch.h:11:6:init_archs	32	static
-main.c:191:6:trap	16	static
-main.c:253:6:my_main	48	static

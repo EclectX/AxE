@@ -1,0 +1,348 @@
+make: Entering directory '/home/user/soc_frame/systems/2x2_16_priority_input'
+rm -rf logs obj_dir *.log *.dmp *.vpd core
+make: Leaving directory '/home/user/soc_frame/systems/2x2_16_priority_input'
+make: Entering directory '/home/user/soc_frame/systems/2x2_16_priority_input'
+verilator  -cc --exe --trace --trace-max-array 20480000 -Wno-fatal -y ../../rtl/noc/noc_connect_16 top.sv sim_main.cpp
+make -j 4 -C obj_dir -f Vtop.mk
+make[1]: Entering directory '/home/user/soc_frame/systems/2x2_16_priority_input/obj_dir'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o sim_main.o ../sim_main.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop_picorv32_axi__S9c40_EF0_EH0.cpp Vtop_mkIQRouterCoreSimple.cpp Vtop_if_axi_light.cpp Vtop_if_axi_light__AC4.cpp Vtop_if_connect.cpp > Vtop__ALLcls.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop__Trace.cpp Vtop__Syms.cpp Vtop__Trace__Slow.cpp > Vtop__ALLsup.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o Vtop__ALLcls.o Vtop__ALLcls.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o Vtop__ALLsup.o Vtop__ALLsup.cpp
+ar -cr Vtop__ALL.a Vtop__ALLcls.o Vtop__ALLsup.o
+ranlib Vtop__ALL.a
+g++    sim_main.o verilated.o verilated_vcd_c.o Vtop__ALL.a    -o Vtop -lm -lstdc++ 
+make[1]: Leaving directory '/home/user/soc_frame/systems/2x2_16_priority_input/obj_dir'
+make: Leaving directory '/home/user/soc_frame/systems/2x2_16_priority_input'
+make: Entering directory '/home/user/soc_frame/systems/_mem_packer_rv32i'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/home/user/soc_frame/systems/_mem_packer_rv32i'
+make: Entering directory '/home/user/soc_frame/systems/_mem_packer_rv32im'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/home/user/soc_frame/systems/_mem_packer_rv32im'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_500'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_501'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+make: Entering directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/tasks/mul_500_nop_502'
+make: Entering directory '/home/user/soc_frame/sw/controller/thesis'
+rm -f main.elf main.bin main.hex main.map objdump *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/controller/thesis'
+
+--------------------
+starting 2x2_16
+--------------------
+
+running img test
+158
+156
+101
+116
+130
+132
+130
+131
+130
+123
+142
+157
+165
+164
+123
+101
+158
+154
+97
+115
+127
+130
+141
+158
+138
+122
+132
+153
+148
+186
+106
+50
+124
+155
+93
+111
+122
+121
+140
+179
+198
+149
+131
+132
+144
+134
+57
+90
+99
+154
+92
+115
+120
+127
+146
+186
+200
+206
+148
+114
+175
+75
+73
+150
+105
+159
+94
+131
+117
+130
+157
+174
+182
+189
+186
+192
+202
+60
+133
+157
+108
+161
+92
+132
+141
+132
+137
+127
+129
+176
+195
+180
+136
+89
+158
+156
+108
+162
+91
+111
+156
+119
+81
+76
+153
+181
+162
+130
+61
+129
+163
+156
+104
+163
+95
+115
+126
+72
+65
+148
+156
+182
+175
+88
+69
+153
+155
+149
+96
+167
+99
+123
+87
+74
+115
+151
+134
+163
+106
+91
+102
+154
+149
+159
+80
+165
+106
+98
+71
+89
+125
+139
+164
+164
+129
+96
+131
+149
+162
+200
+84
+166
+99
+86
+99
+123
+73
+130
+145
+156
+100
+94
+148
+146
+188
+210
+82
+167
+91
+93
+125
+83
+59
+102
+139
+142
+61
+102
+152
+142
+202
+207
+96
+163
+91
+84
+113
+86
+54
+92
+137
+170
+146
+102
+133
+122
+198
+109
+119
+166
+71
+68
+94
+106
+66
+111
+140
+163
+203
+147
+141
+169
+163
+100
+118
+164
+71
+55
+87
+76
+87
+123
+140
+151
+190
+177
+114
+174
+109
+90
+136
+162
+59
+71
+79
+69
+108
+134
+142
+146
+172
+193
+103
+123
+89
+85
+
+cnt: 2167058
+overflows: 0
+
+kill me
+				>>>>>>>>running tasks
+				>>>>>>>>loading config for sim
+				>>>>>>>>pick controller estimations
+				>>>>>>>>create objects
+				>>>>>>>>compiled system
+				>>>>>>>>will run memory compression
+				>>>>>>>>compiled system i
+				>>>>>>>>compiled system im
+				>>>>>>>>calling mem.pack_prgs
+has_bss
+has_bss
+has_bss
+has_bss
+has_bss
+has_bss
+running sim
+None

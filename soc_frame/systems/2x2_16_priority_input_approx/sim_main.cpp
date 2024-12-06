@@ -6,8 +6,7 @@
 
 #include <time.h>
 #include <signal.h>
-#include <cstdio>
-#include <algorithm>
+
 
 // Include common routines
 #include <verilated.h>
@@ -103,7 +102,7 @@ int main(int argc, char** argv, char** env) {
     
     VL_PRINTF( "\n" );
     VL_PRINTF( "--------------------\n" );
-    VL_PRINTF( "starting 2x2_16_approx\n" );
+    VL_PRINTF( "starting 2x2_16\n" );
     VL_PRINTF( "--------------------\n" );
     VL_PRINTF( "\n" );
     
@@ -136,23 +135,14 @@ int main(int argc, char** argv, char** env) {
         {
             if ( 1 == top->trap )
             {
-                for ( int i = 0; i < 1000000000; i++)
-                {
-                    /* delay the print */
-                }
                 VL_PRINTF( "trap\n" );
             }
             
             if ( 1 == top->trap_nodes )
             {
-                for ( int i = 0; i < 1000000000; i++)
-                {
-                    /* delay the print */
-                }
-                
                 VL_PRINTF( "trap nodes\n" );
             }
-
+            
             // -----------------------------------------------------------------
             // uart
             // -----------------------------------------------------------------
@@ -161,52 +151,18 @@ int main(int argc, char** argv, char** env) {
             {
                 // the controller software signals termination by sending some
                 // ascii control char
-               
-                buffer[buffer_index] = top->buffer_out_data;
-                buffer_index++;
-
-                // If the received character is the end of string character
-                if (top->buffer_out_data == 0) {
-                    FILE *fd = fopen("output_buffer","a");
-                    // fprintf(fd,"buffer_index: %d",buffer_index);
-                    for (size_t i = 0; i < buffer_index -1; i++){
-                        
-                        fputc(buffer[i], fd);                    
-                    }
-                    fclose(fd);
-                    //  VL_PRINTF( "buffer: ");
-                    // VL_PRINTF("%s", buffer);
-                    int flag = 0;
-                    char* sim_end_signal = "Simulation Ended!";
-                    for(int i = 0; i< std::min(17,buffer_index);i++){
-                        if(buffer[i] != sim_end_signal[i])
-                            break;
-                        flag+=1;
-                    }
-                    if(flag == 17)
-                        break;
-                    for (size_t i = 0; i < buffer_index -1; i++)
+                
+                if ( 0x04 == top->buffer_out_data )
+                {
+                    int i = 0;
+                    for ( i = 0; i < buffer_index; i++ )
                     {
-                        VL_PRINTF("%c", buffer[i]);
+                        VL_PRINTF( "%c", buffer[ i ] );
                     }
-                    for (size_t i = 0; i < 1000; i++)
-                    {
-                        buffer[i] = 0;
-                    }
-                    buffer_index = 0;  // Reset the buffer index for the next string
-                }
-
-                // if ( 0x04 == top->buffer_out_data )
-                // {
-                //     int i = 0;
-                //     for ( i = 0; i < buffer_index; i++ )
-                //     {
-                //         VL_PRINTF( "%c", buffer[ i ] );
-                //     }
                     
-                //     VL_PRINTF( "kill me\n" );
-                //     break;
-                // }
+                    VL_PRINTF( "kill me\n" );
+                    break;
+                }
                 
                 // *( buffer++ ) = (char)top->buffer_out_data;
                 // buffer += (char)top->buffer_out_data;
@@ -217,7 +173,7 @@ int main(int argc, char** argv, char** env) {
                 
                 //~ buffer_index += 1;
                 
-                // VL_PRINTF( "%c", top->buffer_out_data );
+                VL_PRINTF( "%c", top->buffer_out_data );
             }
 
             // -----------------------------------------------------------------
@@ -265,17 +221,11 @@ int main(int argc, char** argv, char** env) {
             }
         }
         
-
-        if ((main_time % 1000000 == 0 ))
-        {
-            // VL_PRINTF("Another 1 million clock!\n");
-        } 
-
         // ---------------------------------------------------------------------
         // end of the simulation
         // ---------------------------------------------------------------------
         
-        if ( main_time == 1000000000000 )
+        if ( main_time == 1000000000000  )
         {
             VL_PRINTF( "\n" );
             VL_PRINTF( "--------------------\n" );

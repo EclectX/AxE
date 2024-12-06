@@ -59,6 +59,9 @@ main:
     addi x30, zero, 0
     addi x31, zero, 0
     
+    lui sp, %hi(131060)
+    addi sp, sp, %lo(131060)
+    
     call my_main
     
     /* trap */

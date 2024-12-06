@@ -96,7 +96,7 @@ module DTCL_AFPM(
     parameter RESULT_WIDTH = 2*(A+E);
     
     initial begin
-            $display("Current Configuration: Exact Bits: %0d Approximate Bits: %0d Chunk Size: %0d\n",E,A,K);
+            // $display("Current Configuration: Exact Bits: %0d Approximate Bits: %0d Chunk Size: %0d\n",E,A,K);
             assert (A%K == 0) else $display("The number of approximate bits (A) should be devisible by the size of the chunk(s) (K)\n");
     end
     

@@ -4,10 +4,9 @@ CC_DESKTOP = gcc
 
 SMALL = rv32i
 BIG = rv32im
-LIBS = ../../_libs
-SRC = $(LIBS)/util.c $(LIBS)/print.c $(LIBS)/fixed_point.c arch_func.c clk_func.c math_func.c\
-  partition_func.c nodes_func.c prgs_func.c queue_func.c time_func.c scheduler.c nodes.c prgs.c energy_harvester.c
 
+SRC = 
+LIBS = ../../_libs
 
 INC = -I$(LIBS)
 
@@ -26,7 +25,7 @@ CFLAGS = -$(WARN) -$(OPT) $(OTHER) $(INC)
 
 LINK = -Ttext 0 -Wl,-e,my_start
 
-.PHONY: clean objdump rv32i rv32im
+.PHONY: clean rv32i rv32im
 
 rv32i: ARCH=$(SMALL)
 rv32i: $(ARCH)_main.hex $(ARCH)_code
@@ -35,7 +34,7 @@ rv32im: ARCH=$(BIG)
 rv32im: $(ARCH)_main.hex $(ARCH)_code
 
 $(ARCH)_code: $(ARCH)_main.elf
-	/opt/riscv32i/bin/riscv32-unknown-elf-objdump -S ./$(ARCH)_main.elf > $(ARCH)_objdump
+	/opt/riscv32i/bin/riscv32-unknown-elf-objdump -S ./$(ARCH)_main.elf > $(ARCH)_main.objdump
 
 $(ARCH)_main.hex: $(ARCH)_main.bin
 	python3 ../../../tools/freedom-bin2hex.py --bit-width 32 ./$(ARCH)_main.bin > $(ARCH)_main.hex
@@ -47,4 +46,4 @@ $(ARCH)_main.elf:
 	$(CC) -march=$(ARCH) $(CFLAGS) -o ./$(ARCH)_main.elf $(LINK) ../../_libs/start.S $(SRC) ./main.c -lm
 
 clean:
-	rm -f main.elf main.bin main.hex main.map objdump *.su *.o rv32*
+	rm -f main.elf main.bin main.hex main.map *.objdump *.su *.o rv32*

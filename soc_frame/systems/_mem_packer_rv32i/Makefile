@@ -37,8 +37,7 @@ VERILATOR_FLAGS =
 VERILATOR_FLAGS += -cc --exe
 
 # used to create trace file
-VERILATOR_FLAGS += --trace 
-# --threads {4}
+VERILATOR_FLAGS += --trace
 
 # used to dump large arrays
 #VERILATOR_FLAGS += --trace-max-array 10200
@@ -71,7 +70,7 @@ obj_dir/Vtop:
 compile: obj_dir/Vtop
 
 run: obj_dir/Vtop
-	obj_dir/Vtop 
+	obj_dir/Vtop 0
 
 wave: obj_dir/Vtop
 	obj_dir/Vtop +trace

@@ -1,0 +1,16 @@
+make: Entering directory '/home/user/soc_frame/systems/SoC_approx'
+rm -rf logs obj_dir *.log *.dmp *.vpd core
+make: Leaving directory '/home/user/soc_frame/systems/SoC_approx'
+make: Entering directory '/home/user/soc_frame/systems/SoC_approx'
+verilator  -cc --exe --trace --trace-max-array 20480000 -Wno-fatal -y ../../rtl/noc/noc_connect_16 top.sv sim_main.cpp
+make -j 4 -C obj_dir -f Vtop.mk
+make[1]: Entering directory '/home/user/soc_frame/systems/SoC_approx/obj_dir'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o sim_main.o ../sim_main.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop_if_axi_light.cpp Vtop_if_axi_light__AC4.cpp > Vtop__ALLcls.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop__Trace.cpp Vtop__Syms.cpp Vtop__Trace__Slow.cpp > Vtop__ALLsup.cpp
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow       -c -o Vtop__ALLcls.o Vtop__ALLcls.cpp
+make: Entering directory '/home/user/soc_frame/sw/programs/sharpen'
+rm -f main.elf main.bin main.hex main.map objdump *.su *.o rv32*
+make: Leaving directory '/home/user/soc_frame/sw/programs/sharpen'

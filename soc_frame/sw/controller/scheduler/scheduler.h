@@ -1,26 +1,12 @@
-#ifndef SHCEDULER_H
-#define SHCEDULER_H
-#include "globals.h"
-#include "nodes_func.h"
-#define BE_IDLE ( -1 )
-int get_prg_apply_edh_rules( int );
-int L_r_empty( int );
-int get_prg_i_via_edf( int );
 
-unsigned int E( int );
-int E_is_empty( int );
-int is_empty( unsigned int );
-int E_is_full( int );
+// if save mode is not enabled, the scheduler will always pick the big nodes.
 
-unsigned int SE( int );
-unsigned int ST( int );
+#define EN_SAVE_MODE
 
-unsigned int SE_tau( int, int, unsigned int );
-unsigned int ST_tau( int, int, unsigned int );
+// if charging is enabled, save mode should be enabled as well.
 
-unsigned int Es( unsigned int );
+#define EN_CHARGING
 
-unsigned int g( int, int, unsigned int );
-unsigned int h( int, unsigned int );
+#define EN_SKIPPING
 
-#endif
+

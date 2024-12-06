@@ -1,16 +1,13 @@
 #ifndef UTIL_H
 #define UTIL_H
-<<<<<<< HEAD
-// Define a structure to represent single-precision floating-point numbers
-typedef unsigned int uint32_t;
-=======
+
 #include <stddef.h>
+#include "print.h"
 // #include <Python.h>
 // Define a structure to represent single-precision floating-point numbers
 
 typedef unsigned int uint32_t;
 
->>>>>>> 84e3292 (removed big files)
 typedef struct {
     uint32_t value;
 } float32_t;
@@ -18,7 +15,7 @@ typedef struct {
 #define MAX ( 0xFFFFFFFF )
 #define MAX_HALF ( 0x7FFFFFFF )
 
-#define OUTPORT 0x00000000
+// #define OUTPORT 0x00000000
 
 #define FINISHED ( 0x00FFFFFC )
 
@@ -81,21 +78,7 @@ void display_print(int is_digit,int value,char* string);
 // char
 // -------------------------------------
 
-// str
-// -------------------------------------
-void print_str_str_n( const char *p,const char * t );
-void print_str_dec_n( const char *T,unsigned int val );
 
-void print_str_n(const char *p);
-// dec
-// -------------------------------------
-
-void print_dec_n(unsigned int val);
-
-// binary
-// -------------------------------------
-
-void print_bin_n(unsigned int val, int bits);
 // newline
 // -------------------------------------
 
@@ -108,31 +91,19 @@ void emb_assert( unsigned int line, const char *file, const char *exp );
 uint32_t extractSign(float32_t a);
 
 // Helper function to extract the sign bit from a float32_t number
-<<<<<<< HEAD
-uint32_t fp_ExtractSign(int a);
-=======
 uint32_t fp_ExtractSign(uint32_t a);
->>>>>>> 84e3292 (removed big files)
 
 // Helper function to extract the exponent bits from a float32_t 	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp.S -DSTACK_POINTER=$(STACK_POINTER) ../crt0.o ../start.S $(SRC) ./main.cnumber
 uint32_t extractExponent(float32_t a);
 
 // Helper function to extract the exponent bits from a float32_t 	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp.S -DSTACK_POINTER=$(STACK_POINTER) ../crt0.o ../start.S $(SRC) ./main.cnumber
-<<<<<<< HEAD
-uint32_t fp_ExtractExponent(int a);
-=======
 uint32_t fp_ExtractExponent(uint32_t a);
->>>>>>> 84e3292 (removed big files)
 
 // Helper function to extract the fraction bits from a float32_t number
 uint32_t extractFraction(float32_t a);
 
 // Helper function to extract the fraction bits from a float32_t number
-<<<<<<< HEAD
-uint32_t fp_ExtractFraction(int a);
-=======
 uint32_t fp_ExtractFraction(uint32_t a);
->>>>>>> 84e3292 (removed big files)
 
 // Helper function to create a float32_t number from sign, exponent, and fraction
 float32_t makeFloat(uint32_t sign, uint32_t exponent, uint32_t fraction);
@@ -163,17 +134,10 @@ float32_t float_divide(float32_t a, float32_t b);
 float32_t float_asin(float32_t x);
 
 // Function to compute the inverse sine (asin) using polynomial approximation
-<<<<<<< HEAD
-int fp_Asin_simple(int x);
-
-// Function to compute the inverse sine (asin) using polynomial approximation
-int fp_Asin(int x);
-=======
 uint32_t fp_Asin_simple(uint32_t x);
 
 // Function to compute the inverse sine (asin) using polynomial approximation
 uint32_t fp_Asin(uint32_t x);
->>>>>>> 84e3292 (removed big files)
 
 // Function to compute the inverse sine (asin) using polynomial approximation
 float32_t float_asin_Taylor_series(float32_t x);
@@ -192,22 +156,13 @@ your function ==> f(x) for  n < x < m
 f(x) = sqrt(m-n) * g(x/(m-n) - 1) for -1 < x < 1
 */
 
-<<<<<<< HEAD
-int fp_Sqrt(int y);
-
-=======
 uint32_t fp_Sqrt(uint32_t y);
 uint32_t fp_Sqrt_x_lt_30(uint32_t y);
->>>>>>> 84e3292 (removed big files)
 // Function to compute the cos using polynomial approximation
 float32_t float_Cos_Taylor_series(float32_t x);
 
 // Function to compute the cos using polynomial approximation
-<<<<<<< HEAD
-int fp_Cos(int x);
-=======
 uint32_t fp_Cos(uint32_t x);
->>>>>>> 84e3292 (removed big files)
 
 uint32_t fp_Sin(uint32_t x);
 // Function to compute the pow(x,y) assuming that y doesnt have integer     
@@ -216,11 +171,7 @@ float32_t power(float32_t base, float32_t exponent_t);
 
 // Function to compute the pow(x,y) using polynomial approximation 
 //  Here we assume that exponent is normalized and not in the denormalized range
-<<<<<<< HEAD
-int fp_Pow(int base, int exponent);
-=======
 uint32_t fp_Pow(uint32_t base, uint32_t exponent);
->>>>>>> 84e3292 (removed big files)
 
 // Function to compute the pow(x,y) using polynomial approximation 
 //  Here we assume that exponent is normalized and not in the denormalized range
@@ -242,29 +193,6 @@ uint32_t fp_Pow(uint32_t base, uint32_t exponent);
 // }
 
 // calculate absolute value of floating point number x
-<<<<<<< HEAD
-int fp_Fabs(int x);
-
-int fp_Reg2deg(int x);
-
-int eg2rad(int x);
-int fp_Acos(int x);
-
-
-// Function to convert an integer to a string
-void intToString(int num, char* str);
-
-int fp_Exp(int x);
-// Casting float to integer. if x is greater than the range of integer the result is valid
-// This is equivalent of (int)x where x is a float
-int cast_Fp_To_Int(int x);
-// int_to_float convert int value between certain range to float format 
-uint32_t int_to_float(int x);
-void memset_Char_t(unsigned char* ptr,char value,int size);
-
-void memset_Int_t(int* ptr,int value,int size);
-
-=======
 uint32_t fp_Fabs(uint32_t x);
 
 uint32_t fp_Reg2deg(uint32_t x);
@@ -288,5 +216,4 @@ void memset_Int_t(uint32_t* ptr,uint32_t value,uint32_t size);
 
 // uint32_t call_fpmul_py_CAPI(uint32_t RS1,uint32_t RS2);
 void pr_uint32(char space,uint32_t x);
->>>>>>> 84e3292 (removed big files)
 #endif

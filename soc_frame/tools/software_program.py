@@ -95,18 +95,8 @@ class Program( Software ):
                     
                     new_l.append( l )
                 
-                # sp_min = min(new_l)
-                #if this line didn't work; comment it and uncomment the below line.
-                #this part is messy!
-                if(len(new_l)):
-                    sp_min = min(new_l)
-                else:
-                    sp_min = 0
-            if(len(new_l)):
-                sp_min = min(new_l)
-            else:
-                sp_min = 0
-            # sp_min = min(new_l)
+            
+            sp_min = min(new_l)
             
         else:
             
@@ -118,7 +108,7 @@ class Program( Software ):
         #~ logging.debug( "bss_size:   " + str(bss_size) )
         #~ logging.debug( "stack_size: " + str(stack_size) )
         
-        stack_pointer = mem_highest_index + bss_size + stack_size + 1 + 8
+        stack_pointer = mem_highest_index + bss_size + stack_size + 1
         stack_pointer_byte_aligned = stack_pointer * 4
         stack_pointer_byte_aligned_hex = hex(stack_pointer_byte_aligned)
         

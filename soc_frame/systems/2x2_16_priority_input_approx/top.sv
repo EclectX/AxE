@@ -69,38 +69,38 @@
 // throughout the source code the defines are used like in the following
 // case to avoid the use of `ifndef as the "n" is easy to miss.
 
-`include "../../rtl/noc/noc_connect_2x2_16/mkInputQueue.v"
-`include "../../rtl/noc/noc_connect_2x2_16/mkIQRouterCoreSimple.v"
-`include "../../rtl/noc/noc_connect_2x2_16/mkNetworkSimple.v"
-`include "../../rtl/noc/noc_connect_2x2_16/mkOutPortFIFO.v"
-`include "../../rtl/noc/noc_connect_2x2_16/mkRouterInputArbitersRoundRobin.v"
-`include "../../rtl/noc/noc_connect_2x2_16/mkRouterOutputArbitersRoundRobin.v"
-`include "../../rtl/noc/noc_connect_2x2_16/mkSepRouterAllocator.v"
-`include "../../rtl/noc/noc_connect_2x2_16/module_gen_grant_carry.v"
-`include "../../rtl/noc/noc_connect_2x2_16/module_outport_encoder.v"
-`include "../../rtl/noc/noc_connect_2x2_16/RegFile_1port.v"
-`include "../../rtl/noc/noc_connect_2x2_16/RegFileLoadSyn.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkInputQueue.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkIQRouterCoreSimple.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkNetworkSimple.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkOutPortFIFO.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkRouterInputArbitersRoundRobin.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkRouterOutputArbitersRoundRobin.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/mkSepRouterAllocator.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/module_gen_grant_carry.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/module_outport_encoder.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/RegFile_1port.v"
+`include "/home/user/soc_frame/rtl/noc/noc_connect_2x2_16/RegFileLoadSyn.v"
 
-`include "../../rtl/clk_gater/clk_gater.sv"
+`include "/home/user/soc_frame/rtl/clk_gater/clk_gater.sv"
 
 // the following are modules that do not contain any logic.
 // they are only used to bundle other modules together.
 
 //~ `include "../../rtl/node.sv"
-`include "../../rtl/node_clk_gating.sv"
+`include "/home/user/soc_frame/rtl/node_clk_gating.sv"
 
 //~ `include "../../rtl/controller_noc.sv"
-`include "../../rtl/controller_axi.sv"
+`include "/home/user/soc_frame/rtl/controller_axi.sv"
 
 //~ `include "../../rtl/memory_controller.sv"
-`include "../../rtl/memory_controller_priority_input.sv"
+`include "/home/user/soc_frame/rtl/memory_controller_priority_input.sv"
 
 `ifdef SYNTHESIS
     
-    `include "../../rtl/uart/uart.sv"
+    `include "/home/user/soc_frame/rtl/uart/uart.sv"
     
-    `include "../../rtl/uart/uart_clk.sv"
-    `include "../../rtl/uart/uart_tx.sv"
+    `include "/home/user/soc_frame/rtl/uart/uart_clk.sv"
+    `include "/home/user/soc_frame/rtl/uart/uart_tx.sv"
     
 `endif
 
