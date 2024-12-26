@@ -1,0 +1,5 @@
+main.c:41:12:my_gcd	48	static
+main.c:64:12:phi	32	static
+main.c:72:12:phiphi	48	static
+main.c:85:6:phiN	48	static
+main.c:93:6:my_main	16	static

@@ -90,8 +90,8 @@ void checkprint_int(int rs1)
     asm __volatile__ (".word 0x0EA5A50B\n");//0ea5a50b
 }
 void display_print(int is_digit,int value,char* str){
-    int rs1;
-    int rs2;
+    int rs1 = 0;
+    int rs2 = 0;
     if(is_digit == 2){
         checkprint_int(value);
     }
@@ -101,7 +101,6 @@ void display_print(int is_digit,int value,char* str){
     else{
         int i = 0;
         int j = 0;
-        int k = 0;
         while(str[i] != '\0'){
             
             if(j == 0){
@@ -1291,7 +1290,274 @@ void memset_Int_t(uint32_t* ptr,uint32_t value,uint32_t size){}
 //     return result;
 // }
 
+/*
 void pr_uint32(char space,uint32_t x){
     float *y = &x;
     printf("%c%5.20f",space,*y); 
+}
+*/
+
+uint32_t signInv(uint32_t x){
+    uint32_t sign = fp_ExtractSign(x);
+    uint32_t inversedNum;
+    if(sign){
+        inversedNum = x & 0x7FFFFFFF; 
+    }
+    else{
+        inversedNum = x | 0x80000000;
+    }
+    return inversedNum;
+}
+void PrintInt(int num){
+    if(num == 0){
+        checkprint_str((uint32_t)('0'),0);
+        return;
+    }
+    if(num>>31){
+        checkprint_str((uint32_t)('-'),0);
+        num ^= 0xFFFFFFFF;
+        num += 1;   
+    }
+    uint32_t numcpy = num;
+    uint32_t revnum = 0;
+    int m=0;
+    int n=0;
+    while(numcpy>0){
+        if(numcpy%10==0 && m==n) m++;
+        revnum = revnum * 10 + numcpy%10;
+        numcpy/=10;
+        n++;
+    }
+    while(revnum>0){
+        checkprint_str((uint32_t)('0'+revnum%10),0);
+        revnum /= 10;
+    }
+    while(m>0){
+        checkprint_str((uint32_t)('0'),0);
+        m--;
+    }
+
+}
+void Print(char *str,printvar*var){
+    int flag = 0;
+    int counter = 0;
+    int iter = 0;
+    int rs1 = 0;;
+    int rs2 = 0;
+    int numflag = 0;
+    while(str[iter]!='\0'){
+        if(counter == 8) goto y;
+        
+        else if(flag == 1){
+            flag=0;
+            if(str[iter]=='%'){
+                goto x;
+            }
+            else{
+                numflag = 1;
+                if(counter!=0) goto y;
+                z:
+                if(str[iter]=='d'){ // %02d
+                    PrintInt(var->number);
+                }
+                else if(str[iter]=='f'){
+                    checkprint_float(var->number);
+                    rs1 = 0x08080808;
+                    rs2 = 0x08080000;
+                    checkprint_str(rs1,rs2);
+                    rs1 = 0x20202020;
+                    rs2 = 0x20200000;
+                    checkprint_str(rs1,rs2);
+                    rs1 = 0x08080808;
+                    rs2 = 0x08080000;
+                    checkprint_str(rs1,rs2);
+                    rs1=0;
+                    rs2=0;
+                }
+                else if(str[iter]=='s'){
+                    Print(var->str,0);    
+                }
+                var++;
+                numflag = 0;
+            }
+        }
+        else if(str[iter]=='%'){
+            flag = 1;
+        }
+        else{
+        x:  
+            if(counter<4){
+                rs1 = (rs1 << 8) + (uint32_t)str[iter];
+            }
+            else{
+                rs2 = (rs2 << 8) + (uint32_t)str[iter];
+            }
+            counter++;
+        }
+        iter++;
+        continue;
+        y:  checkprint_str(rs1,rs2);
+            rs1 = 0;
+            rs2 = 0;
+            counter = 0;
+            if(numflag) goto z;
+    }
+    if(counter!=0){
+        checkprint_str(rs1,rs2);
+    }
+}
+void snPrint(char* buffer,int n,char *str,printvar*var){
+    int flag = 0;
+    int iter = 0;
+    int bufit = 0;
+    while(1){
+        if(flag == 1){
+            flag=0;
+            if(str[iter]=='%'){
+                buffer[bufit] = str[iter];
+                bufit++;
+            }
+            else{
+                if(str[iter]=='d'){ // %02d
+                    if(var->number>>31){
+                        buffer[bufit] = '-';
+                        bufit++;
+                        var->number ^= 0xFFFFFFFF;
+                        var->number += 1;   
+                    }
+                    uint32_t numcpy = var->number;
+                    uint32_t revnum = 0;
+                    int m=0;
+                    while(numcpy>0){
+                        if(numcpy%10==0) m++;
+                        revnum = revnum * 10 + numcpy%10;
+                        numcpy/=10;
+                    }
+                    while(revnum>0){
+                        if(bufit == n-2)  goto x;
+                        buffer[bufit] = '0'+revnum%10;
+                        revnum /= 10;
+                        bufit++;
+                    }
+                    while(m>0){
+                        if(bufit == n-2)  goto x;
+                        buffer[bufit] = '0';
+                        m--;
+                        bufit++;
+                    }
+                }
+                else if(str[iter]=='f'){
+                    if(var->number>>31){
+                        buffer[bufit] = '-';
+                        bufit++; 
+                    }
+                    int exponent = ((var->number >> 23) & 0xFF) - 127;
+                    int mantissa = var->number & 0x7FFFFF;
+                    mantissa |= 0x800000;
+                    uint32_t integer_part = 0;
+                    if(exponent>30){
+                        integer_part = 0;   // imrproveable
+                    }
+                    else if (exponent > 23) {
+                        integer_part = mantissa << (exponent - 23);
+                        mantissa = 0;
+                    } else if (exponent >= 0) {
+                        integer_part = mantissa >> (23 - exponent);
+                        mantissa &= (1 << (23 - exponent)) - 1;
+                        mantissa = mantissa << (exponent+1);
+                    } else {
+                        integer_part = 0;   // imrproveable
+                    }
+                    if(integer_part){
+                        int numcpy = integer_part;
+                        int revnum = 0;
+                        int m=0;
+                        while(numcpy>0){
+                            if(numcpy%10==0) m++;
+                            revnum = revnum * 10 + numcpy%10;
+                            numcpy/=10;
+                        }
+                        while(revnum>0){
+                            if(bufit == n-2)  goto x;
+                            buffer[bufit] = '0'+revnum%10;
+                            bufit++;
+                            revnum /= 10; 
+                        }
+                        while(m>0){
+                            if(bufit == n-2)  goto x;
+                            buffer[bufit] = '0';
+                            bufit++;
+                            m--;
+                        }
+                    }
+                    else{
+                        if(exponent>30){
+                            if(bufit == n-2)  goto x;
+                            char x[]="Inf";
+                            for(int i =0 ; i<3 ; i++){
+                                buffer[bufit] = x[i];
+                                bufit++;
+                            }
+                            mantissa = 0;
+                        }
+                        else{
+                            if(bufit == n-2)  goto x;
+                            buffer[bufit] = '0';
+                            bufit++;
+                        }
+                    }
+                    if(bufit == n-2)  goto x; 
+                    if(mantissa){
+                        buffer[bufit] = '.';
+                        bufit++;
+                        uint32_t fractional_part = 0;
+                        uint32_t fractional_scale = 2;
+                        while(mantissa) {
+                            mantissa= mantissa << 1;
+                            fractional_part = fractional_part * 2 + (mantissa >> 23);
+                            mantissa &= 0x7FFFFF;
+                            fractional_scale *= 2;
+                        }
+                        for (int i = 0; i < 8; i++) {
+                            if(bufit == n-2)  goto x;
+                            fractional_part *= 10;
+                            if(fractional_part / fractional_scale){
+                                buffer[bufit] = (fractional_part / fractional_scale) + '0';
+                                bufit++;
+                            }
+                            fractional_part %= fractional_scale;
+                        }
+                    }
+                    else if(exponent<=30){
+                        buffer[bufit] = '.';
+                        bufit++;
+                        buffer[bufit] = '0';
+                        bufit++;
+                    }
+                }
+                else if(str[iter]=='s'){
+                    int i=0;
+                    while(var->str[i]){
+                        if(bufit == n-2)  goto x;
+                        buffer[bufit] = var->str[i];
+                        bufit++;
+                        i++;
+                    }
+                }
+                var++;
+            }
+        }
+        else if(str[iter]=='%'){
+            flag = 1;
+        }
+        else{
+            buffer[bufit] = str[iter];
+            bufit++;
+        }
+        iter++;
+        if(bufit==n-2 || str[iter]=='\0')   break;
+        continue;
+        x: break;
+    }
+    buffer[bufit] = '\0';
 }
