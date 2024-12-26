@@ -12,6 +12,12 @@ typedef struct {
     uint32_t value;
 } float32_t;
 
+typedef union {
+    int number;
+    char *str;
+}printvar;
+#define PRINTVARS(...) (printvar*[]){__VA_ARGS__}
+
 #define MAX ( 0xFFFFFFFF )
 #define MAX_HALF ( 0x7FFFFFFF )
 
@@ -217,3 +223,7 @@ void memset_Int_t(uint32_t* ptr,uint32_t value,uint32_t size);
 // uint32_t call_fpmul_py_CAPI(uint32_t RS1,uint32_t RS2);
 void pr_uint32(char space,uint32_t x);
 #endif
+
+uint32_t signInv(uint32_t x);
+void Print(char *str,printvar*var);
+void snPrint(char* buffer,int n,char *str,printvar*var);
