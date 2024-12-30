@@ -1,0 +1,7 @@
+main.c:29:26:g_deriv	48	static
+main.c:35:26:g	32	static
+main.c:40:6:sampleSine	64	static
+main.c:52:6:fillArrayRand	48	static
+main.c:60:6:fillArrayNull	48	static
+main.c:68:5:train	880	static
+main.c:151:6:my_main	16	static

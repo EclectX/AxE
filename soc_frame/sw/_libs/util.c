@@ -1357,7 +1357,7 @@ void Print(char *str,printvar*var){
                 numflag = 1;
                 if(counter!=0) goto y;
                 z:
-                if(str[iter]=='d'){ // %02d
+                if(str[iter]=='d'){ // %02d 081x
                     PrintInt(var->number);
                 }
                 else if(str[iter]=='f'){
@@ -1560,4 +1560,107 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
         x: break;
     }
     buffer[bufit] = '\0';
+}
+void printHex(uint32_t x){
+    char *hexDigits[] = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
+    while(x!=0){
+      uint32_t digitToPrint = (x & 0xF0000000) >> 28;
+      display_print(0,0,hexDigits[digitToPrint]);
+      x = x << 4;
+    }
+}
+int strlen(char *str){
+    if (!str)
+        return 0;
+    int counter=0;
+    for(int i=0; *(str+i)!='\0';i++){
+        counter++;
+    }
+    return counter;
+}
+void strncpy(char *dest, const char *src, size_t n) {
+    size_t i = 0;
+
+    while (i < n && src[i] != '\0') {
+        dest[i] = src[i];
+        i++;
+    }
+
+    while (i < n) {
+        dest[i] = '\0';
+        i++;
+    }
+}
+void strcpy(char *dest, const char *src) {
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    *dest = '\0';
+}
+#define RAND_MAX 32767
+#define N 624
+#define M 397
+#define MATRIX_A 0x9908b0df
+#define UPPER_MASK 0x80000000
+#define LOWER_MASK 0x7fffffff
+#define TEMPERING_MASK_B 0x9d2c5680
+#define TEMPERING_MASK_C 0xefc60000
+#define TEMPERING_SHIFT_U(y)  (y >> 11)
+#define TEMPERING_SHIFT_S(y)  (y << 7)
+#define TEMPERING_SHIFT_T(y)  (y << 15)
+#define TEMPERING_SHIFT_L(y)  (y >> 18)
+static int mt_initialized = 0;
+static unsigned int mt[N+1];
+static int mti=N+1;
+void srand(unsigned int seed){
+  int i;
+  mt_initialized = 1;
+  for (i=0;i<N;i++)
+  {
+    mt[i] = seed & 0xffff0000;
+    seed = 69069 * seed + 1;
+    mt[i] |= (seed & 0xffff0000) >> 16;
+    seed = 69069 * seed + 1;
+  }
+  mti = N;
+}
+unsigned int rand(void){
+  if (!mt_initialized){
+    display_print(0,0,"ERROR: rng is not initialized, call srand()!\n");
+  }
+  unsigned int y;
+  static unsigned int mag01[2]={0x0, MATRIX_A};
+
+  if (mti >= N)
+  {
+    int kk;
+
+    if (mti == N+1)
+      srand(4357);
+
+    for (kk=0;kk<N-M;kk++)
+    {
+      y = (mt[kk]&UPPER_MASK)|(mt[kk+1]&LOWER_MASK);
+      mt[kk] = mt[kk+M] ^ (y >> 1) ^ mag01[y & 0x1];
+    }
+    for (;kk<N-1;kk++)
+    {
+      y = (mt[kk]&UPPER_MASK)|(mt[kk+1]&LOWER_MASK);
+      mt[kk] = mt[kk+(M-N)] ^ (y >> 1) ^ mag01[y & 0x1];
+    }
+    y = (mt[N-1]&UPPER_MASK)|(mt[0]&LOWER_MASK);
+    mt[N-1] = mt[M-1] ^ (y >> 1) ^ mag01[y & 0x1];
+
+    mti = 0;
+  }
+
+  y = mt[mti++];
+  y ^= TEMPERING_SHIFT_U(y);
+  y ^= TEMPERING_SHIFT_S(y) & TEMPERING_MASK_B;
+  y ^= TEMPERING_SHIFT_T(y) & TEMPERING_MASK_C;
+  y ^= TEMPERING_SHIFT_L(y);
+
+  return y & RAND_MAX;
 }
