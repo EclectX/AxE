@@ -46,8 +46,7 @@ uint32_t rn_solver(int *converged, uint32_t maxerr, unsigned maxiter, fn_type f,
   *converged = 0;
   for (iter = 0; iter < maxiter; iter++)
   {
-      // only works with float_sub
-      *converged = (float_sub(maxerr,myfabs(f(guess))).value >> 31) ^ 1;
+      *converged = !(fpsub(maxerr,myfabs(f(guess))) >> 31);
       
       if (*converged)
         break;
@@ -68,7 +67,7 @@ void my_main(){
     for (unsigned int i=0; i < NTESTDATA; i++)
     {
     sqrt_value = testdata[i];   // 0.00001
-    root = rn_solver(&converged, 0x3727c5ac, 20, f, df);
+    root = rn_solver(&converged, 0x3727c5ab, 20, f, df);
     Print("sqrt(%f) == %f (converged:%s)\n",PRINTVARS( sqrt_value, root, converged ? "t" : "f"));
     }
 
