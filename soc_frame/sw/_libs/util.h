@@ -13,8 +13,9 @@ typedef struct {
 } float32_t;
 
 typedef union {
-    int number;
+    uint32_t number;
     char *str;
+    char ch;
 }printvar;
 #define PRINTVARS(...) (printvar*[]){__VA_ARGS__}
 
@@ -225,6 +226,7 @@ void pr_uint32(char space,uint32_t x);
 #endif
 
 uint32_t signInv(uint32_t x);
+void PrintInt(uint32_t num);
 void Print(char *str,printvar*var);
 void snPrint(char* buffer,int n,char *str,printvar*var);
 void printHex(uint32_t x);
@@ -233,3 +235,7 @@ void strncpy(char *dest, const char *src, size_t n);
 void strcpy(char *dest, const char *src);
 void srand(unsigned int seed);
 unsigned int rand(void);
+int strcmp(const char *str1, const char *str2);
+uint32_t atof(const char *str);
+uint32_t floor(uint32_t x);
+int atoi(const char *s);

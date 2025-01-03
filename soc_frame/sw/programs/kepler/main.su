@@ -1,0 +1,9 @@
+main.c:107:10:strict_iteration	32	static
+main.c:112:10:newton	48	static
+main.c:117:10:binary	48	static
+main.c:135:10:e_series	64	static
+main.c:159:10:j_series	48	static
+main.c:196:6:my_main	128	static
+main.c:269:1:bin_fact	64	static
+main.c:286:10:J	80	static
+main.c:313:1:kepler	64	static

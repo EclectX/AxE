@@ -1308,33 +1308,27 @@ uint32_t signInv(uint32_t x){
     }
     return inversedNum;
 }
-void PrintInt(int num){
+void PrintInt(uint32_t num){
     if(num == 0){
         checkprint_str((uint32_t)('0'),0);
         return;
     }
     if(num>>31){
         checkprint_str((uint32_t)('-'),0);
-        num ^= 0xFFFFFFFF;
-        num += 1;   
+        num = num & 0x7FFFFFFF;
     }
     uint32_t numcpy = num;
-    uint32_t revnum = 0;
-    int m=0;
+    uint32_t revnum[12];
     int n=0;
     while(numcpy>0){
-        if(numcpy%10==0 && m==n) m++;
-        revnum = revnum * 10 + numcpy%10;
+        revnum[n] = numcpy%10;
         numcpy/=10;
         n++;
     }
-    while(revnum>0){
-        checkprint_str((uint32_t)('0'+revnum%10),0);
-        revnum /= 10;
-    }
-    while(m>0){
-        checkprint_str((uint32_t)('0'),0);
-        m--;
+    n--;
+    while(n>=0){
+        checkprint_str((uint32_t)('0'+revnum[n]),0);
+        n--;
     }
 
 }
@@ -1373,9 +1367,16 @@ void Print(char *str,printvar*var){
                     checkprint_str(rs1,rs2);
                     rs1=0;
                     rs2=0;
+                    if(var->number == 0){
+                        checkprint_str(0x30300000,0);
+                    }
                 }
                 else if(str[iter]=='s'){
                     Print(var->str,0);    
+                }
+                else if(str[iter]=='c'){
+                    char output[1] = {var->str};
+                    Print(output,0);
                 }
                 var++;
                 numflag = 0;
@@ -1454,6 +1455,7 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                     int exponent = ((var->number >> 23) & 0xFF) - 127;
                     int mantissa = var->number & 0x7FFFFF;
                     mantissa |= 0x800000;
+                    if(var->number == 0) {mantissa = 0; exponent = 0;}
                     uint32_t integer_part = 0;
                     if(exponent>30){
                         integer_part = 0;   // imrproveable
@@ -1512,6 +1514,13 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                         bufit++;
                         uint32_t fractional_part = 0;
                         uint32_t fractional_scale = 2;
+                        while(exponent<-1){
+                            fractional_scale = fractional_scale * 2;
+                            exponent++;
+                        }
+                        if(exponent<-14 || exponent == 0){
+                            mantissa = 0;
+                        }
                         while(mantissa) {
                             mantissa= mantissa << 1;
                             fractional_part = fractional_part * 2 + (mantissa >> 23);
@@ -1663,4 +1672,75 @@ unsigned int rand(void){
   y ^= TEMPERING_SHIFT_L(y);
 
   return y & RAND_MAX;
+}
+int strcmp(const char *str1, const char *str2) {
+    while (*str1 && *str2) {
+        if (*str1 != *str2) {
+            return *str1 - *str2;
+        }
+        str1++;
+        str2++;
+    }
+    return *str1 - *str2;
+}
+uint32_t atof(const char *str){
+    uint32_t output = 0;
+    uint32_t base = 0;
+    int counter = 0;
+    if(*str=='+' || *str == '-'){
+        if(*str == '-'){
+            output |= 0x8FFFFFFF;
+        }
+        str++;
+    }
+    while(*str!='.' && *str && (*str-48 <10)){
+        base *= 10;
+        base += *str-48;
+        str++;
+    }
+    if(*str == '.') str++;
+    while(*str && *str-48 < 10){
+        base *= 10;
+        base += *str-48;
+        counter++;
+        str++;
+    }
+    output = int_to_float(base) | output;
+    while(counter>0){
+        output = fpdiv(output,0x41200000);
+        counter--;
+    }
+    return output;
+}
+uint32_t floor(uint32_t x){
+    uint32_t exp = fp_ExtractExponent(x);
+    uint32_t mant = fp_ExtractFraction(x);
+    mant |= 0x800000;
+    if(exp<127){
+        return 0;
+    }
+    else{
+        if(exp<151){
+            mant = mant >> (150-exp);
+            return int_to_float((int)mant);
+        }
+        else{
+            mant = mant << (exp-150);
+            return int_to_float((int)mant);
+        }
+    }
+}
+int atoi(const char *s)
+{
+	int n=0, neg=0;
+	while (*s==' ') s++;
+    if(*s =='+' || *s=='-'){
+        switch (*s) {
+        case '-': neg=1;
+        case '+': s++;
+        }
+    }
+	while (*s && (*s-48)<9)
+		n = 10*n - (*s++ - '0');
+	return neg ? n : -n;
 }
