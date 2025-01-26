@@ -17,8 +17,8 @@ OPT = O0
 WARN = Wall
 
 OTHER = -pedantic -ffreestanding -fstack-usage
-
-CFLAGS = -$(WARN) -$(OPT) $(OTHER) $(INC)
+#	Added to show fewer errors
+CFLAGS = -$(WARN) -$(OPT) $(OTHER) $(INC) -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-unused-variable -Wno-unused-but-set-variable
 #~ CFLAGS = -$(WARN) $(OTHER) $(INC)
 
 # LINKER

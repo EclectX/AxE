@@ -66,6 +66,7 @@
 #define DEBUG_MEMMGR_SUPPORT_STATS 1
 
 #define POOL_SIZE 8 * 1024
+//#define POOL_SIZE 256 * 1024
 #define MIN_POOL_ALLOC_QUANTAS 16
 
 
@@ -91,5 +92,9 @@ void memmgr_free(void* ap);
 //
 //~ void memmgr_print_stats();
 
+/// YR
+int memcmp(const void *vl, const void *vr, __SIZE_TYPE__ n);
+void * Memset(void *dest, int c, __SIZE_TYPE__ n);
+/// YR
 
 #endif // MEMMGR_H

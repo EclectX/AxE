@@ -1297,6 +1297,9 @@ void pr_uint32(char space,uint32_t x){
 }
 */
 
+/// YR
+
+/// to Invert float nums sign
 uint32_t signInv(uint32_t x){
     uint32_t sign = fp_ExtractSign(x);
     uint32_t inversedNum;
@@ -1308,6 +1311,8 @@ uint32_t signInv(uint32_t x){
     }
     return inversedNum;
 }
+
+/// to print int without whitespace
 void PrintInt(uint32_t num){
     if(num == 0){
         checkprint_str((uint32_t)('0'),0);
@@ -1315,7 +1320,7 @@ void PrintInt(uint32_t num){
     }
     if(num>>31){
         checkprint_str((uint32_t)('-'),0);
-        num = num & 0x7FFFFFFF;
+        num = 0 - num;
     }
     uint32_t numcpy = num;
     uint32_t revnum[12];
@@ -1332,6 +1337,11 @@ void PrintInt(uint32_t num){
     }
 
 }
+
+/// printf like function
+/// args should be in PRINTVARS
+/// Currently only   %.*s %.4s %d %f %s %c   are implemented
+/// todo: %02d 081x
 void Print(char *str,printvar*var){
     int flag = 0;
     int counter = 0;
@@ -1351,7 +1361,20 @@ void Print(char *str,printvar*var){
                 numflag = 1;
                 if(counter!=0) goto y;
                 z:
-                if(str[iter]=='d'){ // %02d 081x
+                if(str[iter]=='.' && str[iter+1]=='*'&& str[iter+2]=='s'){
+                    for(int i=0;i<var->number;i++){
+                        Print("%c",PRINTVARS(*((var+1)->str+i)));
+                    }
+                    var++;
+                    iter +=2;
+                }
+                else if(str[iter]=='.' && str[iter+1]=='4'&& str[iter+2]=='s'){
+                    for(int i=0;i<4;i++){
+                        Print("%c",PRINTVARS(*((var)->str+i)));
+                    }
+                    iter +=2;
+                }
+                else if(str[iter]=='d'){
                     PrintInt(var->number);
                 }
                 else if(str[iter]=='f'){
@@ -1407,6 +1430,11 @@ void Print(char *str,printvar*var){
         checkprint_str(rs1,rs2);
     }
 }
+
+/// snprintf like function
+/// args should be in PRINTVARS
+/// Currently only   %d %f %s %c   are implemented
+/// todo: Print float numbers with low or high power in e+x / e-x format
 void snPrint(char* buffer,int n,char *str,printvar*var){
     int flag = 0;
     int iter = 0;
@@ -1419,7 +1447,7 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                 bufit++;
             }
             else{
-                if(str[iter]=='d'){ // %02d
+                if(str[iter]=='d'){
                     if(var->number>>31){
                         buffer[bufit] = '-';
                         bufit++;
@@ -1458,7 +1486,7 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                     if(var->number == 0) {mantissa = 0; exponent = 0;}
                     uint32_t integer_part = 0;
                     if(exponent>30){
-                        integer_part = 0;   // imrproveable
+                        integer_part = 0;
                     }
                     else if (exponent > 23) {
                         integer_part = mantissa << (exponent - 23);
@@ -1468,7 +1496,7 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                         mantissa &= (1 << (23 - exponent)) - 1;
                         mantissa = mantissa << (exponent+1);
                     } else {
-                        integer_part = 0;   // imrproveable
+                        integer_part = 0;
                     }
                     if(integer_part){
                         int numcpy = integer_part;
@@ -1570,6 +1598,8 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
     }
     buffer[bufit] = '\0';
 }
+
+/// Print 32 bit Numbers in Hex format 
 void printHex(uint32_t x){
     char *hexDigits[] = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
     while(x!=0){
@@ -1578,6 +1608,8 @@ void printHex(uint32_t x){
       x = x << 4;
     }
 }
+
+/// length of string returns
 int strlen(char *str){
     if (!str)
         return 0;
@@ -1587,6 +1619,8 @@ int strlen(char *str){
     }
     return counter;
 }
+
+/// strncpy like function
 void strncpy(char *dest, const char *src, size_t n) {
     size_t i = 0;
 
@@ -1600,6 +1634,8 @@ void strncpy(char *dest, const char *src, size_t n) {
         i++;
     }
 }
+
+/// strcpy like function
 void strcpy(char *dest, const char *src) {
     while (*src != '\0') {
         *dest = *src;
@@ -1608,21 +1644,8 @@ void strcpy(char *dest, const char *src) {
     }
     *dest = '\0';
 }
-#define RAND_MAX 32767
-#define N 624
-#define M 397
-#define MATRIX_A 0x9908b0df
-#define UPPER_MASK 0x80000000
-#define LOWER_MASK 0x7fffffff
-#define TEMPERING_MASK_B 0x9d2c5680
-#define TEMPERING_MASK_C 0xefc60000
-#define TEMPERING_SHIFT_U(y)  (y >> 11)
-#define TEMPERING_SHIFT_S(y)  (y << 7)
-#define TEMPERING_SHIFT_T(y)  (y << 15)
-#define TEMPERING_SHIFT_L(y)  (y >> 18)
-static int mt_initialized = 0;
-static unsigned int mt[N+1];
-static int mti=N+1;
+
+/// Initialize random number generator
 void srand(unsigned int seed){
   int i;
   mt_initialized = 1;
@@ -1635,6 +1658,8 @@ void srand(unsigned int seed){
   }
   mti = N;
 }
+
+/// Generate random number
 unsigned int rand(void){
   if (!mt_initialized){
     display_print(0,0,"ERROR: rng is not initialized, call srand()!\n");
@@ -1673,6 +1698,8 @@ unsigned int rand(void){
 
   return y & RAND_MAX;
 }
+
+/// Compare two strings
 int strcmp(const char *str1, const char *str2) {
     while (*str1 && *str2) {
         if (*str1 != *str2) {
@@ -1683,6 +1710,9 @@ int strcmp(const char *str1, const char *str2) {
     }
     return *str1 - *str2;
 }
+
+/// Convert string to float
+/// It only works for low precision float numbers
 uint32_t atof(const char *str){
     uint32_t output = 0;
     uint32_t base = 0;
@@ -1707,29 +1737,34 @@ uint32_t atof(const char *str){
     }
     output = int_to_float(base) | output;
     while(counter>0){
-        output = fpdiv(output,0x41200000);
+        output = fpdiv(output,0x41200000); /// 10
         counter--;
     }
     return output;
 }
+
+/// -2147483520 to 2147483520
 uint32_t floor(uint32_t x){
+    uint32_t sign = fp_ExtractSign(x);
     uint32_t exp = fp_ExtractExponent(x);
     uint32_t mant = fp_ExtractFraction(x);
     mant |= 0x800000;
     if(exp<127){
-        return 0;
+        return int_to_float((0+sign)*(sign?-1:1));
     }
     else{
         if(exp<151){
             mant = mant >> (150-exp);
-            return int_to_float((int)mant);
+            return int_to_float(((int)mant+sign)*(sign?-1:1));
         }
         else{
             mant = mant << (exp-150);
-            return int_to_float((int)mant);
+            return int_to_float(((int)mant+sign)*(sign?-1:1));
         }
     }
 }
+
+/// Convert string to integer
 int atoi(const char *s)
 {
 	int n=0, neg=0;
@@ -1744,3 +1779,115 @@ int atoi(const char *s)
 		n = 10*n - (*s++ - '0');
 	return neg ? n : -n;
 }
+
+/// open an in-memory file
+void mopen(MFILE *mfile, const char *mode)
+{
+  if (strcmp(mode, "r") != 0)
+  {
+    display_print(0,0,"ERROR: Only the file reads supported\n");
+  }
+
+  mfile->rdptr = 0;
+}
+
+/// at end of in-memory file
+/// 1=Yes   0=No
+int meof(MFILE *mfile)
+{
+  return mfile->rdptr >= mfile->data_sz;
+}
+
+/// read a buffer from the in-memory file
+__SIZE_TYPE__ mread(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile)
+{
+  if (meof(mfile))
+    return 0;
+
+  char *ptr = _ptr;
+  __SIZE_TYPE__ cnt = 0;
+  while (mfile->rdptr < mfile->data_sz && cnt < size && !meof(mfile))
+  {
+    *ptr++ = mfile->data[mfile->rdptr++];
+    cnt++;
+  }
+  return cnt;
+}
+
+/// get a string from the in-memory file
+char * mgets(char *s, size_t size, MFILE *mfile)
+{
+  if (meof(mfile))
+    return NULL;
+
+  char *p = s;
+  size_t cnt;
+  
+  for (cnt=0; mfile->data[mfile->rdptr] != '\n' && cnt < (size-1) && !meof(mfile); cnt++)
+    *p++ = mfile->data[mfile->rdptr++];
+
+  if (mfile->data[mfile->rdptr] == '\n')
+    mfile->rdptr++;
+
+  *p = '\0';
+
+  return s;
+}
+
+/// The absolute value of an integer number
+int abs(int i)
+{
+  return i < 0 ? -i : i;
+}
+/// string scan with 4 char type args
+int sscanc4(const char *buf, const char *fmt, char *a,char *b,char *c, char *d)
+{
+  int i=0, j=0, ret=0,count=0;
+ 	while (fmt && fmt[i] && buf[j])
+ 	{
+    if (fmt[i] == '%') 
+    {
+      i++;
+      switch (count) 
+      {
+        case 0: 
+        {
+	        *a = buf[j];
+	        j++;
+	        ret++;
+	        break;
+        }
+        case 1: 
+        {
+	        *b = buf[j];
+	        j++;
+	        ret++;
+	        break;
+        }
+        case 2: 
+        {
+	        *c = buf[j];
+	        j++;
+	        ret++;
+	        break;
+        }
+        case 3: 
+        {
+	        *d = buf[j];
+	        j++;
+	        ret++;
+	        break;
+        }
+      }
+      count++;
+    } 
+    else 
+    {
+      j++;
+    }
+    i++;
+  }
+  return ret;
+}
+
+/// YR
