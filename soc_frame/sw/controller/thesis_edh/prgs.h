@@ -4,15 +4,15 @@
 
 void init_prgs( prg_t *prgs )
 {
-	prgs[0].name = "parrondo";
-	prgs[0].addr[ARCH_RV32IM] = 0x2fff8; // index: 49150 size: 25205
+	prgs[0].name = "c-interp";
+	prgs[0].addr[ARCH_RV32IM] = 0x2fff8; // index: 49150 size: 30331
 	prgs[0].c[ARCH_RV32IM] = 0;
 	prgs[0].d[ARCH_RV32IM] = 0;
 	prgs[0].t[ARCH_RV32IM] = 0;
 	prgs[0].e[ARCH_RV32IM] = 0;
 	prgs[0].c_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[0].t_clk_cnt[ARCH_RV32IM] = 0;
-	prgs[0].d_multiplyer = 0b0000000101110100;
+	prgs[0].d_multiplyer = 0b0000000100010011;
 	prgs[0].s          = 5;
 	prgs[0].s_cnt_down = 5;
 	prgs[0].assigned_to = 0;

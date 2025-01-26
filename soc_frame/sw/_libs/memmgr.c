@@ -251,3 +251,41 @@ void memmgr_free(void* ap)
 
     freep = p;
 }
+
+/// YR
+
+/// Compare two blocks of memory
+int memcmp(const void *vl, const void *vr, __SIZE_TYPE__ n)
+{
+	const unsigned char *l=vl, *r=vr;
+	for (; n && *l == *r; n--, l++, r++);
+	return n ? *l-*r : 0;
+}
+
+/// Fill block of memory
+void * Memset(void *dest, int c, __SIZE_TYPE__ n)
+{
+	unsigned char *s = dest;
+	__SIZE_TYPE__ k;
+
+	if (!n) return dest;
+	s[0] = s[n-1] = c;
+	if (n <= 2) return dest;
+	s[1] = s[n-2] = c;
+	s[2] = s[n-3] = c;
+	if (n <= 6) return dest;
+	s[3] = s[n-4] = c;
+	if (n <= 8) return dest;
+
+	k = -(unsigned long int)s & 3;
+	s += k;
+	n -= k;
+	n &= -4;
+
+	for (; n; n--, s++) *s = c;
+
+	return dest;
+}
+
+
+/// YR

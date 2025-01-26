@@ -12,13 +12,42 @@ typedef struct {
     uint32_t value;
 } float32_t;
 
+/// YR
+
 typedef union {
     uint32_t number;
     char *str;
     char ch;
 }printvar;
+
+
 #define PRINTVARS(...) (printvar*[]){__VA_ARGS__}
 
+#define RAND_MAX 32767
+#define N 624
+#define M 397
+#define MATRIX_A 0x9908b0df
+#define UPPER_MASK 0x80000000
+#define LOWER_MASK 0x7fffffff
+#define TEMPERING_MASK_B 0x9d2c5680
+#define TEMPERING_MASK_C 0xefc60000
+#define TEMPERING_SHIFT_U(y)  (y >> 11)
+#define TEMPERING_SHIFT_S(y)  (y << 7)
+#define TEMPERING_SHIFT_T(y)  (y << 15)
+#define TEMPERING_SHIFT_L(y)  (y >> 18)
+static int mt_initialized = 0;
+static unsigned int mt[N+1];
+static int mti=N+1;
+
+struct _MFILE {
+  char *fname;
+  size_t data_sz;
+  const char *data;
+  int rdptr;
+};
+typedef struct _MFILE MFILE;
+
+#define EOF (-1)
 #define MAX ( 0xFFFFFFFF )
 #define MAX_HALF ( 0x7FFFFFFF )
 
@@ -223,8 +252,8 @@ void memset_Int_t(uint32_t* ptr,uint32_t value,uint32_t size);
 
 // uint32_t call_fpmul_py_CAPI(uint32_t RS1,uint32_t RS2);
 void pr_uint32(char space,uint32_t x);
-#endif
 
+/// YR
 uint32_t signInv(uint32_t x);
 void PrintInt(uint32_t num);
 void Print(char *str,printvar*var);
@@ -239,3 +268,11 @@ int strcmp(const char *str1, const char *str2);
 uint32_t atof(const char *str);
 uint32_t floor(uint32_t x);
 int atoi(const char *s);
+void mopen(MFILE *mfile, const char *mode);
+int meof(MFILE *mfile);
+__SIZE_TYPE__ mread(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile);
+char * mgets(char *s, size_t size, MFILE *mfile);
+int abs(int i);
+int sscanc4(const char *buf, const char *fmt, char *a,char *b,char *c, char *d);
+/// YR
+#endif
