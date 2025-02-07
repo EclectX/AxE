@@ -20,9 +20,15 @@ typedef union {
     char ch;
 }printvar;
 
+typedef union {
+  uint32_t* number;
+  char **str;
+  char *ch;
+}scanvar;
+
 
 #define PRINTVARS(...) (printvar*[]){__VA_ARGS__}
-#define SCANVARS(...) (uint32_t*[]){__VA_ARGS__}
+#define SCANVARS(...) (scanvar*[]){__VA_ARGS__}
 
 typedef __SIZE_TYPE__ 	size_t;
 
@@ -440,9 +446,8 @@ int meof(MFILE *mfile);
 __SIZE_TYPE__ mread(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile);
 char * mgets(char *s, size_t size, MFILE *mfile);
 int abs(int i);
-int sscanc4(const char *buf, const char *fmt, char *a,char *b,char *c, char *d);
 void bcopy(const void *src, void *dest, size_t n);
-int sscanf(const char *buf, const char *fmt, uint32_t*var[]);
+int Sscanf(const char *buf, const char *fmt, scanvar*var);
 void bzero(void *s, size_t len);
 uint32_t htonl(uint32_t hostlong);
 uint32_t str2ieee(const char *str);

@@ -62,7 +62,7 @@ void my_main()
 	phead->p_mlen = 1;
 	phead->p_left = phead->p_right = phead;
 	while (mgets(line, 128, fp)) {
-		sscanf(line, "%f %d",SCANVARS(&time,&addr.s_un.s_addr));
+		Sscanf(line, "%f %d",SCANVARS(&time,&addr.s_un.s_addr));
 		//inet_aton(addr_str, &addr);
 		p = (struct ptree *)memmgr_alloc(sizeof(struct ptree));
 		if (!p) {

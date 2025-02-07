@@ -1607,10 +1607,12 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
 /// Print 32 bit Numbers in Hex format 
 void printHex(uint32_t x){
     char *hexDigits[] = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
-    while(x!=0){
+    int i = 8;
+    while(i>0){
       uint32_t digitToPrint = (x & 0xF0000000) >> 28;
       display_print(0,0,hexDigits[digitToPrint]);
       x = x << 4;
+      i--;
     }
 }
 
@@ -1843,56 +1845,6 @@ char * mgets(char *s, size_t size, MFILE *mfile)
 int abs(int i)
 {
   return i < 0 ? -i : i;
-}
-/// string scan with 4 char type args
-int sscanc4(const char *buf, const char *fmt, char *a,char *b,char *c, char *d)
-{
-  int i=0, j=0, ret=0,count=0;
- 	while (fmt && fmt[i] && buf[j])
- 	{
-    if (fmt[i] == '%') 
-    {
-      i++;
-      switch (count) 
-      {
-        case 0: 
-        {
-	        *a = buf[j];
-	        j++;
-	        ret++;
-	        break;
-        }
-        case 1: 
-        {
-	        *b = buf[j];
-	        j++;
-	        ret++;
-	        break;
-        }
-        case 2: 
-        {
-	        *c = buf[j];
-	        j++;
-	        ret++;
-	        break;
-        }
-        case 3: 
-        {
-	        *d = buf[j];
-	        j++;
-	        ret++;
-	        break;
-        }
-      }
-      count++;
-    } 
-    else 
-    {
-      j++;
-    }
-    i++;
-  }
-  return ret;
 }
 
 /// Copy bytes in memory
@@ -2138,10 +2090,9 @@ uint32_t bin64toieee (uint32_t highnib,uint32_t lownib){
 
 /// sscanf like
 /// SCANVARS(...)
-int sscanf(const char *buf, const char *fmt, uint32_t*var[]){
+int Sscanf(const char *buf, const char *fmt, scanvar*var){
     int i, j=0, ret=0;
     char *out_loc;
-    int varcount = 0;
  	i = 0;
  	while (fmt && fmt[i] && buf[j])
  	{
@@ -2152,21 +2103,21 @@ int sscanf(const char *buf, const char *fmt, uint32_t*var[]){
       {
         case 'c': 
         {
-	        *var[varcount]= buf[j];
+	        *(var->ch)= buf[j];
 	        j++;
 	        ret++;
 	        break;
         }
         case 'd': 
         {
-	         *var[varcount]= strtol(&buf[j], &out_loc, 10);
+	         *(var->number)= strtol(&buf[j], &out_loc, 10);
 	         j += (out_loc - &buf[j]);
 	         ret++;
 	         break;
         }
         case 'x': 
         {
-	        *var[varcount]= strtol(&buf[j], &out_loc, 16);
+	        *(var->number)= strtol(&buf[j], &out_loc, 16);
 	        j += (out_loc - &buf[j]);
 	        ret++;
 	        break;
@@ -2178,12 +2129,12 @@ int sscanf(const char *buf, const char *fmt, uint32_t*var[]){
             j++;
             uint32_t DOWN = Num2Bin(strtol(&buf[j],&out_loc,10),0);
             j += (out_loc - &buf[j]);
-            *var[varcount] = bin64toieee(UP,DOWN);
+            *(var->number) = bin64toieee(UP,DOWN);
             ret++;
             break;
         }
       }
-      varcount++;
+      var++;
     } 
     else 
     {
@@ -2209,13 +2160,14 @@ uint32_t htonl(uint32_t hostlong) {
     return result;
 }
 
-/// convert a string containing float number to IEEE form
+/// convert a string containing float number to IEEE754
 uint32_t str2ieee(const char *str){
     uint32_t output;
-    sscanf(str,"%f",SCANVARS(&output));
+    Sscanf(str,"%f",SCANVARS(&output));
     return output;
 }
 
+/// write a buffer to the in-memory file
 __SIZE_TYPE__ mwrite(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile)
 {
   if (meof(mfile))

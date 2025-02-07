@@ -27,7 +27,7 @@ my_main(int argc, char *argv[])
 	
 	char buf[64];
   	mgets(buf, 64, infile);
-	while (sscanc4(buf, "%c%c-%c%c\n",&col1, &row1, &col2, &row2)==4) {
+	while (Sscanf(buf, "%c%c-%c%c\n",SCANVARS(&col1, &row1, &col2, &row2))==4) {
 		error = check_move_error_1_to_5(*board, col1, row1, col2, row2, 
 			black_action);
 		if (error) {
