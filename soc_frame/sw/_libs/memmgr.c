@@ -8,6 +8,10 @@
 //~ #include <stdio.h>
 #include "memmgr.h"
 
+/// uncomment only for sha / patricia program
+/// not necessary
+/// #define MEMSET
+
 typedef ulong Align;
 
 union mem_header_union
@@ -287,5 +291,39 @@ void * Memset(void *dest, int c, __SIZE_TYPE__ n)
 	return dest;
 }
 
+/// opy block of memory
+void * memcpy(void *dest, const void *src, __SIZE_TYPE__ n)
+{
+	unsigned char *d = dest;
+	const unsigned char *s = src;
 
+	for (; n; n--) *d++ = *s++;
+	return dest;
+}
+#ifdef MEMSET
+/// Fill block of memory
+void * memset(void *dest, int c, __SIZE_TYPE__ n)
+{
+	unsigned char *s = dest;
+	__SIZE_TYPE__ k;
+
+	if (!n) return dest;
+	s[0] = s[n-1] = c;
+	if (n <= 2) return dest;
+	s[1] = s[n-2] = c;
+	s[2] = s[n-3] = c;
+	if (n <= 6) return dest;
+	s[3] = s[n-4] = c;
+	if (n <= 8) return dest;
+
+	k = -(unsigned int)s & 3;
+	s += k;
+	n -= k;
+	n &= -4;
+
+	for (; n; n--, s++) *s = c;
+
+	return dest;
+}
+#endif
 /// YR

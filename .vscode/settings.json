@@ -6,6 +6,14 @@
         "*.tcc": "c",
         "hello-c.h": "c",
         "print.h": "c",
-        "memmgr.h": "c"
+        "memmgr.h": "c",
+        "stdio.h": "c",
+        "errno.h": "c",
+        "fcntl.h": "c",
+        "stdlib.h": "c",
+        "input_small.h": "c",
+        "sha.h": "c",
+        "stddef.h": "c",
+        "time.h": "c"
     }
 }
