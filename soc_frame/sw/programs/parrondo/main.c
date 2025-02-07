@@ -64,7 +64,7 @@ int cointoss(uint32_t p)
 
 	uint32_t U;
 
-	U = fpdiv(((uint32_t)rand()),((uint32_t)_MAX_RAND));
+	U = fpdiv(((uint32_t)Rand()),((uint32_t)_MAX_RAND));
 	return (fpsub(U,p)>>31) ? 1 : -1;
 } 
 
@@ -146,13 +146,13 @@ void my_main()
 		seed = INITIAL_SEED;
 		Print("Using seed = %d\n",PRINTVARS(INITIAL_SEED));
     }
-	srand((int)seed);
+	Srand((int)seed);
 	for(i=0;i<3;i++)site_visits[i] = 0;
 	i=0;
 	Print("Simulating %d trials ...\n",PRINTVARS(trials));
 	while(i<trials){
-		seed = rand();
-		srand((int)seed);
+		seed = Rand();
+		Srand((int)seed);
 		fortune = 0;
 		while(n++<MAX_ITERATIONS){
 			if(cointoss(game_select) == 1)

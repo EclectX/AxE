@@ -73,8 +73,7 @@ util.c:1899:6:bcopy	48	static
 util.c:1908:8:strchr	32	static
 util.c:1919:6:strtol	64	static
 util.c:2056:10:Num2Bin	64	static
-util.c:2097:10:bin64toieee	64	static
-util.c:2141:5:sscanf	64	static
-util.c:2200:6:bzero	32	static
-util.c:2204:10:htonl	48	static
-util.c:2213:10:str2ieee	48	static
+util.c:2096:10:bin64toieee	64	static
+util.c:2137:5:sscanf	64	static
+util.c:2193:6:bzero	32	static
+util.c:2196:10:htonl	48	static

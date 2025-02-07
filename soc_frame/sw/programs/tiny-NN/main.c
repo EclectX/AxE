@@ -54,7 +54,7 @@ void fillArrayRand(NETWORK_DATA_TYPE* array, unsigned int size)
 	unsigned int i;
 	for(i=0; i<size; ++i)
 	{
-		array[i] =  fpsub((NETWORK_DATA_TYPE)rand(),0x3f000000);
+		array[i] =  fpsub((NETWORK_DATA_TYPE)Rand(),0x3f000000);
 	}
 }
 void fillArrayNull(NETWORK_DATA_TYPE* array, unsigned int size)
@@ -150,7 +150,7 @@ int train(NETWORK_DATA_TYPE eta, NETWORK_DATA_TYPE error_threshold, NETWORK_DATA
 }
 void my_main()
 {
-	srand(42);
+	Srand(42);
     // 0.005, 0.01, 1.0, 0.4
     train(0x3ba3d70a,0x3c23d70a,0x3f800000,0x3ecccccd);
 	display_print(0,0,"\n Done! \n");

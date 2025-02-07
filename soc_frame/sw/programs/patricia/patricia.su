@@ -1,0 +1,6 @@
+patricia.c:30:1:bit	32	static
+patricia.c:36:1:pat_count	48	static
+patricia.c:51:1:insertR	32	static
+patricia.c:68:1:pat_insert	64	static
+patricia.c:132:1:pat_remove	64	static
+patricia.c:208:1:pat_search	48	static

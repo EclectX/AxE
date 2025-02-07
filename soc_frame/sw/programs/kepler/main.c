@@ -103,7 +103,7 @@ e = orbit eccentricty."
 uint32_t bin_fact(int n, int j);
 uint32_t J(int,uint32_t);
 static uint32_t derror = 0x358637bd;
-
+#undef M
 uint32_t strict_iteration(uint32_t E, uint32_t e, uint32_t M, int reset)
 {
 	return fpadd(M, fpmul(e,fp_Sin(E)));
@@ -234,8 +234,8 @@ void my_main()
 		Print("%s\n",PRINTVARS(USAGE));
 		return;
 	}
-	M = atof(argv[i++]);
-	e = atof(argv[i]);
+	M = Atof(argv[i++]);
+	e = Atof(argv[i]);
 	method = (uint32_t(*)(uint32_t,uint32_t,uint32_t,int))methods[m-1];
 	if((m==4)&&(!(fpsub(e,LAPLACE_LIMIT)>>31) && e!=LAPLACE_LIMIT)){
 		Print("e cannot exceed %f for this method.\n",

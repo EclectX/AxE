@@ -95,6 +95,8 @@ void memmgr_free(void* ap);
 /// YR
 int memcmp(const void *vl, const void *vr, __SIZE_TYPE__ n);
 void * Memset(void *dest, int c, __SIZE_TYPE__ n);
+void * memcpy(void *dest, const void *src, __SIZE_TYPE__ n);
+void * memset(void *dest, int c, __SIZE_TYPE__ n);
 /// YR
 
 #endif // MEMMGR_H
