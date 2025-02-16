@@ -1,0 +1,4 @@
+main.c:7:1:rand_int	48	static
+main.c:20:1:fy_shuffle	48	static
+main.c:34:1:print	48	static
+main.c:49:1:my_main	32	static

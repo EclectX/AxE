@@ -1,0 +1,4 @@
+main.c:32:10:fuzzy_match	48	static
+main.c:64:10:fuzzy_match_recurse	48	static
+main.c:117:10:compute_score	64	static
+main.c:316:1:my_main	96	static
