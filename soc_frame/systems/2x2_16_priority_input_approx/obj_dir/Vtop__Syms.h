@@ -24,13 +24,11 @@ class Vtop__Syms : public VerilatedSyms {
     
     // LOCAL STATE
     const char* __Vm_namep;
-    bool __Vm_activity;  ///< Used by trace routines to determine change occurred
     bool __Vm_didInit;
     
     // SUBCELL STATE
     Vtop*                          TOPp;
     Vtop_if_axi_light__AC4         TOP__top__DOT__controller_inst__DOT__if_axi_light_cpu_to_debugger;
-    Vtop_if_axi_light__AC4         TOP__top__DOT__controller_inst__DOT__if_axi_light_debugger_to_offset;
     Vtop_picorv32_pcpi_mul_approx  TOP__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx;
     Vtop_if_axi_light              TOP__top__DOT__if_axi_light_controller;
     Vtop_if_connect                TOP__top__DOT__if_connect_memory;
@@ -65,7 +63,6 @@ class Vtop__Syms : public VerilatedSyms {
     
     // METHODS
     inline const char* name() { return __Vm_namep; }
-    inline bool getClearActivity() { bool r=__Vm_activity; __Vm_activity=false; return r; }
     
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 

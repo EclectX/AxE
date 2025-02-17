@@ -1,5 +1,5 @@
 #include "util.h"
-#include "memmgr.h"
+
 // #include "print.h"
 // int fpadd_counter = 0;
 int fpmul(int rs1, int rs2)
@@ -140,6 +140,12 @@ void display_print(int is_digit,int value,char* str){
             checkprint_str(rs1,rs2);
     }
 }
+
+// Used to print float values
+void display_print_float(float value){
+    asm __volatile__ (".word 0x0EA5950B\n");//0ea5a50b
+}
+
 // is now done in the asm file.
 
 /*signal_fin() is used when the node ran out of charge and is called in trap()
@@ -1102,7 +1108,7 @@ uint32_t fp_Exp(uint32_t x){                                              //|// 
             if(Sign)
                 return 0;
             else{
-                printf("\nThe fp_exp recieved a very big number");
+                // printf("\nThe fp_exp recieved a very big number");
                 exit(1);
             }
         }
@@ -1120,7 +1126,7 @@ uint32_t fp_Exp(uint32_t x){                                              //|// 
         }
     }    
     else if(Exponent > 150){
-        printf("\nThe fp_exp recieved very big number");
+        // printf("\nThe fp_exp recieved very big number");
         exit(1);
     }    
     uint32_t A1 = 0x3e8f8857;                                             //|//                      
@@ -1751,25 +1757,25 @@ uint32_t Atof(const char *str){
 }
 
 /// -2147483520 to 2147483520
-uint32_t floor(uint32_t x){
-    uint32_t sign = fp_ExtractSign(x);
-    uint32_t exp = fp_ExtractExponent(x);
-    uint32_t mant = fp_ExtractFraction(x);
-    mant |= 0x800000;
-    if(exp<127){
-        return int_to_float((0+sign)*(sign?-1:1));
-    }
-    else{
-        if(exp<151){
-            mant = mant >> (150-exp);
-            return int_to_float(((int)mant+sign)*(sign?-1:1));
-        }
-        else{
-            mant = mant << (exp-150);
-            return int_to_float(((int)mant+sign)*(sign?-1:1));
-        }
-    }
-}
+// uint32_t floor(uint32_t x){
+//     uint32_t sign = fp_ExtractSign(x);
+//     uint32_t exp = fp_ExtractExponent(x);
+//     uint32_t mant = fp_ExtractFraction(x);
+//     mant |= 0x800000;
+//     if(exp<127){
+//         return int_to_float((0+sign)*(sign?-1:1));
+//     }
+//     else{
+//         if(exp<151){
+//             mant = mant >> (150-exp);
+//             return int_to_float(((int)mant+sign)*(sign?-1:1));
+//         }
+//         else{
+//             mant = mant << (exp-150);
+//             return int_to_float(((int)mant+sign)*(sign?-1:1));
+//         }
+//     }
+// }
 
 /// Convert string to integer
 int atoi(const char *s)
@@ -2185,3 +2191,28 @@ __SIZE_TYPE__ mwrite(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile)
 
 
 /// YR
+
+//Pouria
+//Dynamic Memory Allocation functions
+// These functions have the same name as stdlib.h header Dynamic memory Allocation functions.
+//  But since the linker first try to resolve the symbols by searching in the compiled objects
+// it will find these ones and it won't search the stdlib and no multiple definition will happen
+// Now the question is what if a sybmol is sed and it only exists in stdlib. Then it will link stdlib and there will be cnflict
+// between these costum memory functions and the standard ones.
+//  The offical solution would be to overwrite the syscalls provided by newlib
+void *malloc(size_t size) {
+    return memmgr_alloc(size);
+}
+
+void free(void *ptr) {
+    memmgr_free(ptr);
+}
+
+
+void *calloc(size_t num, size_t size) {
+    void *ptr = memmgr_alloc(num * size);
+    if (ptr) {
+        memset(ptr, 0, num * size);
+    }
+    return ptr;
+}

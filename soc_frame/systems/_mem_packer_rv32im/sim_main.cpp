@@ -76,16 +76,16 @@ int main(int argc, char** argv, char** env) {
     
     // If verilator was invoked with --trace argument,
     // and if at run time passed the +trace argument, turn on tracing
-    VerilatedVcdC* tfp = NULL;
-    const char* flag = Verilated::commandArgsPlusMatch("trace");
-    if (flag && 0==strcmp(flag, "+trace")) {
-        Verilated::traceEverOn(true);  // Verilator must compute traced signals
-        VL_PRINTF("Enabling waves into logs/vlt_dump.vcd...\n");
-        tfp = new VerilatedVcdC;
-        top->trace(tfp, 99);  // Trace 99 levels of hierarchy
-        Verilated::mkdir("logs");
-        tfp->open("logs/vlt_dump.vcd");  // Open the dump file
-    }
+    // VerilatedVcdC* tfp = NULL;
+    // const char* flag = Verilated::commandArgsPlusMatch("trace");
+    // if (flag && 0==strcmp(flag, "+trace")) {
+    //     Verilated::traceEverOn(true);  // Verilator must compute traced signals
+    //     VL_PRINTF("Enabling waves into logs/vlt_dump.vcd...\n");
+    //     tfp = new VerilatedVcdC;
+    //     top->trace(tfp, 99);  // Trace 99 levels of hierarchy
+    //     Verilated::mkdir("logs");
+    //     tfp->open("logs/vlt_dump.vcd");  // Open the dump file
+    // }
     
     ascii_debug_t ascii_debug[ NODES_NUM-1 ];
     
@@ -253,7 +253,7 @@ int main(int argc, char** argv, char** env) {
         top->eval();
         
         // Dump trace data for this cycle
-        if (tfp) tfp->dump (main_time);
+        // if (tfp) tfp->dump (main_time);
     }
     
     //~ fclose(fp);
@@ -261,7 +261,7 @@ int main(int argc, char** argv, char** env) {
     // Final model cleanup
     top->final();
     
-    if (tfp) { tfp->close(); tfp = NULL; }
+    // if (tfp) { tfp->close(); tfp = NULL; }
     
     // Destroy model
     delete top;

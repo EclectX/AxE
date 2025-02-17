@@ -61,7 +61,6 @@ class Software:
     # --------------------------------------------------------------------------
     
     def compl( self, stack_pointer ):
-        
         os.system( "make -C " + self.path_base + self.name + "/ " + " " + self.arch + " STACK_POINTER=" + stack_pointer + " > /dev/null" )
         
     

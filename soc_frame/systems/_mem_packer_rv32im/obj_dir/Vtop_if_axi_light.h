@@ -10,8 +10,6 @@
 //==========
 
 class Vtop__Syms;
-class Vtop_VerilatedVcd;
-
 
 //----------
 
@@ -27,10 +25,8 @@ VL_MODULE(Vtop_if_axi_light) {
     CData/*3:0*/ wstrb;
     CData/*0:0*/ bvalid;
     CData/*0:0*/ bready;
-    CData/*1:0*/ bresp;
     CData/*0:0*/ arready;
     CData/*0:0*/ rvalid;
-    CData/*1:0*/ rresp;
     CData/*0:0*/ w_addr_collected;
     CData/*0:0*/ w_data_collected;
     CData/*0:0*/ w_addr_sent;
@@ -58,9 +54,6 @@ VL_MODULE(Vtop_if_axi_light) {
   public:
     void _initial__TOP__top__DOT__if_axi_light_axi_detector__1(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     void _initial__TOP__top__DOT__if_axi_light_debugger__2(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
-    static void traceInit(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceFull(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceChg(VerilatedVcd* vcdp, void* userthis, uint32_t code);
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 
 //----------

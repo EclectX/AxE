@@ -10,8 +10,6 @@
 //==========
 
 class Vtop__Syms;
-class Vtop_VerilatedVcd;
-
 
 //----------
 
@@ -20,7 +18,6 @@ VL_MODULE(Vtop_if_connect) {
     
     // LOCAL SIGNALS
     CData/*0:0*/ en_put;
-    CData/*0:0*/ en_get_non_full_VCs;
     CData/*0:0*/ en_get;
     CData/*1:0*/ put_non_full_VCs;
     CData/*0:0*/ en_put_non_full_VCs;
@@ -42,10 +39,6 @@ VL_MODULE(Vtop_if_connect) {
     void __Vconfigure(Vtop__Syms* symsp, bool first);
   private:
     void _ctor_var_reset() VL_ATTR_COLD;
-  public:
-    static void traceInit(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceFull(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceChg(VerilatedVcd* vcdp, void* userthis, uint32_t code);
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 
 //----------

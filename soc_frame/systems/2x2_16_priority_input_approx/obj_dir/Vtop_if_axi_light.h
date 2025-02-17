@@ -10,8 +10,6 @@
 //==========
 
 class Vtop__Syms;
-class Vtop_VerilatedVcd;
-
 
 //----------
 
@@ -63,9 +61,6 @@ VL_MODULE(Vtop_if_axi_light) {
     void _initial__TOP__top__DOT__if_axi_light_controller__1(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     void _initial__TOP__top__DOT__node_0__DOT__if_axi_light_detector_to_offset__11(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     void _initial__TOP__top__DOT__node_0__DOT__if_axi_light_mux_to_slave_bridge__3(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
-    static void traceInit(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceFull(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceChg(VerilatedVcd* vcdp, void* userthis, uint32_t code);
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 
 //----------
