@@ -26,7 +26,6 @@ void Vtop_if_connect::_ctor_var_reset() {
     // Body
     put_flit = VL_RAND_RESET_I(21);
     en_put = VL_RAND_RESET_I(1);
-    en_get_non_full_VCs = VL_RAND_RESET_I(1);
     en_get = VL_RAND_RESET_I(1);
     put_non_full_VCs = VL_RAND_RESET_I(2);
     en_put_non_full_VCs = VL_RAND_RESET_I(1);

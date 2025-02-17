@@ -12,7 +12,6 @@
 Vtop__Syms::Vtop__Syms(Vtop* topp, const char* namep)
     // Setup locals
     : __Vm_namep(namep)
-    , __Vm_activity(false)
     , __Vm_didInit(false)
     // Setup submodule names
     , TOP__top__DOT__if_axi_light_axi_detector(Verilated::catName(topp->name(), "top.if_axi_light_axi_detector"))

@@ -5,7 +5,6 @@ CC_DESKTOP = gcc
 SMALL = rv32i
 BIG = rv32im
 
-SRC = 
 LIBS = ../../_libs
 #~ PROG = ./square_mmult/
 
@@ -18,7 +17,7 @@ WARN = Wall
 
 OTHER = -pedantic -ffreestanding -fstack-usage
 #	Added to show fewer errors
-CFLAGS = -$(WARN) -$(OPT) $(OTHER) $(INC) -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-unused-variable -Wno-unused-but-set-variable
+CFLAGS = -$(WARN) -$(OPT) $(OTHER) $(INC)  -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-unused-variable -Wno-unused-but-set-variable
 #~ CFLAGS = -$(WARN) $(OTHER) $(INC)
 
 # LINKER
@@ -45,7 +44,7 @@ $(ARCH)_main.bin: $(ARCH)_main.elf
 
 $(ARCH)_main.elf:
 #~ 	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp_nostart.S -DSTACK_POINTER=$(STACK_POINTER) ../start.S $(SRC) ./main.c
-	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp.S -DSTACK_POINTER=$(STACK_POINTER) ../crt0.o ../start.S $(SRC) ./main.c
+	$(CC) -march=$(ARCH) $(CFLAGS) -nostartfiles -o ./$(ARCH)_main.elf $(LINK) ../sp.S -DSTACK_POINTER=$(STACK_POINTER) ../crt0.o ../start.S $(SRC) ./main.c -lm
 
 clean:
 	rm -f main.elf main.bin main.hex main.map *.objdump *.objdump_table *.su *.o rv32*
