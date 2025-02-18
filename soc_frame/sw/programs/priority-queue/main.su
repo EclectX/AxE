@@ -1,0 +1,8 @@
+main.c:24:7:newNode	48	static
+main.c:35:5:peek	32	static
+main.c:41:5:priopeek	32	static
+main.c:48:6:pop	48	static
+main.c:56:6:push	48	static
+main.c:89:5:isEmpty	32	static
+main.c:95:1:printPQ	48	static
+main.c:106:6:my_main	32	static

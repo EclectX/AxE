@@ -92,4 +92,28 @@ void memmgr_free(void* ap);
 //~ void memmgr_print_stats();
 
 
+//ali's work begins
+
+
+void* memmgr_memset(void *dest, int c, __SIZE_TYPE__ n);
+void* memmgr_calloc(__SIZE_TYPE__ num, __SIZE_TYPE__ nsize);
+
+void* memmgr_memcpy(void *dest, const void *src, __SIZE_TYPE__ n);
+
+/*
+typedef __SIZE_TYPE__   size_t;
+typedef uint64_t              uintptr_t;
+
+static char * __strchrnul(const char *s, int c);
+size_t strcspn(const char *s, const char *c);
+char *strpbrk(const char *s, const char *b);
+*/
+
+
+
+//ali's work ends
+
+
 #endif // MEMMGR_H
+
+

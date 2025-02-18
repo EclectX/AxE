@@ -7,7 +7,7 @@
 //----------------------------------------------------------------
 //~ #include <stdio.h>
 #include "memmgr.h"
-
+#include "util.h"
 typedef ulong Align;
 
 union mem_header_union
@@ -251,3 +251,117 @@ void memmgr_free(void* ap)
 
     freep = p;
 }
+
+
+//ali's work begin
+void *
+memmgr_memset(void *dest, int c, __SIZE_TYPE__ n)
+{
+	unsigned char *s = dest;
+	__SIZE_TYPE__ k;
+
+	/* Fill head and tail with minimal branching. Each
+	 * conditional ensures that all the subsequently used
+	 * offsets are well-defined and in the dest region. */
+
+	if (!n) return dest;
+	s[0] = s[n-1] = c;
+	if (n <= 2) return dest;
+	s[1] = s[n-2] = c;
+	s[2] = s[n-3] = c;
+	if (n <= 6) return dest;
+	s[3] = s[n-4] = c;
+	if (n <= 8) return dest;
+
+	/* Advance pointer to align it at a 4-byte boundary,
+	 * and truncate n to a multiple of 4. The previous code
+	 * already took care of any head/tail that get cut off
+	 * by the alignment. */
+
+	k = -(uint32_t)s & 3;
+	s += k;
+	n -= k;
+	n &= -4;
+
+	/* Pure C fallback with no aliasing violations. */
+	for (; n; n--, s++) *s = c;
+
+	return dest;
+}
+void *
+memmgr_calloc(__SIZE_TYPE__ num, __SIZE_TYPE__ nsize) {
+	if (!num || !nsize) {
+		return NULL;
+	}
+
+	__SIZE_TYPE__ size = num * nsize;
+	if (nsize != size / num) {
+		return NULL; // If ml
+	}
+	void *block = memmgr_alloc(size);
+	if (!block) {
+		return NULL;
+	}
+	memmgr_memset(block, 0, size);
+	return block;
+
+}
+
+void *
+memmgr_memcpy(void *dest, const void *src, __SIZE_TYPE__ n)
+{
+	unsigned char *d = dest;
+	const unsigned char *s = src;
+
+	for (; n; n--) *d++ = *s++;
+	return dest;
+}
+
+
+/*
+#define BITOP(a,b,op) \
+ ((a)[(size_t)(b)/(8*sizeof *(a))] op (size_t)1<<((size_t)(b)%(8*sizeof *(a))))
+#define ALIGN (sizeof(size_t))
+#define ONES ((size_t)-1/UCHAR_MAX)
+#define HIGHS (ONES * (UCHAR_MAX/2+1))
+#define HASZERO(x) (((x)-ONES) & ~(x) & HIGHS)
+typedef __SIZE_TYPE__   size_t;
+typedef uint64_t              uintptr_t;
+
+ static char *
+__strchrnul(const char *s, int c)
+{
+	size_t *w, k;
+
+	c = (unsigned char)c;
+	if (!c) return (char *)s + strlen(s);
+
+	for (; (uintptr_t)s % ALIGN; s++)
+		if (!*s || *(unsigned char *)s == c) return (char *)s;
+	k = ONES * c;
+	for (w = (void *)s; !HASZERO(*w) && !HASZERO(*w^k); w++);
+	for (s = (void *)w; *s && *(unsigned char *)s != c; s++);
+	return (char *)s;
+}
+
+size_t
+strcspn(const char *s, const char *c)
+{
+	const char *a = s;
+	size_t byteset[32/sizeof(size_t)];
+
+	if (!c[0] || !c[1]) return __strchrnul(s, *c)-a;
+
+	memmgr_memset(byteset, 0, sizeof byteset);
+	for (; *c && BITOP(byteset, *(unsigned char *)c, |=); c++);
+	for (; *s && !BITOP(byteset, *(unsigned char *)s, &); s++);
+	return s-a;
+}
+char *
+strpbrk(const char *s, const char *b)
+{
+	s += strcspn(s, b);
+	return *s ? (char *)s : 0;
+}
+*/
+//ali's work ends

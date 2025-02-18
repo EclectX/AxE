@@ -1,0 +1,11 @@
+main.c:7:1:int_cmp	48	static
+main.c:18:1:print_int_array	48	static
+main.c:30:1:sort_integers_example	64	static
+main.c:49:1:cstring_cmp	48	static
+main.c:60:1:print_cstring_array	48	static
+main.c:72:1:sort_cstrings_example	48	static
+main.c:98:1:struct_cmp_by_price	48	static
+main.c:110:1:struct_cmp_by_product	48	static
+main.c:121:1:print_struct_array	48	static
+main.c:133:1:sort_structs_example	144	static
+main.c:163:1:my_main	16	static

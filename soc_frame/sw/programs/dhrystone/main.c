@@ -392,11 +392,12 @@
  */
 
 //~ #include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+//#include <string.h>
+//#include <stdlib.h>
 //~ #include <sys/time.h>
 
 #include "util.h"
+#include "print.h"
 #include "memmgr.h"
 
 #define LOOPS 1

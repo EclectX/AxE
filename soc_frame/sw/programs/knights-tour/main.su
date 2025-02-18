@@ -1,0 +1,5 @@
+main.c:22:1:isSafe	32	static
+main.c:29:1:printSolution	48	static
+main.c:45:1:solveKT	192	static
+main.c:78:1:solveKTUtil	64	static
+main.c:102:1:my_main	16	static

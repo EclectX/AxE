@@ -1,0 +1,16 @@
+main.c:44:1:my_main	32	static
+main.c:64:1:init	32	static
+main.c:83:1:draw	32	static
+main.c:98:1:process	32	static
+main.c:130:1:getNumNeigbors	48	static
+main.c:156:1:processMutate	32	static
+main.c:166:1:flip	32	static
+main.c:175:1:getLeft	48	static
+main.c:188:1:getRight	48	static
+main.c:201:1:getUp	48	static
+main.c:214:1:getDown	48	static
+main.c:227:1:getUpLeft	48	static
+main.c:240:1:getUpRight	48	static
+main.c:253:1:getDownLeft	48	static
+main.c:266:1:getDownRight	48	static
+main.c:281:1:sleep	32	static

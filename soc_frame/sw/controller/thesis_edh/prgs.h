@@ -4,15 +4,15 @@
 
 void init_prgs( prg_t *prgs )
 {
-	prgs[0].name = "spirograph";
-	prgs[0].addr[ARCH_RV32IM] = 0x2fff8; // index: 49150 size: 24178
+	prgs[0].name = "grad-descent";
+	prgs[0].addr[ARCH_RV32IM] = 0x2fff8; // index: 49150 size: 25760
 	prgs[0].c[ARCH_RV32IM] = 0;
 	prgs[0].d[ARCH_RV32IM] = 0;
 	prgs[0].t[ARCH_RV32IM] = 0;
 	prgs[0].e[ARCH_RV32IM] = 0;
 	prgs[0].c_clk_cnt[ARCH_RV32IM] = 0;
 	prgs[0].t_clk_cnt[ARCH_RV32IM] = 0;
-	prgs[0].d_multiplyer = 0b0000001000111010;
+	prgs[0].d_multiplyer = 0b0000000111110011;
 	prgs[0].s          = 5;
 	prgs[0].s_cnt_down = 5;
 	prgs[0].assigned_to = 0;

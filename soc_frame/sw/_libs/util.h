@@ -225,5 +225,33 @@ void pr_uint32(char space,uint32_t x);
 #endif
 
 uint32_t signInv(uint32_t x);
-void Print(char *str,printvar*var);
+int Print(char *str,printvar*var);
 void snPrint(char* buffer,int n,char *str,printvar*var);
+int strlen(char *str);
+void strncpy(char *dest, const char *src, size_t n);
+void srand(unsigned int seed);
+unsigned int rand(void);
+
+//ali's work begins
+#define MINIMUM(X, Y) (((X) < (Y)) ? (X) : (Y))
+#define MAXIMUM(X, Y) (((X) > (Y)) ? (X) : (Y))
+
+void Fail(int code);
+
+void Putc(char c);
+void Puts(char *s);
+int strcmp(const char *l, const char *r);
+
+#define INT_MAX       __INT_MAX__
+
+#define FALSE 0
+#define TRUE !(FALSE)
+///*
+char *strcpy(char *dest, const char *src);
+char *strcat(char *dest, const char *src);
+
+#define assert(P)    (P) = (void)0 
+//*/
+typedef int		 cmp_t(const void *, const void *);
+void qsort(void *a, size_t n, size_t es, cmp_t *cmp);
+//ali's work ends

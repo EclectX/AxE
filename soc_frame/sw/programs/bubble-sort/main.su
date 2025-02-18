@@ -1,0 +1,3 @@
+main.c:14:1:print_data	48	static
+main.c:22:1:bubblesort	48	static
+main.c:45:1:my_main	32	static

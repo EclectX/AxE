@@ -1,0 +1,3 @@
+main.c:7:1:foo	32	static
+main.c:13:1:bar	32	static
+main.c:49:6:my_main	32	static

@@ -1,0 +1,5 @@
+main.c:41:6:turn_Y	32	static
+main.c:57:1:derivateWRTWeight	64	static
+main.c:69:1:derivateWRTBias	48	static
+main.c:81:1:gradientDescent	48	static
+main.c:91:1:my_main	32	static

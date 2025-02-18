@@ -1,0 +1,5 @@
+main.c:7:24:multiplication_modulo	64	static
+main.c:13:12:is_prime	128	static
+main.c:32:17:factor_worker	96	static
+main.c:48:19:factor	80	static
+main.c:75:6:my_main	112	static

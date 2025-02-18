@@ -1,0 +1,2 @@
+main.c:10:12:mov	48	static
+main.c:28:6:my_main	32	static
