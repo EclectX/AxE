@@ -1,0 +1,4 @@
+main.c:61:1:sgenrand	48	static
+main.c:85:1:lsgenrand	48	static
+main.c:96:1:genrand	32	static
+main.c:135:1:my_main	32	static

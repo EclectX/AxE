@@ -1,4 +1,5 @@
 #include "util.h"
+
 // #include "print.h"
 // int fpadd_counter = 0;
 int fpmul(int rs1, int rs2)
@@ -139,6 +140,12 @@ void display_print(int is_digit,int value,char* str){
             checkprint_str(rs1,rs2);
     }
 }
+
+// Used to print float values
+void display_print_float(float value){
+    asm __volatile__ (".word 0x0EA5950B\n");//0ea5a50b
+}
+
 // is now done in the asm file.
 
 /*signal_fin() is used when the node ran out of charge and is called in trap()
@@ -1101,7 +1108,7 @@ uint32_t fp_Exp(uint32_t x){                                              //|// 
             if(Sign)
                 return 0;
             else{
-                printf("\nThe fp_exp recieved a very big number");
+                // printf("\nThe fp_exp recieved a very big number");
                 exit(1);
             }
         }
@@ -1119,7 +1126,7 @@ uint32_t fp_Exp(uint32_t x){                                              //|// 
         }
     }    
     else if(Exponent > 150){
-        printf("\nThe fp_exp recieved very big number");
+        // printf("\nThe fp_exp recieved very big number");
         exit(1);
     }    
     uint32_t A1 = 0x3e8f8857;                                             //|//                      
@@ -1297,6 +1304,9 @@ void pr_uint32(char space,uint32_t x){
 }
 */
 
+/// YR
+
+/// to Invert float nums sign
 uint32_t signInv(uint32_t x){
     uint32_t sign = fp_ExtractSign(x);
     uint32_t inversedNum;
@@ -1308,37 +1318,42 @@ uint32_t signInv(uint32_t x){
     }
     return inversedNum;
 }
-void PrintInt(int num){
+
+/// to print int without whitespace
+void PrintInt(uint32_t num){
     if(num == 0){
         checkprint_str((uint32_t)('0'),0);
         return;
     }
     if(num>>31){
         checkprint_str((uint32_t)('-'),0);
-        num ^= 0xFFFFFFFF;
-        num += 1;   
+        num = 0 - num;
     }
     uint32_t numcpy = num;
-    uint32_t revnum = 0;
-    int m=0;
+    uint32_t revnum[12];
     int n=0;
     while(numcpy>0){
-        if(numcpy%10==0 && m==n) m++;
-        revnum = revnum * 10 + numcpy%10;
+        revnum[n] = numcpy%10;
         numcpy/=10;
         n++;
     }
-    while(revnum>0){
-        checkprint_str((uint32_t)('0'+revnum%10),0);
-        revnum /= 10;
-    }
-    while(m>0){
-        checkprint_str((uint32_t)('0'),0);
-        m--;
+    n--;
+    while(n>=0){
+        checkprint_str((uint32_t)('0'+revnum[n]),0);
+        n--;
     }
 
 }
+<<<<<<< HEAD
 int Print(char *str,printvar*var){
+=======
+
+/// printf like function
+/// args should be in PRINTVARS
+/// Currently only   %.*s %.4s %d %f %s %c %08lx   are implemented
+/// todo: %02d
+void Print(char *str,printvar*var){
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
     int flag = 0;
     int counter = 0;
     int cnt = 0;
@@ -1358,7 +1373,24 @@ int Print(char *str,printvar*var){
                 numflag = 1;
                 if(counter!=0) goto y;
                 z:
-                if(str[iter]=='d'){ // %02d
+                if(str[iter]=='0' && str[iter+1]=='8'&& str[iter+2]=='l' && str[iter+3]=='x'){
+                    printHex(var->number);
+                    iter +=3;
+                }
+                else if(str[iter]=='.' && str[iter+1]=='*'&& str[iter+2]=='s'){
+                    for(int i=0;i<var->number;i++){
+                        Print("%c",PRINTVARS(*((var+1)->str+i)));
+                    }
+                    var++;
+                    iter +=2;
+                }
+                else if(str[iter]=='.' && str[iter+1]=='4'&& str[iter+2]=='s'){
+                    for(int i=0;i<4;i++){
+                        Print("%c",PRINTVARS(*((var)->str+i)));
+                    }
+                    iter +=2;
+                }
+                else if(str[iter]=='d'){
                     PrintInt(var->number);
                 }
                 else if(str[iter]=='f'){
@@ -1374,10 +1406,14 @@ int Print(char *str,printvar*var){
                     checkprint_str(rs1,rs2);
                     rs1=0;
                     rs2=0;
+                    if(var->number == 0){
+                        checkprint_str(0x30300000,0);
+                    }
                 }
                 else if(str[iter]=='s'){
                     Print(var->str,0);    
                 }
+<<<<<<< HEAD
 
                 //ali's work begins
                 else if (str[iter] == 'c') { // %c
@@ -1396,6 +1432,12 @@ int Print(char *str,printvar*var){
                 }
                 //ali's work ends
 
+=======
+                else if(str[iter]=='c'){
+                    char output[1] = {var->str};
+                    Print(output,0);
+                }
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
                 var++;
                 numflag = 0;
             }
@@ -1428,6 +1470,11 @@ int Print(char *str,printvar*var){
     }
     return cnt;
 }
+
+/// snprintf like function
+/// args should be in PRINTVARS
+/// Currently only   %d %f %s %c   are implemented
+/// todo: Print float numbers with low or high power in e+x / e-x format
 void snPrint(char* buffer,int n,char *str,printvar*var){
     int flag = 0;
     int iter = 0;
@@ -1440,7 +1487,7 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                 bufit++;
             }
             else{
-                if(str[iter]=='d'){ // %02d
+                if(str[iter]=='d'){
                     if(var->number>>31){
                         buffer[bufit] = '-';
                         bufit++;
@@ -1476,9 +1523,10 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                     int exponent = ((var->number >> 23) & 0xFF) - 127;
                     int mantissa = var->number & 0x7FFFFF;
                     mantissa |= 0x800000;
+                    if(var->number == 0) {mantissa = 0; exponent = 0;}
                     uint32_t integer_part = 0;
                     if(exponent>30){
-                        integer_part = 0;   // imrproveable
+                        integer_part = 0;
                     }
                     else if (exponent > 23) {
                         integer_part = mantissa << (exponent - 23);
@@ -1488,7 +1536,7 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                         mantissa &= (1 << (23 - exponent)) - 1;
                         mantissa = mantissa << (exponent+1);
                     } else {
-                        integer_part = 0;   // imrproveable
+                        integer_part = 0;
                     }
                     if(integer_part){
                         int numcpy = integer_part;
@@ -1534,6 +1582,13 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
                         bufit++;
                         uint32_t fractional_part = 0;
                         uint32_t fractional_scale = 2;
+                        while(exponent<-1){
+                            fractional_scale = fractional_scale * 2;
+                            exponent++;
+                        }
+                        if(exponent<-14 || exponent == 0){
+                            mantissa = 0;
+                        }
                         while(mantissa) {
                             mantissa= mantissa << 1;
                             fractional_part = fractional_part * 2 + (mantissa >> 23);
@@ -1583,6 +1638,23 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
     }
     buffer[bufit] = '\0';
 }
+<<<<<<< HEAD
+=======
+
+/// Print 32 bit Numbers in Hex format 
+void printHex(uint32_t x){
+    char *hexDigits[] = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
+    int i = 8;
+    while(i>0){
+      uint32_t digitToPrint = (x & 0xF0000000) >> 28;
+      display_print(0,0,hexDigits[digitToPrint]);
+      x = x << 4;
+      i--;
+    }
+}
+
+/// length of string returns
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 int strlen(char *str){
     if (!str)
         return 0;
@@ -1592,6 +1664,11 @@ int strlen(char *str){
     }
     return counter;
 }
+<<<<<<< HEAD
+=======
+
+/// strncpy like function
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 void strncpy(char *dest, const char *src, size_t n) {
     size_t i = 0;
 
@@ -1605,6 +1682,7 @@ void strncpy(char *dest, const char *src, size_t n) {
         i++;
     }
 }
+<<<<<<< HEAD
 #define RAND_MAX 32767
 #define N 624
 #define M 397
@@ -1621,6 +1699,21 @@ static int mt_initialized = 0;
 static unsigned int mt[N+1];
 static int mti=N+1;
 void srand(unsigned int seed){
+=======
+
+/// strcpy like function
+void strcpy(char *dest, const char *src) {
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    *dest = '\0';
+}
+
+/// Initialize random number generator
+void Srand(unsigned int seed){
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
   int i;
   mt_initialized = 1;
   for (i=0;i<N;i++)
@@ -1632,9 +1725,17 @@ void srand(unsigned int seed){
   }
   mti = N;
 }
+<<<<<<< HEAD
 unsigned int rand(void){
   if (!mt_initialized){
     display_print(0,0,"ERROR: rng is not initialized, call srand()!\n");
+=======
+
+/// Generate random number
+unsigned int Rand(void){
+  if (!mt_initialized){
+    display_print(0,0,"ERROR: rng is not initialized, call Srand()!\n");
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
   }
   unsigned int y;
   static unsigned int mag01[2]={0x0, MATRIX_A};
@@ -1644,7 +1745,11 @@ unsigned int rand(void){
     int kk;
 
     if (mti == N+1)
+<<<<<<< HEAD
       srand(4357);
+=======
+      Srand(4357);
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 
     for (kk=0;kk<N-M;kk++)
     {
@@ -1671,6 +1776,7 @@ unsigned int rand(void){
   return y & RAND_MAX;
 }
 
+<<<<<<< HEAD
 //ali's work begins
 
 //#define MINIMUM(X, Y) (((X) < (Y)) ? (X) : (Y))
@@ -1745,13 +1851,679 @@ char *strcpy(char *dest, const char *src)
 	while ((*d++ = *s++));
 	return dest;
 }
+=======
+/// Compare two strings
+int strcmp(const char *str1, const char *str2) {
+    while (*str1 && *str2) {
+        if (*str1 != *str2) {
+            return *str1 - *str2;
+        }
+        str1++;
+        str2++;
+    }
+    return *str1 - *str2;
+}
+
+/// Convert string to float
+/// It only works for low precision float numbers
+uint32_t Atof(const char *str){
+    uint32_t output = 0;
+    uint32_t base = 0;
+    int counter = 0;
+    if(*str=='+' || *str == '-'){
+        if(*str == '-'){
+            output |= 0x8FFFFFFF;
+        }
+        str++;
+    }
+    while(*str!='.' && *str && (*str-48 <10)){
+        base *= 10;
+        base += *str-48;
+        str++;
+    }
+    if(*str == '.') str++;
+    while(*str && *str-48 < 10){
+        base *= 10;
+        base += *str-48;
+        counter++;
+        str++;
+    }
+    output = int_to_float(base) | output;
+    while(counter>0){
+        output = fpdiv(output,0x41200000); /// 10
+        counter--;
+    }
+    return output;
+}
+
+/// -2147483520 to 2147483520
+// uint32_t floor(uint32_t x){
+//     uint32_t sign = fp_ExtractSign(x);
+//     uint32_t exp = fp_ExtractExponent(x);
+//     uint32_t mant = fp_ExtractFraction(x);
+//     mant |= 0x800000;
+//     if(exp<127){
+//         return int_to_float((0+sign)*(sign?-1:1));
+//     }
+//     else{
+//         if(exp<151){
+//             mant = mant >> (150-exp);
+//             return int_to_float(((int)mant+sign)*(sign?-1:1));
+//         }
+//         else{
+//             mant = mant << (exp-150);
+//             return int_to_float(((int)mant+sign)*(sign?-1:1));
+//         }
+//     }
+// }
+
+/// Convert string to integer
+int atoi(const char *s)
+{
+	int n=0, neg=0;
+	while (*s==' ') s++;
+    if(*s =='+' || *s=='-'){
+        switch (*s) {
+        case '-': neg=1;
+        case '+': s++;
+        }
+    }
+	while (*s && (*s-48)<9)
+		n = 10*n - (*s++ - '0');
+	return neg ? n : -n;
+}
+
+/// open an in-memory file
+void mopen(MFILE *mfile, const char *mode)
+{
+  if (strcmp(mode, "r") != 0)
+  {
+    display_print(0,0,"ERROR: Only the file reads supported\n");
+  }
+
+  mfile->rdptr = 0;
+}
+
+/// at end of in-memory file
+/// 1=Yes   0=No
+int meof(MFILE *mfile)
+{
+  return mfile->rdptr >= mfile->data_sz;
+}
+
+/// read a buffer from the in-memory file
+__SIZE_TYPE__ mread(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile)
+{
+  if (meof(mfile))
+    return 0;
+
+  char *ptr = _ptr;
+  __SIZE_TYPE__ cnt = 0;
+  while (mfile->rdptr < mfile->data_sz && cnt < size && !meof(mfile))
+  {
+    *ptr++ = mfile->data[mfile->rdptr++];
+    cnt++;
+  }
+  return cnt;
+}
+
+/// get a string from the in-memory file
+char * mgets(char *s, size_t size, MFILE *mfile)
+{
+  if (meof(mfile))
+    return NULL;
+
+  char *p = s;
+  size_t cnt;
+  
+  for (cnt=0; mfile->data[mfile->rdptr] != '\n' && cnt < (size-1) && !meof(mfile); cnt++)
+    *p++ = mfile->data[mfile->rdptr++];
+
+  if (mfile->data[mfile->rdptr] == '\n')
+    mfile->rdptr++;
+
+  *p = '\0';
+
+  return s;
+}
+
+/// The absolute value of an integer number
+int abs(int i)
+{
+  return i < 0 ? -i : i;
+}
+
+/// Copy bytes in memory
+void bcopy(const void *src, void *dest, size_t n) {
+    const char *src_ptr = (const char *)src;
+    char *dest_ptr = (char *)dest;
+    
+    for (size_t i = 0; i < n; i++) {
+        dest_ptr[i] = src_ptr[i];
+    }
+}
+
+char * strchr(const char *s, char c)
+{
+  do
+  {
+    if (*s == c)
+	    return (char*)s;
+  } while (*s++);
+  return NULL;
+}
+
+#define IN(l,a,r) (((l) <= (a)) && ((a) <= (r)))
+long strtol(const char  *nptr, char** endptr, int base)
+{
+  int			c;		/* current character value */
+  int			digit;		/* digit value */
+  static const char *digits = "0123456789abcdefghijklmnopqrstuvxwyz";
+  int		is_negative;	/* false for positive, true for negative */
+  long		number;		/* the accumulating number */
+  const char		*pos;		/* pointer into digit list */
+  const char		*q;		/* pointer past end of digits */
+
+  if (!(IN(2,base,36) || (base == 0) || (nptr != (const char*)NULL)))
+  {
+    if (endptr != (char**)NULL)
+	    *endptr = (char*)nptr;
+    return (0L);
+  }
+
+  while (isspace((int)*nptr))
+	  nptr++;				/* ignore leading whitespace */
+
+  switch (*nptr)			/* set number sign */
+  {
+  case '-':
+    is_negative = 1; 
+    nptr++;
+    break;
+
+  case '+':
+    is_negative = 0;
+    nptr++;
+    break;
+
+  default:
+    is_negative = 0;
+    break;
+  }
+
+  q = nptr;
+  if (base == 0)			/* variable base; set by lookahead */
+  {
+	  if (*q == '0')
+	    base = ((*(q+1) == 'x') || (*(q+1) == 'X')) ? 16 : 8;
+	else
+	    base = 10;
+  }
+
+  /* eliminate optional "0x" or "0X" prefix */
+  if ((base == 16) && (*q == '0') && ((*(q+1) == 'x') || (*(q+1) == 'X')) )
+	  q += 2;
+
+  number = 0L;
+
+  /* Number conversion is done by shifting rather than multiplication
+     when the base is a power of 2, in order that the results not be
+     impacted by integer overflow. */
+  switch (base)
+  {
+  case 2:
+  	while (IN('0',*q,'1'))
+  	{
+	    number <<= 1;
+	    number |= *q - '0';
+	    q++;
+  	}
+    break;
+
+  case 4:
+  	while (IN('0',*q,'3'))
+    {
+	    number <<= 2;
+	    number |= *q - '0';
+	    q++;
+	  }
+	  break;
+
+  case 8:
+	  while (IN('0',*q,'7'))
+	  {
+	    number <<= 3;
+	    number |= *q - '0';
+	    q++;
+	  }
+	  break;
+
+
+  case 16:
+	  for (;;)
+	  {
+	    if (*q == '\0')
+		    break;
+	    c = (int)(unsigned)*q;
+	    if (isupper(c))
+		    c = tolower(c);
+	    pos = strchr(digits,c);
+	    if (pos == (char*)NULL)
+		    break;
+	    digit = (int)(pos - digits);
+	    if (!IN(0,digit,15))
+		    break;
+	    number <<= 4;
+	    number |= digit;
+	    q++;
+	  }
+	  break;
+
+    default:		/* all other bases done by multiplication */
+	  for (;;)	/* accumulate negative so most negative */
+	  {		/* number on two's-complement is handled */
+	    if (*q == '\0')
+		    break;
+	    c = (int)(unsigned)*q;
+	    if (isupper(c))
+		    c = tolower(c);
+	    pos = strchr(digits,c);
+	    if (pos == (char*)NULL)
+		    break;
+	    digit = (int)(pos - digits);
+	    if (!IN(0,digit,base-1))
+		    break;
+	    number *= base;
+	    number -= digit;
+	    q++;
+	  }
+	  if (endptr != (char**)NULL)
+	    *endptr = (char*)q;
+	  if (is_negative)
+	    return(number);
+	  number = -number;
+	  break;
+  }
+  if (is_negative)
+	  number = -number;
+  if (endptr != (char**)NULL)
+	  *endptr = (char*)q;
+  return (number);
+}
+/// neg?
+uint32_t Num2Bin(int Num,int SUPUNI){
+    uint32_t temp;
+    uint32_t output=0;
+    int count=0;
+    if(SUPUNI){
+        while(Num){
+            temp <<=1;
+            temp |= Num%2;
+            Num/=2;
+            count++;
+        }
+        while(count){
+            output <<=1;
+            output |= (temp & 1);
+            temp >>=1;
+            count--;
+        }
+    }
+    else{
+        int order=1;
+        int Numcpy = Num;
+        while(Numcpy){
+            order*=10;
+            Numcpy/=10;
+        }
+        count = 32;
+        while(count && Num){
+            output <<=1;
+            Num *= 2;
+            output |= (Num/order);
+            Num = Num%order;
+            count--;
+        }
+        while(count){
+            output <<=1;
+            count--;
+        }
+    }
+    return output;
+}
+
+uint32_t bin64toieee (uint32_t highnib,uint32_t lownib){
+    int whereis1 = -1;
+    int counter=0;
+    if(highnib!=0){
+        counter = 32;
+        uint32_t highnibcp = highnib;
+        while(!(highnibcp & 0x80000000) && counter){
+            highnibcp <<=1;
+            counter--;
+        }
+        whereis1 = 31 + counter;
+    }
+    else if(lownib!=0){
+        counter = 32;
+        uint32_t lownibcp = lownib;
+        while(!(lownibcp & 0x80000000) && counter){
+            lownibcp <<=1;
+            counter--;
+        }
+        whereis1 = counter-1;
+    }
+    int exp = whereis1 - 32 + 127;
+    uint32_t mantissa=0;
+    if(whereis1>54){
+        mantissa = 0x007FFFFF & (highnib >> (whereis1-55));
+    }
+    else if(whereis1>31){
+        mantissa = 0x007FFFFF & (highnib << (55-whereis1));
+        mantissa |= lownib >> (32- (24-(whereis1-31)));
+    }
+    else if(whereis1>22){
+        mantissa =  0x007FFFFF & (lownib >> (whereis1-23));
+    }
+    else if(whereis1>-1){
+        mantissa =  0x007FFFFF & (lownib << (23-whereis1));
+    }
+    else{
+        mantissa = 0;
+    }
+    return ((exp << 23) | mantissa);
+}
+
+/// sscanf like
+/// SCANVARS(...)
+int Sscanf(const char *buf, const char *fmt, scanvar*var){
+    int i, j=0, ret=0;
+    char *out_loc;
+ 	i = 0;
+ 	while (fmt && fmt[i] && buf[j])
+ 	{
+    if (fmt[i] == '%') 
+    {
+      i++;
+      switch (fmt[i]) 
+      {
+        case 'c': 
+        {
+	        *(var->ch)= buf[j];
+	        j++;
+	        ret++;
+	        break;
+        }
+        case 'd': 
+        {
+	         *(var->number)= strtol(&buf[j], &out_loc, 10);
+	         j += (out_loc - &buf[j]);
+	         ret++;
+	         break;
+        }
+        case 'x': 
+        {
+	        *(var->number)= strtol(&buf[j], &out_loc, 16);
+	        j += (out_loc - &buf[j]);
+	        ret++;
+	        break;
+        }
+        case 'f':
+        {
+            uint32_t UP = Num2Bin(strtol(&buf[j],&out_loc,10),1);
+            j += (out_loc - &buf[j]);
+            j++;
+            uint32_t DOWN = Num2Bin(strtol(&buf[j],&out_loc,10),0);
+            j += (out_loc - &buf[j]);
+            *(var->number) = bin64toieee(UP,DOWN);
+            ret++;
+            break;
+        }
+      }
+      var++;
+    } 
+    else 
+    {
+      // buf[j] = fmt[i];
+      j++;
+    }
+    i++;
+  }
+  return ret;
+}
+
+/// The bzero() function erases the data in the n bytes of the memory
+/// starting at the location pointed to by s, by writing zeros
+void bzero(void *s, size_t len) {
+    memset(s, 0, len);
+}
+///  converts a u_long from host to TCP/IP network byte order (which is big-endian).
+uint32_t htonl(uint32_t hostlong) {
+    uint32_t result = ((hostlong >> 24) & 0x000000FF) | 
+                      ((hostlong >> 8) & 0x0000FF00) | 
+                      ((hostlong << 8) & 0x00FF0000) | 
+                      ((hostlong << 24) & 0xFF000000);
+    return result;
+}
+
+/// convert a string containing float number to IEEE754
+uint32_t str2ieee(const char *str){
+    uint32_t output;
+    Sscanf(str,"%f",SCANVARS(&output));
+    return output;
+}
+
+/// write a buffer to the in-memory file
+__SIZE_TYPE__ mwrite(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile)
+{
+  if (meof(mfile))
+    return 0;
+
+  const char *ptr = _ptr;
+  __SIZE_TYPE__ cnt = 0;
+  while (mfile->rdptr < mfile->data_sz && cnt < size && !meof(mfile))
+  {
+    mfile->data[mfile->rdptr++] = *ptr++;
+    cnt++;
+  }
+  return cnt;
+}
+
+
+/// YR
+
+
+// parsa
+
+// strncat
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 char *
 strcat(char *dest, const char *src)
 {
 	strcpy(dest + strlen(dest), src);
 	return dest;
 }
+<<<<<<< HEAD
 #define assert(P)    (P) = (void)0 
 
 //*/
 //ali's work ends
+=======
+
+// malloc 
+/* malloc/free functions */
+
+typedef char MEMALIGN[16];
+
+union memhdr {
+	struct {
+		size_t size;
+		unsigned is_free;
+
+		union memhdr *next;
+	};
+	MEMALIGN stub;
+};
+
+typedef union memhdr memhdr_t;
+
+static memhdr_t *head = NULL, *tail = NULL;
+
+static memhdr_t *
+__get_free_block(size_t size) {
+	memhdr_t *current = head;
+	while (current) {
+		if (current->is_free && current->size >= size) {
+			return current;
+		}
+		current = current->next;
+	}
+	return NULL;
+}
+
+void *
+malloc(size_t size) {
+	void *block;
+	memhdr_t *header;
+
+	if (!size) {
+		return NULL;
+	}
+	header = __get_free_block(size);
+
+	if (header) {
+		header->is_free = 0;
+		return (void *) (header + 1);
+	}
+	size_t total_size = sizeof(memhdr_t) + size;
+	block = libtarg_sbrk(total_size);
+	if (block == (void *) -1) {
+		return NULL;
+	}
+
+	header = block;
+	header->size = size;
+	header->is_free = 0;
+	header->next = NULL;
+	if (!head) {
+		head = header;
+	}
+	if (tail) {
+		tail->next = header;
+	}
+	tail = header;
+
+	return (void *) (header + 1);
+}
+
+void
+free(void *block) {
+	memhdr_t *header;
+
+	if (!block) {
+		return;
+	}
+
+	header = (memhdr_t * )block - 1;
+
+	void *pbreak = libtarg_sbrk(0);
+	memhdr_t *tmp;
+	if ((char *) block + header->size == pbreak) {
+		if (head == tail) {
+			head = tail = NULL;
+		} else {
+			tmp = head;
+			while (tmp) {
+				if (tmp->next == tail) {
+					tmp->next = NULL;
+					tail = tmp;
+				}
+				tmp = tmp->next;
+			}
+		}
+		libtarg_sbrk(0 - sizeof(memhdr_t) - header->size);
+		return;
+	}
+
+	header->is_free = 1;
+}
+
+void *
+calloc(size_t num, size_t nsize) {
+	if (!num || !nsize) {
+		return NULL;
+	}
+
+	size_t size = num * nsize;
+	if (nsize != size / num) {
+		return NULL; // If ml
+	}
+	void *block = malloc(size);
+	if (!block) {
+		return NULL;
+	}
+	libmin_memset(block, 0, size);
+	return block;
+}
+
+void *
+realloc(void *block, size_t size)
+{
+	if (!block || !size) {
+		return malloc(size);
+	}
+
+	memhdr_t *header = (memhdr_t *) block - 1;
+	if (header->size >= size) {
+		return block;
+	}
+
+	void *ret = malloc(size);
+	if (ret) {
+		libmin_memcpy(ret, block, header->size);
+		free(block);
+	}
+	return ret;
+}
+
+void PrintUInt(uint32_t num){
+    if(num == 0){
+        checkprint_str((uint32_t)('0'),0);
+        return;
+    }
+   
+    uint32_t numcpy = num;
+    uint32_t revnum[12];
+    int n=0;
+    while(numcpy>0){
+        revnum[n] = numcpy%10;
+        numcpy/=10;
+        n++;
+    }
+    n--;
+    while(n>=0){
+        checkprint_str((uint32_t)('0'+revnum[n]),0);
+        n--;
+    }
+
+}
+
+
+// strcasestr
+char *
+strcasestr(const char *h, const char *n)
+{
+	size_t l = strlen(n);
+	for (; *h; h++) if (!strncasecmp(h, n, l)) return (char *)h;
+	return 0;
+}
+
+int
+strncasecmp(const char *_l, const char *_r, size_t n)
+{
+	const unsigned char *l=(void *)_l, *r=(void *)_r;
+	if (!n--) return 0;
+	for (; *l && *r && n && (*l == *r || tolower(*l) == tolower(*r)); l++, r++, n--);
+	return tolower(*l) - tolower(*r);
+}
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be

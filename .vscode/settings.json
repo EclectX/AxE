@@ -1,8 +1,27 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
+<<<<<<< HEAD
         "print.h": "c",
         "stdlib.h": "c",
         "util.h": "c"
+=======
+        "util.h": "c",
+        "cmath": "c",
+        "*.tcc": "c",
+        "hello-c.h": "c",
+        "print.h": "c",
+        "memmgr.h": "c",
+        "stdio.h": "c",
+        "errno.h": "c",
+        "fcntl.h": "c",
+        "stdlib.h": "c",
+        "input_small.h": "c",
+        "sha.h": "c",
+        "stddef.h": "c",
+        "time.h": "c",
+        "cstdint": "c",
+        "aes.h": "c"
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
     }
 }

@@ -8,8 +8,8 @@
   Copyright (C) 2019 Stefan Huemer <stefan@huemer.tech>
   
 ***************************************************************************** */
-
-`define MEM_SIZE ( 262144 )
+`define MEM_SIZE ( 268435456 )//1GB
+//`define MEM_SIZE ( 262144 )
 //`define MEM_SIZE ( 2048 )
 //`define MEM_SIZE ( 16384 )
 

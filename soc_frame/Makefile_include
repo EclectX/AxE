@@ -37,13 +37,13 @@ VERILATOR_FLAGS =
 VERILATOR_FLAGS += -cc --exe
 
 # used to create trace file
-VERILATOR_FLAGS += --trace
+VERILATOR_FLAGS += 
 
 # used to dump large arrays
 #VERILATOR_FLAGS += --trace-max-array 10200
 #~ VERILATOR_FLAGS += --trace-max-array 8192
 #~ VERILATOR_FLAGS += --trace-max-array 2048
-VERILATOR_FLAGS += --trace-max-array 20480000
+# VERILATOR_FLAGS += --trace-max-array 20480000
 
 # Disable fatal exit on warnings
 # pico causes some warnings and this is needed so the warnings don't cause an
@@ -72,9 +72,9 @@ compile: obj_dir/Vtop
 run: obj_dir/Vtop
 	obj_dir/Vtop
 
-wave: obj_dir/Vtop
-	obj_dir/Vtop +trace
-	gtkwave logs/vlt_dump.vcd --script=gtkwave.tcl
+# wave: obj_dir/Vtop
+# 	obj_dir/Vtop +trace
+# 	gtkwave logs/vlt_dump.vcd --script=gtkwave.tcl
 
 clean:
 	-rm -rf logs obj_dir *.log *.dmp *.vpd core

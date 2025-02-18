@@ -49,7 +49,30 @@ util.c:1158:5:cast_Fp_To_Int	64	static
 util.c:1184:10:int_to_float	64	static
 util.c:1223:6:memset_Char_t	32	static
 util.c:1225:6:memset_Int_t	32	static
+<<<<<<< HEAD
 util.c:1300:10:signInv	48	static
 util.c:1311:6:PrintInt	48	static
 util.c:1341:6:Print	64	static
 util.c:1409:6:snPrint	112	static
+=======
+util.c:1303:10:signInv	48	static
+util.c:1316:6:PrintInt	96	static
+util.c:1345:6:Print	80	static
+util.c:1442:6:snPrint	112	static
+util.c:1607:6:printHex	112	static
+util.c:1617:5:strlen	48	static
+util.c:1628:6:strncpy	48	static
+util.c:1643:6:strcpy	32	static
+util.c:1653:6:Srand	48	static
+util.c:1667:14:Rand	32	static
+util.c:1707:5:strcmp	32	static
+util.c:1720:10:Atof	48	static
+util.c:1751:10:floor	48	static
+util.c:1772:5:atoi	48	static
+util.c:1788:6:mopen	32	static
+util.c:1800:5:meof	32	static
+util.c:1806:15:mread	48	static
+util.c:1822:8:mgets	48	static
+util.c:1842:5:abs	32	static
+util.c:1847:5:sscanc4	64	static
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be

@@ -1,0 +1,3 @@
+main.c:38:5:num_digits	48	static
+main.c:55:5:print_centered	48	static
+main.c:74:5:my_main	112	static

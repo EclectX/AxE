@@ -17,5 +17,5 @@
 
 //`define MEM_SIZE ( (3 * 25048) + 1 )
 //`define MEM_SIZE ( (3 * 2048) + 1 )
-
-`define MEM_SIZE ( 262144 )
+`define MEM_SIZE ( 268435456 )//1GB
+//`define MEM_SIZE ( 262144 )

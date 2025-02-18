@@ -27,7 +27,7 @@
 // `define DEBUGNETS
 // `define DEBUGREGS
 // `define DEBUGASM
-// `define DEBUG
+ //`define DEBUG
 // `define FP_count
 // `define INT_MUL_COUNT
 `define PRINT_MODULE
@@ -2036,7 +2036,7 @@ module picorv32 #(
 						end
 						reg_op1 <= reg_op1 + decoded_imm;
 						`ifdef DEBUG                    
-							$display("DECODE Node[%d]: 0x%08x 0x%08x %0s",NODE_ID, dbg_insn_addr, dbg_insn_opcode, dbg_ascii_instr ? dbg_ascii_instr : "UNKNOWN");
+							$display("DECODE Node[%d]: 0x%08x 0x%08x %0s sp is %x",NODE_ID, dbg_insn_addr, dbg_insn_opcode, dbg_ascii_instr ? dbg_ascii_instr : "UNKNOWN",cpuregs[2]);
                     		$display( "\n0x%08x ==>  0x%08x Node[%d] cpu write ",reg_op2,reg_op1,NODE_ID);
 						`endif
 						set_mem_do_wdata = 1;
@@ -2958,7 +2958,7 @@ module picorv32_pcpi_fpmul(
 
   //Internal variables
   // custom instruction (R-Type) for invoking a Floating Point Multiplication on a PCPI Co-Processor
-  wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0001011 && pcpi_insn[31:25] == 7'b0000001; //TODO: Change instruction to something else custom
+  wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0110011 &&  pcpi_insn[14:12] == 3'b001 && pcpi_insn[31:25] == 7'b0000011; //TODO: Change instruction to something else custom
   reg       s_output_z_stb;
   reg       [31:0] s_output_z;
   reg       s_input_a_ack;
@@ -2996,13 +2996,13 @@ module picorv32_pcpi_fpmul(
 		s_input_b_ack <= 1;
 		pcpi_wait <= 0;
         if (s_input_a_ack && s_input_b_ack && active) begin
-		//   $display("ACTIVE: picorv32_pcpi_fpmul");
+		  // $display("ACTIVE: picorv32_pcpi_fpmul");
 		  s_input_a_ack <= 0;
           s_input_b_ack <= 0;
           a <= pcpi_rs1;
           b <= pcpi_rs2;
-        //   $display("a = %h", a);
-		//   $display("b = %h", b);
+           //$display("a = %h", a);
+		   //$display("b = %h", b);
 		  pcpi_wait <= 1; //start of mutli-cycle operation
 		  pcpi_ready <= 0;
           state <= unpack;
@@ -3283,7 +3283,7 @@ module picorv32_pcpi_fpdiv(
 
   //Internal variables
   // custom instruction (R-Type) for invoking a Floating Point Division on a PCPI Co-Processor
-  wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0001011 && pcpi_insn[31:25] == 7'b0000011; //TODO: Change instruction to something else custom
+ wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0110011 &&  pcpi_insn[14:12] == 3'b010 && pcpi_insn[31:25] == 7'b0000011; //TODO: Change instruction to something else custom
   reg       s_output_z_stb;
   reg       [31:0] s_output_z;
   reg       s_input_a_ack;
@@ -3594,7 +3594,7 @@ module picorv32_pcpi_fpadd(
 		
   //Internal variables
   // custom instruction (R-Type) for invoking a Floating Point Addition on a PCPI Co-Processor
-  wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0001011 && pcpi_insn[31:25] == 7'b0000000;
+wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0110011 &&  pcpi_insn[14:12] == 3'b011 && pcpi_insn[31:25] == 7'b0000011;
   reg       s_output_z_stb;
   reg       [31:0] s_output_z;
   reg       s_input_a_ack;
@@ -3977,7 +3977,7 @@ module picorv32_pcpi_fpsub(
 		
   //Internal variables
   // custom instruction (R-Type) for invoking a Floating Point Substraction on a PCPI Co-Processor
-  wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0001011 && pcpi_insn[31:25] == 7'b0000010;
+wire active = pcpi_valid && pcpi_insn[6:0] == 7'b0110011 &&  pcpi_insn[14:12] == 3'b100 && pcpi_insn[31:25] == 7'b0000011;
   reg       s_output_z_stb;
   reg       [31:0] s_output_z;
   reg       s_input_a_ack;

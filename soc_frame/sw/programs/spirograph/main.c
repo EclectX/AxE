@@ -31,19 +31,18 @@ void spirograph(uint32_t *x, uint32_t *y, uint32_t l, uint32_t k, size_t N, uint
 }
 void my_main()
 {
-  size_t N = 5;
+  size_t N = 500;
   uint32_t l = 0x3e99999a, k = 0x3f400000, rot = 0x41200000;
   //  0.3   0.75  10
   uint32_t *x = memmgr_alloc(N * sizeof(uint32_t));
   uint32_t *y = memmgr_alloc(N * sizeof(uint32_t));
   spirograph(x, y, l, k, N, rot);
+  char answer[25];
   for (size_t i = 0; i < N; i++)
   {
-	  display_print(0,0,"\n ");
-		display_print(1,x[i],"");
-		display_print(0,0,", ");
-		display_print(1,y[i],"");
-		display_print(0,0,"\n");
+    //Print("\n%f, %f\n",PRINTVARS(x[i],y[i]));
+    snPrint(answer,25,"\n %f, %f\n",PRINTVARS(x[i],y[i]));
+    Print(answer,PRINTVARS(0));
   }
   memmgr_free(x);
   memmgr_free(y);

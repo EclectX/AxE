@@ -1,0 +1,8 @@
+main.c:24:1:minVal	48	static
+main.c:45:1:minSpanTree	128	dynamic
+main.c:83:1:initializeData	48	static
+main.c:106:1:displayGraph	64	static
+main.c:139:1:displayGraph1	64	static
+main.c:171:1:displayPath	64	static
+main.c:196:1:displayTree	64	static
+main.c:209:1:my_main	128	dynamic

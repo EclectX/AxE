@@ -7,7 +7,15 @@
 //----------------------------------------------------------------
 //~ #include <stdio.h>
 #include "memmgr.h"
+<<<<<<< HEAD
 #include "util.h"
+=======
+
+/// uncomment only for sha / patricia program
+/// not necessary
+/// #define MEMSET
+
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 typedef ulong Align;
 
 union mem_header_union
@@ -252,18 +260,36 @@ void memmgr_free(void* ap)
     freep = p;
 }
 
+<<<<<<< HEAD
 
 //ali's work begin
 void *
 memmgr_memset(void *dest, int c, __SIZE_TYPE__ n)
+=======
+/// YR
+
+/// Compare two blocks of memory
+int memcmp(const void *vl, const void *vr, __SIZE_TYPE__ n)
+{
+	const unsigned char *l=vl, *r=vr;
+	for (; n && *l == *r; n--, l++, r++);
+	return n ? *l-*r : 0;
+}
+
+/// Fill block of memory
+void * Memset(void *dest, int c, __SIZE_TYPE__ n)
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 {
 	unsigned char *s = dest;
 	__SIZE_TYPE__ k;
 
+<<<<<<< HEAD
 	/* Fill head and tail with minimal branching. Each
 	 * conditional ensures that all the subsequently used
 	 * offsets are well-defined and in the dest region. */
 
+=======
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 	if (!n) return dest;
 	s[0] = s[n-1] = c;
 	if (n <= 2) return dest;
@@ -273,21 +299,29 @@ memmgr_memset(void *dest, int c, __SIZE_TYPE__ n)
 	s[3] = s[n-4] = c;
 	if (n <= 8) return dest;
 
+<<<<<<< HEAD
 	/* Advance pointer to align it at a 4-byte boundary,
 	 * and truncate n to a multiple of 4. The previous code
 	 * already took care of any head/tail that get cut off
 	 * by the alignment. */
 
 	k = -(uint32_t)s & 3;
+=======
+	k = -(unsigned long int)s & 3;
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 	s += k;
 	n -= k;
 	n &= -4;
 
+<<<<<<< HEAD
 	/* Pure C fallback with no aliasing violations. */
+=======
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 	for (; n; n--, s++) *s = c;
 
 	return dest;
 }
+<<<<<<< HEAD
 void *
 memmgr_calloc(__SIZE_TYPE__ num, __SIZE_TYPE__ nsize) {
 	if (!num || !nsize) {
@@ -309,6 +343,11 @@ memmgr_calloc(__SIZE_TYPE__ num, __SIZE_TYPE__ nsize) {
 
 void *
 memmgr_memcpy(void *dest, const void *src, __SIZE_TYPE__ n)
+=======
+
+/// opy block of memory
+void * memcpy(void *dest, const void *src, __SIZE_TYPE__ n)
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 {
 	unsigned char *d = dest;
 	const unsigned char *s = src;
@@ -316,6 +355,7 @@ memmgr_memcpy(void *dest, const void *src, __SIZE_TYPE__ n)
 	for (; n; n--) *d++ = *s++;
 	return dest;
 }
+<<<<<<< HEAD
 
 
 /*
@@ -365,3 +405,32 @@ strpbrk(const char *s, const char *b)
 }
 */
 //ali's work ends
+=======
+#ifdef MEMSET
+/// Fill block of memory
+void * memset(void *dest, int c, __SIZE_TYPE__ n)
+{
+	unsigned char *s = dest;
+	__SIZE_TYPE__ k;
+
+	if (!n) return dest;
+	s[0] = s[n-1] = c;
+	if (n <= 2) return dest;
+	s[1] = s[n-2] = c;
+	s[2] = s[n-3] = c;
+	if (n <= 6) return dest;
+	s[3] = s[n-4] = c;
+	if (n <= 8) return dest;
+
+	k = -(unsigned int)s & 3;
+	s += k;
+	n -= k;
+	n &= -4;
+
+	for (; n; n--, s++) *s = c;
+
+	return dest;
+}
+#endif
+/// YR
+>>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
