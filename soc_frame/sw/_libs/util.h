@@ -3,10 +3,12 @@
 
 //#include <stddef.h>
 #include "print.h"
+#include <stdint.h>
+#include "memmgr.h"
 // #include <Python.h>
 // Define a structure to represent single-precision floating-point numbers
 
-typedef unsigned int uint32_t;
+
 
 typedef struct {
     uint32_t value;
@@ -275,6 +277,8 @@ void signal_fin();
 void signal_kill_sim();
 
 void display_print(int is_digit,int value,char* string);
+
+void display_print_float(float value);
 // -----------------------------------------------------------------------------
 // 
 // P R I N T
@@ -439,7 +443,7 @@ void Srand(unsigned int seed);
 unsigned int Rand(void);
 int strcmp(const char *str1, const char *str2);
 uint32_t Atof(const char *str);
-uint32_t floor(uint32_t x);
+// uint32_t floor(uint32_t x);
 int atoi(const char *s);
 void mopen(MFILE *mfile, const char *mode);
 int meof(MFILE *mfile);
@@ -453,4 +457,19 @@ uint32_t htonl(uint32_t hostlong);
 uint32_t str2ieee(const char *str);
 __SIZE_TYPE__ mwrite(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile);
 /// YR
+
+//Pouria
+//Dynamic Memory Allocation functions
+// These functions have the same name as stdlib.h header Dynamic memory Allocation functions.
+//  But since the linker first try to resolve the symbols by searching in the compiled objects
+// it will find these ones and it won't search the stdlib and no multiple definition will happen
+// Now the question is what if a sybmol is sed and it only exists in stdlib. Then it will link stdlib and there will be cnflict
+// between these costum memory functions and the standard ones.
+//  The offical solution would be to overwrite the syscalls provided by newlib
+void *malloc(size_t size);
+
+void free(void *ptr);
+
+
+void *calloc(size_t num, size_t size) ;
 #endif

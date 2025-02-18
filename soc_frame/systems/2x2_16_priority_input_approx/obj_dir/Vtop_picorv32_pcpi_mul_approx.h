@@ -10,8 +10,6 @@
 //==========
 
 class Vtop__Syms;
-class Vtop_VerilatedVcd;
-
 
 //----------
 
@@ -724,9 +722,6 @@ VL_MODULE(Vtop_picorv32_pcpi_mul_approx) {
     void _settle__TOP__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx__2(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     void _settle__TOP__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx__3(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
     void _settle__TOP__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx__4(Vtop__Syms* __restrict vlSymsp) VL_ATTR_COLD;
-    static void traceInit(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceFull(VerilatedVcd* vcdp, void* userthis, uint32_t code);
-    static void traceChg(VerilatedVcd* vcdp, void* userthis, uint32_t code);
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 
 //----------

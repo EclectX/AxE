@@ -52,11 +52,9 @@ void Vtop_if_axi_light::_ctor_var_reset() {
     wstrb = VL_RAND_RESET_I(4);
     bvalid = VL_RAND_RESET_I(1);
     bready = VL_RAND_RESET_I(1);
-    bresp = VL_RAND_RESET_I(2);
     arready = VL_RAND_RESET_I(1);
     rvalid = VL_RAND_RESET_I(1);
     rdata = VL_RAND_RESET_I(32);
-    rresp = VL_RAND_RESET_I(2);
     w_addr_collected = VL_RAND_RESET_I(1);
     w_data_collected = VL_RAND_RESET_I(1);
     w_addr_sent = VL_RAND_RESET_I(1);

@@ -16,11 +16,9 @@
 Vtop__Syms::Vtop__Syms(Vtop* topp, const char* namep)
     // Setup locals
     : __Vm_namep(namep)
-    , __Vm_activity(false)
     , __Vm_didInit(false)
     // Setup submodule names
     , TOP__top__DOT__controller_inst__DOT__if_axi_light_cpu_to_debugger(Verilated::catName(topp->name(), "top.controller_inst.if_axi_light_cpu_to_debugger"))
-    , TOP__top__DOT__controller_inst__DOT__if_axi_light_debugger_to_offset(Verilated::catName(topp->name(), "top.controller_inst.if_axi_light_debugger_to_offset"))
     , TOP__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx(Verilated::catName(topp->name(), "top.controller_inst.picorv32_if_wrapper_inst.picorv32_axi_inst.picorv32_core.pcpi_mul_approx"))
     , TOP__top__DOT__if_axi_light_controller(Verilated::catName(topp->name(), "top.if_axi_light_controller"))
     , TOP__top__DOT__if_connect_memory(Verilated::catName(topp->name(), "top.if_connect_memory"))
@@ -53,7 +51,6 @@ Vtop__Syms::Vtop__Syms(Vtop* topp, const char* namep)
     TOPp = topp;
     // Setup each module's pointers to their submodules
     TOPp->__PVT__top__DOT__controller_inst__DOT__if_axi_light_cpu_to_debugger = &TOP__top__DOT__controller_inst__DOT__if_axi_light_cpu_to_debugger;
-    TOPp->__PVT__top__DOT__controller_inst__DOT__if_axi_light_debugger_to_offset = &TOP__top__DOT__controller_inst__DOT__if_axi_light_debugger_to_offset;
     TOPp->__PVT__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx = &TOP__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx;
     TOPp->__PVT__top__DOT__if_axi_light_controller = &TOP__top__DOT__if_axi_light_controller;
     TOPp->__PVT__top__DOT__if_connect_memory = &TOP__top__DOT__if_connect_memory;
@@ -84,7 +81,6 @@ Vtop__Syms::Vtop__Syms(Vtop* topp, const char* namep)
     // Setup each module's pointer back to symbol table (for public functions)
     TOPp->__Vconfigure(this, true);
     TOP__top__DOT__controller_inst__DOT__if_axi_light_cpu_to_debugger.__Vconfigure(this, true);
-    TOP__top__DOT__controller_inst__DOT__if_axi_light_debugger_to_offset.__Vconfigure(this, false);
     TOP__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_approx.__Vconfigure(this, true);
     TOP__top__DOT__if_axi_light_controller.__Vconfigure(this, true);
     TOP__top__DOT__if_connect_memory.__Vconfigure(this, true);

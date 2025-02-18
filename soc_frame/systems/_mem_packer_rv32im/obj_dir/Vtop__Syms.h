@@ -20,7 +20,6 @@ class Vtop__Syms : public VerilatedSyms {
     
     // LOCAL STATE
     const char* __Vm_namep;
-    bool __Vm_activity;  ///< Used by trace routines to determine change occurred
     bool __Vm_didInit;
     
     // SUBCELL STATE
@@ -35,7 +34,6 @@ class Vtop__Syms : public VerilatedSyms {
     
     // METHODS
     inline const char* name() { return __Vm_namep; }
-    inline bool getClearActivity() { bool r=__Vm_activity; __Vm_activity=false; return r; }
     
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 

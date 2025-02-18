@@ -6,146 +6,6 @@
 #include "Vtop__Syms.h"
 
 //==========
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__inPortVL[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__inPortVL_1[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__inPortVL_2[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__inPortVL_3[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__inPortVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__lockedVL[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__lockedVL_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__lockedVL_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__lockedVL_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__lockedVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_0[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_0_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_0_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_0_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_0_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_1_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_1_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_1_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_1_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_2_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_2_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_2_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_2_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_3_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_3_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_3_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_3_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_4_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_4_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_4_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable1___PVT__selectedIO_reg_4_4[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__inPortVL[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__inPortVL_1[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__inPortVL_2[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__inPortVL_3[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__inPortVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__lockedVL[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__lockedVL_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__lockedVL_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__lockedVL_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__lockedVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_0[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_0_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_0_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_0_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_0_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_1_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_1_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_1_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_1_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_2_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_2_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_2_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_2_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_3_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_3_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_3_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_3_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_4_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_4_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_4_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable2___PVT__selectedIO_reg_4_4[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__inPortVL[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__inPortVL_1[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__inPortVL_2[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__inPortVL_3[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__inPortVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__lockedVL[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__lockedVL_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__lockedVL_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__lockedVL_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__lockedVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_0[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_0_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_0_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_0_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_0_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_1_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_1_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_1_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_1_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_2_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_2_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_2_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_2_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_3_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_3_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_3_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_3_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_4_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_4_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_4_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable3___PVT__selectedIO_reg_4_4[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__inPortVL[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__inPortVL_1[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__inPortVL_2[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__inPortVL_3[2];
-CData/*2:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__inPortVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__lockedVL[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__lockedVL_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__lockedVL_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__lockedVL_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__lockedVL_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_0[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_0_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_0_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_0_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_0_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_1_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_1_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_1_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_1_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_2_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_2_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_2_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_2_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_3_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_3_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_3_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_3_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_4[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_4_1[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_4_2[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_4_3[2];
-CData/*0:0*/ Vtop_mkIQRouterCoreSimple::__Vtable4___PVT__selectedIO_reg_4_4[2];
 
 VL_CTOR_IMP(Vtop_mkIQRouterCoreSimple) {
     // Reset internal values
@@ -161,70 +21,10 @@ void Vtop_mkIQRouterCoreSimple::__Vconfigure(Vtop__Syms* vlSymsp, bool first) {
 Vtop_mkIQRouterCoreSimple::~Vtop_mkIQRouterCoreSimple() {
 }
 
-void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__1(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__1\n"); );
+void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__2(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__2\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    this->__PVT__inPortVL = 2U;
-    this->__PVT__inPortVL_1 = 2U;
-    this->__PVT__inPortVL_2 = 2U;
-    this->__PVT__inPortVL_3 = 2U;
-    this->__PVT__inPortVL_4 = 2U;
-    this->__PVT__lockedVL = 0U;
-    this->__PVT__lockedVL_1 = 0U;
-    this->__PVT__lockedVL_2 = 0U;
-    this->__PVT__lockedVL_3 = 0U;
-    this->__PVT__lockedVL_4 = 0U;
-    this->__PVT__selectedIO_reg_0 = 0U;
-    this->__PVT__selectedIO_reg_0_1 = 0U;
-    this->__PVT__selectedIO_reg_0_2 = 0U;
-    this->__PVT__selectedIO_reg_0_3 = 0U;
-    this->__PVT__selectedIO_reg_0_4 = 0U;
-    this->__PVT__selectedIO_reg_1 = 0U;
-    this->__PVT__selectedIO_reg_1_1 = 0U;
-    this->__PVT__selectedIO_reg_1_2 = 0U;
-    this->__PVT__selectedIO_reg_1_3 = 0U;
-    this->__PVT__selectedIO_reg_1_4 = 0U;
-    this->__PVT__selectedIO_reg_2 = 0U;
-    this->__PVT__selectedIO_reg_2_1 = 0U;
-    this->__PVT__selectedIO_reg_2_2 = 0U;
-    this->__PVT__selectedIO_reg_2_3 = 0U;
-    this->__PVT__selectedIO_reg_2_4 = 0U;
-    this->__PVT__selectedIO_reg_3 = 0U;
-    this->__PVT__selectedIO_reg_3_1 = 0U;
-    this->__PVT__selectedIO_reg_3_2 = 0U;
-    this->__PVT__selectedIO_reg_3_3 = 0U;
-    this->__PVT__selectedIO_reg_3_4 = 0U;
-    this->__PVT__selectedIO_reg_4 = 0U;
-    this->__PVT__selectedIO_reg_4_1 = 0U;
-    this->__PVT__selectedIO_reg_4_2 = 0U;
-    this->__PVT__selectedIO_reg_4_3 = 0U;
-    this->__PVT__selectedIO_reg_4_4 = 0U;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_1_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_2_token = 0xaU;
@@ -235,7 +35,6 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_2_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_3_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token = 0xaU;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -249,9 +48,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -265,9 +62,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -281,9 +76,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -297,9 +90,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -313,15 +104,12 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 2U;
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
@@ -340,112 +128,26 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
 VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__5(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__5\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*0:0*/ __Vtableidx1;
     // Body
     this->__Vdlyvset__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40)));
@@ -455,48 +157,22 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -504,7 +180,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_2__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -512,163 +188,15 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_1__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    __Vtableidx1 = vlTOPp->top__DOT__w_res_n_syn;
-    if ((VL_ULL(1) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__inPortVL = this->__Vtable1___PVT__inPortVL
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(2) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__inPortVL_1 = this->__Vtable1___PVT__inPortVL_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(4) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__inPortVL_2 = this->__Vtable1___PVT__inPortVL_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(8) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__inPortVL_3 = this->__Vtable1___PVT__inPortVL_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x10) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__inPortVL_4 = this->__Vtable1___PVT__inPortVL_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x20) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__lockedVL = this->__Vtable1___PVT__lockedVL
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x40) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__lockedVL_1 = this->__Vtable1___PVT__lockedVL_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x80) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__lockedVL_2 = this->__Vtable1___PVT__lockedVL_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x100) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__lockedVL_3 = this->__Vtable1___PVT__lockedVL_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x200) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__lockedVL_4 = this->__Vtable1___PVT__lockedVL_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x400) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_0 = this->__Vtable1___PVT__selectedIO_reg_0
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x800) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_0_1 = this->__Vtable1___PVT__selectedIO_reg_0_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x1000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_0_2 = this->__Vtable1___PVT__selectedIO_reg_0_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x2000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_0_3 = this->__Vtable1___PVT__selectedIO_reg_0_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x4000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_0_4 = this->__Vtable1___PVT__selectedIO_reg_0_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x8000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_1 = this->__Vtable1___PVT__selectedIO_reg_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x10000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_1_1 = this->__Vtable1___PVT__selectedIO_reg_1_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x20000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_1_2 = this->__Vtable1___PVT__selectedIO_reg_1_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x40000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_1_3 = this->__Vtable1___PVT__selectedIO_reg_1_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x80000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_1_4 = this->__Vtable1___PVT__selectedIO_reg_1_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x100000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_2 = this->__Vtable1___PVT__selectedIO_reg_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x200000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_2_1 = this->__Vtable1___PVT__selectedIO_reg_2_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x400000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_2_2 = this->__Vtable1___PVT__selectedIO_reg_2_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x800000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_2_3 = this->__Vtable1___PVT__selectedIO_reg_2_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x1000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_2_4 = this->__Vtable1___PVT__selectedIO_reg_2_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x2000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_3 = this->__Vtable1___PVT__selectedIO_reg_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x4000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_3_1 = this->__Vtable1___PVT__selectedIO_reg_3_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x8000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_3_2 = this->__Vtable1___PVT__selectedIO_reg_3_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x10000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_3_3 = this->__Vtable1___PVT__selectedIO_reg_3_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x20000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_3_4 = this->__Vtable1___PVT__selectedIO_reg_3_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x40000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_4 = this->__Vtable1___PVT__selectedIO_reg_4
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x80000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_4_1 = this->__Vtable1___PVT__selectedIO_reg_4_1
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x100000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_4_2 = this->__Vtable1___PVT__selectedIO_reg_4_2
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x200000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_4_3 = this->__Vtable1___PVT__selectedIO_reg_4_3
-            [__Vtableidx1];
-    }
-    if ((VL_ULL(0x400000000) & this->__Vtablechg1[__Vtableidx1])) {
-        this->__PVT__selectedIO_reg_4_4 = this->__Vtable1___PVT__selectedIO_reg_4_4
-            [__Vtableidx1];
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
-            this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -683,15 +211,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
-            this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -699,7 +220,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -733,7 +254,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -749,7 +270,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -936,7 +457,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -944,7 +465,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -952,7 +473,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -960,7 +481,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -968,7 +489,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -1223,27 +744,27 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr[this->__Vdlyvdim0__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0] 
             = this->__Vdlyvval__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0;
     }
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
         [this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads];
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
         [this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads];
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_4_token__024D_IN 
         = ((0x10U & ((IData)(this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_4_token) 
@@ -1324,7 +845,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     } else {
         this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_tails = 0U;
     }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_4__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -1351,7 +872,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                    & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_3__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -1378,16 +899,16 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                    & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -1420,7 +941,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -1453,7 +974,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -1483,11 +1004,11 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
 }
 
@@ -3562,15 +3083,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                    ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-            ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -3590,15 +3102,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                    ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -3612,16 +3115,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -3637,17 +3130,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -3702,20 +3184,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                    >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
             : (((IData)(this->__PVT__outport_encoder___05F_d832) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -3769,16 +3237,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
                | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -3799,16 +3257,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d689 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d690 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694));
     this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d792 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
@@ -3824,16 +3272,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
                | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
             : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d659 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -3950,17 +3388,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__14\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                        ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in 
@@ -3971,17 +3398,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in 
@@ -3995,17 +3411,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in)
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_tails)))
           : 0U);
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                        ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in 
@@ -4016,17 +3421,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in 
@@ -4763,8 +4157,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
 }
 
-void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__20(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__20\n"); );
+void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__21(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__21\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token__024D_IN 
@@ -4807,9 +4201,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         = ((0x10U & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                      << 4U)) | (0xfU & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                                         >> 1U)));
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_3__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -4836,9 +4230,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_4__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -4865,11 +4259,11 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs__024first = ((4U & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                             ? ((2U 
@@ -4896,13 +4290,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_1__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -4929,13 +4323,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_2__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -4962,7 +4356,7 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail)));
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
@@ -7056,15 +6450,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                    ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-            ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -7084,15 +6469,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                    ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -7106,16 +6482,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -7131,17 +6497,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -7196,20 +6551,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                    >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
             : (((IData)(this->__PVT__outport_encoder___05F_d832) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -7263,16 +6604,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
                | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -7293,16 +6624,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d689 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d690 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694));
     this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d792 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
@@ -7318,16 +6639,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
                | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
             : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d659 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -7440,70 +6751,10 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                      : this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT))));
 }
 
-void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__2(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__2\n"); );
+void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__3(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__3\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    this->__PVT__inPortVL = 2U;
-    this->__PVT__inPortVL_1 = 2U;
-    this->__PVT__inPortVL_2 = 2U;
-    this->__PVT__inPortVL_3 = 2U;
-    this->__PVT__inPortVL_4 = 2U;
-    this->__PVT__lockedVL = 0U;
-    this->__PVT__lockedVL_1 = 0U;
-    this->__PVT__lockedVL_2 = 0U;
-    this->__PVT__lockedVL_3 = 0U;
-    this->__PVT__lockedVL_4 = 0U;
-    this->__PVT__selectedIO_reg_0 = 0U;
-    this->__PVT__selectedIO_reg_0_1 = 0U;
-    this->__PVT__selectedIO_reg_0_2 = 0U;
-    this->__PVT__selectedIO_reg_0_3 = 0U;
-    this->__PVT__selectedIO_reg_0_4 = 0U;
-    this->__PVT__selectedIO_reg_1 = 0U;
-    this->__PVT__selectedIO_reg_1_1 = 0U;
-    this->__PVT__selectedIO_reg_1_2 = 0U;
-    this->__PVT__selectedIO_reg_1_3 = 0U;
-    this->__PVT__selectedIO_reg_1_4 = 0U;
-    this->__PVT__selectedIO_reg_2 = 0U;
-    this->__PVT__selectedIO_reg_2_1 = 0U;
-    this->__PVT__selectedIO_reg_2_2 = 0U;
-    this->__PVT__selectedIO_reg_2_3 = 0U;
-    this->__PVT__selectedIO_reg_2_4 = 0U;
-    this->__PVT__selectedIO_reg_3 = 0U;
-    this->__PVT__selectedIO_reg_3_1 = 0U;
-    this->__PVT__selectedIO_reg_3_2 = 0U;
-    this->__PVT__selectedIO_reg_3_3 = 0U;
-    this->__PVT__selectedIO_reg_3_4 = 0U;
-    this->__PVT__selectedIO_reg_4 = 0U;
-    this->__PVT__selectedIO_reg_4_1 = 0U;
-    this->__PVT__selectedIO_reg_4_2 = 0U;
-    this->__PVT__selectedIO_reg_4_3 = 0U;
-    this->__PVT__selectedIO_reg_4_4 = 0U;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_1_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_2_token = 0xaU;
@@ -7514,7 +6765,6 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_2_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_3_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token = 0xaU;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -7528,9 +6778,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -7544,9 +6792,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -7560,9 +6806,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -7576,9 +6820,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -7592,15 +6834,12 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 2U;
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
@@ -7619,112 +6858,26 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
 VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__6(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__6\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*0:0*/ __Vtableidx2;
     // Body
     this->__Vdlyvset__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40)));
@@ -7734,48 +6887,22 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -7783,7 +6910,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_3__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -7791,163 +6918,15 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_2__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    __Vtableidx2 = vlTOPp->top__DOT__w_res_n_syn;
-    if ((VL_ULL(1) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__inPortVL = this->__Vtable2___PVT__inPortVL
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(2) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__inPortVL_1 = this->__Vtable2___PVT__inPortVL_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(4) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__inPortVL_2 = this->__Vtable2___PVT__inPortVL_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(8) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__inPortVL_3 = this->__Vtable2___PVT__inPortVL_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x10) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__inPortVL_4 = this->__Vtable2___PVT__inPortVL_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x20) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__lockedVL = this->__Vtable2___PVT__lockedVL
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x40) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__lockedVL_1 = this->__Vtable2___PVT__lockedVL_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x80) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__lockedVL_2 = this->__Vtable2___PVT__lockedVL_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x100) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__lockedVL_3 = this->__Vtable2___PVT__lockedVL_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x200) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__lockedVL_4 = this->__Vtable2___PVT__lockedVL_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x400) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_0 = this->__Vtable2___PVT__selectedIO_reg_0
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x800) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_0_1 = this->__Vtable2___PVT__selectedIO_reg_0_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x1000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_0_2 = this->__Vtable2___PVT__selectedIO_reg_0_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x2000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_0_3 = this->__Vtable2___PVT__selectedIO_reg_0_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x4000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_0_4 = this->__Vtable2___PVT__selectedIO_reg_0_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x8000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_1 = this->__Vtable2___PVT__selectedIO_reg_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x10000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_1_1 = this->__Vtable2___PVT__selectedIO_reg_1_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x20000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_1_2 = this->__Vtable2___PVT__selectedIO_reg_1_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x40000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_1_3 = this->__Vtable2___PVT__selectedIO_reg_1_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x80000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_1_4 = this->__Vtable2___PVT__selectedIO_reg_1_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x100000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_2 = this->__Vtable2___PVT__selectedIO_reg_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x200000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_2_1 = this->__Vtable2___PVT__selectedIO_reg_2_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x400000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_2_2 = this->__Vtable2___PVT__selectedIO_reg_2_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x800000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_2_3 = this->__Vtable2___PVT__selectedIO_reg_2_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x1000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_2_4 = this->__Vtable2___PVT__selectedIO_reg_2_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x2000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_3 = this->__Vtable2___PVT__selectedIO_reg_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x4000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_3_1 = this->__Vtable2___PVT__selectedIO_reg_3_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x8000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_3_2 = this->__Vtable2___PVT__selectedIO_reg_3_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x10000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_3_3 = this->__Vtable2___PVT__selectedIO_reg_3_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x20000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_3_4 = this->__Vtable2___PVT__selectedIO_reg_3_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x40000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_4 = this->__Vtable2___PVT__selectedIO_reg_4
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x80000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_4_1 = this->__Vtable2___PVT__selectedIO_reg_4_1
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x100000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_4_2 = this->__Vtable2___PVT__selectedIO_reg_4_2
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x200000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_4_3 = this->__Vtable2___PVT__selectedIO_reg_4_3
-            [__Vtableidx2];
-    }
-    if ((VL_ULL(0x400000000) & this->__Vtablechg2[__Vtableidx2])) {
-        this->__PVT__selectedIO_reg_4_4 = this->__Vtable2___PVT__selectedIO_reg_4_4
-            [__Vtableidx2];
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
-            this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -7963,7 +6942,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -7971,7 +6950,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -8005,7 +6984,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -8020,15 +6999,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
-            this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -8215,7 +7187,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -8223,7 +7195,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -8231,7 +7203,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -8239,7 +7211,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -8247,7 +7219,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -8502,24 +7474,24 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr[this->__Vdlyvdim0__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0] 
             = this->__Vdlyvval__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0;
     }
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
         [this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads];
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
@@ -8603,7 +7575,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     } else {
         this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_tails = 0U;
     }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_4__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -8630,13 +7602,13 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                    & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_1__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -8666,7 +7638,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -8699,7 +7671,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -8732,7 +7704,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -8762,11 +7734,11 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
 }
 
@@ -10840,15 +9812,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                    ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-            ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -10873,16 +9836,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -10898,17 +9851,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -10929,17 +9871,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                    >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))))
             : (((IData)(this->__PVT__outport_encoder___05F_d830) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                        ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
@@ -10950,17 +9881,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
@@ -10982,15 +9902,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                    ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -11025,20 +9936,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                    >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
             : (((IData)(this->__PVT__outport_encoder___05F_d832) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -11093,16 +9990,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
                | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -11123,17 +10010,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d690 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d691 
-        = (7U & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                  ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                      ? (IData)(this->__PVT__outport_encoder___05F_d829)
-                      : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695))
-                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695)));
     this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d792 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
@@ -11149,16 +10025,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
                | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
             : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d659 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -11274,17 +10140,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__12\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                        ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
@@ -11295,17 +10150,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
@@ -12037,8 +10881,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
 }
 
-void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__21(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__21\n"); );
+void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__22(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__22\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token__024D_IN 
@@ -12081,9 +10925,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         = ((0x10U & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                      << 4U)) | (0xfU & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                                         >> 1U)));
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_1__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -12110,9 +10954,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_4__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -12139,11 +10983,11 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs__024first = ((4U & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                             ? ((2U 
@@ -12170,13 +11014,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_2__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -12203,13 +11047,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_3__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -12236,7 +11080,7 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail)));
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
@@ -14325,15 +13169,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                    ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-            ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -14358,16 +13193,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -14383,17 +13208,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -14421,15 +13235,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                    ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -14464,20 +13269,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                    >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
             : (((IData)(this->__PVT__outport_encoder___05F_d832) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -14532,16 +13323,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
                | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d684));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -14562,17 +13343,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d690 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d694));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d691 
-        = (7U & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                  ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                      ? (IData)(this->__PVT__outport_encoder___05F_d829)
-                      : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695))
-                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695)));
     this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d792 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
@@ -14588,16 +13358,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
                | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
             : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d659 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d671));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -14709,66 +13469,10 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                      : this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT))));
 }
 
-void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__24(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__24\n"); );
+void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__25(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__25\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                        ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full)
-            : ((~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
-                   >> 3U)) & ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
-                               ? ((7U & ((IData)(1U) 
-                                         + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
-                                  == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                               : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full))));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))) 
-                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))
-                : ((~ (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-                       >> 0x17U)) & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty))));
-    this->__PVT__flitBuffers_3__DOT__x___05Fh1895 = 
-        ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
-          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_tails)))
-          : 0U);
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                        ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
@@ -14779,17 +13483,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                          + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d830) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
@@ -14803,82 +13496,45 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in)
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_tails)))
           : 0U);
-    this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
-        = (((vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
-             >> 0x17U) & (~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
-                             >> 3U))) & ((IData)(this->__PVT__flitBuffers_3__DOT__x___05Fh1895) 
-                                         == (IData)(this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads)));
+    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
+        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
+                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
+                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full)
+            : ((~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
+                   >> 3U)) & ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
+                               ? ((7U & ((IData)(1U) 
+                                         + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
+                                  == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
+                               : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full))));
+    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
+        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
+                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
+                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty)
+            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))) 
+                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))
+                : ((~ (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
+                       >> 0x17U)) & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty))));
+    this->__PVT__flitBuffers_3__DOT__x___05Fh1895 = 
+        ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in)
+          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_tails)))
+          : 0U);
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in 
              >> 0x17U) & (~ ((IData)(this->__PVT__outport_encoder___05F_d830) 
                              >> 3U))) & ((IData)(this->__PVT__flitBuffers_2__DOT__x___05Fh1895) 
                                          == (IData)(this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads)));
+    this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
+        = (((vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in 
+             >> 0x17U) & (~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
+                             >> 3U))) & ((IData)(this->__PVT__flitBuffers_3__DOT__x___05Fh1895) 
+                                         == (IData)(this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads)));
 }
 
-void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__3(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__3\n"); );
+void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__4(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__4\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    this->__PVT__inPortVL = 2U;
-    this->__PVT__inPortVL_1 = 2U;
-    this->__PVT__inPortVL_2 = 2U;
-    this->__PVT__inPortVL_3 = 2U;
-    this->__PVT__inPortVL_4 = 2U;
-    this->__PVT__lockedVL = 0U;
-    this->__PVT__lockedVL_1 = 0U;
-    this->__PVT__lockedVL_2 = 0U;
-    this->__PVT__lockedVL_3 = 0U;
-    this->__PVT__lockedVL_4 = 0U;
-    this->__PVT__selectedIO_reg_0 = 0U;
-    this->__PVT__selectedIO_reg_0_1 = 0U;
-    this->__PVT__selectedIO_reg_0_2 = 0U;
-    this->__PVT__selectedIO_reg_0_3 = 0U;
-    this->__PVT__selectedIO_reg_0_4 = 0U;
-    this->__PVT__selectedIO_reg_1 = 0U;
-    this->__PVT__selectedIO_reg_1_1 = 0U;
-    this->__PVT__selectedIO_reg_1_2 = 0U;
-    this->__PVT__selectedIO_reg_1_3 = 0U;
-    this->__PVT__selectedIO_reg_1_4 = 0U;
-    this->__PVT__selectedIO_reg_2 = 0U;
-    this->__PVT__selectedIO_reg_2_1 = 0U;
-    this->__PVT__selectedIO_reg_2_2 = 0U;
-    this->__PVT__selectedIO_reg_2_3 = 0U;
-    this->__PVT__selectedIO_reg_2_4 = 0U;
-    this->__PVT__selectedIO_reg_3 = 0U;
-    this->__PVT__selectedIO_reg_3_1 = 0U;
-    this->__PVT__selectedIO_reg_3_2 = 0U;
-    this->__PVT__selectedIO_reg_3_3 = 0U;
-    this->__PVT__selectedIO_reg_3_4 = 0U;
-    this->__PVT__selectedIO_reg_4 = 0U;
-    this->__PVT__selectedIO_reg_4_1 = 0U;
-    this->__PVT__selectedIO_reg_4_2 = 0U;
-    this->__PVT__selectedIO_reg_4_3 = 0U;
-    this->__PVT__selectedIO_reg_4_4 = 0U;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_1_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_2_token = 0xaU;
@@ -14889,7 +13545,6 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_2_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_3_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token = 0xaU;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -14903,9 +13558,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -14919,9 +13572,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -14935,9 +13586,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -14951,9 +13600,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -14967,15 +13614,12 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 2U;
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
@@ -14994,112 +13638,26 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
 VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__7(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__7\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*0:0*/ __Vtableidx3;
     // Body
     this->__Vdlyvset__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40)));
@@ -15109,48 +13667,22 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -15158,7 +13690,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_4__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -15166,156 +13698,15 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_1__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    __Vtableidx3 = vlTOPp->top__DOT__w_res_n_syn;
-    if ((VL_ULL(1) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__inPortVL = this->__Vtable3___PVT__inPortVL
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(2) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__inPortVL_1 = this->__Vtable3___PVT__inPortVL_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(4) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__inPortVL_2 = this->__Vtable3___PVT__inPortVL_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(8) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__inPortVL_3 = this->__Vtable3___PVT__inPortVL_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x10) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__inPortVL_4 = this->__Vtable3___PVT__inPortVL_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x20) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__lockedVL = this->__Vtable3___PVT__lockedVL
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x40) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__lockedVL_1 = this->__Vtable3___PVT__lockedVL_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x80) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__lockedVL_2 = this->__Vtable3___PVT__lockedVL_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x100) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__lockedVL_3 = this->__Vtable3___PVT__lockedVL_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x200) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__lockedVL_4 = this->__Vtable3___PVT__lockedVL_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x400) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_0 = this->__Vtable3___PVT__selectedIO_reg_0
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x800) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_0_1 = this->__Vtable3___PVT__selectedIO_reg_0_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x1000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_0_2 = this->__Vtable3___PVT__selectedIO_reg_0_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x2000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_0_3 = this->__Vtable3___PVT__selectedIO_reg_0_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x4000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_0_4 = this->__Vtable3___PVT__selectedIO_reg_0_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x8000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_1 = this->__Vtable3___PVT__selectedIO_reg_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x10000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_1_1 = this->__Vtable3___PVT__selectedIO_reg_1_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x20000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_1_2 = this->__Vtable3___PVT__selectedIO_reg_1_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x40000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_1_3 = this->__Vtable3___PVT__selectedIO_reg_1_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x80000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_1_4 = this->__Vtable3___PVT__selectedIO_reg_1_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x100000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_2 = this->__Vtable3___PVT__selectedIO_reg_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x200000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_2_1 = this->__Vtable3___PVT__selectedIO_reg_2_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x400000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_2_2 = this->__Vtable3___PVT__selectedIO_reg_2_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x800000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_2_3 = this->__Vtable3___PVT__selectedIO_reg_2_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x1000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_2_4 = this->__Vtable3___PVT__selectedIO_reg_2_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x2000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_3 = this->__Vtable3___PVT__selectedIO_reg_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x4000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_3_1 = this->__Vtable3___PVT__selectedIO_reg_3_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x8000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_3_2 = this->__Vtable3___PVT__selectedIO_reg_3_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x10000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_3_3 = this->__Vtable3___PVT__selectedIO_reg_3_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x20000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_3_4 = this->__Vtable3___PVT__selectedIO_reg_3_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x40000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_4 = this->__Vtable3___PVT__selectedIO_reg_4
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x80000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_4_1 = this->__Vtable3___PVT__selectedIO_reg_4_1
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x100000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_4_2 = this->__Vtable3___PVT__selectedIO_reg_4_2
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x200000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_4_3 = this->__Vtable3___PVT__selectedIO_reg_4_3
-            [__Vtableidx3];
-    }
-    if ((VL_ULL(0x400000000) & this->__Vtablechg3[__Vtableidx3])) {
-        this->__PVT__selectedIO_reg_4_4 = this->__Vtable3___PVT__selectedIO_reg_4_4
-            [__Vtableidx3];
-    }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -15330,15 +13721,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
-            this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -15346,7 +13730,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -15379,15 +13763,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
-            this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -15403,7 +13780,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -15590,7 +13967,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -15598,7 +13975,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -15606,7 +13983,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -15614,7 +13991,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -15622,7 +13999,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -15877,27 +14254,27 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr[this->__Vdlyvdim0__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0] 
             = this->__Vdlyvval__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0;
     }
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
         [this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads];
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
         [this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads];
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_4_token__024D_IN 
         = ((0x10U & ((IData)(this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_4_token) 
@@ -15978,9 +14355,9 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     } else {
         this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_tails = 0U;
     }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_3__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -16007,9 +14384,9 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                    & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_2__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -16036,12 +14413,12 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                    & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -16074,7 +14451,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -16107,7 +14484,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -16137,11 +14514,11 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
 }
 
@@ -18241,15 +16618,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                    ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -18263,16 +16631,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -18288,17 +16646,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -18315,15 +16662,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d830) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                    ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -18370,20 +16708,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                    >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
             : (((IData)(this->__PVT__outport_encoder___05F_d832) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -18406,17 +16730,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
                 ? 1U : 0U) : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                        ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
@@ -18427,17 +16740,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
@@ -18482,16 +16784,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
                | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -18513,16 +16805,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d699))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d699));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d689 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d692 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696));
     this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d792 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
@@ -18538,16 +16820,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
                | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
             : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d663 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -18661,17 +16933,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__13\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                        ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
@@ -18682,17 +16943,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
@@ -19424,8 +17674,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
 }
 
-void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__22(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__22\n"); );
+void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__23(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__23\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token__024D_IN 
@@ -19468,9 +17718,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         = ((0x10U & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                      << 4U)) | (0xfU & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                                         >> 1U)));
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_2__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -19497,9 +17747,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_3__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -19526,11 +17776,11 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs__024first = ((4U & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                             ? ((2U 
@@ -19557,13 +17807,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_1__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -19590,13 +17840,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_4__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -19623,7 +17873,7 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail)));
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
@@ -21728,15 +19978,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d829) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                    ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -21750,16 +19991,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -21775,17 +20006,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -21802,15 +20022,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d830) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                    ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))) 
@@ -21857,20 +20068,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                    >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
             : (((IData)(this->__PVT__outport_encoder___05F_d832) 
                 >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -21923,16 +20120,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
                | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -21954,16 +20141,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d699))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d699));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d689 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d693));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d692 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696));
     this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d792 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
             ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
@@ -21979,16 +20156,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
                | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
             : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d663 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -22098,66 +20265,10 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                      : this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT))));
 }
 
-void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__25(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__25\n"); );
+void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__24(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__24\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                        ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full)
-            : ((~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
-                   >> 3U)) & ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
-                               ? ((7U & ((IData)(1U) 
-                                         + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
-                                  == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                               : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full))));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))) 
-                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))
-                : ((~ (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-                       >> 0x17U)) & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty))));
-    this->__PVT__flitBuffers_4__DOT__x___05Fh1895 = 
-        ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
-          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_tails)))
-          : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                        ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
@@ -22168,17 +20279,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                          + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d831) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
@@ -22192,82 +20292,45 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in)
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_tails)))
           : 0U);
-    this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
-        = (((vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
-             >> 0x17U) & (~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
-                             >> 3U))) & ((IData)(this->__PVT__flitBuffers_4__DOT__x___05Fh1895) 
-                                         == (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads)));
+    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
+        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
+                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
+                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full)
+            : ((~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
+                   >> 3U)) & ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
+                               ? ((7U & ((IData)(1U) 
+                                         + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
+                                  == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
+                               : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full))));
+    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
+        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
+                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
+                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty)
+            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+                ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))) 
+                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))
+                : ((~ (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
+                       >> 0x17U)) & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty))));
+    this->__PVT__flitBuffers_4__DOT__x___05Fh1895 = 
+        ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in)
+          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_tails)))
+          : 0U);
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in 
              >> 0x17U) & (~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
                              >> 3U))) & ((IData)(this->__PVT__flitBuffers_1__DOT__x___05Fh1895) 
                                          == (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads)));
+    this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
+        = (((vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in 
+             >> 0x17U) & (~ ((IData)(this->__PVT__outport_encoder___05F_d828) 
+                             >> 3U))) & ((IData)(this->__PVT__flitBuffers_4__DOT__x___05Fh1895) 
+                                         == (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads)));
 }
 
-void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__4(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__4\n"); );
+void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__1(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__1\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    this->__PVT__inPortVL = 2U;
-    this->__PVT__inPortVL_1 = 2U;
-    this->__PVT__inPortVL_2 = 2U;
-    this->__PVT__inPortVL_3 = 2U;
-    this->__PVT__inPortVL_4 = 2U;
-    this->__PVT__lockedVL = 0U;
-    this->__PVT__lockedVL_1 = 0U;
-    this->__PVT__lockedVL_2 = 0U;
-    this->__PVT__lockedVL_3 = 0U;
-    this->__PVT__lockedVL_4 = 0U;
-    this->__PVT__selectedIO_reg_0 = 0U;
-    this->__PVT__selectedIO_reg_0_1 = 0U;
-    this->__PVT__selectedIO_reg_0_2 = 0U;
-    this->__PVT__selectedIO_reg_0_3 = 0U;
-    this->__PVT__selectedIO_reg_0_4 = 0U;
-    this->__PVT__selectedIO_reg_1 = 0U;
-    this->__PVT__selectedIO_reg_1_1 = 0U;
-    this->__PVT__selectedIO_reg_1_2 = 0U;
-    this->__PVT__selectedIO_reg_1_3 = 0U;
-    this->__PVT__selectedIO_reg_1_4 = 0U;
-    this->__PVT__selectedIO_reg_2 = 0U;
-    this->__PVT__selectedIO_reg_2_1 = 0U;
-    this->__PVT__selectedIO_reg_2_2 = 0U;
-    this->__PVT__selectedIO_reg_2_3 = 0U;
-    this->__PVT__selectedIO_reg_2_4 = 0U;
-    this->__PVT__selectedIO_reg_3 = 0U;
-    this->__PVT__selectedIO_reg_3_1 = 0U;
-    this->__PVT__selectedIO_reg_3_2 = 0U;
-    this->__PVT__selectedIO_reg_3_3 = 0U;
-    this->__PVT__selectedIO_reg_3_4 = 0U;
-    this->__PVT__selectedIO_reg_4 = 0U;
-    this->__PVT__selectedIO_reg_4_1 = 0U;
-    this->__PVT__selectedIO_reg_4_2 = 0U;
-    this->__PVT__selectedIO_reg_4_3 = 0U;
-    this->__PVT__selectedIO_reg_4_4 = 0U;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_1_token = 0xaU;
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_2_token = 0xaU;
@@ -22278,7 +20341,6 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_2_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_3_token = 0xaU;
     this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token = 0xaU;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -22292,9 +20354,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -22308,9 +20368,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -22324,9 +20382,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -22340,9 +20396,7 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty = 0U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0xaaaaaaaaaaaaaaaa);
@@ -22356,15 +20410,12 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_5 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_6 = 2U;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_7 = 2U;
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt = 0xaU;
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 2U;
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
-    this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_full = 0U;
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_tails = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads = 2U;
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_not_empty = 0U;
@@ -22383,112 +20434,26 @@ void Vtop_mkIQRouterCoreSimple::_initial__TOP__top__DOT__if_wrapper_noc_2x2_16_i
 VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__8(Vtop__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__8\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
-    // Variables
-    CData/*0:0*/ __Vtableidx4;
     // Body
     this->__Vdlyvset__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
     this->__Vdlyvset__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0U;
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = 0U;
-    }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
     if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47)
-            : 0U);
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
+    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 0U;
+    }
     this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) ? (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48)
-            : 0U);
     this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40)));
@@ -22498,48 +20463,22 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full 
+        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty 
         = (1U & ((~ (IData)(vlTOPp->top__DOT__w_res_n_syn)) 
                  | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41)));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
     this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full 
         = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32) 
-            | (IData)(this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    if ((1U & (~ (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
-        this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = 0U;
-    }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full 
-        = ((IData)(vlTOPp->top__DOT__w_res_n_syn) & 
-           ((IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33) 
-            | (IData)(this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115)));
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -22547,7 +20486,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_4__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
@@ -22555,156 +20494,15 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt 
-                = this->__PVT__outPortFIFOs_3__DOT__x___05Fh2099;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_ULL(0);
     }
-    __Vtableidx4 = vlTOPp->top__DOT__w_res_n_syn;
-    if ((VL_ULL(1) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__inPortVL = this->__Vtable4___PVT__inPortVL
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(2) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__inPortVL_1 = this->__Vtable4___PVT__inPortVL_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(4) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__inPortVL_2 = this->__Vtable4___PVT__inPortVL_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(8) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__inPortVL_3 = this->__Vtable4___PVT__inPortVL_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x10) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__inPortVL_4 = this->__Vtable4___PVT__inPortVL_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x20) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__lockedVL = this->__Vtable4___PVT__lockedVL
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x40) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__lockedVL_1 = this->__Vtable4___PVT__lockedVL_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x80) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__lockedVL_2 = this->__Vtable4___PVT__lockedVL_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x100) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__lockedVL_3 = this->__Vtable4___PVT__lockedVL_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x200) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__lockedVL_4 = this->__Vtable4___PVT__lockedVL_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x400) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_0 = this->__Vtable4___PVT__selectedIO_reg_0
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x800) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_0_1 = this->__Vtable4___PVT__selectedIO_reg_0_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x1000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_0_2 = this->__Vtable4___PVT__selectedIO_reg_0_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x2000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_0_3 = this->__Vtable4___PVT__selectedIO_reg_0_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x4000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_0_4 = this->__Vtable4___PVT__selectedIO_reg_0_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x8000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_1 = this->__Vtable4___PVT__selectedIO_reg_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x10000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_1_1 = this->__Vtable4___PVT__selectedIO_reg_1_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x20000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_1_2 = this->__Vtable4___PVT__selectedIO_reg_1_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x40000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_1_3 = this->__Vtable4___PVT__selectedIO_reg_1_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x80000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_1_4 = this->__Vtable4___PVT__selectedIO_reg_1_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x100000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_2 = this->__Vtable4___PVT__selectedIO_reg_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x200000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_2_1 = this->__Vtable4___PVT__selectedIO_reg_2_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x400000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_2_2 = this->__Vtable4___PVT__selectedIO_reg_2_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x800000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_2_3 = this->__Vtable4___PVT__selectedIO_reg_2_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x1000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_2_4 = this->__Vtable4___PVT__selectedIO_reg_2_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x2000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_3 = this->__Vtable4___PVT__selectedIO_reg_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x4000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_3_1 = this->__Vtable4___PVT__selectedIO_reg_3_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x8000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_3_2 = this->__Vtable4___PVT__selectedIO_reg_3_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x10000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_3_3 = this->__Vtable4___PVT__selectedIO_reg_3_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x20000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_3_4 = this->__Vtable4___PVT__selectedIO_reg_3_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x40000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_4 = this->__Vtable4___PVT__selectedIO_reg_4
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x80000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_4_1 = this->__Vtable4___PVT__selectedIO_reg_4_1
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x100000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_4_2 = this->__Vtable4___PVT__selectedIO_reg_4_2
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x200000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_4_3 = this->__Vtable4___PVT__selectedIO_reg_4_3
-            [__Vtableidx4];
-    }
-    if ((VL_ULL(0x400000000) & this->__Vtablechg4[__Vtableidx4])) {
-        this->__PVT__selectedIO_reg_4_4 = this->__Vtable4___PVT__selectedIO_reg_4_4
-            [__Vtableidx4];
-    }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -22720,7 +20518,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -22728,7 +20526,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -22761,15 +20559,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
-            this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -22784,15 +20575,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
-            this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-        }
-    } else {
-        this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_not_full = 1U;
-    }
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt 
-                = this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_ULL(0);
@@ -22979,7 +20763,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -22987,7 +20771,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -22995,7 +20779,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -23003,7 +20787,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))) {
             this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -23011,7 +20795,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))) {
             this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head 
-                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110;
+                = this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head = 0U;
@@ -23266,24 +21050,24 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr[this->__Vdlyvdim0__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0] 
             = this->__Vdlyvval__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0;
     }
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
         [this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads];
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
@@ -23367,13 +21151,13 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     } else {
         this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_tails = 0U;
     }
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_2__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -23400,7 +21184,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                    & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_1__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -23430,7 +21214,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -23463,7 +21247,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in)) {
             this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -23496,7 +21280,7 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     if (vlTOPp->top__DOT__w_res_n_syn) {
         if (this->__PVT__outPortFIFOs__024EN_enq) {
             this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail 
-                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111;
+                = this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN;
         }
     } else {
         this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = 0U;
@@ -23577,11 +21361,11 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_tails)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
     this->__PVT__routerAlloc__024allocate_alloc_input 
         = (((((IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_not_empty) 
@@ -25600,6 +23384,13 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads)))
           : 0U);
+    this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d811 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
+                & ((IData)(this->__PVT__outport_encoder___05F_d829) 
+                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d829) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))));
     this->__PVT__flitBuffers_3__DOT__x___05Fh2274 = 
         ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads)))
@@ -25612,16 +23403,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -25637,17 +23418,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -25657,13 +23427,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                    == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))
                 : ((~ (IData)(this->__PVT__outPortFIFOs__024EN_enq)) 
                    & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty))));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-                & ((IData)(this->__PVT__outport_encoder___05F_d830) 
-                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))));
     this->__PVT__flitBuffers_2__DOT__x___05Fh2274 = 
         ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads)))
@@ -25671,41 +23434,18 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d830) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                    ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))) 
                == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))
             : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty));
-    this->__PVT__flitBuffers_1__DOT__x___05Fh2274 = 
-        ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads)))
-          : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
-        = ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
-               >> 3U)) & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                    ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))) 
-               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))
-            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty));
+    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                & ((IData)(this->__PVT__outport_encoder___05F_d830) 
+                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d830) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654 
         = (1U & ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
                   ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -25713,13 +23453,25 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                             >> 3U)) | (0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))))
                   : ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
                          >> 3U)) | (0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d831))))));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-                & ((IData)(this->__PVT__outport_encoder___05F_d831) 
-                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))));
+    this->__PVT__flitBuffers_1__DOT__x___05Fh2274 = 
+        ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
+          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads)))
+          : 0U);
+    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
+        = ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
+               >> 3U)) & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full));
+    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
+            ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))) 
+               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))
+            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty));
+    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
+            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
+               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
+                   >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d699 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
@@ -25728,27 +23480,13 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
                 ? 1U : 0U) : 0U);
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
+    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
+            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
+                & ((IData)(this->__PVT__outport_encoder___05F_d831) 
+                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d831) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -25772,16 +23510,16 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
                 ? 1U : 0U) : 0U);
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d653 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668));
+    this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d810 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
+               & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667))
+            : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667));
+    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
+            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
+               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
+            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
@@ -25792,21 +23530,11 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686));
+    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+               & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668))
+            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -25828,32 +23556,11 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                       ? (IData)(this->__PVT__outport_encoder___05F_d830)
                       : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d698))
                   : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d698)));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d691 
-        = (7U & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                  ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                      ? (IData)(this->__PVT__outport_encoder___05F_d829)
-                      : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695))
-                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695)));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d692 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d672 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d663 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662));
+    this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d809 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
+               & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665))
+            : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -25966,17 +23673,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__15\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                        ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in 
@@ -25987,17 +23683,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
-                ? ((IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d828) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in 
@@ -26011,17 +23696,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_4_putRoutedFlit_flit_in)
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_tails)))
           : 0U);
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                           >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in 
-                                     >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                        ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((0x800000U 
-                                              & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in 
@@ -26032,17 +23706,6 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
                                          + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                   >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in 
-                             >> 0x17U))) ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                ? ((IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                : ((0x800000U & vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((1U & (((IData)(this->__PVT__outport_encoder___05F_d829) 
                    >> 3U) & (vlTOPp->top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_3_putRoutedFlit_flit_in 
@@ -26092,60 +23755,38 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         if (VL_UNLIKELY((((IData)(vlSymsp->TOP__top__DOT__if_connect_node_empty.en_get) 
                           & ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
                               ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                 | (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d672))
-                              : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d672))) 
+                                 | ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                     ? ((0U == (7U 
+                                                & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                        | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
+                                     : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652)))
+                              : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                  ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                     | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
+                                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652)))) 
                          & (((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
                               ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                 & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d653))
-                              : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d653))
+                                 & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                     ? ((0U != (7U 
+                                                & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                        & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654))
+                                     : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654)))
+                              : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                  ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                     & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654))
+                                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654)))
                              ? (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
-                                   >> 3U)) : (((8U 
-                                                & (IData)(this->__PVT__outport_encoder___05F_d828))
-                                                ? (
-                                                   (0U 
-                                                    != 
-                                                    (7U 
-                                                     & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                                   & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665))
-                                                : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665))
+                                   >> 3U)) : ((IData)(this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d809)
                                                ? (~ 
                                                   ((IData)(this->__PVT__outport_encoder___05F_d831) 
                                                    >> 3U))
-                                               : ((
-                                                   (8U 
-                                                    & (IData)(this->__PVT__outport_encoder___05F_d828))
-                                                    ? 
-                                                   ((0U 
-                                                     != 
-                                                     (7U 
-                                                      & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                                    & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667))
-                                                    : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667))
+                                               : ((IData)(this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d810)
                                                    ? 
                                                   (~ 
                                                    ((IData)(this->__PVT__outport_encoder___05F_d830) 
                                                     >> 3U))
                                                    : 
-                                                  (((8U 
-                                                     & (IData)(this->__PVT__outport_encoder___05F_d828))
-                                                     ? 
-                                                    (((0U 
-                                                       != 
-                                                       (7U 
-                                                        & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                                      & ((IData)(this->__PVT__outport_encoder___05F_d829) 
-                                                         >> 3U)) 
-                                                     & (0U 
-                                                        == 
-                                                        (7U 
-                                                         & (IData)(this->__PVT__outport_encoder___05F_d829))))
-                                                     : 
-                                                    (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                                                      >> 3U) 
-                                                     & (0U 
-                                                        == 
-                                                        (7U 
-                                                         & (IData)(this->__PVT__outport_encoder___05F_d829))))) 
+                                                  ((IData)(this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d811) 
                                                    & (~ 
                                                       ((IData)(this->__PVT__outport_encoder___05F_d829) 
                                                        >> 3U))))))))) {
@@ -26156,60 +23797,38 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
         if (VL_UNLIKELY((((IData)(vlSymsp->TOP__top__DOT__if_connect_node_empty.en_get) 
                           & ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
                               ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                 | (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d672))
-                              : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d672))) 
+                                 | ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                     ? ((0U == (7U 
+                                                & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                        | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
+                                     : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652)))
+                              : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                  ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                     | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
+                                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652)))) 
                          & (((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
                               ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                 & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d653))
-                              : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d653))
+                                 & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                     ? ((0U != (7U 
+                                                & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                        & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654))
+                                     : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654)))
+                              : ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+                                  ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                                     & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654))
+                                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654)))
                              ? (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
-                                   >> 3U)) : (((8U 
-                                                & (IData)(this->__PVT__outport_encoder___05F_d828))
-                                                ? (
-                                                   (0U 
-                                                    != 
-                                                    (7U 
-                                                     & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                                   & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665))
-                                                : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665))
+                                   >> 3U)) : ((IData)(this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d809)
                                                ? (~ 
                                                   ((IData)(this->__PVT__outport_encoder___05F_d831) 
                                                    >> 3U))
-                                               : ((
-                                                   (8U 
-                                                    & (IData)(this->__PVT__outport_encoder___05F_d828))
-                                                    ? 
-                                                   ((0U 
-                                                     != 
-                                                     (7U 
-                                                      & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                                    & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667))
-                                                    : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667))
+                                               : ((IData)(this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d810)
                                                    ? 
                                                   (~ 
                                                    ((IData)(this->__PVT__outport_encoder___05F_d830) 
                                                     >> 3U))
                                                    : 
-                                                  (((8U 
-                                                     & (IData)(this->__PVT__outport_encoder___05F_d828))
-                                                     ? 
-                                                    (((0U 
-                                                       != 
-                                                       (7U 
-                                                        & (IData)(this->__PVT__outport_encoder___05F_d828))) 
-                                                      & ((IData)(this->__PVT__outport_encoder___05F_d829) 
-                                                         >> 3U)) 
-                                                     & (0U 
-                                                        == 
-                                                        (7U 
-                                                         & (IData)(this->__PVT__outport_encoder___05F_d829))))
-                                                     : 
-                                                    (((IData)(this->__PVT__outport_encoder___05F_d829) 
-                                                      >> 3U) 
-                                                     & (0U 
-                                                        == 
-                                                        (7U 
-                                                         & (IData)(this->__PVT__outport_encoder___05F_d829))))) 
+                                                  ((IData)(this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d811) 
                                                    & (~ 
                                                       ((IData)(this->__PVT__outport_encoder___05F_d829) 
                                                        >> 3U))))))))) {
@@ -26857,8 +24476,8 @@ VL_INLINE_OPT void Vtop_mkIQRouterCoreSimple::_sequent__TOP__top__DOT__if_wrappe
     }
 }
 
-void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__23(Vtop__Syms* __restrict vlSymsp) {
-    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__23\n"); );
+void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__20(Vtop__Syms* __restrict vlSymsp) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+            Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__20\n"); );
     Vtop* __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     this->__PVT__routerAlloc__DOT__outputArbs__DOT__oas_0_token__024D_IN 
@@ -26901,9 +24520,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         = ((0x10U & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                      << 4U)) | (0xfU & ((IData)(this->__PVT__routerAlloc__DOT__inputArbs__DOT__ias_4_token) 
                                         >> 1U)));
-    this->__PVT__outPortFIFOs_1__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_1__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -26930,9 +24549,9 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_2__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_2__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -26959,11 +24578,11 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__x___05Fh1275 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs__DOT__x___05Fh2099 = 
-        (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
+        = (VL_ULL(1) + this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt);
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs__024first = ((4U & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                             ? ((2U 
@@ -26990,13 +24609,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                                     ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                     : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_3__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -27023,13 +24642,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail)));
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh1275 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__x___05Fh2099 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN 
         = (VL_ULL(1) + this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt);
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head)));
     this->__PVT__outPortFIFOs_4__024first = ((4U & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                               ? ((2U 
@@ -27056,7 +24675,7 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                    & (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head))
                                                    ? (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1)
                                                    : (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem))));
-    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 
+    this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN 
         = (7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail)));
     this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__024D_OUT 
         = this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr
@@ -29147,6 +26766,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_heads)))
           : 0U);
+    this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d811 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
+                & ((IData)(this->__PVT__outport_encoder___05F_d829) 
+                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d829) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))));
     this->__PVT__flitBuffers_3__DOT__x___05Fh2274 = 
         ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_3__DOT__inputQueue_ifc_mf_ifc_heads)))
@@ -29159,16 +26785,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                                     & ((IData)(1U) 
                                                        + (IData)(this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_heads)))
                                                     : 0U);
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 
-        = (0xfU & ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-                     >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-                    ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)
-                    : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                        ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                           - (IData)(1U)) : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                                              ? ((IData)(1U) 
-                                                 + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt))
-                                              : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt)))));
     this->__PVT__flitBuffers__DOT__inputQueue_ifc_mf_ifc_wrFIFO_whas_AND_inputQue_ETC___05F_d20 
         = (((IData)(this->__PVT__flitBuffers__024EN_enq) 
             & (~ ((IData)(this->__PVT__outport_encoder___05F_d832) 
@@ -29184,17 +26800,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                                          + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
                                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
                                : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full))));
-    this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 
-        = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
-             >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
-            ? (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full)
-            : ((8U & (IData)(this->__PVT__outport_encoder___05F_d832))
-                ? ((IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail) 
-                   == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                : ((IData)(this->__PVT__outPortFIFOs__024EN_enq)
-                    ? ((7U & ((IData)(2U) + (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))) 
-                       == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head))
-                    : (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full))));
     this->__PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 
         = ((((IData)(this->__PVT__outport_encoder___05F_d832) 
              >> 3U) & (IData)(this->__PVT__outPortFIFOs__024EN_enq))
@@ -29204,13 +26809,6 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                    == (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail))
                 : ((~ (IData)(this->__PVT__outPortFIFOs__024EN_enq)) 
                    & (IData)(this->__PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty))));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-                & ((IData)(this->__PVT__outport_encoder___05F_d830) 
-                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d830) 
-                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))));
     this->__PVT__flitBuffers_2__DOT__x___05Fh2274 = 
         ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
           ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_2__DOT__inputQueue_ifc_mf_ifc_heads)))
@@ -29218,41 +26816,18 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
         = ((~ ((IData)(this->__PVT__outport_encoder___05F_d830) 
                >> 3U)) & (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-                    ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full));
     this->__PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head))) 
                == (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail))
             : (IData)(this->__PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty));
-    this->__PVT__flitBuffers_1__DOT__x___05Fh2274 = 
-        ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads)))
-          : 0U);
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
-        = ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
-               >> 3U)) & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 
-        = (0xfU & ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-                    ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt) 
-                       - (IData)(1U)) : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt)));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail) 
-               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))
-            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full));
-    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))) 
-               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))
-            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty));
+    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+                & ((IData)(this->__PVT__outport_encoder___05F_d830) 
+                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d830) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654 
         = (1U & ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
                   ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -29260,13 +26835,25 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                             >> 3U)) | (0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))))
                   : ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
                          >> 3U)) | (0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d831))))));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-                & ((IData)(this->__PVT__outport_encoder___05F_d831) 
-                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d831) 
-                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))));
+    this->__PVT__flitBuffers_1__DOT__x___05Fh2274 = 
+        ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
+          ? (7U & ((IData)(1U) + (IData)(this->__PVT__flitBuffers_1__DOT__inputQueue_ifc_mf_ifc_heads)))
+          : 0U);
+    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 
+        = ((~ ((IData)(this->__PVT__outport_encoder___05F_d831) 
+               >> 3U)) & (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full));
+    this->__PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
+            ? ((7U & ((IData)(1U) + (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head))) 
+               == (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail))
+            : (IData)(this->__PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty));
+    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
+            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
+               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
+                   >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d699 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
@@ -29275,27 +26862,13 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
                 ? 1U : 0U) : 0U);
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
-    this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
-               | (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                   >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))))
-            : (((IData)(this->__PVT__outport_encoder___05F_d832) 
-                >> 3U) & (4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d832)))));
+    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
+            ? (((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
+                & ((IData)(this->__PVT__outport_encoder___05F_d831) 
+                   >> 3U)) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))))
+            : (((IData)(this->__PVT__outport_encoder___05F_d831) 
+                >> 3U) & (0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))));
     this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d655 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831))) 
@@ -29319,16 +26892,16 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d831))
             ? ((2U == (7U & (IData)(this->__PVT__outport_encoder___05F_d831)))
                 ? 1U : 0U) : 0U);
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d653 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d654));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668));
+    this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d810 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
+               & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667))
+            : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d667));
+    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
+            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
+               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
+            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
@@ -29339,21 +26912,11 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
             ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830)))
                 ? 2U : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700))
             : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d700));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d651));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d676));
-    this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
-               | (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686))
-            : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_outport_en_ETC___05F_d686));
+    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
+            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
+               & (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668))
+            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_NOT_outpor_ETC___05F_d668));
     this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d656 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d830))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d830))) 
@@ -29375,32 +26938,11 @@ void Vtop_mkIQRouterCoreSimple::_settle__TOP__top__DOT__if_wrapper_noc_2x2_16_in
                       ? (IData)(this->__PVT__outport_encoder___05F_d830)
                       : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d698))
                   : (IData)(this->__PVT__IF_outport_encoder_82_BIT_3_83_THEN_IF_outport_ETC___05F_d698)));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d691 
-        = (7U & ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-                  ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                      ? (IData)(this->__PVT__outport_encoder___05F_d829)
-                      : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695))
-                  : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d695)));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_IF_outport_ETC___05F_d692 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829)))
-                ? 3U : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_IF_outport_ETC___05F_d696));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d672 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((0U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d652));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d685 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((3U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d669));
-    this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d663 
-        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
-            ? ((4U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
-               | (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662))
-            : (IData)(this->__PVT__IF_outport_encoder_03_BIT_3_04_THEN_outport_en_ETC___05F_d662));
+    this->__PVT__IF_outport_encoder_45_BIT_3_46_THEN_NOT_outpor_ETC___05F_d809 
+        = ((8U & (IData)(this->__PVT__outport_encoder___05F_d828))
+            ? ((0U != (7U & (IData)(this->__PVT__outport_encoder___05F_d828))) 
+               & (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665))
+            : (IData)(this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_NOT_outpor_ETC___05F_d665));
     this->__PVT__IF_outport_encoder_24_BIT_3_25_THEN_outport_en_ETC___05F_d683 
         = ((8U & (IData)(this->__PVT__outport_encoder___05F_d829))
             ? ((1U == (7U & (IData)(this->__PVT__outport_encoder___05F_d829))) 
@@ -29554,41 +27096,6 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     out_ports_4_getFlit = VL_RAND_RESET_I(21);
     out_ports_4_putNonFullVCs_nonFullVCs = VL_RAND_RESET_I(2);
     EN_out_ports_4_putNonFullVCs = VL_RAND_RESET_I(1);
-    __PVT__inPortVL = VL_RAND_RESET_I(3);
-    __PVT__inPortVL_1 = VL_RAND_RESET_I(3);
-    __PVT__inPortVL_2 = VL_RAND_RESET_I(3);
-    __PVT__inPortVL_3 = VL_RAND_RESET_I(3);
-    __PVT__inPortVL_4 = VL_RAND_RESET_I(3);
-    __PVT__lockedVL = VL_RAND_RESET_I(1);
-    __PVT__lockedVL_1 = VL_RAND_RESET_I(1);
-    __PVT__lockedVL_2 = VL_RAND_RESET_I(1);
-    __PVT__lockedVL_3 = VL_RAND_RESET_I(1);
-    __PVT__lockedVL_4 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_0 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_0_1 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_0_2 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_0_3 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_0_4 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_1 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_1_1 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_1_2 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_1_3 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_1_4 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_2 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_2_1 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_2_2 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_2_3 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_2_4 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_3 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_3_1 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_3_2 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_3_3 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_3_4 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_4 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_4_1 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_4_2 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_4_3 = VL_RAND_RESET_I(1);
-    __PVT__selectedIO_reg_4_4 = VL_RAND_RESET_I(1);
     __PVT__flitBuffers__024EN_enq = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs__024first = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__024EN_enq = VL_RAND_RESET_I(1);
@@ -29703,12 +27210,14 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     { int __Vi0=0; for (; __Vi0<8; ++__Vi0) {
             __PVT__flitBuffers_4__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr[__Vi0] = VL_RAND_RESET_I(20);
     }}
-    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_almost_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_empty = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_1 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_2 = VL_RAND_RESET_I(3);
@@ -29717,22 +27226,18 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_5 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_6 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_mem_7 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_size_cnt = VL_RAND_RESET_I(4);
     __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs__DOT__x___05Fh1275 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs__DOT__x___05Fh2099 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs__DOT__outPortFIFO_ifc_fifo_tail__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_almost_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_empty = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_1 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_2 = VL_RAND_RESET_I(3);
@@ -29741,25 +27246,19 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_5 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_6 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_mem_7 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_size_cnt = VL_RAND_RESET_I(4);
     __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_1__DOT__x___05Fh1275 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_1__DOT__x___05Fh2099 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_1__DOT__outPortFIFO_ifc_fifo_tail__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_1__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_almost_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_empty = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_1 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_2 = VL_RAND_RESET_I(3);
@@ -29768,25 +27267,19 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_5 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_6 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_mem_7 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_size_cnt = VL_RAND_RESET_I(4);
     __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_2__DOT__x___05Fh1275 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_2__DOT__x___05Fh2099 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_2__DOT__outPortFIFO_ifc_fifo_tail__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_2__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_almost_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_empty = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_1 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_2 = VL_RAND_RESET_I(3);
@@ -29795,25 +27288,19 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_5 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_6 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_mem_7 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_size_cnt = VL_RAND_RESET_I(4);
     __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_3__DOT__x___05Fh1275 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_3__DOT__x___05Fh2099 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_3__DOT__outPortFIFO_ifc_fifo_tail__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_3__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_almost_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_deq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_empty = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt = VL_RAND_RESET_Q(64);
+    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_enq_cnt__024D_IN = VL_RAND_RESET_Q(64);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_full = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_1 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_2 = VL_RAND_RESET_I(3);
@@ -29822,44 +27309,11 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_5 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_6 = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_mem_7 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_size_cnt = VL_RAND_RESET_I(4);
     __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_4__DOT__x___05Fh1275 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_4__DOT__x___05Fh2099 = VL_RAND_RESET_Q(64);
-    __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d48 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d47 = VL_RAND_RESET_I(4);
-    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_head_PLUS_1___05F_d110 = VL_RAND_RESET_I(3);
-    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail_PLUS_1___05F_d111 = VL_RAND_RESET_I(3);
+    __PVT__outPortFIFOs_4__DOT__outPortFIFO_ifc_fifo_tail__024D_IN = VL_RAND_RESET_I(3);
     __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d115 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d33 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_AND_outPort_ETC___05F_d41 = VL_RAND_RESET_I(1);
-    __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d32 = VL_RAND_RESET_I(1);
     __PVT__outPortFIFOs_4__DOT__IF_outPortFIFO_ifc_fifo_w_deq_whas_THEN_outPor_ETC___05F_d40 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_0 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_1 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_2 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_3 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_0_4 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_1 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_1 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_2 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_3 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_1_4 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_2 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_1 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_2 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_3 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_2_4 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_3 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_1 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_2 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_3 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_3_4 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_4 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_1 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_2 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_3 = VL_RAND_RESET_I(1);
-    __PVT__routerAlloc__DOT__as_inputArbGrants_reg_4_4 = VL_RAND_RESET_I(1);
     __PVT__routerAlloc__DOT__inputArbs__024input_arbs_0_select = VL_RAND_RESET_I(5);
     __PVT__routerAlloc__DOT__inputArbs__024input_arbs_1_select = VL_RAND_RESET_I(5);
     __PVT__routerAlloc__DOT__inputArbs__024input_arbs_2_select = VL_RAND_RESET_I(5);
@@ -29995,294 +27449,6 @@ void Vtop_mkIQRouterCoreSimple::_ctor_var_reset() {
     __PVT__routerAlloc__DOT__outputArbs__DOT__ab___05Fh7813 = VL_RAND_RESET_I(2);
     __PVT__routerAlloc__DOT__outputArbs__DOT__ab___05Fh8157 = VL_RAND_RESET_I(2);
     __PVT__routerAlloc__DOT__outputArbs__DOT__ab___05Fh8452 = VL_RAND_RESET_I(2);
-    __Vtablechg1[0] = VL_ULL(0x7ffffffff);
-    __Vtablechg1[1] = VL_ULL(0);
-    __Vtable1___PVT__inPortVL[0] = 0U;
-    __Vtable1___PVT__inPortVL[1] = 0U;
-    __Vtable1___PVT__inPortVL_1[0] = 0U;
-    __Vtable1___PVT__inPortVL_1[1] = 0U;
-    __Vtable1___PVT__inPortVL_2[0] = 0U;
-    __Vtable1___PVT__inPortVL_2[1] = 0U;
-    __Vtable1___PVT__inPortVL_3[0] = 0U;
-    __Vtable1___PVT__inPortVL_3[1] = 0U;
-    __Vtable1___PVT__inPortVL_4[0] = 0U;
-    __Vtable1___PVT__inPortVL_4[1] = 0U;
-    __Vtable1___PVT__lockedVL[0] = 0U;
-    __Vtable1___PVT__lockedVL[1] = 0U;
-    __Vtable1___PVT__lockedVL_1[0] = 0U;
-    __Vtable1___PVT__lockedVL_1[1] = 0U;
-    __Vtable1___PVT__lockedVL_2[0] = 0U;
-    __Vtable1___PVT__lockedVL_2[1] = 0U;
-    __Vtable1___PVT__lockedVL_3[0] = 0U;
-    __Vtable1___PVT__lockedVL_3[1] = 0U;
-    __Vtable1___PVT__lockedVL_4[0] = 0U;
-    __Vtable1___PVT__lockedVL_4[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_1[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_1[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_2[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_2[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_3[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_3[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_4[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_0_4[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_1[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_1[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_2[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_2[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_3[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_3[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_4[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_1_4[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_1[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_1[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_2[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_2[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_3[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_3[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_4[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_2_4[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_1[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_1[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_2[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_2[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_3[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_3[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_4[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_3_4[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_1[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_1[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_2[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_2[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_3[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_3[1] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_4[0] = 0U;
-    __Vtable1___PVT__selectedIO_reg_4_4[1] = 0U;
-    __Vtablechg2[0] = VL_ULL(0x7ffffffff);
-    __Vtablechg2[1] = VL_ULL(0);
-    __Vtable2___PVT__inPortVL[0] = 0U;
-    __Vtable2___PVT__inPortVL[1] = 0U;
-    __Vtable2___PVT__inPortVL_1[0] = 0U;
-    __Vtable2___PVT__inPortVL_1[1] = 0U;
-    __Vtable2___PVT__inPortVL_2[0] = 0U;
-    __Vtable2___PVT__inPortVL_2[1] = 0U;
-    __Vtable2___PVT__inPortVL_3[0] = 0U;
-    __Vtable2___PVT__inPortVL_3[1] = 0U;
-    __Vtable2___PVT__inPortVL_4[0] = 0U;
-    __Vtable2___PVT__inPortVL_4[1] = 0U;
-    __Vtable2___PVT__lockedVL[0] = 0U;
-    __Vtable2___PVT__lockedVL[1] = 0U;
-    __Vtable2___PVT__lockedVL_1[0] = 0U;
-    __Vtable2___PVT__lockedVL_1[1] = 0U;
-    __Vtable2___PVT__lockedVL_2[0] = 0U;
-    __Vtable2___PVT__lockedVL_2[1] = 0U;
-    __Vtable2___PVT__lockedVL_3[0] = 0U;
-    __Vtable2___PVT__lockedVL_3[1] = 0U;
-    __Vtable2___PVT__lockedVL_4[0] = 0U;
-    __Vtable2___PVT__lockedVL_4[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_1[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_1[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_2[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_2[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_3[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_3[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_4[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_0_4[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_1[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_1[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_2[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_2[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_3[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_3[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_4[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_1_4[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_1[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_1[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_2[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_2[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_3[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_3[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_4[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_2_4[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_1[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_1[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_2[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_2[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_3[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_3[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_4[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_3_4[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_1[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_1[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_2[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_2[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_3[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_3[1] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_4[0] = 0U;
-    __Vtable2___PVT__selectedIO_reg_4_4[1] = 0U;
-    __Vtablechg3[0] = VL_ULL(0x7ffffffff);
-    __Vtablechg3[1] = VL_ULL(0);
-    __Vtable3___PVT__inPortVL[0] = 0U;
-    __Vtable3___PVT__inPortVL[1] = 0U;
-    __Vtable3___PVT__inPortVL_1[0] = 0U;
-    __Vtable3___PVT__inPortVL_1[1] = 0U;
-    __Vtable3___PVT__inPortVL_2[0] = 0U;
-    __Vtable3___PVT__inPortVL_2[1] = 0U;
-    __Vtable3___PVT__inPortVL_3[0] = 0U;
-    __Vtable3___PVT__inPortVL_3[1] = 0U;
-    __Vtable3___PVT__inPortVL_4[0] = 0U;
-    __Vtable3___PVT__inPortVL_4[1] = 0U;
-    __Vtable3___PVT__lockedVL[0] = 0U;
-    __Vtable3___PVT__lockedVL[1] = 0U;
-    __Vtable3___PVT__lockedVL_1[0] = 0U;
-    __Vtable3___PVT__lockedVL_1[1] = 0U;
-    __Vtable3___PVT__lockedVL_2[0] = 0U;
-    __Vtable3___PVT__lockedVL_2[1] = 0U;
-    __Vtable3___PVT__lockedVL_3[0] = 0U;
-    __Vtable3___PVT__lockedVL_3[1] = 0U;
-    __Vtable3___PVT__lockedVL_4[0] = 0U;
-    __Vtable3___PVT__lockedVL_4[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_1[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_1[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_2[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_2[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_3[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_3[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_4[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_0_4[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_1[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_1[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_2[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_2[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_3[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_3[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_4[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_1_4[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_1[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_1[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_2[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_2[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_3[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_3[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_4[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_2_4[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_1[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_1[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_2[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_2[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_3[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_3[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_4[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_3_4[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_1[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_1[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_2[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_2[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_3[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_3[1] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_4[0] = 0U;
-    __Vtable3___PVT__selectedIO_reg_4_4[1] = 0U;
-    __Vtablechg4[0] = VL_ULL(0x7ffffffff);
-    __Vtablechg4[1] = VL_ULL(0);
-    __Vtable4___PVT__inPortVL[0] = 0U;
-    __Vtable4___PVT__inPortVL[1] = 0U;
-    __Vtable4___PVT__inPortVL_1[0] = 0U;
-    __Vtable4___PVT__inPortVL_1[1] = 0U;
-    __Vtable4___PVT__inPortVL_2[0] = 0U;
-    __Vtable4___PVT__inPortVL_2[1] = 0U;
-    __Vtable4___PVT__inPortVL_3[0] = 0U;
-    __Vtable4___PVT__inPortVL_3[1] = 0U;
-    __Vtable4___PVT__inPortVL_4[0] = 0U;
-    __Vtable4___PVT__inPortVL_4[1] = 0U;
-    __Vtable4___PVT__lockedVL[0] = 0U;
-    __Vtable4___PVT__lockedVL[1] = 0U;
-    __Vtable4___PVT__lockedVL_1[0] = 0U;
-    __Vtable4___PVT__lockedVL_1[1] = 0U;
-    __Vtable4___PVT__lockedVL_2[0] = 0U;
-    __Vtable4___PVT__lockedVL_2[1] = 0U;
-    __Vtable4___PVT__lockedVL_3[0] = 0U;
-    __Vtable4___PVT__lockedVL_3[1] = 0U;
-    __Vtable4___PVT__lockedVL_4[0] = 0U;
-    __Vtable4___PVT__lockedVL_4[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_1[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_1[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_2[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_2[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_3[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_3[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_4[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_0_4[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_1[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_1[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_2[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_2[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_3[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_3[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_4[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_1_4[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_1[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_1[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_2[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_2[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_3[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_3[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_4[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_2_4[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_1[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_1[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_2[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_2[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_3[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_3[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_4[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_3_4[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_1[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_1[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_2[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_2[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_3[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_3[1] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_4[0] = 0U;
-    __Vtable4___PVT__selectedIO_reg_4_4[1] = 0U;
     __Vdlyvdim0__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0;
     __Vdlyvval__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = VL_RAND_RESET_I(20);
     __Vdlyvset__flitBuffers__DOT__inputQueue_ifc_mf_ifc_fifoMem__DOT__arr__v0 = 0;
