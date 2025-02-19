@@ -432,7 +432,6 @@ void pr_uint32(char space,uint32_t x);
 
 /// YR
 uint32_t signInv(uint32_t x);
-<<<<<<< HEAD
 int Print(char *str,printvar*var);
 void snPrint(char* buffer,int n,char *str,printvar*var);
 int strlen(char *str);
@@ -448,7 +447,7 @@ void Fail(int code);
 
 void Putc(char c);
 void Puts(char *s);
-int strcmp(const char *l, const char *r);
+intS strcmp(const char *l, const char *r);
 
 #define INT_MAX       __INT_MAX__
 
@@ -463,17 +462,16 @@ char *strcat(char *dest, const char *src);
 typedef int		 cmp_t(const void *, const void *);
 void qsort(void *a, size_t n, size_t es, cmp_t *cmp);
 //ali's work ends
-=======
 void PrintInt(uint32_t num);
 void Print(char *str,printvar*var);
 void snPrint(char* buffer,int n,char *str,printvar*var);
 void printHex(uint32_t x);
 int strlen(char *str);
 void strncpy(char *dest, const char *src, size_t n);
-void strcpy(char *dest, const char *src);
+//void strcpy(char *dest, const char *src);
 void Srand(unsigned int seed);
 unsigned int Rand(void);
-int strcmp(const char *str1, const char *str2);
+//int strcmp(const char *str1, const char *str2);
 uint32_t Atof(const char *str);
 // uint32_t floor(uint32_t x);
 int atoi(const char *s);
@@ -505,4 +503,3 @@ void free(void *ptr);
 
 void *calloc(size_t num, size_t size) ;
 #endif
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be

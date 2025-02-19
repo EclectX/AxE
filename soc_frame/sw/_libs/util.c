@@ -1344,16 +1344,7 @@ void PrintInt(uint32_t num){
     }
 
 }
-<<<<<<< HEAD
 int Print(char *str,printvar*var){
-=======
-
-/// printf like function
-/// args should be in PRINTVARS
-/// Currently only   %.*s %.4s %d %f %s %c %08lx   are implemented
-/// todo: %02d
-void Print(char *str,printvar*var){
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
     int flag = 0;
     int counter = 0;
     int cnt = 0;
@@ -1413,14 +1404,9 @@ void Print(char *str,printvar*var){
                 else if(str[iter]=='s'){
                     Print(var->str,0);    
                 }
-<<<<<<< HEAD
 
                 //ali's work begins
-                else if (str[iter] == 'c') { // %c
-                    int a= (int)var->number; // Print the character stored in var->number]
-                    char* s[]= {a};
-                    Print("%s", PRINTVARS(s));
-                }
+
                 else if (str[iter] == 'x'){
                     uint32_t x= (int)var->number;
                     char *hexDigits[] = {"0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"};
@@ -1432,12 +1418,10 @@ void Print(char *str,printvar*var){
                 }
                 //ali's work ends
 
-=======
                 else if(str[iter]=='c'){
                     char output[1] = {var->str};
                     Print(output,0);
                 }
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
                 var++;
                 numflag = 0;
             }
@@ -1638,8 +1622,6 @@ void snPrint(char* buffer,int n,char *str,printvar*var){
     }
     buffer[bufit] = '\0';
 }
-<<<<<<< HEAD
-=======
 
 /// Print 32 bit Numbers in Hex format 
 void printHex(uint32_t x){
@@ -1654,7 +1636,6 @@ void printHex(uint32_t x){
 }
 
 /// length of string returns
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 int strlen(char *str){
     if (!str)
         return 0;
@@ -1664,11 +1645,6 @@ int strlen(char *str){
     }
     return counter;
 }
-<<<<<<< HEAD
-=======
-
-/// strncpy like function
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 void strncpy(char *dest, const char *src, size_t n) {
     size_t i = 0;
 
@@ -1682,7 +1658,6 @@ void strncpy(char *dest, const char *src, size_t n) {
         i++;
     }
 }
-<<<<<<< HEAD
 #define RAND_MAX 32767
 #define N 624
 #define M 397
@@ -1698,8 +1673,7 @@ void strncpy(char *dest, const char *src, size_t n) {
 static int mt_initialized = 0;
 static unsigned int mt[N+1];
 static int mti=N+1;
-void srand(unsigned int seed){
-=======
+
 
 /// strcpy like function
 void strcpy(char *dest, const char *src) {
@@ -1713,7 +1687,6 @@ void strcpy(char *dest, const char *src) {
 
 /// Initialize random number generator
 void Srand(unsigned int seed){
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
   int i;
   mt_initialized = 1;
   for (i=0;i<N;i++)
@@ -1725,17 +1698,11 @@ void Srand(unsigned int seed){
   }
   mti = N;
 }
-<<<<<<< HEAD
-unsigned int rand(void){
-  if (!mt_initialized){
-    display_print(0,0,"ERROR: rng is not initialized, call srand()!\n");
-=======
 
 /// Generate random number
 unsigned int Rand(void){
   if (!mt_initialized){
     display_print(0,0,"ERROR: rng is not initialized, call Srand()!\n");
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
   }
   unsigned int y;
   static unsigned int mag01[2]={0x0, MATRIX_A};
@@ -1745,11 +1712,8 @@ unsigned int Rand(void){
     int kk;
 
     if (mti == N+1)
-<<<<<<< HEAD
       srand(4357);
-=======
-      Srand(4357);
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
+
 
     for (kk=0;kk<N-M;kk++)
     {
@@ -1776,8 +1740,7 @@ unsigned int Rand(void){
   return y & RAND_MAX;
 }
 
-<<<<<<< HEAD
-//ali's work begins
+//Ali's work begins
 
 //#define MINIMUM(X, Y) (((X) < (Y)) ? (X) : (Y))
 //#define MAXIMUM(X, Y) (((X) > (Y)) ? (X) : (Y))
@@ -1836,6 +1799,7 @@ Puts(char *s)
   Putc('\n');
 }
 
+/// Compare two strings
 int
 strcmp(const char *l, const char *r)
 {
@@ -1851,18 +1815,11 @@ char *strcpy(char *dest, const char *src)
 	while ((*d++ = *s++));
 	return dest;
 }
-=======
-/// Compare two strings
-int strcmp(const char *str1, const char *str2) {
-    while (*str1 && *str2) {
-        if (*str1 != *str2) {
-            return *str1 - *str2;
-        }
-        str1++;
-        str2++;
-    }
-    return *str1 - *str2;
-}
+#define assert(P)    (P) = (void)0 
+
+//Ali's work end
+
+
 
 /// Convert string to float
 /// It only works for low precision float numbers
@@ -2336,19 +2293,12 @@ __SIZE_TYPE__ mwrite(void *_ptr, __SIZE_TYPE__ size, MFILE *mfile)
 // parsa
 
 // strncat
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
 char *
 strcat(char *dest, const char *src)
 {
 	strcpy(dest + strlen(dest), src);
 	return dest;
 }
-<<<<<<< HEAD
-#define assert(P)    (P) = (void)0 
-
-//*/
-//ali's work ends
-=======
 
 // malloc 
 /* malloc/free functions */
@@ -2526,4 +2476,3 @@ strncasecmp(const char *_l, const char *_r, size_t n)
 	for (; *l && *r && n && (*l == *r || tolower(*l) == tolower(*r)); l++, r++, n--);
 	return tolower(*l) - tolower(*r);
 }
->>>>>>> 23eef5a6de376a1385a3786dc0d22a1bbe6736be
