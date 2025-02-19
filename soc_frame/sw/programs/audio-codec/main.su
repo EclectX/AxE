@@ -1,0 +1,4 @@
+main.c:19:6:encode	64	static
+main.c:43:6:decode	64	static
+main.c:59:13:test	32	static
+main.c:63:6:my_main	80	static

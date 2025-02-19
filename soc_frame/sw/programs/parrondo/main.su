@@ -1,0 +1,4 @@
+main.c:62:5:cointoss	48	static
+main.c:71:5:play_s	16	static
+main.c:77:5:play_c	32	static
+main.c:83:6:my_main	208	static

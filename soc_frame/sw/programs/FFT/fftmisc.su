@@ -1,0 +1,4 @@
+fftmisc.c:35:5:IsPowerOfTwo	32	static
+fftmisc.c:47:10:NumberOfBitsNeeded	48	static
+fftmisc.c:60:10:ReverseBits	48	static
+fftmisc.c:74:8:Index_to_frequency	32	static
