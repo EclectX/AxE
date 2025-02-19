@@ -1,5 +1,0 @@
-main.c:12:10:f	32	static
-main.c:16:10:df	32	static
-main.c:33:10:myfabs	32	static
-main.c:41:10:rn_solver	64	static
-main.c:64:6:my_main	48	static

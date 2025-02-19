@@ -1,7 +1,0 @@
-main.c:21:16:createStackNode	48	static
-main.c:28:15:createListNode	48	static
-main.c:35:15:createGraph	48	static
-main.c:45:6:addEdge	48	static
-main.c:51:6:topologicalSortUtil	48	static
-main.c:68:6:topologicalSort	64	static
-main.c:95:6:my_main	32	static

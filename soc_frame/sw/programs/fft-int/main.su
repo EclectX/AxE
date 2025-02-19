@@ -1,7 +1,0 @@
-main.c:62:5:fix_fft	96	static
-main.c:148:6:window	48	static
-main.c:160:6:fix_loud	64	static
-main.c:175:5:db_from_ampl	48	static
-main.c:198:7:fix_mpy	32	static
-main.c:203:5:iscale	32	static
-main.c:367:6:my_main	80	static

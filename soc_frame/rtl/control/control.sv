@@ -10,7 +10,7 @@
 ***************************************************************************** */
 
 // this module can activate the nodes and set the AXI address offsets.
-
+`define CYCLE_COUNTER_OVERFLOW_AWARE
 module control #()
 (
      input clk
@@ -111,7 +111,7 @@ reg trigger_b_reg;
 
 integer unsigned counter_global;
 
-`ifdef DEBUG_CONTROL
+`ifdef CYCLE_COUNTER_OVERFLOW_AWARE
 
 integer unsigned counter_global_prev;
 
@@ -156,7 +156,7 @@ begin : control_proc
         //~ counter_global = 4294967295;
         //~ counter_global = 4293967295;
         
-`ifdef DEBUG_CONTROL
+`ifdef CYCLE_COUNTER_OVERFLOW_AWARE
         
         counter_global_prev = 0;
         //~ counter_global = 4263506011;
@@ -279,7 +279,9 @@ begin : control_proc
                     $display( ";%d,p%h,%d;", counter_global, latched_wdata, node_sel );
                 
                 // check for overflow
-                
+ `endif
+
+ `ifdef CYCLE_COUNTER_OVERFLOW_AWARE               
                 if ( counter_global_prev > counter_global )
                 begin
                     
@@ -289,7 +291,7 @@ begin : control_proc
                     
                 end
                 
-                $display( "uut: %d,%d,%d,%h", counter_global, num_active, node_sel, latched_wdata );
+                // $display( "uut: %d,%d,%d,%h", counter_global, num_active, node_sel, latched_wdata );
                 
                 counter_global_prev = counter_global;
                 

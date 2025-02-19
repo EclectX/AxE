@@ -150,15 +150,15 @@ class Memory:
                 
                 # clean the output and compile with some default stack pointer
                 # that should be high enough
-                
-                prg.clean()
-                prg.compl( "0x00040000" )
+                sp = "0x10000000"
+                # prg.clean()
+                # prg.compl( sp )
                 
                 # a simulation is run with an arg that outputs the memory usage
                 
-                memory_usage = sim.run( sys, prg, [MEM_PACKER_OUTPUT_MEMORY] )
+                # memory_usage = sim.run( sys, prg, [MEM_PACKER_OUTPUT_MEMORY] )
                 
-                sp = prg.get_stack_pointer( memory_usage )
+                # sp = prg.get_stack_pointer( memory_usage )
                 
                 # the program has to be compiled again using the new stack
                 # pointer. this is the program that is then read and stored in

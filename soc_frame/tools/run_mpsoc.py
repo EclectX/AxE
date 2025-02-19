@@ -283,7 +283,7 @@ sim = Simulator()
 # 
 # ------------------------------------------------------------------------------
 
-# sys.clean()
+sys.clean()
 
 # set the architectures for the nodes
 
@@ -292,7 +292,7 @@ for i,arch in enumerate( node_arch_lst ):
     sys.set_define( "defines_nodes", "N" + str(i) + "_ARCH", "`RV32" + arch.upper() )
     
 
-# sys.compl()
+sys.compl()
 print( "\t\t\t\t>>>>>>>>compiled system" )
 
 # ------------------------------------------------------------------------------

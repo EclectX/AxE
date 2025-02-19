@@ -1,7 +1,0 @@
-sha.c:21:13:sha_transform	384	static
-sha.c:84:13:byte_reverse	48	static
-sha.c:106:6:sha_init	32	static
-sha.c:117:6:sha_update	32	static
-sha.c:135:6:sha_final	48	static
-sha.c:163:6:sha_stream	8240	static
-sha.c:177:6:sha_print	64	static

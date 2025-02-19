@@ -252,7 +252,6 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__guard;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__round_bit;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__sticky;
-        CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_is_zero;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_is_zero;
         CData/*5:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_approximate;
@@ -270,9 +269,9 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_s;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b_s;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z_s;
+        CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__guard;
     };
     struct {
-        CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__guard;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__round_bit;
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__sticky;
         CData/*5:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__count;
@@ -336,9 +335,9 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wait;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_wr;
+        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_wait;
     };
     struct {
-        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_wait;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_ready;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_int_wr;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_int_ready;
@@ -402,9 +401,9 @@ VL_MODULE(Vtop) {
         CData/*4:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoded_rs1;
         CData/*4:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoded_rs2;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger;
+        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_pseudo_trigger;
     };
     struct {
-        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_pseudo_trigger;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__compressed_instr;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__is_lui_auipc_jal;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__is_lb_lh_lw_lbu_lhu;
@@ -468,13 +467,12 @@ VL_MODULE(Vtop) {
         CData/*3:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__state;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__a_s;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__b_s;
+        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z_s;
     };
     struct {
-        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z_s;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__guard;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__round_bit;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__sticky;
-        CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_is_zero;
         CData/*0:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_is_zero;
         CData/*5:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_approximate;
@@ -534,10 +532,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__node_0__DOT__bridge_slave_inst__DOT__genblk2__DOT__bridge_slave_missing_inst__DOT__done;
         CData/*0:0*/ top__DOT__node_1__DOT__w_activate;
         CData/*0:0*/ top__DOT__node_1__DOT__w_fin;
-    };
-    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__w_res_n_gated;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid;
+    };
+    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__mem_valid;
         CData/*3:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__mem_wstrb;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__mem_instr;
@@ -600,10 +598,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_sb;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_sh;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_sw;
-    };
-    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_addi;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_slti;
+    };
+    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_sltiu;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_xori;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_ori;
@@ -666,10 +664,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__latched_is_lb;
         CData/*4:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__latched_rd;
         CData/*3:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_timeout_counter;
-    };
-    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_timeout;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__do_waitirq;
+    };
+    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__alu_out_0;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__alu_eq;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__alu_ltu;
@@ -706,7 +704,6 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__guard;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__round_bit;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__sticky;
-        CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_is_zero;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_is_zero;
         CData/*5:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_approximate;
@@ -732,11 +729,11 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_mulh;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_mulhsu;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_mulhu;
-    };
-    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_any_mulh;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__pcpi_wait_q;
         CData/*6:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_counter;
+    };
+    struct {
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_waiting;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish;
         CData/*0:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_div;
@@ -798,11 +795,11 @@ VL_MODULE(Vtop) {
         CData/*3:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__latched_wstrb;
         CData/*2:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__latched_arprot;
         CData/*0:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__done;
-    };
-    struct {
         CData/*0:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__resp_from;
         CData/*0:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__r_bvalid;
         CData/*0:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__r_rvalid;
+    };
+    struct {
         CData/*0:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__detected;
         CData/*0:0*/ top__DOT__memory_controller_inst__DOT__axi_detector_demux_inst__DOT__write;
         CData/*3:0*/ top__DOT__memory_controller_inst__DOT__bram_controller_inst__DOT__latched_wstrb;
@@ -864,11 +861,11 @@ VL_MODULE(Vtop) {
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_rd;
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_rd;
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_rd;
-    };
-    struct {
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_rd;
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_rd;
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_int_rd;
+    };
+    struct {
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_rdata_word;
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_rdata_q;
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_rdata_latched_noshuffle;
@@ -930,11 +927,11 @@ VL_MODULE(Vtop) {
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_out;
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__next_pc;
-    };
-    struct {
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__timer;
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_rd;
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_rd;
+    };
+    struct {
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_rd;
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_rd;
         IData/*31:0*/ top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_rd;
@@ -996,11 +993,11 @@ VL_MODULE(Vtop) {
         WData/*71:0*/ top__DOT__node_0__DOT__bridge_slave_inst__DOT__genblk2__DOT__bridge_slave_missing_inst__DOT__merged_request[3];
         IData/*31:0*/ top__DOT__node_0__DOT__bridge_slave_inst__DOT__genblk2__DOT__bridge_slave_missing_inst__DOT__latched_awaddr;
         IData/*31:0*/ top__DOT__node_0__DOT__bridge_slave_inst__DOT__genblk2__DOT__bridge_slave_missing_inst__DOT__latched_wdata;
-    };
-    struct {
         IData/*31:0*/ top__DOT__node_0__DOT__bridge_slave_inst__DOT__genblk2__DOT__bridge_slave_missing_inst__DOT__latched_araddr;
         IData/*31:0*/ top__DOT__node_0__DOT__bridge_slave_inst__DOT__genblk2__DOT__bridge_slave_missing_inst__DOT__extracted_rdata;
         IData/*31:0*/ top__DOT__node_1__DOT__w_axi_offset;
+    };
+    struct {
         IData/*31:0*/ top__DOT__node_1__DOT__clk_gater_inst__DOT__state;
         IData/*31:0*/ top__DOT__node_1__DOT__clk_gater_inst__DOT__i;
         IData/*31:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn;
@@ -1062,11 +1059,11 @@ VL_MODULE(Vtop) {
         IData/*23:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b_m;
         IData/*23:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z_m;
         IData/*31:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__dividend;
-    };
-    struct {
         IData/*31:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__quotient;
         IData/*31:0*/ top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__quotient_msk;
         IData/*31:0*/ top__DOT__node_1__DOT__axi_detector_inst__DOT__state;
+    };
+    struct {
         IData/*31:0*/ top__DOT__node_1__DOT__axi_detector_inst__DOT__latched_awaddr;
         IData/*31:0*/ top__DOT__node_1__DOT__axi_detector_inst__DOT__latched_wdata;
         IData/*31:0*/ top__DOT__node_1__DOT__axi_detector_inst__DOT__latched_araddr;
@@ -1122,16 +1119,17 @@ VL_MODULE(Vtop) {
         IData/*31:0*/ top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata;
         IData/*31:0*/ top__DOT__memory_controller_inst__DOT__control_inst__DOT__active;
         IData/*31:0*/ top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global;
+        IData/*31:0*/ top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global_prev;
         IData/*31:0*/ top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_0_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_1_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core__024in_ports_2_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_0_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_2_putRoutedFlit_flit_in;
-    };
-    struct {
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_1__024in_ports_3_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_0_putRoutedFlit_flit_in;
+    };
+    struct {
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_1_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_2__024in_ports_4_putRoutedFlit_flit_in;
         IData/*23:0*/ top__DOT__if_wrapper_noc_2x2_16_inst__DOT__mkNetworkSimple_inst__DOT__net_routers_router_core_3__024in_ports_0_putRoutedFlit_flit_in;
@@ -1194,10 +1192,10 @@ VL_MODULE(Vtop) {
         CData/*0:0*/ top__DOT__res_n_syn_inst__DOT__shift_reg[8];
         CData/*6:0*/ top__DOT__ring_buffer_inst__DOT__buffer[150];
         IData/*31:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__cpuregs[32];
-    };
-    struct {
         CData/*1:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_chunks[3];
         CData/*1:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_chunks[3];
+    };
+    struct {
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_chunks_quantized[3];
         CData/*0:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_chunks_quantized[3];
         CData/*5:0*/ top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_approximate_quantized[3];

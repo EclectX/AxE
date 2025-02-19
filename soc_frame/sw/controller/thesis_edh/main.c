@@ -184,10 +184,18 @@ void my_main()
 	init_nodes( nodes );
 	init_prgs( prgs );
 	init_archs( archs );
+	int cnt_start = 0;
+    int cnt_end = 0;
 	print_str("******** ");print_str(" Start executing ");print_str(prgs[0].name);print_str(" on the slave node");print_str(" ********\n");
 	node_assign_prg( 0, 0 );
+	cnt_start = GET_COUNTER_GLOBAL;
+	display_print(0,0,"Starting cycle");
+	display_print(2,cnt_start,"");
 	while(!node_is_busy(0)){
 		nodes_set_idle();
 	}
+	cnt_end = GET_COUNTER_GLOBAL;
+	display_print(0,0,"Starting cycle");
+	display_print(2,cnt_end,"");
 	print_str("\n********");print_str(" Finished executing ");print_str(prgs[0].name);print_str(" on the slave node");print_str(" ********\n");
 }

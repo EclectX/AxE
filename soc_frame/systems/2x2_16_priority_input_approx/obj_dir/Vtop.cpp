@@ -996,8 +996,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
     IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z;
     IData/*27:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__sum;
     IData/*23:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z_m;
-    IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
+    IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     IData/*26:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m;
     IData/*26:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__z;
@@ -1009,8 +1009,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
     IData/*23:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z;
     IData/*23:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z_m;
-    IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
+    IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     IData/*23:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m;
     IData/*23:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z;
@@ -1105,10 +1105,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state;
-    __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
-        = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
+    __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
+        = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack 
@@ -1193,10 +1193,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state;
-    __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
-        = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
+    __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
+        = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack 
@@ -1221,6 +1221,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_rem;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_timeout_counter 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_timeout_counter;
+    __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid 
+        = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_instr 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_instr;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__latched_is_lb 
@@ -1237,8 +1239,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_cycle;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_sh 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_sh;
-    __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid 
-        = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_prefetch 
         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_prefetch;
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_pc 
@@ -1593,211 +1593,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__memory_controller_inst__DOT__w_merged_request_bridge_to_buffer[1U] = 0U;
         vlTOPp->top__DOT__memory_controller_inst__DOT__w_merged_request_bridge_to_buffer[2U] = 0U;
     }
-    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awready = 0U;
-    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wready = 0U;
-    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.arready = 0U;
-    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bvalid = 0U;
-    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rvalid = 0U;
-    if (vlTOPp->top__DOT__w_res_n_syn) {
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global 
-            = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global);
-        if ((1U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active)) {
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[0U] 
-                = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters
-                   [0U]);
-        }
-        if ((2U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active)) {
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[1U] 
-                = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters
-                   [1U]);
-        }
-        if ((0U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
-            __Vtask_write_req_wait__117__done = 0U;
-            vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.arready = 1U;
-            if ((1U & (~ (IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected)))) {
-                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awready = 1U;
-            }
-            if ((1U & (~ (IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected)))) {
-                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wready = 1U;
-            }
-            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awvalid) {
-                __Vtask_write_req_wait__117__t_awaddr 
-                    = vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awaddr;
-                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected = 1U;
-            }
-            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wvalid) {
-                __Vtask_write_req_wait__117__t_wdata 
-                    = vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wdata;
-                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected = 1U;
-            }
-            if (((IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected) 
-                 & (IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected))) {
-                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected = 0U;
-                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected = 0U;
-                __Vtask_write_req_wait__117__done = 1U;
-            }
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr 
-                = __Vtask_write_req_wait__117__t_awaddr;
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata 
-                = __Vtask_write_req_wait__117__t_wdata;
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
-                = __Vtask_write_req_wait__117__done;
-            if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
-                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 1U;
-            }
-            __Vtask_read_req_wait__118__done = 0U;
-            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.arvalid) {
-                __Vtask_read_req_wait__118__t_araddr 
-                    = vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.araddr;
-                __Vtask_read_req_wait__118__done = 1U;
-            }
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr 
-                = __Vtask_read_req_wait__118__t_araddr;
-            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
-                = __Vtask_read_req_wait__118__done;
-            if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
-                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 2U;
-            }
-        } else {
-            if ((1U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
-                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel 
-                    = (1U & (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr 
-                             >> 2U));
-                if ((0x80U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr)) {
-                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel] 
-                        = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata;
-                    if ((0U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata)) {
-                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active 
-                            = ((~ ((IData)(1U) << (IData)(vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel))) 
-                               & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active);
-                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active 
-                            = (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active 
-                               - (IData)(1U));
-                    } else {
-                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active 
-                            = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active);
-                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel] = 0U;
-                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active 
-                            = (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active 
-                               | ((IData)(1U) << (IData)(vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel)));
-                    }
-                } else {
-                    if ((0x40000U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr)) {
-                        vlTOPp->leds_status = (0xffU 
-                                               & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata);
-                    } else {
-                        if ((0x80000U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr)) {
-                            vlTOPp->triggers = (0xffU 
-                                                & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata);
-                        }
-                    }
-                }
-                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 4U;
-            } else {
-                if ((2U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
-                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel 
-                        = (1U & (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr 
-                                 >> 2U));
-                    if ((1U & (~ (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr 
-                                  >> 0x1eU)))) {
-                        if ((0x80U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
-                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets
-                                [vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel];
-                        } else {
-                            if ((0x100U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
-                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                    = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active;
-                            } else {
-                                if ((0x200U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
-                                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                        = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters
-                                        [vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel];
-                                } else {
-                                    if ((0x400U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
-                                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                            = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global;
-                                    } else {
-                                        if ((0x100000U 
-                                             & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
-                                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                                = vlTOPp->top__DOT__memory_controller_inst__DOT__spoon_feed;
-                                        } else {
-                                            if ((0x8000U 
-                                                 & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
-                                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                                    = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global;
-                                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global = 0U;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state 
-                        = ((0x40000000U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)
-                            ? 3U : 5U);
-                } else {
-                    if ((3U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
-                        if (vlTOPp->top__DOT__memory_controller_inst__DOT__pixel_avail) {
-                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
-                                = vlTOPp->top__DOT__memory_controller_inst__DOT__pixel;
-                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 5U;
-                        }
-                    } else {
-                        if ((4U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
-                            __Vtask_write_resp__119__done = 0U;
-                            vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bvalid = 1U;
-                            vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bresp = 0U;
-                            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bready) {
-                                __Vtask_write_resp__119__done = 1U;
-                            }
-                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
-                                = __Vtask_write_resp__119__done;
-                            if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
-                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 0U;
-                            }
-                        } else {
-                            if ((5U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
-                                __Vtask_read_resp__120__t_rdata 
-                                    = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata;
-                                __Vtask_read_resp__120__done = 0U;
-                                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rvalid = 1U;
-                                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rresp = 0U;
-                                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rdata 
-                                    = __Vtask_read_resp__120__t_rdata;
-                                if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rready) {
-                                    __Vtask_read_resp__120__done = 1U;
-                                }
-                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
-                                    = __Vtask_read_resp__120__done;
-                                if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
-                                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 0U;
-                                }
-                            } else {
-                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 0U;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } else {
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[0U] = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[0U] = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global = 1U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[1U] = 0U;
-        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[1U] = 0U;
-    }
     if (vlTOPp->top__DOT__w_res_n_syn) {
         vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_memory.awready = 0U;
         vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_memory.wready = 0U;
@@ -1966,6 +1761,222 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__memory_controller_inst__DOT__bram_controller_inst__DOT__wdata_temp = 0U;
         vlTOPp->top__DOT__memory_controller_inst__DOT__bram_controller_inst__DOT__rdata_temp = 0U;
         vlTOPp->top__DOT__memory_controller_inst__DOT__bram_controller_inst__DOT__done = 0U;
+    }
+    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awready = 0U;
+    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wready = 0U;
+    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.arready = 0U;
+    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bvalid = 0U;
+    vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rvalid = 0U;
+    if (vlTOPp->top__DOT__w_res_n_syn) {
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global 
+            = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global);
+        if ((1U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active)) {
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[0U] 
+                = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters
+                   [0U]);
+        }
+        if ((2U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active)) {
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[1U] 
+                = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters
+                   [1U]);
+        }
+        if ((0U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
+            __Vtask_write_req_wait__117__done = 0U;
+            vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.arready = 1U;
+            if ((1U & (~ (IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected)))) {
+                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awready = 1U;
+            }
+            if ((1U & (~ (IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected)))) {
+                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wready = 1U;
+            }
+            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awvalid) {
+                __Vtask_write_req_wait__117__t_awaddr 
+                    = vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.awaddr;
+                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected = 1U;
+            }
+            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wvalid) {
+                __Vtask_write_req_wait__117__t_wdata 
+                    = vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.wdata;
+                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected = 1U;
+            }
+            if (((IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected) 
+                 & (IData)(vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected))) {
+                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_addr_collected = 0U;
+                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.w_data_collected = 0U;
+                __Vtask_write_req_wait__117__done = 1U;
+            }
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr 
+                = __Vtask_write_req_wait__117__t_awaddr;
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata 
+                = __Vtask_write_req_wait__117__t_wdata;
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
+                = __Vtask_write_req_wait__117__done;
+            if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
+                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 1U;
+            }
+            __Vtask_read_req_wait__118__done = 0U;
+            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.arvalid) {
+                __Vtask_read_req_wait__118__t_araddr 
+                    = vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.araddr;
+                __Vtask_read_req_wait__118__done = 1U;
+            }
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr 
+                = __Vtask_read_req_wait__118__t_araddr;
+            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
+                = __Vtask_read_req_wait__118__done;
+            if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
+                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 2U;
+            }
+        } else {
+            if ((1U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
+                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel 
+                    = (1U & (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr 
+                             >> 2U));
+                if ((0x80U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr)) {
+                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel] 
+                        = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata;
+                    if (VL_UNLIKELY((vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global_prev 
+                                     > vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global))) {
+                        VL_WRITEF("uut: detected overflow\n");
+                        VL_WRITEF("uut: prev: %10#\n",
+                                  32,vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global_prev);
+                        VL_WRITEF("uut: curr: %10#\n",
+                                  32,vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global);
+                    }
+                    if ((0U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata)) {
+                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active 
+                            = ((~ ((IData)(1U) << (IData)(vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel))) 
+                               & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active);
+                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active 
+                            = (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active 
+                               - (IData)(1U));
+                    } else {
+                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active 
+                            = ((IData)(1U) + vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active);
+                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel] = 0U;
+                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active 
+                            = (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active 
+                               | ((IData)(1U) << (IData)(vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel)));
+                    }
+                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global_prev 
+                        = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global;
+                } else {
+                    if ((0x40000U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr)) {
+                        vlTOPp->leds_status = (0xffU 
+                                               & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata);
+                    } else {
+                        if ((0x80000U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr)) {
+                            vlTOPp->triggers = (0xffU 
+                                                & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata);
+                        }
+                    }
+                }
+                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 4U;
+            } else {
+                if ((2U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
+                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel 
+                        = (1U & (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr 
+                                 >> 2U));
+                    if ((1U & (~ (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr 
+                                  >> 0x1eU)))) {
+                        if ((0x80U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
+                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets
+                                [vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel];
+                        } else {
+                            if ((0x100U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
+                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                    = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active;
+                            } else {
+                                if ((0x200U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
+                                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                        = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters
+                                        [vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel];
+                                } else {
+                                    if ((0x400U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
+                                        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                            = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global;
+                                    } else {
+                                        if ((0x100000U 
+                                             & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
+                                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                                = vlTOPp->top__DOT__memory_controller_inst__DOT__spoon_feed;
+                                        } else {
+                                            if ((0x8000U 
+                                                 & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)) {
+                                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                                    = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global;
+                                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global = 0U;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state 
+                        = ((0x40000000U & vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr)
+                            ? 3U : 5U);
+                } else {
+                    if ((3U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
+                        if (vlTOPp->top__DOT__memory_controller_inst__DOT__pixel_avail) {
+                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata 
+                                = vlTOPp->top__DOT__memory_controller_inst__DOT__pixel;
+                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 5U;
+                        }
+                    } else {
+                        if ((4U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
+                            __Vtask_write_resp__119__done = 0U;
+                            vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bvalid = 1U;
+                            vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bresp = 0U;
+                            if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.bready) {
+                                __Vtask_write_resp__119__done = 1U;
+                            }
+                            vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
+                                = __Vtask_write_resp__119__done;
+                            if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
+                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 0U;
+                            }
+                        } else {
+                            if ((5U == vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state)) {
+                                __Vtask_read_resp__120__t_rdata 
+                                    = vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata;
+                                __Vtask_read_resp__120__done = 0U;
+                                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rvalid = 1U;
+                                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rresp = 0U;
+                                vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rdata 
+                                    = __Vtask_read_resp__120__t_rdata;
+                                if (vlSymsp->TOP__top__DOT__memory_controller_inst__DOT__if_axi_light_control.rready) {
+                                    __Vtask_read_resp__120__done = 1U;
+                                }
+                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done 
+                                    = __Vtask_read_resp__120__done;
+                                if (vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done) {
+                                    vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 0U;
+                                }
+                            } else {
+                                vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__state = 0U;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[0U] = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[0U] = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__done = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__node_sel = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__active = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__num_active = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global = 1U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global_prev = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_awaddr = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_wdata = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_araddr = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__latched_rdata = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[1U] = 0U;
+        vlTOPp->top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[1U] = 0U;
     }
     vlSymsp->TOP__top__DOT__node_0__DOT__if_axi_light_self_awareness_to_mux.awvalid = 0U;
     vlSymsp->TOP__top__DOT__node_0__DOT__if_axi_light_self_awareness_to_mux.wvalid = 0U;
@@ -4053,10 +4064,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
             }
         }
     }
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 0U;
-    if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active) {
-        vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 1U;
-    }
     if (((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_rinst) 
          & (IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_done))) {
         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoded_rs1 
@@ -4084,8 +4091,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_waitirq = 0U;
     }
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_ready = 0U;
-    if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active) {
+    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 0U;
+    if (VL_UNLIKELY((((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
+                      & (0xbU == (0x7fU & vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
+                     & (0x41U == (0x7fU & (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
+                                           >> 0x19U)))))) {
+        VL_WRITEF("FPMUL_APPROX Completed.\n");
         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_ready = 1U;
+        vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 1U;
     }
     __Vdlyvval__top__DOT__res_n_syn_inst__DOT__shift_reg__v0 
         = vlTOPp->top__DOT__res_n_syn_inst__DOT__shift_reg
@@ -4176,16 +4189,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag__DOT__state = 0U;
         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag_ready = 0U;
     }
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 0U;
-    if (((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__w_res_n_syn))) {
-        vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 1U;
-    }
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 0U;
-    if (((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__w_res_n_syn))) {
-        vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 1U;
-    }
     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu = 0U;
     if ((((((IData)(vlTOPp->top__DOT__w_res_n_syn) 
             & (IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid)) 
@@ -4234,8 +4237,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__pcpi_wait_q 
         = ((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_wait) 
            & (IData)(vlTOPp->top__DOT__w_res_n_syn));
-    if (((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__w_res_n_syn))) {
+    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 0U;
+    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 0U;
+    if (VL_UNLIKELY(((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
+                     & (IData)(vlTOPp->top__DOT__w_res_n_syn)))) {
+        VL_WRITEF("\nMUL called\n");
+        vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 1U;
+        vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 1U;
         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_rd 
             = (IData)(((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_any_mulh)
                         ? (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__rd 
@@ -6262,7 +6270,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_rd 
                             = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z;
                         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_wr = 1U;
-                        if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb) {
+                        if (VL_UNLIKELY(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb)) {
+                            VL_WRITEF("\nFPMUL called\n");
                             __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb = 0U;
                             vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_wr = 0U;
                             vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_ready = 0U;
@@ -6705,7 +6714,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_rd 
                         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z;
                     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_wr = 1U;
-                    if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb) {
+                    if (VL_UNLIKELY(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb)) {
+                        VL_WRITEF("\nFPADD called\n");
                         __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb = 0U;
                         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_ready = 0U;
                         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_wr = 0U;
@@ -6744,9 +6754,9 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                                      >> 0x19U)))))) {
                 __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack = 0U;
                 __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack = 0U;
-                __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
-                    = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
                 __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
+                    = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
+                __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
                     = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op1;
                 vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wait = 1U;
                 vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_ready = 0U;
@@ -7147,7 +7157,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_rd 
                         = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__z;
                     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wr = 1U;
-                    if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb) {
+                    if (VL_UNLIKELY(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb)) {
+                        VL_WRITEF("\nFPSUB called\n");
                         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wr = 0U;
                         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_ready = 0U;
                         __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb = 0U;
@@ -7186,9 +7197,9 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                                      >> 0x19U)))))) {
                 __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack = 0U;
                 __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack = 0U;
-                __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
-                    = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
                 __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
+                    = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
+                __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
                     = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op1;
                 vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wait = 1U;
                 vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_ready = 0U;
@@ -7563,7 +7574,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
                                 vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_rd 
                                     = vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z;
                                 vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wr = 1U;
-                                if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb) {
+                                if (VL_UNLIKELY(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb)) {
+                                    VL_WRITEF("\nFPDIV called\n");
                                     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wr = 0U;
                                     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_ready = 0U;
                                     __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb = 0U;
@@ -7674,10 +7686,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack;
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
-        = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
+    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
+        = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m 
@@ -7714,10 +7726,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack;
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
-        = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
+    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
+        = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m 
@@ -8160,11 +8172,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__2(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__quotient_msk;
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu 
         = __Vdly__top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu;
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active 
-        = (((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
-            & (0xbU == (0x7fU & vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
-           & (0x41U == (0x7fU & (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
-                                 >> 0x19U))));
     if (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_xfer) {
         vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_rdata_q 
             = vlSymsp->TOP__top__DOT__if_axi_light_controller.rdata;
@@ -10888,11 +10895,6 @@ void Vtop::_settle__TOP__6(Vtop__Syms* __restrict vlSymsp) {
                                                         | ((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_maskirq) 
                                                            | ((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_waitirq) 
                                                               | (IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_timer))))))))))))))))));
-    vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active 
-        = (((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
-            & (0xbU == (0x7fU & vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
-           & (0x41U == (0x7fU & (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
-                                 >> 0x19U))));
     vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_int_ready 
         = ((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready) 
            | ((IData)(vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_ready) 
@@ -11139,16 +11141,6 @@ void Vtop::_settle__TOP__6(Vtop__Syms* __restrict vlSymsp) {
         = (((0U != (0xffU & (vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2 
                              >> 0x17U))) << 0x17U) 
            | (0x7fffffU & vlTOPp->top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2));
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active 
-        = (((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
-            & (0xbU == (0x7fU & vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
-           & (0x41U == (0x7fU & (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
-                                 >> 0x19U))));
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active 
-        = (((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
-            & (0xbU == (0x7fU & vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
-           & (0x41U == (0x7fU & (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
-                                 >> 0x19U))));
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_la_read 
         = ((IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated) 
            & ((~ (IData)((0U != (IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_state)))) 
@@ -14151,8 +14143,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
     IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z;
     IData/*27:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__sum;
     IData/*23:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z_m;
-    IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
+    IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     IData/*26:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m;
     IData/*26:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__z;
@@ -14164,8 +14156,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
     IData/*23:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z;
     IData/*23:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z_m;
-    IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
+    IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     IData/*23:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m;
     IData/*23:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z;
@@ -14256,10 +14248,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state;
-    __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
-        = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
+    __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
+        = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack 
@@ -14344,10 +14336,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state;
-    __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
-        = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
+    __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
+        = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack 
@@ -14382,14 +14374,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__latched_is_lu;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_pseudo_trigger 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_pseudo_trigger;
-    __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger 
-        = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_cycle 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_cycle;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_sh 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_sh;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid;
+    __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger 
+        = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_prefetch 
         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_prefetch;
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_pc 
@@ -14555,10 +14547,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__node_0__DOT__axi_detector_inst__DOT__detected = 0U;
         vlTOPp->top__DOT__node_0__DOT__axi_detector_inst__DOT__write = 0U;
     }
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 0U;
-    if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active) {
-        vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 1U;
-    }
     if (((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_rinst) 
          & (IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_done))) {
         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoded_rs1 
@@ -14586,8 +14574,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_waitirq = 0U;
     }
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_ready = 0U;
-    if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active) {
+    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 0U;
+    if (VL_UNLIKELY((((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
+                      & (0xbU == (0x7fU & vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
+                     & (0x41U == (0x7fU & (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
+                                           >> 0x19U)))))) {
+        VL_WRITEF("FPMUL_APPROX Completed.\n");
         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_ready = 1U;
+        vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 1U;
     }
     if ((0U == (IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag__DOT__state))) {
         if ((((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
@@ -14655,16 +14649,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag__DOT__state = 0U;
         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag_ready = 0U;
     }
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 0U;
-    if (((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated))) {
-        vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 1U;
-    }
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 0U;
-    if (((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated))) {
-        vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 1U;
-    }
     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu = 0U;
     if ((((((IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated) 
             & (IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid)) 
@@ -14713,8 +14697,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__pcpi_wait_q 
         = ((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_wait) 
            & (IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated));
-    if (((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated))) {
+    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 0U;
+    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 0U;
+    if (VL_UNLIKELY(((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
+                     & (IData)(vlTOPp->top__DOT__node_0__DOT__w_res_n_gated)))) {
+        VL_WRITEF("\nMUL called\n");
+        vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 1U;
+        vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 1U;
         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_rd 
             = (IData)(((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_any_mulh)
                         ? (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__rd 
@@ -16489,7 +16478,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_rd 
                             = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z;
                         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_wr = 1U;
-                        if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb) {
+                        if (VL_UNLIKELY(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb)) {
+                            VL_WRITEF("\nFPMUL called\n");
                             __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb = 0U;
                             vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_wr = 0U;
                             vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_ready = 0U;
@@ -16932,7 +16922,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_rd 
                         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z;
                     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_wr = 1U;
-                    if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb) {
+                    if (VL_UNLIKELY(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb)) {
+                        VL_WRITEF("\nFPADD called\n");
                         __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb = 0U;
                         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_ready = 0U;
                         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_wr = 0U;
@@ -16971,9 +16962,9 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                                      >> 0x19U)))))) {
                 __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack = 0U;
                 __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack = 0U;
-                __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
-                    = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
                 __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
+                    = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
+                __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
                     = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op1;
                 vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wait = 1U;
                 vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_ready = 0U;
@@ -17374,7 +17365,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_rd 
                         = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__z;
                     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wr = 1U;
-                    if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb) {
+                    if (VL_UNLIKELY(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb)) {
+                        VL_WRITEF("\nFPSUB called\n");
                         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wr = 0U;
                         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_ready = 0U;
                         __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb = 0U;
@@ -17413,9 +17405,9 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                                      >> 0x19U)))))) {
                 __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack = 0U;
                 __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack = 0U;
-                __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
-                    = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
                 __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
+                    = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
+                __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
                     = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op1;
                 vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wait = 1U;
                 vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_ready = 0U;
@@ -17790,7 +17782,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
                                 vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_rd 
                                     = vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z;
                                 vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wr = 1U;
-                                if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb) {
+                                if (VL_UNLIKELY(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb)) {
+                                    VL_WRITEF("\nFPDIV called\n");
                                     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wr = 0U;
                                     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_ready = 0U;
                                     __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb = 0U;
@@ -17901,10 +17894,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack;
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
-        = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
+    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
+        = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m 
@@ -17941,10 +17934,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack;
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
-        = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
+    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
+        = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m 
@@ -18391,11 +18384,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__9(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__quotient_msk;
     vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu 
         = __Vdly__top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu;
-    vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active 
-        = (((IData)(vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
-            & (0xbU == (0x7fU & vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
-           & (0x41U == (0x7fU & (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
-                                 >> 0x19U))));
     if (vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_xfer) {
         vlTOPp->top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_rdata_q 
             = vlSymsp->TOP__top__DOT__node_0__DOT__if_axi_light_offset_to_mux.rdata;
@@ -19438,8 +19426,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
     IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z;
     IData/*27:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__sum;
     IData/*23:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z_m;
-    IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
+    IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     IData/*26:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m;
     IData/*26:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__z;
@@ -19451,8 +19439,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
     IData/*23:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z;
     IData/*23:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z_m;
-    IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
+    IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     IData/*23:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m;
     IData/*23:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b_m;
     IData/*31:0*/ __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z;
@@ -19543,10 +19531,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state;
-    __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
-        = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
+    __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
+        = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack 
@@ -19631,10 +19619,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state;
-    __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
-        = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
+    __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
+        = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack 
@@ -19669,14 +19657,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__latched_is_lu;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_pseudo_trigger 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_pseudo_trigger;
-    __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger 
-        = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_cycle 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__count_cycle;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_sh 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_sh;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid;
+    __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger 
+        = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoder_trigger;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_prefetch 
         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_prefetch;
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_pc 
@@ -19842,10 +19830,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__node_1__DOT__axi_detector_inst__DOT__detected = 0U;
         vlTOPp->top__DOT__node_1__DOT__axi_detector_inst__DOT__write = 0U;
     }
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 0U;
-    if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active) {
-        vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 1U;
-    }
     if (((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_do_rinst) 
          & (IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_done))) {
         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__decoded_rs1 
@@ -19873,8 +19857,14 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__instr_waitirq = 0U;
     }
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_ready = 0U;
-    if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active) {
+    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 0U;
+    if (VL_UNLIKELY((((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
+                      & (0xbU == (0x7fU & vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
+                     & (0x41U == (0x7fU & (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
+                                           >> 0x19U)))))) {
+        VL_WRITEF("FPMUL_APPROX Completed.\n");
         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_ready = 1U;
+        vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx_wr = 1U;
     }
     if ((0U == (IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag__DOT__state))) {
         if ((((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
@@ -19942,16 +19932,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag__DOT__state = 0U;
         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_flag_ready = 0U;
     }
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 0U;
-    if (((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__node_1__DOT__w_res_n_gated))) {
-        vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 1U;
-    }
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 0U;
-    if (((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__node_1__DOT__w_res_n_gated))) {
-        vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 1U;
-    }
     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu = 0U;
     if ((((((IData)(vlTOPp->top__DOT__node_1__DOT__w_res_n_gated) 
             & (IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid)) 
@@ -20000,8 +19980,13 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__pcpi_wait_q 
         = ((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_div_wait) 
            & (IData)(vlTOPp->top__DOT__node_1__DOT__w_res_n_gated));
-    if (((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
-         & (IData)(vlTOPp->top__DOT__node_1__DOT__w_res_n_gated))) {
+    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 0U;
+    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 0U;
+    if (VL_UNLIKELY(((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__mul_finish) 
+                     & (IData)(vlTOPp->top__DOT__node_1__DOT__w_res_n_gated)))) {
+        VL_WRITEF("\nMUL called\n");
+        vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_wr = 1U;
+        vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_ready = 1U;
         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_mul_rd 
             = (IData)(((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__instr_any_mulh)
                         ? (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk2__DOT__genblk1__DOT__pcpi_mul__DOT__rd 
@@ -21776,7 +21761,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_rd 
                             = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__z;
                         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_wr = 1U;
-                        if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb) {
+                        if (VL_UNLIKELY(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb)) {
+                            VL_WRITEF("\nFPMUL called\n");
                             __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__s_output_z_stb = 0U;
                             vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_wr = 0U;
                             vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_ready = 0U;
@@ -22219,7 +22205,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_rd 
                         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__z;
                     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_wr = 1U;
-                    if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb) {
+                    if (VL_UNLIKELY(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb)) {
+                        VL_WRITEF("\nFPADD called\n");
                         __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd__DOT__s_output_z_stb = 0U;
                         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_ready = 0U;
                         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpadd_wr = 0U;
@@ -22258,9 +22245,9 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                      >> 0x19U)))))) {
                 __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack = 0U;
                 __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack = 0U;
-                __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
-                    = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
                 __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
+                    = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
+                __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
                     = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op1;
                 vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wait = 1U;
                 vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_ready = 0U;
@@ -22661,7 +22648,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_rd 
                         = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__z;
                     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wr = 1U;
-                    if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb) {
+                    if (VL_UNLIKELY(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb)) {
+                        VL_WRITEF("\nFPSUB called\n");
                         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_wr = 0U;
                         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub_ready = 0U;
                         __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_output_z_stb = 0U;
@@ -22700,9 +22688,9 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                      >> 0x19U)))))) {
                 __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack = 0U;
                 __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack = 0U;
-                __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
-                    = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
                 __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
+                    = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op2;
+                __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
                     = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__reg_op1;
                 vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wait = 1U;
                 vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_ready = 0U;
@@ -23077,7 +23065,8 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
                                 vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_rd 
                                     = vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__z;
                                 vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wr = 1U;
-                                if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb) {
+                                if (VL_UNLIKELY(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb)) {
+                                    VL_WRITEF("\nFPDIV called\n");
                                     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_wr = 0U;
                                     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv_ready = 0U;
                                     __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_output_z_stb = 0U;
@@ -23188,10 +23177,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_a_ack;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__s_input_b_ack;
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
-        = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__b;
+    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a 
+        = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__state;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpsub__DOT__a_m 
@@ -23228,10 +23217,10 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_a_ack;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__s_input_b_ack;
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
-        = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__b;
+    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a 
+        = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__state;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpdiv__DOT__a_m 
@@ -23678,11 +23667,6 @@ VL_INLINE_OPT void Vtop::_sequent__TOP__11(Vtop__Syms* __restrict vlSymsp) {
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__quotient_msk;
     vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu 
         = __Vdly__top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__genblk3__DOT__pcpi_div__DOT__instr_divu;
-    vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active 
-        = (((IData)(vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_valid) 
-            & (0xbU == (0x7fU & vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn))) 
-           & (0x41U == (0x7fU & (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__pcpi_insn 
-                                 >> 0x19U))));
     if (vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_xfer) {
         vlTOPp->top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__mem_rdata_q 
             = vlSymsp->TOP__top__DOT__node_1__DOT__if_axi_light_offset_to_mux.rdata;
@@ -25218,7 +25202,6 @@ void Vtop::_ctor_var_reset() {
     top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__round_bit = VL_RAND_RESET_I(1);
     top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__sticky = VL_RAND_RESET_I(1);
     top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__product = VL_RAND_RESET_Q(48);
-    top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active = VL_RAND_RESET_I(1);
     top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT____Vcellout__dtclafpm__fp_product = 0;
     top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_is_zero = VL_RAND_RESET_I(1);
     top__DOT__controller_inst__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_is_zero = VL_RAND_RESET_I(1);
@@ -25599,7 +25582,6 @@ void Vtop::_ctor_var_reset() {
     top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__round_bit = VL_RAND_RESET_I(1);
     top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__sticky = VL_RAND_RESET_I(1);
     top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__product = VL_RAND_RESET_Q(48);
-    top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active = VL_RAND_RESET_I(1);
     top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT____Vcellout__dtclafpm__fp_product = 0;
     top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_is_zero = VL_RAND_RESET_I(1);
     top__DOT__node_0__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_is_zero = VL_RAND_RESET_I(1);
@@ -26002,7 +25984,6 @@ void Vtop::_ctor_var_reset() {
     top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__round_bit = VL_RAND_RESET_I(1);
     top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__sticky = VL_RAND_RESET_I(1);
     top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul__DOT__product = VL_RAND_RESET_Q(48);
-    top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__active = VL_RAND_RESET_I(1);
     top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT____Vcellout__dtclafpm__fp_product = 0;
     top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplier_is_zero = VL_RAND_RESET_I(1);
     top__DOT__node_1__DOT__picorv32_if_wrapper_inst__DOT__picorv32_axi_inst__DOT__picorv32_core__DOT__pcpi_fpmul_approx__DOT__dtclafpm__DOT__multiplicand_is_zero = VL_RAND_RESET_I(1);
@@ -26270,6 +26251,7 @@ void Vtop::_ctor_var_reset() {
             top__DOT__memory_controller_inst__DOT__control_inst__DOT__axi_offsets[__Vi0] = VL_RAND_RESET_I(32);
     }}
     top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global = VL_RAND_RESET_I(32);
+    top__DOT__memory_controller_inst__DOT__control_inst__DOT__counter_global_prev = VL_RAND_RESET_I(32);
     { int __Vi0=0; for (; __Vi0<2; ++__Vi0) {
             top__DOT__memory_controller_inst__DOT__control_inst__DOT__counters[__Vi0] = VL_RAND_RESET_I(32);
     }}
