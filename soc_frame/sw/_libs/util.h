@@ -447,7 +447,7 @@ void Fail(int code);
 
 void Putc(char c);
 void Puts(char *s);
-intS strcmp(const char *l, const char *r);
+int strcmp(const char *l, const char *r);
 
 #define INT_MAX       __INT_MAX__
 
