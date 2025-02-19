@@ -24,3 +24,6 @@ soc_frame/sw/programs/msort/main.su
 soc_frame/sw/programs/msort/memmgr.su
 test.hex
 
+**/*.su
+libgcc
+**/*.RESULTS
